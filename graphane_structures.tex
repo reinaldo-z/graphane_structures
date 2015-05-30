@@ -1,5 +1,7 @@
-% \documentclass[aps,pra,11pt,tightenlines,showpacs,superscriptaddress,groupedaddress]{revtex4-1}
-\documentclass[twocolumn,aps,pra,11pt,tightenlines,showpacs,superscriptaddress,groupedaddress]{revtex4-1}
+\documentclass[aps,pra,11pt,tightenlines,showpacs,superscriptaddress,groupedaddress]{revtex4-1}
+\newcommand{\lw}{0.6\linewidth}
+% \documentclass[twocolumn,aps,pra,11pt,tightenlines,showpacs,superscriptaddress,groupedaddress]{revtex4-1}
+% \newcommand{\lw}{0.98\linewidth}
 
 \usepackage{color}% For link colors
 \definecolor{linkcol}{rgb}{0,0,1} 
@@ -18,7 +20,6 @@
 \pagestyle{empty}       % use if page numbers not wanted
 
 
-\newcommand{\lw}{\linewidth}
 \newcommand{\da}{$D^{a}$}
 \newcommand{\ea}{$\eta^{ixy}$}
 \newcommand{\altstc}{C$_{16}$H$_{8}$-alt}
@@ -85,11 +86,9 @@ The sections organization of this paper is as follows. In Sec. \ref{sec:theory} 
 \begin{figure}[h!] 
 \centering
 \subfigure[\ \label{fig:altstruct}]{
-    \includegraphics[width=0.49\lw]{alt/altstruct1}
-    \includegraphics[width=0.49\lw]{alt/altstruct2}}
+    \includegraphics[width=\lw]{alt/altstruct1}}
 \subfigure[\ \label{fig:upstruct}]{
-    \includegraphics[width=0.49\lw]{up/upstruct1}
-    \includegraphics[width=0.49\lw]{up/upstruct2}}
+    \includegraphics[width=\lw]{up/upstruct1}}
 \caption{Top and side views of the [\ref{fig:altstruct}] {\altstc} and [\ref{fig:upstruct}] {\upstc} structures. The dark and light spheres correspond to carbon and hydrogen atoms, respectively.}\label{fig:structures}
 \end{figure}
 %%%% end figure of structures
@@ -211,9 +210,9 @@ We show in Figs. \ref{fig:alt-eta} and \ref{fig:up-eta}  the spectra obtained fo
 \begin{figure}[h!]
     \centering
     \subfigure[\ \label{fig:alt-Da}]{
-        \includegraphics[width=1\lw]{alt/alt-Da-final}}
+        \includegraphics[width=\lw]{alt/alt-Da-final}}
     \subfigure[\ \label{fig:up-Da}]{
-        \includegraphics[width=1\lw]{up/up-Da-final}}
+        \includegraphics[width=\lw]{up/up-Da-final}}
     \caption{(Color online) Spectra of the degree of spin polarization along the direction \emph{i}, {\da}, for the hydrogenated graphene structures {\altstc} [Fig. \ref{fig:alt-Da}] and {\upstc} [Fig. \ref{fig:up-Da}] under incidence of circularly polarized light.}\label{fig:Da}
 \end{figure}
 %%%% end figure Da
@@ -245,9 +244,9 @@ We show in Figs. \ref{fig:alt-eta} and \ref{fig:up-eta}  the spectra obtained fo
 \begin{figure}[h!]
     \centering
     \subfigure[\ \label{fig:alt-eta}]{
-            \includegraphics[width=1\lw]{alt/alt-eta_sm-final}}
+            \includegraphics[width=\lw]{alt/alt-eta_sm-final}}
     \subfigure[\ \label{fig:up-eta}]{
-            \includegraphics[width=1\lw]{up/up_eta_sm_final}}
+            \includegraphics[width=\lw]{up/up_eta_sm_final}}
     \caption{(Color online) Spectra of the injection current tensor along the direction \emph{i}, {\ea}, for the hydrogenated graphene structures {\altstc} [Fig \ref{fig:alt-eta}] and {\upstc} [Fig. \ref{fig:up-eta}] under incidence of circularly polarized light.}\label{fig:eta}
 \end{figure}
 %%%% end figure eta
@@ -257,11 +256,11 @@ We show in Figs. \ref{fig:alt-eta} and \ref{fig:up-eta}  the spectra obtained fo
 \begin{figure}[h!]
     \centering
     \subfigure[\ \label{fig:alt-shg-abs}]{
-            \includegraphics[width=1\lw]{alt/alt_shg_final-abs_sm}}
+            \includegraphics[width=\lw]{alt/alt_shg_final-abs_sm}}
     \subfigure[\ \label{fig:up-shg-im}]{
-            \includegraphics[width=1\lw]{alt/alt_shg_final-im_sm}}
+            \includegraphics[width=\lw]{alt/alt_shg_final-im_sm}}
     \subfigure[\ \label{fig:up-shg-re}]{
-            \includegraphics[width=1\lw]{alt/alt_shg_final-re_sm}}
+            \includegraphics[width=\lw]{alt/alt_shg_final-re_sm}}
     \caption{(Color online) Spectra of the SHG for the {\altstc}. The Fig. [\ref{fig:alt-shg-abs}] corresponds to the absolute value for the non zero components {\huge Something else}.}\label{fig:shg-alt}
 \end{figure}
 %%%% end figure shg alt
@@ -272,11 +271,11 @@ We show in Figs. \ref{fig:alt-eta} and \ref{fig:up-eta}  the spectra obtained fo
 \begin{figure}[h!]
     \centering
     \subfigure[\ \label{fig:up-shg-abs}]{
-            \includegraphics[width=1\lw]{up/up_shg_final_abs_sm}}
+            \includegraphics[width=\lw]{up/up_shg_final_abs_sm}}
     \subfigure[\ \label{fig:up-shg-im}]{
-            \includegraphics[width=1\lw]{up/up_shg_final_im-sm}}
+            \includegraphics[width=\lw]{up/up_shg_final_im-sm}}
     \subfigure[\ \label{fig:up-shg-re}]{
-            \includegraphics[width=1\lw]{up/up_shg_final_re-sm}}
+            \includegraphics[width=\lw]{up/up_shg_final_re-sm}}
     \caption{(Color online) Spectra of the SHG for the {\upstc}. The Fig. [\ref{fig:up-shg-abs}] corresponds to the absolute value for the non zero components {\huge Something else}.}\label{fig:shg-up}
 \end{figure}
 %%%% end figure shg up
