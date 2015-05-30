@@ -1,14 +1,14 @@
 # Fdb version 3
-["bibtex graphane_structures"] 1433018824 "graphane_structures.aux" "graphane_structures.bbl" "graphane_structures" 1433018825
+["bibtex graphane_structures"] 1433022679 "graphane_structures.aux" "graphane_structures.bbl" "graphane_structures" 1433022680
   "apsrev.bst.bst" 0 -1 0 ""
-  "graphane_structures.aux" 1433018825 13962 5e1699ec81593f620a3da1a11ea2bb1c ""
+  "graphane_structures.aux" 1433022680 13888 3f44be2ff8b4d1b1c341b66a570184e4 ""
   "graphane_structures.bcf" 1432425421 92774 be3b15650fc69f0c44454f7e201bab09 ""
-  "graphane_structuresNotes.bib" 1433018825 0 d41d8cd98f00b204e9800998ecf8427e ""
+  "graphane_structuresNotes.bib" 1433022679 0 d41d8cd98f00b204e9800998ecf8427e ""
   "graphene_structures.bib" 1432686215 12559 0dd520a7d6bf393643fed6f98b428f7b ""
   (generated)
   "graphane_structures.bbl"
   "graphane_structures.blg"
-["pdflatex"] 1433018824 "graphane_structures.tex" "graphane_structures.pdf" "graphane_structures" 1433018825
+["pdflatex"] 1433022679 "graphane_structures.tex" "graphane_structures.pdf" "graphane_structures" 1433022680
   "/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii" 1337017135 71627 94eb9990bed73c364d7f53f960cc8c5b ""
   "/usr/share/texlive/texmf-dist/tex/generic/ifxetex/ifxetex.sty" 1284331290 1458 43ab4710dc82f3edeabecd0d099626b2 ""
   "/usr/share/texlive/texmf-dist/tex/generic/oberdiek/gettitlestring.sty" 1303254447 8237 52810bdb4db2270e717422560a104aea ""
@@ -57,21 +57,19 @@
   "alt/alt_shg_final-abs_sm.pdf" 1432851437 89182 75bf0d666d93d1ea87fe154a8b2815f8 ""
   "alt/alt_shg_final-im_sm.pdf" 1432851438 84492 a60bf22457fd7a294c3c0b7114164347 ""
   "alt/alt_shg_final-re_sm.pdf" 1432851439 87357 432ac230ba931d5a06f6da5a2fee3c45 ""
-  "alt/altstruct1.png" 1431833191 48257 cc7910139447a02313684ee97ab0233e ""
-  "alt/altstruct2.png" 1431833204 45010 08d62ced871f37670dd5af41c3233f78 ""
-  "graphane_structures.aux" 1433018825 13962 5e1699ec81593f620a3da1a11ea2bb1c ""
-  "graphane_structures.bbl" 1433018824 19317 fa7b3568f92890112388b63804760745 "bibtex graphane_structures"
-  "graphane_structures.out" 1433018825 807 7e0bd5e2985a59a99f6cef389e756955 ""
-  "graphane_structures.tex" 1433018823 21926 143393c184c70547d121b4b37b194082 ""
+  "alt/altstruct1.png" 1433022373 92608 8e18ae57109943fd96b09f756e403683 ""
+  "graphane_structures.aux" 1433022680 13888 3f44be2ff8b4d1b1c341b66a570184e4 ""
+  "graphane_structures.bbl" 1433022679 19317 fa7b3568f92890112388b63804760745 "bibtex graphane_structures"
+  "graphane_structures.out" 1433022680 749 0337c23a9b0d3753d2cc6d7f9473f09d ""
+  "graphane_structures.tex" 1433022675 21823 720c96439027d26250139e4a539da1ba ""
   "up/up-Da-final.pdf" 1432851133 31198 e5843acf4c73ee2f1b3898b6932f252f ""
   "up/up_eta_sm_final.pdf" 1432851196 41800 3b8d5942d49ee3d53ae954ad1111c527 ""
   "up/up_shg_final_abs_sm.pdf" 1432851331 50959 e966a5adfdf8897cd2b86643a37ea846 ""
   "up/up_shg_final_im-sm.pdf" 1432851331 50136 1d303a68d2a45aa157dccae26be61a6e ""
   "up/up_shg_final_re-sm.pdf" 1432851332 50058 ff50d44c9b18ce4eafae5225e2849df3 ""
-  "up/upstruct1.png" 1431833216 43730 a989e8dd5a62cc6beb1831893ce1354d ""
-  "up/upstruct2.png" 1431833226 37850 88c9fe4d76226a5dca54cb3e858eee64 ""
+  "up/upstruct1.png" 1433022259 80362 c2b0e73b20b39509ad512a9574eae903 ""
   (generated)
-  "graphane_structures.pdf"
   "graphane_structures.out"
-  "graphane_structures.log"
   "graphane_structures.aux"
+  "graphane_structures.log"
+  "graphane_structures.pdf"
