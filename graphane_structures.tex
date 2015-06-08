@@ -77,7 +77,8 @@ The sections organization of this paper is as follows. In Sec. \ref{sec:theory} 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%                                                     %%
 %%               begin of theory section               %%
-\section{Theory} % (fold)
+
+\section{Theory} 
 \label{sec:theory}
 
 %%%% begin figure of structures
@@ -150,59 +151,72 @@ The units of both $\mathbf{\dot{J}}^{i}_{\text{inj}}(\omega)$ and $\eta^{ijk} (\
 
     \subsection{Second harmonic generation}
 
+SHG, also called frequency doubling, is a particular case of the nonlinear optical process of sum of frequency in which photons of same frequency are annihilated to produce a new photon with twice frequency, energy and half of wavelength of the initial photons. This phenomena occurs when light beams from coherent sources inside over a nonlinear media that does not present inversion of symmetry \cite{bloembergen1962light,anderson2015theory,salazar2014molecular,sipe2000second}.
 
+Recently, Anderson \emph{et al.} \cite{anderson2015theory} developed a new formalism to calculate the second order susceptibility which includes the scissors correction, needed to have the correct value of the energy band gap; the contribution of the nonlocal part of the pseudopotentials, routinely used in ab initio band-structure calculations; and the derivation for the inclusion of the cut function, used to extract the surface response. According to that we have the expressions for the imaginary part of the interband contributions (\emph{i}) and intraband (\emph{e}) for $1\omega$ and $2\omega$
 
-\begin{subequations}\label{chis}
-\begin{equation}
-\mathrm{Im}[\chi^{\mathrm{a}\mathrm{b}\mathrm{c}}_{e,\omega}]= 
-\frac{\pi |e|^3}{2\hbar^2}
-\int \frac{dk^3}{8\pi^3}
-\sum_{vc}\sum_{q\neq(v,c)}\frac{1}{\omega^\Sigma_{cv}}
-\left[
-\frac{\mathrm{Im}[\mathcal{V}^{\Sigma,\mathrm{a}}_{qc}\{r^{\mathrm{b}}_{cv}r^{\mathrm{c}}_{vq}\}]}
-{(2\omega^\Sigma_{cv}-\omega^\Sigma_{cq})} 
--\frac{\mathrm{Im}[\mathcal{V}^{\Sigma,\mathrm{a}}_{vq}\{r^{\mathrm{c}}_{qc}r^{\mathrm{b}}_{cv}\}]}
-{(2\omega^\Sigma_{cv}-\omega^\Sigma_{qv})}
-\right]\delta(\omega^\Sigma_{cv}-\omega),
-\end{equation}  
-\begin{equation}
-\mathrm{Im}[\chi^{\mathrm{a}\mathrm{b}\mathrm{c}}_{i,\omega}]= 
-\frac{\pi\vert e\vert^3}{2\hbar^2}
-\int \frac{dk^3}{8\pi^3}
-\sum_{cv}\frac{1}{(\omega^\Sigma_{cv})^{2}}
-\left[
-\mathrm{Re}\left[\left\{r^{\mathrm{b}}_{cv}\left(\mathcal{V}^{\Sigma,\mathrm{a}}_{vc}\right)_{;k^{\mathrm{c}}}\right\}\right]
-+\frac{\mathrm{Re}\left[\mathcal{V}^{\Sigma,\mathrm{a}}_{vc}\left\{r^{\mathrm{b}}_{cv}
-\Delta^{\mathrm{c}}_{cv}\right\}\right]}{\omega^\Sigma_{cv}} 
-\right]\delta(\omega^\Sigma_{cv}-\omega),
-\end{equation}
-\begin{equation}
-\mathrm{Im}[\chi^{\mathrm{a}\mathrm{b}\mathrm{c}}_{e,2\omega}]= 
--\frac{\pi |e|^3}{2\hbar^2}
-\int \frac{dk^3}{8\pi^3}
-\sum_{vc}\frac{4}{\omega^\Sigma_{cv}}
-\left[
-\sum_{v'\ne
-  v}\frac{\mathrm{Im}[\mathcal{V}^{\Sigma,\mathrm{a}}_{vc}\{r^{\mathrm{b}}_{cv'}r^{\mathrm{c}}_{v'v}\}]}
-{2\omega^\Sigma_{cv'}-\omega^\Sigma_{cv}}
-- \sum_{c'\ne
-  c}\frac{\mathrm{Im}[\mathcal{V}^{\Sigma,\mathrm{a}}_{vc}\{r^{\mathrm{c}}_{cc'}r^{\mathrm{b}}_{c'v}\}]}
-{2\omega^\Sigma_{c'v}-\omega^\Sigma_{cv}}
-\right]\delta(\omega^\Sigma_{cv}-2\omega),
-\end{equation}
-\begin{equation}
-\mathrm{Im}[\chi^{\mathrm{a}\mathrm{b}\mathrm{c}}_{i,2\omega}]= 
- \frac{\pi \vert
-   e\vert^{3}}{2\hbar^2}
-\int \frac{dk^3}{8\pi^3}
-\sum_{vc}\frac{4}{(\omega^\Sigma_{cv})^{2}}
-\left[\mathrm{Re}\left[\mathcal{V}^{\Sigma,\mathrm{a}}_{vc}\left\{\left(r^{\mathrm{b}}_{cv}\right)_{;k^{\mathrm{c}}}
-\right\}\right] -
-\frac{2\mathrm{Re}\left[\mathcal{V}^{\Sigma,\mathrm{a}}_{vc}\left\{r^{\mathrm{b}}_{cv}
-\Delta^{\mathrm{c}}_{cv}\right\}\right]}{\omega^\Sigma_{cv}}\right]\delta(\omega^\Sigma_{cv}-2\omega)
-,
-\end{equation}
+\begin{subequations}\label{eq:chis}
+    \begin{equation}
+        \mathrm{Im}[\chi^{\mathrm{a}\mathrm{b}\mathrm{c}}_{e,\omega}]= 
+        \frac{\pi |e|^3}{2\hbar^2}
+        \int \frac{dk^3}{8\pi^3}
+        \sum_{vc}\sum_{q\neq(v,c)}\frac{1}{\omega^\Sigma_{cv}}
+        \left[
+        \frac{\mathrm{Im}[\mathcal{V}^{\Sigma,\mathrm{a}}_{qc}\{r^{\mathrm{b}}_{cv}r^{\mathrm{c}}_{vq}\}]}
+        {(2\omega^\Sigma_{cv}-\omega^\Sigma_{cq})} 
+        -\frac{\mathrm{Im}[\mathcal{V}^{\Sigma,\mathrm{a}}_{vq}\{r^{\mathrm{c}}_{qc}r^{\mathrm{b}}_{cv}\}]}
+        {(2\omega^\Sigma_{cv}-\omega^\Sigma_{qv})}
+        \right]\delta(\omega^\Sigma_{cv}-\omega),
+    \end{equation}  
+    \begin{equation}
+        \mathrm{Im}[\chi^{\mathrm{a}\mathrm{b}\mathrm{c}}_{i,\omega}]= 
+        \frac{\pi\vert e\vert^3}{2\hbar^2}
+        \int \frac{dk^3}{8\pi^3}
+        \sum_{cv}\frac{1}{(\omega^\Sigma_{cv})^{2}}
+        \left[
+        \mathrm{Re}\left[\left\{r^{\mathrm{b}}_{cv}\left(\mathcal{V}^{\Sigma,\mathrm{a}}_{vc}\right)_{;k^{\mathrm{c}}}\right\}\right]
+        +\frac{\mathrm{Re}\left[\mathcal{V}^{\Sigma,\mathrm{a}}_{vc}\left\{r^{\mathrm{b}}_{cv}
+        \Delta^{\mathrm{c}}_{cv}\right\}\right]}{\omega^\Sigma_{cv}} 
+        \right]\delta(\omega^\Sigma_{cv}-\omega),
+    \end{equation}
+    \begin{equation}
+        \mathrm{Im}[\chi^{\mathrm{a}\mathrm{b}\mathrm{c}}_{e,2\omega}]= 
+        -\frac{\pi |e|^3}{2\hbar^2}
+        \int \frac{dk^3}{8\pi^3}
+        \sum_{vc}\frac{4}{\omega^\Sigma_{cv}}
+        \left[
+        \sum_{v'\ne
+          v}\frac{\mathrm{Im}[\mathcal{V}^{\Sigma,\mathrm{a}}_{vc}\{r^{\mathrm{b}}_{cv'}r^{\mathrm{c}}_{v'v}\}]}
+        {2\omega^\Sigma_{cv'}-\omega^\Sigma_{cv}}
+        - \sum_{c'\ne
+          c}\frac{\mathrm{Im}[\mathcal{V}^{\Sigma,\mathrm{a}}_{vc}\{r^{\mathrm{c}}_{cc'}r^{\mathrm{b}}_{c'v}\}]}
+        {2\omega^\Sigma_{c'v}-\omega^\Sigma_{cv}}
+        \right]\delta(\omega^\Sigma_{cv}-2\omega),
+    \end{equation}
+    \begin{equation}
+        \mathrm{Im}[\chi^{\mathrm{a}\mathrm{b}\mathrm{c}}_{i,2\omega}]= 
+         \frac{\pi \vert
+           e\vert^{3}}{2\hbar^2}
+        \int \frac{dk^3}{8\pi^3}
+        \sum_{vc}\frac{4}{(\omega^\Sigma_{cv})^{2}}
+        \left[\mathrm{Re}\left[\mathcal{V}^{\Sigma,\mathrm{a}}_{vc}\left\{\left(r^{\mathrm{b}}_{cv}\right)_{;k^{\mathrm{c}}}
+        \right\}\right] -
+        \frac{2\mathrm{Re}\left[\mathcal{V}^{\Sigma,\mathrm{a}}_{vc}\left\{r^{\mathrm{b}}_{cv}
+        \Delta^{\mathrm{c}}_{cv}\right\}\right]}{\omega^\Sigma_{cv}}\right]\delta(\omega^\Sigma_{cv}-2\omega)
+        .
+    \end{equation}
 \end{subequations}
+
+\noindent Here, the factor of 2 for spin degeneracy is not included and the real part of each contribution can be obtained through a Kramers-Kronig transformation \cite{tancogne2014effect} and 
+
+\begin{equation}\label{eq:chitotal}
+    \chi^{abc} = \chi^{abc}_{e,\omega} + \chi^{abc}_{e,2\omega} + \chi^{abc}_{i,\omega} + \chi^{abc}_{i,2\omega}
+    .
+\end{equation}
+
+As made before, in Eq. \ref{eq:chis} and \ref{eq:chitotal} the dependence in frequency, $\omega$, has been omitted. For our case in Eq. \ref{eq:chis}, the  expression $\mathcal{V}^{\Sigma}$ corresponds to the sum of the LDA and non-local potentials and $r^{\mathrm{a}} $ are the position matrix elements. sbTo accomplish the required intrinsic permutation symmetry, the \{\} notation symmetrizes the $bc$ Cartesian indices, i.e., $\{u^{b}s^{c}\} = (u^{b}s^{c} + u^{c}s^{b})/{2}$ and so, $\chi^{abc} = \chi^{acb}$.
+
+
 
 %%               end of theory section                 %%
 %%                                                     %%
