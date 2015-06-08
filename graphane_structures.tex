@@ -1,5 +1,5 @@
 \documentclass[aps,pra,11pt,tightenlines,showpacs,superscriptaddress,groupedaddress]{revtex4-1}
-\newcommand{\lw}{0.6\linewidth}
+\newcommand{\lw}{0.55\linewidth}
 % \documentclass[twocolumn,aps,pra,11pt,tightenlines,showpacs,superscriptaddress,groupedaddress]{revtex4-1}
 % \newcommand{\lw}{0.98\linewidth}
 
@@ -57,17 +57,15 @@
 \section{Introduction}\label{sec:intro}
 
 
-Graphene is an allotrope of carbon with a planar hexagonal two-dimensional honeycomb structure or equilateral triangular crystal lattice in which one carbon atom occupies a vertex \cite{geim2007rise}. In 2010 Andre Geim and Konstantin Novoselov received the Nobel Prize for the research of properties about this material \cite{geim2007rise}. Some of the properties of graphene are mechanical strength, thermal conductivity, and optical absorption coefficient \cite{geim2007rise, nair2008fine}. Graphene behaves like a metal\cite{geim2007rise}. Also it presents a tunable band gap by changing the layer surface \cite{han2007energy}, aplying an electric field \cite{zhang2009direct},  and doping \cite{ohta2006controlling, elias2009control,guisinger2009exposure,samarakoon2010tunable}. As shown in Figure \ref{fig:structures} when a hydrogen is bonded to a carbon atom from graphene structure, it pulls the carbon atom modifying the carbon--carbon bond length in the planar structure and opening the band-gap \cite{samarakoon2010tunable}.
+Graphene is an allotrope of carbon with a planar hexagonal two-dimensional honeycomb structure or equilateral triangular crystal lattice in which one carbon atom occupies a vertex \cite{geim2007rise}. In 2010 Geim and Novoselov received the Nobel Prize for the research of properties about this material \cite{geim2007rise}. Some of the properties of graphene are mechanical strength, optical absorption coefficient and thermal conductivity \cite{geim2007rise, nair2008fine}. Also graphene behaves like a metal \cite{geim2007rise} but it presents a tunable band gap by changing the layer surface \cite{han2007energy}, aplying an electric field \cite{zhang2009direct},  and doping \cite{ohta2006controlling, elias2009control,guisinger2009exposure,samarakoon2010tunable}. As shown in Figure \ref{fig:structures} when a hydrogen is bonded to a carbon atom from graphene structure, it pulls the carbon atom modifying the carbon--carbon bond length in the planar structure and then opening the gap \cite{samarakoon2010tunable}. The structures presented in this paper are hydrogenated graphene structures presenting a gap of energy.
 
 
 In this paper, we are focused in the characterization of three phenomena of interest, all of them recently studied on semiconducting bulk an surfaces systems: the one-photon optical spin- and current-injection and  second harmonic generation (SHG). First, the optical spin-injection might be characterized by the physical dimensionless quantity of degree of spin polarization (DSP), in the \emph{i} direction ($D^{i}$), which is a function of the photon frequency, $\omega$. The DSP gives a quantitative value of the fraction of injected electrons from the valence to the conduction bands that are spin polarized. There are theoretical reports of calculations for the spin injection in bulk media  (Si, GaAs, CdSe, and Ge semiconductors) \cite{nastos2007full,cabellos2009stress,rioux2010optical} and surfaces  [Si(111):In, Si(111):As, GaAs(110):Sb, GaAs(110), and Si(111) with $4\times2$ and $8\times2$ reconstructions]\cite{mendoza2012optical,arzate2014optical}. Hereupon, the one-photon current injection is characterized by the current injection tensor, $\eta(0;\omega,-\omega)$  being a particular case of the current injection tensor $\eta(\omega_{1}-\omega_{2};\omega_{1},-\omega_{2})$, where $\omega{1}$ and $\omega{2}$ are the frequencies of two different incident beams. The frequency dependence of the injection current tensor is expressed as $\eta(\omega)$ instead of $\eta(0;\omega,-\omega)$.
 
-In the other hand, nonlinear optical spectroscopies, particularly SHG, are important methods to study surfaces. The importance of this kind of tests come from their noninvasive and nondestructive nature to study surfaces and interfaces obtaining as result the atomic structure, phase transitions, adsorption of atoms, and many other properties \cite{dadap1997second,daum1993identification,mcgilp1994probing,power1995resonant,godefroy1996electric,salazar2014molecular,chen1981surface,mendoza1998microscopic}. For the calculation of the SHG we followed the new formalism developed by Anderson and Mendoza \emph{et al.}  \cite{anderson2015theory} based on the $\mathbf{r}\cdot\mathbf{E} $ or length gauge and the electron density operator.
+In the other hand, nonlinear optical spectroscopies, particularly SHG, are important methods to study surfaces. The importance of this kind of tests come from their noninvasive and nondestructive nature to study surfaces and interfaces obtaining as result the atomic structure, phase transitions, adsorption of atoms, and many other properties \cite{dadap1997second,daum1993identification,mcgilp1994probing,power1995resonant,godefroy1996electric,salazar2014molecular,chen1981surface,mendoza1998microscopic}. For the calculation of the SHG we followed the new formalism developed by Anderson \emph{et al.} for theoretical approach of surface second-harmonic generation from semiconductor surfaces \cite{anderson2015theory} based on the $\mathbf{r}\cdot\mathbf{E} $ or \textit{length gauge} and the electron density operator. This formalism can be applied to surface and bulk structures \cite{anderson2015theory,sipe2000second}.
 
+The sections organization of this paper is as follows. In Sec. \ref{sec:theory} we present the theory that describes the DSP and current injection, in a given \emph{i} direction, $D^{i}$, $\eta^{ijk}$, and the SHG. The description of those phenomena are given in the independent-particle approximation. In Sec. \ref{sec:results} we describe the details of the calculation for the responses and the corresponding spectra for  $D^{i}$, $\eta^{ijk}$, and SHG for the respective \emph{alt} and \emph{up} structures. Finally, we give conclusions in Sec. \ref{sec:conclusions}.
 
-% Following the same analysis we calculated the spin- and current-injection response in our structures. 
-
-The sections organization of this paper is as follows. In Sec. \ref{sec:theory} we present the theory that describes the DSP and current injection, in a given \emph{i} direction, $D^{i}$, $\eta^{ijk}$, and the SHG. The description of those phenomena are given in the independent-particle approximation. In Sec. \ref{sec:results} we describe the details of the calculation for the responses and the corresponding spectra for  $D^{i}$, $\eta^{ijk}$, and SHG for the respective \emph{alt} and \emph{up} structures. Finally, we give conclusions in Sec. \ref{sec:conclusions} and acknowledgments in Sec. \ref{sec:Acknouledgment}.
 
 %%               end of Intro section                  %%
 %%                                                     %%
@@ -153,6 +151,58 @@ The units of both $\mathbf{\dot{J}}^{i}_{\text{inj}}(\omega)$ and $\eta^{ijk} (\
     \subsection{Second harmonic generation}
 
 
+
+\begin{subequations}\label{chis}
+\begin{equation}
+\mathrm{Im}[\chi^{\mathrm{a}\mathrm{b}\mathrm{c}}_{e,\omega}]= 
+\frac{\pi |e|^3}{2\hbar^2}
+\int \frac{dk^3}{8\pi^3}
+\sum_{vc}\sum_{q\neq(v,c)}\frac{1}{\omega^\Sigma_{cv}}
+\left[
+\frac{\mathrm{Im}[\mathcal{V}^{\Sigma,\mathrm{a}}_{qc}\{r^{\mathrm{b}}_{cv}r^{\mathrm{c}}_{vq}\}]}
+{(2\omega^\Sigma_{cv}-\omega^\Sigma_{cq})} 
+-\frac{\mathrm{Im}[\mathcal{V}^{\Sigma,\mathrm{a}}_{vq}\{r^{\mathrm{c}}_{qc}r^{\mathrm{b}}_{cv}\}]}
+{(2\omega^\Sigma_{cv}-\omega^\Sigma_{qv})}
+\right]\delta(\omega^\Sigma_{cv}-\omega),
+\end{equation}  
+\begin{equation}
+\mathrm{Im}[\chi^{\mathrm{a}\mathrm{b}\mathrm{c}}_{i,\omega}]= 
+\frac{\pi\vert e\vert^3}{2\hbar^2}
+\int \frac{dk^3}{8\pi^3}
+\sum_{cv}\frac{1}{(\omega^\Sigma_{cv})^{2}}
+\left[
+\mathrm{Re}\left[\left\{r^{\mathrm{b}}_{cv}\left(\mathcal{V}^{\Sigma,\mathrm{a}}_{vc}\right)_{;k^{\mathrm{c}}}\right\}\right]
++\frac{\mathrm{Re}\left[\mathcal{V}^{\Sigma,\mathrm{a}}_{vc}\left\{r^{\mathrm{b}}_{cv}
+\Delta^{\mathrm{c}}_{cv}\right\}\right]}{\omega^\Sigma_{cv}} 
+\right]\delta(\omega^\Sigma_{cv}-\omega),
+\end{equation}
+\begin{equation}
+\mathrm{Im}[\chi^{\mathrm{a}\mathrm{b}\mathrm{c}}_{e,2\omega}]= 
+-\frac{\pi |e|^3}{2\hbar^2}
+\int \frac{dk^3}{8\pi^3}
+\sum_{vc}\frac{4}{\omega^\Sigma_{cv}}
+\left[
+\sum_{v'\ne
+  v}\frac{\mathrm{Im}[\mathcal{V}^{\Sigma,\mathrm{a}}_{vc}\{r^{\mathrm{b}}_{cv'}r^{\mathrm{c}}_{v'v}\}]}
+{2\omega^\Sigma_{cv'}-\omega^\Sigma_{cv}}
+- \sum_{c'\ne
+  c}\frac{\mathrm{Im}[\mathcal{V}^{\Sigma,\mathrm{a}}_{vc}\{r^{\mathrm{c}}_{cc'}r^{\mathrm{b}}_{c'v}\}]}
+{2\omega^\Sigma_{c'v}-\omega^\Sigma_{cv}}
+\right]\delta(\omega^\Sigma_{cv}-2\omega),
+\end{equation}
+\begin{equation}
+\mathrm{Im}[\chi^{\mathrm{a}\mathrm{b}\mathrm{c}}_{i,2\omega}]= 
+ \frac{\pi \vert
+   e\vert^{3}}{2\hbar^2}
+\int \frac{dk^3}{8\pi^3}
+\sum_{vc}\frac{4}{(\omega^\Sigma_{cv})^{2}}
+\left[\mathrm{Re}\left[\mathcal{V}^{\Sigma,\mathrm{a}}_{vc}\left\{\left(r^{\mathrm{b}}_{cv}\right)_{;k^{\mathrm{c}}}
+\right\}\right] -
+\frac{2\mathrm{Re}\left[\mathcal{V}^{\Sigma,\mathrm{a}}_{vc}\left\{r^{\mathrm{b}}_{cv}
+\Delta^{\mathrm{c}}_{cv}\right\}\right]}{\omega^\Sigma_{cv}}\right]\delta(\omega^\Sigma_{cv}-2\omega)
+,
+\end{equation}
+\end{subequations}
 
 %%               end of theory section                 %%
 %%                                                     %%
@@ -257,9 +307,9 @@ We show in Figs. \ref{fig:alt-eta} and \ref{fig:up-eta}  the spectra obtained fo
     \centering
     \subfigure[\ \label{fig:alt-shg-abs}]{
             \includegraphics[width=\lw]{alt/alt_shg_final-abs_sm}}
-    \subfigure[\ \label{fig:up-shg-im}]{
+    \subfigure[\ \label{fig:alt-shg-im}]{
             \includegraphics[width=\lw]{alt/alt_shg_final-im_sm}}
-    \subfigure[\ \label{fig:up-shg-re}]{
+    \subfigure[\ \label{fig:alt-shg-re}]{
             \includegraphics[width=\lw]{alt/alt_shg_final-re_sm}}
     \caption{(Color online) Spectra of the SHG for the {\altstc}. The Fig. [\ref{fig:alt-shg-abs}] corresponds to the absolute value for the non zero components {\huge Something else}.}\label{fig:shg-alt}
 \end{figure}
@@ -316,8 +366,10 @@ We show in Figs. \ref{fig:alt-eta} and \ref{fig:up-eta}  the spectra obtained fo
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\newpage
+
+% \begin{thebibliography}{37}
 \bibliography{graphene_structures}
 % \bibliographystyle{apsrev.bst}
+% \end{thebibliography}
 
 \end{document}
