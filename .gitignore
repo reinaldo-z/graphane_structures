@@ -22,6 +22,6 @@
 *.mtc1
 *.out
 *.synctex.gz
-*.fdb_latexmk
+*.fdb_latexmkg
 
 *.pdf
