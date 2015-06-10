@@ -236,14 +236,68 @@ As made before, in Eq. \ref{eq:chis} and \ref{eq:chitotal} the dependence in fre
 
 We present the results of the numerical calculations for \da, \ea, and SHG for the hydrogenated graphene structures, {\altstc} and {\upstc} shown in Fig. \ref{fig:structures}. Both structures are infinite carbon planes in an hexagonal honeycomb lattice with \%50 of hydrogenation in two different arrangements: the \emph{alt} structure [Fig \ref{fig:altstruct}] has alternating hydrogen bonds in the top and bottom sides of the carbon plane; the \emph{up} structure [Fig \ref{fig:upstruct}] has hydrogen bonds only in the top side. Both structures are non-centrosymmetric and has a thickness of 5.56 and 2.76 Angstroms, respectively. A vacuum length at least  five times the thickness for each structure was taken to construct the super-cell.  
 
-For this work we used the ABINIT code \cite{torrent2008implementation} for the calculation of the self-consistent ground state and their Kohn-Sham states using DFT--LDA in the plane waves approximation. Also we used the relativistic separable dual-space Gaussian pseudopotentials of Hartwigsen-Goedecker-Hutter (HGH) \cite{hartwigsen1998relativistic} including the spin-orbit interaction, necessary to make the calculations of $D^{i} $ but not in the cases of \ea and SHG. Moreover, we have taken a cutoff energy of 65 and 40\,Ha for the \emph{alt} and \emph{up} structures, respectively, and the energy eigenvalues and matrix elements were calculated using 14452 and 8452 \textbf{k}\,points in the irreducible BZ.
+
+In this work we used the ABINIT code \cite{torrent2008implementation} for the calculation of the self-consistent ground state and their Kohn-Sham states using DFT-LDA in the plane waves approximation. Also, to compute the \emph{DSP} and the optical current injection we used the relativistic separable dual-space Gaussian pseudopotentials of Hartwigsen-Goedecker-Hutter (HGH) \cite{hartwigsen1998relativistic} including the spin-orbit interaction, necessary to make the calculations of $D^{i} $ but not in the cases of {\ea}. For the caso of SHG Troullier-Martins pseudopotentials \cite{troullier1991efficient} that are fully separable nonlocal pseudopotentials in the Kleiman-Bylander form \cite{kleinman1982efficacious}. The contribution of the non-local potential in Eq. \ref{eq:chis} is carried out using the DP code \cite{olevanoDP}. Moreover, we have taken a cutoff energy of 65 and 40\,Ha for the \emph{alt} and \emph{up} structures, respectively, and the energy eigenvalues and matrix elements were calculated using 14452 and 8452 \textbf{k}\,points in the irreducible Brillouin zone (IBZ).
+
+
+%%%% begin figure Da
+\begin{figure}
+    \centering
+    \subfigure[\ \label{fig:alt-Da}]{
+        \includegraphics[width=\lw]{alt/alt-Da-final}}
+    \subfigure[\ \label{fig:up-Da}]{
+        \includegraphics[width=\lw]{up/up-Da-final}}
+    \caption{(Color online) Spectra of the degree of spin polarization along the direction \emph{i}, {\da}, for the hydrogenated graphene structures {\altstc} [Fig. \ref{fig:alt-Da}] and {\upstc} [Fig. \ref{fig:up-Da}] under incidence of circularly polarized light.}\label{fig:Da}
+\end{figure}
+%%%% end figure Da
+
+%%%% begin figure eta
+\begin{figure}
+    \centering
+    \subfigure[\ \label{fig:alt-eta}]{
+            \includegraphics[width=\lw]{alt/alt-eta_sm-final}}
+    \subfigure[\ \label{fig:up-eta}]{
+            \includegraphics[width=\lw]{up/up_eta_sm_final}}
+    \caption{(Color online) Spectra of the injection current tensor along the direction \emph{i}, {\ea}, for the hydrogenated graphene structures {\altstc} [Fig \ref{fig:alt-eta}] and {\upstc} [Fig. \ref{fig:up-eta}] under incidence of circularly polarized light.}\label{fig:eta}
+\end{figure}
+%%%% end figure eta
+
+
+%%%% begin figure shg alt
+\begin{figure}
+    \centering
+    \subfigure[\ \label{fig:alt-shg-abs}]{
+            \includegraphics[width=\lw]{alt/alt_shg_final-abs_sm}}
+    \subfigure[\ \label{fig:alt-shg-re}]{
+            \includegraphics[width=\lw]{alt/alt_shg_final-re_sm}}
+    \subfigure[\ \label{fig:alt-shg-im}]{
+            \includegraphics[width=\lw]{alt/alt_shg_final-im_sm}}
+    \caption{(Color online) Spectra of the SHG for the {\altstc} structure. The Fig. \ref{fig:alt-shg-abs} corresponds to the sum of the absolute value for the non zero real [Fig. \ref{fig:alt-shg-re}] and imaginary [Fig. \ref{fig:alt-shg-im}] components of $\chi^{ijk}(2\omega;\omega,\omega) $ tensor.}\label{fig:shg-alt}
+\end{figure}
+%%%% end figure shg alt
+
+
+
+%%%% begin figure shg up
+\begin{figure}
+    \centering
+    \subfigure[\ \label{fig:up-shg-abs}]{
+            \includegraphics[width=\lw]{up/up_shg_final_abs_sm}}
+    \subfigure[\ \label{fig:up-shg-re}]{
+            \includegraphics[width=\lw]{up/up_shg_final_re-sm}}
+    \subfigure[\ \label{fig:up-shg-im}]{
+            \includegraphics[width=\lw]{up/up_shg_final_im-sm}}
+    \caption{(Color online) Spectra of the SHG for the {\upstc} structure. The Fig. \ref{fig:up-shg-abs} corresponds to the sum if the absolute value for the non zero real [Fig. \ref{fig:up-shg-re}] and imaginary [\ref{fig:up-shg-im}] components of $\chi^{ijk}(2\omega;\omega,\omega) $ tensor.}\label{fig:shg-up}
+\end{figure}
+%%%% end figure shg up
+
 
 In Figs. \ref{fig:alt-Da} and \ref{fig:up-Da} we show the spectra obtained for {\da} of the {\altstc} and {\upstc} structures, respectively. Values over (under) zero define a positive (negative) direction of spin polarization along the \emph{a} direction. It can be observed that for both structures we have more than 40\% of {\da} and a maximum absolute value in the \emph{y} direction, reaching almost a 50\% in the \emph{alt} structure. In table \ref{tab:dacomp} we show a comparison of the maximum degree of spin polarization reported for different structures.
 
 
 
 %%%% begin table comparison Da
-\begin{table}[h]
+\begin{table}[]
     \caption{Comparison of the reported absolute values for the highest percentage of {\da} for different structures. ($^{*}$This work.)}
     \label{tab:dacomp}
     \centering
@@ -268,18 +322,6 @@ To report the {\ea} we took in account that our structures are infinite carbon-h
 We show in Figs. \ref{fig:alt-eta} and \ref{fig:up-eta}  the spectra obtained for the current tensor {\ea} of the structures \emph{alt} and \emph{up}, respectively. We can observe that circularly polarized light on the plane $xy$ produces injection current along three directions. Values over (under) zero define a positive (negative) direction of current injection along the \emph{a} direction. From Fig. \ref{fig:eta} we can see that for the \emph{alt} structure spectra [Fig. \ref{fig:alt-eta}] we have a positive maximum in the \emph{y} direction for an incident beam energy of 1.25\,eV, reaching a value of 3.7\,mC$^{3}$/J$^{2}$s$^{2}$ . Also, for the \emph{up} structure spectra [Fig. \ref{fig:up-eta}] we have a negative maximum in the \emph{x} direction for an incident beam energy of 0.405\,eV, reaching a value of 3.5\,mC$^{3}$/J$^{2}$s$^{2}$. In table \ref{tab:etacomp} we present a comparison of the maximum current injection reported for different structures.
 
 
-%%%% begin figure Da
-\begin{figure}[h!]
-    \centering
-    \subfigure[\ \label{fig:alt-Da}]{
-        \includegraphics[width=\lw]{alt/alt-Da-final}}
-    \subfigure[\ \label{fig:up-Da}]{
-        \includegraphics[width=\lw]{up/up-Da-final}}
-    \caption{(Color online) Spectra of the degree of spin polarization along the direction \emph{i}, {\da}, for the hydrogenated graphene structures {\altstc} [Fig. \ref{fig:alt-Da}] and {\upstc} [Fig. \ref{fig:up-Da}] under incidence of circularly polarized light.}\label{fig:Da}
-\end{figure}
-%%%% end figure Da
-
-
 
 %%%% begin table comparison eta
 \begin{table}[]
@@ -302,47 +344,9 @@ We show in Figs. \ref{fig:alt-eta} and \ref{fig:up-eta}  the spectra obtained fo
 %%%% end table comparison eta
 
 
-%%%% begin figure eta
-\begin{figure}[h!]
-    \centering
-    \subfigure[\ \label{fig:alt-eta}]{
-            \includegraphics[width=\lw]{alt/alt-eta_sm-final}}
-    \subfigure[\ \label{fig:up-eta}]{
-            \includegraphics[width=\lw]{up/up_eta_sm_final}}
-    \caption{(Color online) Spectra of the injection current tensor along the direction \emph{i}, {\ea}, for the hydrogenated graphene structures {\altstc} [Fig \ref{fig:alt-eta}] and {\upstc} [Fig. \ref{fig:up-eta}] under incidence of circularly polarized light.}\label{fig:eta}
-\end{figure}
-%%%% end figure eta
 
 
-%%%% begin figure shg alt
-\begin{figure}[h!]
-    \centering
-    \subfigure[\ \label{fig:alt-shg-abs}]{
-            \includegraphics[width=\lw]{alt/alt_shg_final-abs_sm}}
-    \subfigure[\ \label{fig:alt-shg-im}]{
-            \includegraphics[width=\lw]{alt/alt_shg_final-im_sm}}
-    \subfigure[\ \label{fig:alt-shg-re}]{
-            \includegraphics[width=\lw]{alt/alt_shg_final-re_sm}}
-    \caption{(Color online) Spectra of the SHG for the {\altstc}. The Fig. [\ref{fig:alt-shg-abs}] corresponds to the absolute value for the non zero components {\huge Something else}.}\label{fig:shg-alt}
-\end{figure}
-%%%% end figure shg alt
-
-
-
-%%%% begin figure shg up
-\begin{figure}[h!]
-    \centering
-    \subfigure[\ \label{fig:up-shg-abs}]{
-            \includegraphics[width=\lw]{up/up_shg_final_abs_sm}}
-    \subfigure[\ \label{fig:up-shg-im}]{
-            \includegraphics[width=\lw]{up/up_shg_final_im-sm}}
-    \subfigure[\ \label{fig:up-shg-re}]{
-            \includegraphics[width=\lw]{up/up_shg_final_re-sm}}
-    \caption{(Color online) Spectra of the SHG for the {\upstc}. The Fig. [\ref{fig:up-shg-abs}] corresponds to the absolute value for the non zero components {\huge Something else}.}\label{fig:shg-up}
-\end{figure}
-%%%% end figure shg up
-
-
+\blindtext
 
 %%%                                                    %%
 %%               end of results section                %%
@@ -358,6 +362,7 @@ We show in Figs. \ref{fig:alt-eta} and \ref{fig:up-eta}  the spectra obtained fo
 \section{Conclusions} % (fold)
 \label{sec:conclusions}
 
+\blindtext
 
 %%                                                     %%
 %%             end of conclusions section              %%
