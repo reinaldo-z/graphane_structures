@@ -214,7 +214,7 @@ Recently, Anderson \emph{et al.} \cite{anderson2015theory} developed a new forma
     .
 \end{equation}
 
-As made before, in Eq. \ref{eq:chis} and \ref{eq:chitotal} the dependence in frequency, $\omega$, has been omitted. For our case in Eq. \ref{eq:chis}, the  expression $\mathcal{V}^{\Sigma}$ corresponds to the sum of the LDA and non-local velocity matrix elements, $r^{\mathrm{a}} $ are the position matrix elements and $\Delta^{a}_{nm} = v^{\text{LDA},a}_{nn} - v^{\text{LDA},a}_{mm} $ \cite{anderson2015theory}. To accomplish the required intrinsic permutation symmetry, the \{\} notation symmetrizes the $bc$ Cartesian indices, i.e., $\{u^{b}s^{c}\} = (u^{b}s^{c} + u^{c}s^{b})/{2}$ and so, $\chi^{abc} = \chi^{acb}$. The units of $\chi^{ijk} $, again, are those of their bulk equivalents times $\ell_{\text{eff}}$ expressed in the corresponding units to report.
+As made before, in Eq. \ref{eq:chis} and \ref{eq:chitotal} the dependence in frequency, $\omega$, has been omitted. For our case in Eq. \ref{eq:chis}, the  expression $\mathcal{V}^{\Sigma}$ corresponds to the sum of the LDA and non-local velocity matrix elements, $r^{\mathrm{a}} $ are the position matrix elements and $\Delta^{a}_{nm} = v^{\text{LDA},a}_{nn} - v^{\text{LDA},a}_{mm} $. To accomplish the required intrinsic permutation symmetry, the \{\} notation symmetrizes the $bc$ Cartesian indices, i.e., $\{u^{b}s^{c}\} = (u^{b}s^{c} + u^{c}s^{b})/{2}$ and so, $\chi^{abc} = \chi^{acb}$. The units of $\chi^{ijk} $, again, are those of their bulk equivalents times $\ell_{\text{eff}}$ expressed in the corresponding units to report. For full details read the appendix of Ref. \cite{anderson2015theory}.
 
 
 
@@ -232,7 +232,6 @@ As made before, in Eq. \ref{eq:chis} and \ref{eq:chitotal} the dependence in fre
 
 \section{Results} % (fold)
 \label{sec:results}
-
 
 We present the results of the numerical calculations for \da, \ea, and SHG for the hydrogenated graphene structures, {\altstc} and {\upstc} shown in Fig. \ref{fig:structures}. Both structures are infinite carbon planes in an hexagonal honeycomb lattice with \%50 of hydrogenation in two different arrangements: the \emph{alt} structure [Fig \ref{fig:altstruct}] has alternating hydrogen bonds in the top and bottom sides of the carbon plane; the \emph{up} structure [Fig \ref{fig:upstruct}] has hydrogen bonds only in the top side. Both structures are non-centrosymmetric and has a thickness of 5.56 and 2.76 Angstroms, respectively. A vacuum length at least  five times the thickness for each structure was taken to construct the super-cell.  
 
@@ -254,6 +253,7 @@ In this work we used the ABINIT code \cite{torrent2008implementation} for the ca
 %%%% begin figure eta
 \begin{figure}
     \centering
+    
     \subfigure[\ \label{fig:alt-eta}]{
             \includegraphics[width=\lw]{alt/alt-eta_sm-final}}
     \subfigure[\ \label{fig:up-eta}]{
@@ -265,6 +265,7 @@ In this work we used the ABINIT code \cite{torrent2008implementation} for the ca
 
 %%%% begin figure shg alt
 \begin{figure}
+
     \centering
     \subfigure[\ \label{fig:alt-shg-abs}]{
             \includegraphics[width=\lw]{alt/alt_shg_final-abs_sm}}
@@ -275,7 +276,6 @@ In this work we used the ABINIT code \cite{torrent2008implementation} for the ca
     \caption{(Color online) Spectra of the SHG for the {\altstc} structure. The Fig. \ref{fig:alt-shg-abs} corresponds to the sum of the absolute value for the non zero real [Fig. \ref{fig:alt-shg-re}] and imaginary [Fig. \ref{fig:alt-shg-im}] components of $\chi^{ijk}(2\omega;\omega,\omega) $ tensor.}\label{fig:shg-alt}
 \end{figure}
 %%%% end figure shg alt
-
 
 
 %%%% begin figure shg up
@@ -292,12 +292,14 @@ In this work we used the ABINIT code \cite{torrent2008implementation} for the ca
 %%%% end figure shg up
 
 
-In Figs. \ref{fig:alt-Da} and \ref{fig:up-Da} we show the spectra obtained for {\da} of the {\altstc} and {\upstc} structures, respectively. Values over (under) zero define a positive (negative) direction of spin polarization along the \emph{a} direction. It can be observed that for both structures we have more than 40\% of {\da} and a maximum absolute value in the \emph{y} direction, reaching almost a 50\% in the \emph{alt} structure. In table \ref{tab:dacomp} we show a comparison of the maximum degree of spin polarization reported for different structures.
+In Figs. \ref{fig:alt-Da} and \ref{fig:up-Da} we show the spectra obtained for {\da} of the {\altstc} and {\upstc} structures, respectively. Values over (under) zero define a positive (negative) direction of spin polarization along the \emph{a} direction. It can be observed that for both structures we have more than 40\% of {\da} and a maximum absolute value in the \emph{y} direction, reaching almost a 50\% in the \emph{alt} structure. In table \ref{tab:dacomp} we show a comparison of the maximum degree of spin polarization reported for different structures.To report the {\ea} we took in account that our structures are infinite carbon-hydrogen layers. So in Eq. \ref{eq:etaeff} we defined the $\ell_{\text{eff}}$ as the thickness of each structure, 5.56 and 2.76 Angstroms for the \emph{alt} and \emph{up} structures.
 
+We show in Figs. \ref{fig:alt-eta} and \ref{fig:up-eta}  the spectra obtained for the current tensor {\ea} of the structures \emph{alt} and \emph{up}, respectively. We can observe that circularly polarized light on the plane $xy$ produces injection current along three directions. Values over (under) zero define a positive (negative) direction of current injection along the \emph{a} direction. From Fig. \ref{fig:eta} we can see that for the \emph{alt} structure spectra [Fig. \ref{fig:alt-eta}] we have a positive maximum in the \emph{y} direction for an incident beam energy of 1.25\,eV, reaching a value of 3.7\,mC$^{3}$/J$^{2}$s$^{2}$ . Also, for the \emph{up} structure spectra [Fig. \ref{fig:up-eta}] we have a negative maximum in the \emph{x} direction for an incident beam energy of 0.405\,eV, reaching a value of 3.5\,mC$^{3}$/J$^{2}$s$^{2}$. In table \ref{tab:etacomp} we present a comparison of the maximum current injection reported for different structures.
 
+In Figs. \ref{fig:shg-alt} and \ref{fig:shg-up} we show the spectra obtained for the SHG for the \emph{alt} and \emph{up}
 
 %%%% begin table comparison Da
-\begin{table}[]
+\begin{table}
     \caption{Comparison of the reported absolute values for the highest percentage of {\da} for different structures. ($^{*}$This work.)}
     \label{tab:dacomp}
     \centering
@@ -317,14 +319,8 @@ In Figs. \ref{fig:alt-Da} and \ref{fig:up-Da} we show the spectra obtained for {
 %%%% end table comparison Da
 
 
-To report the {\ea} we took in account that our structures are infinite carbon-hydrogen layers. So in Eq. \ref{eq:etaeff} we defined the $\ell_{\text{eff}}$ as the thickness of each structure, 5.56 and 2.76 Angstroms for the \emph{alt} and \emph{up} structures.
-
-We show in Figs. \ref{fig:alt-eta} and \ref{fig:up-eta}  the spectra obtained for the current tensor {\ea} of the structures \emph{alt} and \emph{up}, respectively. We can observe that circularly polarized light on the plane $xy$ produces injection current along three directions. Values over (under) zero define a positive (negative) direction of current injection along the \emph{a} direction. From Fig. \ref{fig:eta} we can see that for the \emph{alt} structure spectra [Fig. \ref{fig:alt-eta}] we have a positive maximum in the \emph{y} direction for an incident beam energy of 1.25\,eV, reaching a value of 3.7\,mC$^{3}$/J$^{2}$s$^{2}$ . Also, for the \emph{up} structure spectra [Fig. \ref{fig:up-eta}] we have a negative maximum in the \emph{x} direction for an incident beam energy of 0.405\,eV, reaching a value of 3.5\,mC$^{3}$/J$^{2}$s$^{2}$. In table \ref{tab:etacomp} we present a comparison of the maximum current injection reported for different structures.
-
-
-
 %%%% begin table comparison eta
-\begin{table}[]
+\begin{table}
     \caption{Comparison of the highest reported absolute values of {\ea} for different structures. ($^{*}$This work.)}
     \label{tab:etacomp}
     \centering
@@ -344,6 +340,22 @@ We show in Figs. \ref{fig:alt-eta} and \ref{fig:up-eta}  the spectra obtained fo
 %%%% end table comparison eta
 
 
+%%%% begin table comparison shg
+\begin{table}
+    \caption{Comparison of the highest reported absolute values of SHG for different structures. ($^{*}$This work.)}
+    \label{tab:shgcomp}
+    \centering
+    \begin{ruledtabular}
+    \begin{tabular}{lccc}
+    Structure & Energy & $\chi^{ijk} $ &  Ref.\\
+              & [eV]   & \hspace{-2.5mm} \emph{ijk},\, [$10^{6} \times$pm$^{2}$/V ] \\
+    \hline
+    {\altstc}               & 1.25  & y, 3.70  & *     \\
+    {\upstc}                & 0.405 & x, 3.50  & *     \\
+    \end{tabular}
+    \end{ruledtabular}
+\end{table}
+%%%% end table comparison shg
 
 
 \blindtext
