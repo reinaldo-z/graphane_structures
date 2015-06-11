@@ -82,7 +82,7 @@ The sections organization of this paper is as follows. In Sec. \ref{sec:theory} 
 \label{sec:theory}
 
 %%%% begin figure of structures
-\begin{figure}[h!] 
+\begin{figure} 
 \centering
 \subfigure[\ \label{fig:altstruct}]{
     \includegraphics[width=\lw]{alt/altstruct1}}
@@ -267,12 +267,12 @@ In this work we used the ABINIT code \cite{torrent2008implementation} for the ca
 \begin{figure}
 
     \centering
-    \subfigure[\ \label{fig:alt-shg-abs}]{
-            \includegraphics[width=\lw]{alt/alt_shg_final-abs_sm}}
     \subfigure[\ \label{fig:alt-shg-re}]{
             \includegraphics[width=\lw]{alt/alt_shg_final-re_sm}}
     \subfigure[\ \label{fig:alt-shg-im}]{
             \includegraphics[width=\lw]{alt/alt_shg_final-im_sm}}
+    \subfigure[\ \label{fig:alt-shg-abs}]{
+            \includegraphics[width=\lw]{alt/alt_shg_final-abs_sm}}
     \caption{(Color online) Spectra of the SHG for the {\altstc} structure. The Fig. \ref{fig:alt-shg-abs} corresponds to the sum of the absolute value for the non zero real [Fig. \ref{fig:alt-shg-re}] and imaginary [Fig. \ref{fig:alt-shg-im}] components of $\chi^{ijk}(2\omega;\omega,\omega) $ tensor.}\label{fig:shg-alt}
 \end{figure}
 %%%% end figure shg alt
@@ -281,13 +281,13 @@ In this work we used the ABINIT code \cite{torrent2008implementation} for the ca
 %%%% begin figure shg up
 \begin{figure}
     \centering
-    \subfigure[\ \label{fig:up-shg-abs}]{
-            \includegraphics[width=\lw]{up/up_shg_final_abs_sm}}
     \subfigure[\ \label{fig:up-shg-re}]{
             \includegraphics[width=\lw]{up/up_shg_final_re-sm}}
     \subfigure[\ \label{fig:up-shg-im}]{
             \includegraphics[width=\lw]{up/up_shg_final_im-sm}}
-    \caption{(Color online) Spectra of the SHG for the {\upstc} structure. The Fig. \ref{fig:up-shg-abs} corresponds to the sum if the absolute value for the non zero real [Fig. \ref{fig:up-shg-re}] and imaginary [\ref{fig:up-shg-im}] components of $\chi^{ijk}(2\omega;\omega,\omega) $ tensor.}\label{fig:shg-up}
+    \subfigure[\ \label{fig:up-shg-abs}]{
+            \includegraphics[width=\lw]{up/up_shg_final_abs_sm}}
+    \caption{(Color online) Spectra of the SHG for the {\upstc} structure. The Fig. \ref{fig:up-shg-abs} corresponds to the sum of the absolute value for the non zero real [Fig. \ref{fig:up-shg-re}] and imaginary [\ref{fig:up-shg-im}] components of $\chi^{ijk}(2\omega;\omega,\omega) $ tensor.}\label{fig:shg-up}
 \end{figure}
 %%%% end figure shg up
 
@@ -296,7 +296,10 @@ In Figs. \ref{fig:alt-Da} and \ref{fig:up-Da} we show the spectra obtained for {
 
 We show in Figs. \ref{fig:alt-eta} and \ref{fig:up-eta}  the spectra obtained for the current tensor {\ea} of the structures \emph{alt} and \emph{up}, respectively. We can observe that circularly polarized light on the plane $xy$ produces injection current along three directions. Values over (under) zero define a positive (negative) direction of current injection along the \emph{a} direction. From Fig. \ref{fig:eta} we can see that for the \emph{alt} structure spectra [Fig. \ref{fig:alt-eta}] we have a positive maximum in the \emph{y} direction for an incident beam energy of 1.25\,eV, reaching a value of 3.7\,mC$^{3}$/J$^{2}$s$^{2}$ . Also, for the \emph{up} structure spectra [Fig. \ref{fig:up-eta}] we have a negative maximum in the \emph{x} direction for an incident beam energy of 0.405\,eV, reaching a value of 3.5\,mC$^{3}$/J$^{2}$s$^{2}$. In table \ref{tab:etacomp} we present a comparison of the maximum current injection reported for different structures.
 
-In Figs. \ref{fig:shg-alt} and \ref{fig:shg-up} we show the spectra obtained for the SHG for the \emph{alt} and \emph{up}
+In Figs. \ref{fig:shg-alt} and \ref{fig:shg-up} we show the spectra obtained for the SHG for the \emph{alt} and \emph{up} structures, respectively. The Figs. \ref{fig:alt-shg-re} and \ref{fig:up-shg-re} show the real part of the non-zero components, Figs. \ref{fig:alt-shg-im} and \ref{fig:up-shg-im} the imaginary part, and Figs. \ref{fig:alt-shg-abs} and \ref{fig:alt-shg-abs} the absolute value of the $\chi^{ijk}(2\omega;\omega\omega) $ tensor. 
+
+We can see from Fig. \ref{fig:shg-alt} that for the \emph{alt} structure an absolute maximum of the SHG spectra is reached at 0.4\,eV with a value of 0.6$\times10^{6} $\,pm$^{2}$/V for the $\chi^{yxx} $ component produced principally for contributions of the imaginary part. Also, a second local maximum is reached at 1.1\,eV with a value of 0.55$\times10^{6} $\,pm$^{2}$/V for the $\chi^{xxx} $ component having in this case a principal contribution from the real part. Also, from Fig. \ref{fig:shg-up} we can see that for the \emph{up} structure an absolute maximum is reached near to 0.042\,eV reaching a value of 70$\times10^{6} $\,pm$^{2}$/V for the $\chi^{yxx} $ tensor component which contribution comes from the imaginary part of the spectra. In table \ref{tab:shgcomp} we show a comparison of the maximum SHG reported for different structures.
+
 
 %%%% begin table comparison Da
 \begin{table}
@@ -357,8 +360,6 @@ In Figs. \ref{fig:shg-alt} and \ref{fig:shg-up} we show the spectra obtained for
 \end{table}
 %%%% end table comparison shg
 
-
-\blindtext
 
 %%%                                                    %%
 %%               end of results section                %%
