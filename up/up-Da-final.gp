@@ -22,7 +22,7 @@ set ytics 0.2
 set output "up-Da-final.tex"
 set key right center
 set xrange [0.07:0.12]
-set ylabel "$D^{a}$"
+set ylabel "$D^{i}$"
 
 p   "dsp.kk_x_8452_40-spin_scissor_0_Nc_18" u 1:(2*$4/($2+$3+1.e-10)) title "$D^{x}$" w l ls 2,\
     "dsp.kk_y_8452_40-spin_scissor_0_Nc_18" u 1:(2*$4/($2+$3+1.e-10)) title "$D^{y}$" w l ls 5,\
