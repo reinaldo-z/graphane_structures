@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2014.5.25)  12 JUN 2015 12:04
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2014.5.25)  12 JUN 2015 12:40
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -439,23 +439,15 @@ e
 Class revtex4-1 Info: Taking \maketitle back from hyperref on input line 33.
 \openout3 = `graphane_structuresNotes.bib'.
 
-Missing character: There is no Ã in font cmr10!
-Missing character: There is no — in font cmr10!
-Missing character: There is no Ã in font cmr10!
-Missing character: There is no — in font cmr10!
-Missing character: There is no Ã in font cmr10!
-Missing character: There is no — in font cmr10!
-Missing character: There is no Ã in font cmr10!
-Missing character: There is no — in font cmr10!
 
 [1{/usr/local/texlive/2014/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-<alt/altstruct1.png, id=79, 981.6675pt x 395.97937pt>
+<alt/altstruct1.png, id=80, 981.6675pt x 395.97937pt>
 File: alt/altstruct1.png Graphic file (type png)
  <use alt/altstruct1.png>
 Package pdftex.def Info: alt/altstruct1.png used on input line 103.
 (pdftex.def)             Requested size: 257.40143pt x 103.82831pt.
 
-<up/upstruct1.png, id=81, 981.6675pt x 395.97937pt>
+<up/upstruct1.png, id=82, 981.6675pt x 395.97937pt>
 File: up/upstruct1.png Graphic file (type png)
  <use up/upstruct1.png>
 Package pdftex.def Info: up/upstruct1.png used on input line 105.
@@ -599,7 +591,7 @@ texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2014/te
 xmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2014/texm
 f-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2014/texmf
 -dist/fonts/type1/public/amsfonts/cm/cmti8.pfb>
-Output written on graphane_structures.pdf (12 pages, 611113 bytes).
+Output written on graphane_structures.pdf (12 pages, 611247 bytes).
 PDF statistics:
  586 PDF objects out of 1000 (max. 8388607)
  511 compressed objects within 6 object streams
