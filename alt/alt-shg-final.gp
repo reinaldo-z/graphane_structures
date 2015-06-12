@@ -71,7 +71,7 @@ unset zeroaxis
 set yrange [0:0.7]
 set key top right
 set output "alt_shg_final-abs_sm.tex"
-set ylabel "$|\\chi^{ijk}(2\\omega; \\omega, \\omega)|$ [10$^{6} \\times$ pm$^{2}$/V] "
+set ylabel "$|\\chi^{ijk}(2\\omega; \\omega, \\omega)|$ [\\times10$^{6} $\\,pm$^{2}$/V] "
 p   "shgL.vnl.sm_0.15_xxx_14452_55-nospin_scissor_0_Nc_41" u 1:(lm*1E6*(abso($2,$3,$4,$5))) title "xxx" w l ls 1,\
     "shgL.vnl.sm_0.15_xxy_14452_55-nospin_scissor_0_Nc_41" u 1:(lm*1E6*(abso($2,$3,$4,$5))) title "xxy" w l ls 2,\
     "shgL.vnl.sm_0.15_xyy_14452_55-nospin_scissor_0_Nc_41" u 1:(lm*1E6*(abso($2,$3,$4,$5))) title "yxx" w l ls 3,\
@@ -83,7 +83,7 @@ set zeroaxis lw 2 lt 2 lc 0
 set yrange [-0.63:0.43]
 set key bottom right
 set output "alt_shg_final-im_sm.tex"
-set ylabel "Im $[\\chi^{ijk}(2\\omega; \\omega, \\omega)]$ [10$^{6} \\times$ pm$^{2}$/V] "
+set ylabel "Im $[\\chi^{ijk}(2\\omega; \\omega, \\omega)]$ [\\times10$^{6} $\\,pm$^{2}$/V] "
 p   "shgL.vnl.sm_0.15_xxx_14452_55-nospin_scissor_0_Nc_41" u 1:(lm*1E6*($3+$5)) title "xxx" w l ls 1,\
     "shgL.vnl.sm_0.15_xxy_14452_55-nospin_scissor_0_Nc_41" u 1:(lm*1E6*($3+$5)) title "xxy" w l ls 2,\
     "shgL.vnl.sm_0.15_xyy_14452_55-nospin_scissor_0_Nc_41" u 1:(lm*1E6*($3+$5)) title "yxx" w l ls 3,\
@@ -95,7 +95,7 @@ set yrange [*:*]
 set yrange [-0.55:0.55]
 set key top right
 set output "alt_shg_final-re_sm.tex"
-set ylabel "Re $[\\chi^{ijk}(2\\omega; \\omega, \\omega)]$ [10$^{6} \\times$ pm$^{2}$/V] "
+set ylabel "Re $[\\chi^{ijk}(2\\omega; \\omega, \\omega)]$ [\\times10$^{6} $\\,pm$^{2}$/V] "
 p   "shgL.vnl.sm_0.15_xxx_14452_55-nospin_scissor_0_Nc_41" u 1:(lm*1E6*($2+$4)) title "xxx" w l ls 1,\
     "shgL.vnl.sm_0.15_xxy_14452_55-nospin_scissor_0_Nc_41" u 1:(lm*1E6*($2+$4)) title "xxy" w l ls 2,\
     "shgL.vnl.sm_0.15_xyy_14452_55-nospin_scissor_0_Nc_41" u 1:(lm*1E6*($2+$4)) title "yxx" w l ls 3,\
