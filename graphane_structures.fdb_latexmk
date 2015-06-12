@@ -1,14 +1,14 @@
 # Fdb version 3
-["bibtex graphane_structures"] 1434042311 "graphane_structures.aux" "graphane_structures.bbl" "graphane_structures" 1434042314
+["bibtex graphane_structures"] 1434127797 "graphane_structures.aux" "graphane_structures.bbl" "graphane_structures" 1434128676
   "apsrev.bst.bst" 0 -1 0 ""
-  "graphane_structures.aux" 1434042313 15460 503dd5284493d73d9668efe283bc59dc ""
+  "graphane_structures.aux" 1434128675 15757 d7d575ab8d8a5dafc207ca5ece572758 ""
   "graphane_structures.bcf" 1433397033 92774 be3b15650fc69f0c44454f7e201bab09 ""
-  "graphane_structuresNotes.bib" 1434042313 0 d41d8cd98f00b204e9800998ecf8427e ""
+  "graphane_structuresNotes.bib" 1434128675 0 d41d8cd98f00b204e9800998ecf8427e ""
   "graphene_structures.bib" 1433891681 13831 300c7f487902ae68375daabb0371efd5 ""
   (generated)
-  "graphane_structures.bbl"
   "graphane_structures.blg"
-["pdflatex"] 1434042312 "graphane_structures.tex" "graphane_structures.pdf" "graphane_structures" 1434042314
+  "graphane_structures.bbl"
+["pdflatex"] 1434128674 "graphane_structures.tex" "graphane_structures.pdf" "graphane_structures" 1434128676
   "/usr/local/texlive/2014/texmf-dist/tex/context/base/supp-pdf.mkii" 1337017135 71627 94eb9990bed73c364d7f53f960cc8c5b ""
   "/usr/local/texlive/2014/texmf-dist/tex/generic/ifxetex/ifxetex.sty" 1284331290 1458 43ab4710dc82f3edeabecd0d099626b2 ""
   "/usr/local/texlive/2014/texmf-dist/tex/generic/oberdiek/gettitlestring.sty" 1303254447 8237 52810bdb4db2270e717422560a104aea ""
@@ -59,10 +59,10 @@
   "alt/alt_shg_final-im_sm.pdf" 1433397035 84492 a60bf22457fd7a294c3c0b7114164347 ""
   "alt/alt_shg_final-re_sm.pdf" 1433397035 87357 432ac230ba931d5a06f6da5a2fee3c45 ""
   "alt/altstruct1.png" 1433397034 92608 8e18ae57109943fd96b09f756e403683 ""
-  "graphane_structures.aux" 1434042313 15460 503dd5284493d73d9668efe283bc59dc ""
-  "graphane_structures.bbl" 1434042312 21182 9047d059fca327b52ee06ec50c833044 "bibtex graphane_structures"
-  "graphane_structures.out" 1434042313 749 0337c23a9b0d3753d2cc6d7f9473f09d ""
-  "graphane_structures.tex" 1434041967 29294 d1f7c61d2281423f9861a04afcbb14d1 ""
+  "graphane_structures.aux" 1434128675 15757 d7d575ab8d8a5dafc207ca5ece572758 ""
+  "graphane_structures.bbl" 1434127798 21182 9047d059fca327b52ee06ec50c833044 "bibtex graphane_structures"
+  "graphane_structures.out" 1434128675 749 0337c23a9b0d3753d2cc6d7f9473f09d ""
+  "graphane_structures.tex" 1434128673 33175 49d210a92347bbbc83f0db7ffa0a10cf ""
   "up/up-Da-final.pdf" 1433397033 31198 e5843acf4c73ee2f1b3898b6932f252f ""
   "up/up_eta_sm_final.pdf" 1433397032 41800 3b8d5942d49ee3d53ae954ad1111c527 ""
   "up/up_shg_final_abs_sm.pdf" 1433397030 50959 e966a5adfdf8897cd2b86643a37ea846 ""
@@ -70,7 +70,7 @@
   "up/up_shg_final_re-sm.pdf" 1433397033 50058 ff50d44c9b18ce4eafae5225e2849df3 ""
   "up/upstruct1.png" 1433397029 80362 c2b0e73b20b39509ad512a9574eae903 ""
   (generated)
-  "graphane_structures.aux"
-  "graphane_structures.pdf"
   "graphane_structures.out"
+  "graphane_structures.aux"
   "graphane_structures.log"
+  "graphane_structures.pdf"

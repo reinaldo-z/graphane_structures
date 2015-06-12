@@ -20,7 +20,7 @@
 \pagestyle{empty}       % use if page numbers not wanted
 
 
-\newcommand{\da}{$D^{a}$}
+\newcommand{\di}{$D^{i}$}
 \newcommand{\ea}{$\eta^{ixy}$}
 \newcommand{\altstc}{C$_{16}$H$_{8}$-alt}
 \newcommand{\upstc}{C$_{16}$H$_{8}$-up}
@@ -43,11 +43,26 @@
 
 \date{\today}
 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%                                                     %%
+%%                begin of abstract                    %%
+
 \begin{abstract}
-\blindtext
+
+We present a theoretical study of the optical generation of one-photon spin and current injection onto In- adsorbed Si(111) surfaces with 4 × 2 and 8 × 2 reconstructions. The spin injection, under incidence of circularly polarized light into nonmagnetic semiconductors, creates spin-polarized electrons in the conduction bands. The current injection is a nonlinear second-order effect that is allowed in materials without inversion symmetry. In bulk centrosymmetric crystals, the optical injection of current can only be observed at the surface wherein the inversion of symmetry might be broken. We report calculations for the degree of spin polarization and current-injection spectra which are calculated in a full electronic band structure scheme at the level of GW scissor-energy correction. Our results show an anisotropic behavior of the spin- and current-injection optical response. We obtain maximum percentages of the degree of spin polarization of 30\% and 35\% for the 4 × 2 and 8 × 2 surface reconstructions, respectively. It is also possible to optically generate injection current coming mainly from the first two top layers on both In-adsorbed surface reconstructions.
+
 \end{abstract}
 
+
+%%               end of abstract                       %%
+%%                                                     %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 \maketitle
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -94,7 +109,7 @@ The sections organization of this paper is as follows. In Sec. \ref{sec:theory} 
 
     \subsection{Optical spin injection}
 
-The injection and detection of spin polarized electrons into nonmagnetic materials is the core of spintronics \cite{vzutic2004spintronics,fert2008nobel,pezzoli2012optical,bottegoni2013experimental,bottegoni2013photoinduced} and an important problem in condensed matter. The process of optical spin injection of carriers appears when circularly polarized light \cite{dyakonov1984theory} insides in a semiconductor media promoting spin-polarized electrons from the valence to the conduction bands. This process takes place as a result of the interaction of electron spin and motion caused by the spin-orbit coupling in media. The DSP gives a quantitative value of the fraction of injected electrons into the conduction bands that are spin polarized. It can be calculated by full band structure local-density approximation (LDA) and $\textbf{k}\cdot \textbf{p}$ methods \cite{nastos2007full,cabellos2009stress}.
+The injection and detection of spin polarized electrons into nonmagnetic materials is the core of spintronics \cite{vzutic2004spintronics,fert2008nobel,pezzoli2012optical,bottegoni2013experimental,bottegoni2013photoinduced} and an important problem in condensed matter. The process of optical spin injection of carriers appears when circularly polarized light (CPI) \cite{dyakonov1984theory} insides in a semiconductor media promoting spin-polarized electrons from the valence to the conduction bands. This process takes place as a result of the interaction of electron spin and motion caused by the spin-orbit coupling in media. The DSP gives a quantitative value of the fraction of injected electrons into the conduction bands that are spin polarized. It can be calculated by full band structure local-density approximation (LDA) and $\textbf{k}\cdot \textbf{p}$ methods \cite{nastos2007full,cabellos2009stress}.
 
 Mendoza and Cabellos derived the expressions for the optical spin generation suitable for surfaces and interfaces \cite{mendoza2012optical}. They used a slab approach in order to model the surface. They wrote the surface DSP along direction \emph{i} as
 
@@ -104,7 +119,7 @@ Mendoza and Cabellos derived the expressions for the optical spin generation sui
 
 \noindent where $\zeta^{ixy} (\omega)$ and $\xi^{aa}(\omega)$ are the surface spin-injection rate tensor components and are diagonal components of the surface carrier generation rate tensor, respectively, and the indexes \emph{i},\emph{j},\emph{k} denote Cartesian coordinates.
 
-In our calculation we consider a normal incidence of circularly polarized light propagating along the \emph{-z} direction,
+In our calculation we consider a normal incidence of CPI propagating along the \emph{-z} direction,
 
 \begin{equation*}
     \mathbf{E} (\omega) = E_{0}(\hat{x} -i \hat{y})/\sqrt{2}, 
@@ -121,7 +136,7 @@ In our calculation we consider a normal incidence of circularly polarized light 
 
     \subsection{Optical current injection}
 
-The optical current injection is a second-order nonlinear effect that takes place in non-centrosymmetric structures \cite{nastos2006optical,cabellos2011optical,bhat2005excitonic,fraser1999quantum}. The photocurrent can be injected with a single optical beam and is produced by the interference of one photon-absorption processes associated with different linear polarizations of light \cite{sipe2000second}. Also called  \emph{circular photovoltaic effect} the optical current injection occurs in a non-centrosymmetric media when it is photoexcited with circularly polarized light, producing an interference effect in the excitation pathways, and resulting in an asymmetric population of the injected carriers in reciprocal space and, therefor, a photocurrent. This photocurrent phenomena has been studied in bulk semiconductors, one dimensional (1D) nanotubes \cite{mele2000coherent,kral2000photogalvanic}, and two dimensional (2D) surfaces \cite{mele2000coherent}.
+The optical current injection (OCI) is a second-order nonlinear effect that takes place in non-centrosymmetric structures \cite{nastos2006optical,cabellos2011optical,bhat2005excitonic,fraser1999quantum}. The photocurrent can be injected with a single optical beam and is produced by the interference of one photon-absorption processes associated with different linear polarizations of light \cite{sipe2000second}. Also called  \emph{circular photovoltaic effect} the OCI occurs in a non-centrosymmetric media when it is photoexcited with CPI, producing an interference effect in the excitation pathways, and resulting in an asymmetric population of the injected carriers in reciprocal space and, therefor, a photocurrent. This photocurrent phenomena has been studied in bulk semiconductors, one dimensional (1D) nanotubes \cite{mele2000coherent,kral2000photogalvanic}, and two dimensional (2D) surfaces \cite{mele2000coherent}.
 
 In the year 2011 Cabellos and Mendoza \emph{et al.} \cite{cabellos2011optical}  derived the expression for the generation of the injection current for surfaces and interfaces. They defined the surface injection current as 
 
@@ -137,7 +152,7 @@ In the year 2011 Cabellos and Mendoza \emph{et al.} \cite{cabellos2011optical}  
 
 \noindent where the sum is made over the number of layers that contributes to the response of the media, $\eta_{ijk} (\ell|\omega)$ corresponds to the $\ell_{\text{th}}$-layer contribution to the surface injection current tensor and $\ell_{\text{eff}}$ is the thickness to the total layers that contribute to the response. The tensor $\eta^{ijk}(\omega)$ is purely imaginary and has the property of being antisymmetric in the last two Cartesian indices, \emph{j} and \emph{k} \cite{sipe2000second,nastos2006optical}. 
 
-Taking in account that with circularly polarized light it is possible to generate current injection along the $\hat{i}$, $\hat{j}$, and $\hat{k}$ directions with incident light on the surface plane, the total injection current can be obtained in a similar way as has been done in \ref{eq:D^i}
+Taking in account that with CPI it is possible to generate current injection along the $\hat{i}$, $\hat{j}$, and $\hat{k}$ directions with incident light on the surface plane, the total injection current can be obtained in a similar way as has been done in \ref{eq:D^i}
 
 \begin{equation*}
     |{\eta^{\text{T}}}| = \sqrt{ \left[ \eta^{xxy} \right]^{2} + \left[ \eta^{yxy} \right]^{2} + \left[ \eta^{zxy} \right]^{2} }
@@ -233,10 +248,10 @@ As made before, in Eq. \ref{eq:chis} and \ref{eq:chitotal} the dependence in fre
 \section{Results} % (fold)
 \label{sec:results}
 
-We present the results of the numerical calculations for \da, \ea, and SHG for the hydrogenated graphene structures, {\altstc} and {\upstc} shown in Fig. \ref{fig:structures}. Both structures are infinite carbon planes in an hexagonal honeycomb lattice with \%50 of hydrogenation in two different arrangements: the \emph{alt} structure [Fig \ref{fig:altstruct}] has alternating hydrogen bonds in the top and bottom sides of the carbon plane; the \emph{up} structure [Fig \ref{fig:upstruct}] has hydrogen bonds only in the top side. Both structures are non-centrosymmetric and has a thickness of 5.56 and 2.76 Angstroms, respectively. A vacuum length at least  five times the thickness for each structure was taken to construct the super-cell.  
+We present the results of the numerical calculations for \di, \ea, and SHG for the hydrogenated graphene structures, {\altstc} and {\upstc} shown in Fig. \ref{fig:structures}. Both structures are infinite carbon planes in an hexagonal honeycomb lattice with \%50 of hydrogenation in two different arrangements: the \emph{alt} structure [Fig \ref{fig:altstruct}] has alternating hydrogen bonds in the top and bottom sides of the carbon plane; the \emph{up} structure [Fig \ref{fig:upstruct}] has hydrogen bonds only in the top side. Both structures are non-centrosymmetric and has a thickness of 5.56 and 2.76 Angstroms, respectively. A vacuum length at least  five times the thickness for each structure was taken to construct the super-cell.  
 
 
-In this work we used the ABINIT code \cite{torrent2008implementation} for the calculation of the self-consistent ground state and their Kohn-Sham states using DFT-LDA in the plane waves approximation. Also, to compute the \emph{DSP} and the optical current injection we used the relativistic separable dual-space Gaussian pseudopotentials of Hartwigsen-Goedecker-Hutter (HGH) \cite{hartwigsen1998relativistic} including the spin-orbit interaction, necessary to make the calculations of $D^{i} $ but not in the cases of {\ea}. For the caso of SHG Troullier-Martins pseudopotentials \cite{troullier1991efficient} that are fully separable nonlocal pseudopotentials in the Kleiman-Bylander form \cite{kleinman1982efficacious}. The contribution of the non-local potential in Eq. \ref{eq:chis} is carried out using the DP code \cite{olevanoDP}. Moreover, we have taken a cutoff energy of 65 and 40\,Ha for the \emph{alt} and \emph{up} structures, respectively, and the energy eigenvalues and matrix elements were calculated using 14452 and 8452 \textbf{k}\,points in the irreducible Brillouin zone (IBZ).
+In this work we used the ABINIT code \cite{torrent2008implementation} for the calculation of the self-consistent ground state and their Kohn-Sham states using DFT-LDA in the plane waves approximation. Also, to compute the \emph{DSP} and the OCI we used the relativistic separable dual-space Gaussian pseudopotentials of Hartwigsen-Goedecker-Hutter (HGH) \cite{hartwigsen1998relativistic} including the spin-orbit interaction, necessary to make the calculations of $D^{i} $ but not in the cases of {\ea}. For the caso of SHG Troullier-Martins pseudopotentials \cite{troullier1991efficient} that are fully separable nonlocal pseudopotentials in the Kleiman-Bylander form \cite{kleinman1982efficacious}. The contribution of the non-local potential in Eq. \ref{eq:chis} is carried out using the DP code \cite{olevanoDP}. Moreover, we have taken a cutoff energy of 65 and 40\,Ha for the \emph{alt} and \emph{up} structures, respectively, and the energy eigenvalues and matrix elements were calculated using 14452 and 8452 \textbf{k}\,points in the irreducible Brillouin zone (IBZ).
 
 
 %%%% begin figure Da
@@ -246,7 +261,7 @@ In this work we used the ABINIT code \cite{torrent2008implementation} for the ca
         \includegraphics[width=\lw]{alt/alt-Da-final}}
     \subfigure[\ \label{fig:up-Da}]{
         \includegraphics[width=\lw]{up/up-Da-final}}
-    \caption{(Color online) Spectra of the degree of spin polarization along the direction \emph{i}, {\da}, for the hydrogenated graphene structures {\altstc} [Fig. \ref{fig:alt-Da}] and {\upstc} [Fig. \ref{fig:up-Da}] under incidence of circularly polarized light.}\label{fig:Da}
+    \caption{(Color online) Spectra of the degree of spin polarization along the direction \emph{i}, {\di}, for the hydrogenated graphene structures {\altstc} [Fig. \ref{fig:alt-Da}] and {\upstc} [Fig. \ref{fig:up-Da}] under incidence of circularly polarized light.}\label{fig:Da}
 \end{figure}
 %%%% end figure Da
 
@@ -292,30 +307,31 @@ In this work we used the ABINIT code \cite{torrent2008implementation} for the ca
 %%%% end figure shg up
 
 
-In Figs. \ref{fig:alt-Da} and \ref{fig:up-Da} we show the spectra obtained for {\da} of the {\altstc} and {\upstc} structures, respectively. Values over (under) zero define a positive (negative) direction of spin polarization along the \emph{a} direction. It can be observed that for both structures we have more than 40\% of {\da} and a maximum absolute value in the \emph{y} direction, reaching almost a 50\% in the \emph{alt} structure. In table \ref{tab:dacomp} we show a comparison of the maximum degree of spin polarization reported for different structures.To report the {\ea} we took in account that our structures are infinite carbon-hydrogen layers. So in Eq. \ref{eq:etaeff} we defined the $\ell_{\text{eff}}$ as the thickness of each structure, 5.56 and 2.76 Angstroms for the \emph{alt} and \emph{up} structures.
+In Figs. \ref{fig:alt-Da} and \ref{fig:up-Da} we show the spectra obtained for {\di} of the {\altstc} and {\upstc} structures, respectively. Values over (under) zero define a positive (negative) direction of spin polarization along the \emph{i} direction. It can be observed that for both structures we have more than 40\% of {\di} and a maximum absolute value in the \emph{y} direction, reaching almost a 70\% in the \emph{alt} structure. In table \ref{tab:dacomp} we show a comparison of the maximum degree of spin polarization reported for different structures. 
 
-We show in Figs. \ref{fig:alt-eta} and \ref{fig:up-eta}  the spectra obtained for the current tensor {\ea} of the structures \emph{alt} and \emph{up}, respectively. We can observe that circularly polarized light on the plane $xy$ produces injection current along three directions. Values over (under) zero define a positive (negative) direction of current injection along the \emph{a} direction. From Fig. \ref{fig:eta} we can see that for the \emph{alt} structure spectra [Fig. \ref{fig:alt-eta}] we have a positive maximum in the \emph{y} direction for an incident beam energy of 1.25\,eV, reaching a value of 3.7\,mC$^{3}$/J$^{2}$s$^{2}$ . Also, for the \emph{up} structure spectra [Fig. \ref{fig:up-eta}] we have a negative maximum in the \emph{x} direction for an incident beam energy of 0.405\,eV, reaching a value of 3.5\,mC$^{3}$/J$^{2}$s$^{2}$. In table \ref{tab:etacomp} we present a comparison of the maximum current injection reported for different structures.
+To report the {\ea} we took in account that our structures are infinite carbon-hydrogen layers. So in Eq. \ref{eq:etaeff} we defined the $\ell_{\text{eff}}$ as the thickness of each structure, 5.56 and 2.76 Angstroms for the \emph{alt} and \emph{up} structures, respectively. We show in Figs. \ref{fig:alt-eta} and \ref{fig:up-eta}  the spectra obtained for the current tensor {\ea} of the structures \emph{alt} and \emph{up}, respectively. We can observe that circularly polarized light (CPI) on the plane $xy$ produces injection current along three directions. Values over (under) zero define a positive (negative) direction of current injection along the \emph{i} direction. From Fig. \ref{fig:eta} we can see that for the \emph{alt} structure spectra [Fig. \ref{fig:alt-eta}] we have a positive maximum in the \emph{y} direction for an incident beam energy of 1.25\,eV, reaching a value of 3.7\,mC$^{3}$/J$^{2}$s$^{2}$ . Also, for the \emph{up} structure spectra [Fig. \ref{fig:up-eta}] we have a positive maximum in the \emph{y} direction for an incident beam energy of 0.09\,eV, reaching a value of 28\,mC$^{3}$/J$^{2}$s$^{2}$. In table \ref{tab:etacomp} we present a comparison of the maximum current injection reported for different structures.
 
-In Figs. \ref{fig:shg-alt} and \ref{fig:shg-up} we show the spectra obtained for the SHG for the \emph{alt} and \emph{up} structures, respectively. The Figs. \ref{fig:alt-shg-re} and \ref{fig:up-shg-re} show the real part of the non-zero components, Figs. \ref{fig:alt-shg-im} and \ref{fig:up-shg-im} the imaginary part, and Figs. \ref{fig:alt-shg-abs} and \ref{fig:alt-shg-abs} the absolute value of the $\chi^{ijk}(2\omega;\omega\omega) $ tensor. 
-
-We can see from Fig. \ref{fig:shg-alt} that for the \emph{alt} structure an absolute maximum of the SHG spectra is reached at 0.4\,eV with a value of 0.6$\times10^{6} $\,pm$^{2}$/V for the $\chi^{yxx} $ component produced principally for contributions of the imaginary part. Also, a second local maximum is reached at 1.1\,eV with a value of 0.55$\times10^{6} $\,pm$^{2}$/V for the $\chi^{xxx} $ component having in this case a principal contribution from the real part. Also, from Fig. \ref{fig:shg-up} we can see that for the \emph{up} structure an absolute maximum is reached near to 0.042\,eV reaching a value of 70$\times10^{6} $\,pm$^{2}$/V for the $\chi^{yxx} $ tensor component which contribution comes from the imaginary part of the spectra. In table \ref{tab:shgcomp} we show a comparison of the maximum SHG reported for different structures.
+In Figs. \ref{fig:shg-alt} and \ref{fig:shg-up} we show the spectra obtained for the SHG for the \emph{alt} and \emph{up} structures, respectively. The Figs. \ref{fig:alt-shg-re} and \ref{fig:up-shg-re} show the real part of the non-zero components, Figs. \ref{fig:alt-shg-im} and \ref{fig:up-shg-im} the imaginary part, and Figs. \ref{fig:alt-shg-abs} and \ref{fig:alt-shg-abs} the absolute value of the $\chi^{ijk}(2\omega;\omega\omega) $ tensor. We can see from Fig. \ref{fig:shg-alt} that for the \emph{alt} structure an absolute maximum of the SHG spectra is reached at 0.4\,eV with a value of 0.6$\times10^{6} $\,pm$^{2}$/V for the $\chi^{yxx} $ component produced principally for contributions of the imaginary part. Also, a second local maximum is reached at 1.1\,eV with a value of 0.55$\times10^{6} $\,pm$^{2}$/V for the $\chi^{xxx} $ component having in this case a principal contribution from the real part. Also, from Fig. \ref{fig:shg-up} we can see that for the \emph{up} structure an absolute maximum is reached near to 0.042\,eV reaching a value of 70$\times10^{6} $\,pm$^{2}$/V for the $\chi^{yxx} $ tensor component which contribution comes from the imaginary part of the spectra. In table \ref{tab:shgcomp} we show a comparison of the maximum SHG reported for different structures.
 
 
 %%%% begin table comparison Da
 \begin{table}
-    \caption{Comparison of the reported absolute values for the highest percentage of {\da} for different structures. ($^{*}$This work.)}
+    \caption{Comparison of the reported absolute values for the highest percentage of {\di} for different structures. ($^{*}$This work.)}
     \label{tab:dacomp}
     \centering
     \begin{ruledtabular}
-    \begin{tabular}{lccc}
-    Structure & Energy & {\da} &  Reference\\
-              & [eV]   & \emph{a}, [\%] \\
+    \begin{tabular}{lcccc}
+    Structure & Energy &  \multicolumn{2}{c}{\di} &  Reference\\
+    \cline{3-4}
+              & [eV]   & component & [\%] \\
     \hline
-    {\altstc}               & 0.719 & y, 48 & *     \\
-    {\upstc}                & 0.40  & y, 42 & *     \\
-    Si(111)-In $8\times2$   & 0.74  & z, 32 & \cite{arzate2014optical}  \\
-    Si(111)-As $1\times1$   & 2.20  & z, 100& \cite{mendoza2012optical} \\
-    Bulk Si                 & 3.44  & z, 30 & \cite{nastos2007full}     \\
+    {\altstc}               & 0.719 & y & 48 & *     \\
+    {\upstc}                & 0.08  & y & 68 & *     \\
+    Si(111)-In $8\times2$   & 0.74  & z & 32 & \cite{arzate2014optical}  \\
+    Si(111)-As $1\times1$   & 2.20  & z & 100& \cite{mendoza2012optical} \\
+    Bulk Si                 & 3.44  & z & 30 & \cite{nastos2007full}     \\
+    Bulk GaAs               & 1.50  & z & 50 & \cite{nastos2007full} \cite{bhat2005excitonic} \\
+    Bulk CdSe               & 1.8   & z {\scriptsize (\emph{yz} polarization)} & 100& \cite{nastos2007full}\\
     \end{tabular}
     \end{ruledtabular}
 \end{table}
@@ -328,15 +344,18 @@ We can see from Fig. \ref{fig:shg-alt} that for the \emph{alt} structure an abso
     \label{tab:etacomp}
     \centering
     \begin{ruledtabular}
-    \begin{tabular}{lccc}
-    Structure & Energy &{\ea} &  Ref.\\
-              & [eV]   & \hspace{-2.5mm} \emph{a},\, [mC$^{3}$/J$^{2}$s$^{2}$] \\
+    \begin{tabular}{lcccc}
+    Structure & Energy &  \multicolumn{2}{c}{\ea} &  Reference\\
+    \cline{3-4}
+              & [eV]   & direction & [mC$^{3}$/J$^{2}$s$^{2}$] \\
     \hline
-    {\altstc}               & 1.25  & y, 3.70  & *     \\
-    {\upstc}                & 0.405 & x, 3.50  & *     \\
-    Si(111)-In $8\times2$   & 1.24  & y, 0.35  & \cite{arzate2014optical}  \\
-    Si(111) $2\times1$      & 0.75  & y, 1.22  & \cite{mendoza2012optical} \\
-    GaAs(110) clean         & 4.30  & y, 0.30  & \cite{nastos2007full}     \\
+    {\altstc}               & 1.25  & y & 3.70  & *     \\
+    {\upstc}                & 0.09  & x & 28.0  & *     \\
+    Si(111)-In $8\times2$   & 1.24  & y & 0.35  & \cite{arzate2014optical}  \\
+    Si(111) $2\times1$      & 0.75  & y & 1.22  & \cite{mendoza2012optical} \\
+    GaAs(110) clean         & 4.30  & y & 0.30  & \cite{nastos2007full}     \\
+    GaS (110)-Sb            & 4.60  & y & 0.17  & \cite{cabellos2011optical}\\
+    Bulk CdSd               & 1.8   & y {\scriptsize (\emph{yz} polarization)} & 90.0  & \cite{nastos2006optical}  \\
     \end{tabular}
     \end{ruledtabular}
 \end{table}
@@ -345,27 +364,25 @@ We can see from Fig. \ref{fig:shg-alt} that for the \emph{alt} structure an abso
 
 %%%% begin table comparison shg
 \begin{table}
-    \caption{Comparison of the highest reported absolute values of SHG for different structures. ($^{*}$This work.)}
+    \caption{Comparison of the highest reported absolute values of SHG for different structures and components. ($^{*}$This work.)}
     \label{tab:shgcomp}
     \centering
     \begin{ruledtabular}
-    \begin{tabular}{lccc}
-    Structure & Energy & $\chi^{ijk} $ &  Ref.\\
-              & [eV]   & \hspace{-2.5mm} \emph{ijk},\, [$10^{6} \times$pm$^{2}$/V ] \\
+    \begin{tabular}{lcccc}
+    Structure & Energy & \multicolumn{2}{c}{$\chi^{ijk} $} &  Reference\\
+    \cline{3-4}
+              & [eV]   & component & [$10^{6} $ pm$^{2}$/V ] \\
     \hline
-    {\altstc}               & 1.25  & y, 3.70  & *     \\
-    {\upstc}                & 0.405 & x, 3.50  & *     \\
+    {\altstc}                       & 0.4   & yxx   & 0.6   & *     \\
+    {\upstc}                        & 0.042 & yxx   & 70    & *     \\
+    Si(100)2$\times$1               & 1.5   & xxx   & 1.5   & \cite{anderson2015theory} \ \\
+    BN(6,0) nanotubes pristine      & 5.0   & zzz   & 35    & \cite{salazar2014molecular} \\
+    BN(6,0) nanotubes + 4(H$_{2}$)  & 5.0   & zzz   & 33    & \cite{salazar2014molecular} \\
+    BN(6,0) nanotubes + 12(H$_{2}$) & 4.8   & zzz   & 15    & \cite{salazar2014molecular} \\
     \end{tabular}
     \end{ruledtabular}
 \end{table}
 %%%% end table comparison shg
-
-
-
-%%%                                                    %%
-%%               end of results section                %%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -376,7 +393,9 @@ We can see from Fig. \ref{fig:shg-alt} that for the \emph{alt} structure an abso
 \section{Conclusions} % (fold)
 \label{sec:conclusions}
 
-\blindtext
+We have performed \emph{ab initio} for the spin- and  current-injection and Second Harmonic Generation (SHG) on the hydrogenated graphene {\altstc} and {\upstc} structures [Figs. \ref{fig:altstruct} and \ref{fig:upstruct}] with the independent particle approximation (IPA). 
+Our calculations predicts that it is possible to inject spin-polarized electrons along the perpendicular direction to the surface plane, obtaining a degree of spin polarization (DSP) of the injected electrons about 48\% and 68\% at the photon energies of around 0.719 and 0.08\,Ha  for the \emph{alt} and \emph{up} structures, respectively [Figs. \ref{fig:alt-Da} and \ref{fig:up-Da}]. This results predicts that particularly the \emph{up} structure is usable for spintronics proposes. Also, our results about the optical current injection (OCI) with circularly polarized light (CPI) show that the \emph{alt}  and \emph{up} structures have a response near to 3.70 and 28.0\,[mC$^{3}$/J$^{2}$s$^{2}$] for incident beams with energies of around 1.25 and 0.09\,eV. According to measurements already done on bulk materials, it is actually possible to measure such amount of injection current density. current density. Thus the control of the motion of the electron at the {\altstc} and {\upstc} structures is possible by incidence of circularly polarized light. Finally we found that the \emph{alt} and \emph{up} structures present a absolute maximum of 0.6$\times 10^{6}$ and 70.0\,$\times 10^{6} $\,pm$^{2}$/V at the photon energies of around 0.40 and 0.042\,eV.
+
 
 %%                                                     %%
 %%             end of conclusions section              %%
@@ -385,18 +404,19 @@ We can see from Fig. \ref{fig:shg-alt} that for the \emph{alt} structure an abso
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%               begin of Acknowledgment section          %%
+%%               begin of Acknowledgment section       %%
 %%                                                     %%
 
 \section{Acknowledgment} % (fold)
 \label{sec:Acknouledgment}
 
+This work has been supported by \emph{Consejo Nacional de Ciencia y Tecnolog\'ia} (CONACyT), M\'exico, Grant No. 153930.
+
 
 %%                                                     %%
-%%             end of Acknowledgment section              %%
+%%             end of Acknowledgment section           %%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
 
 % \begin{thebibliography}{37}
 \bibliography{graphene_structures}
