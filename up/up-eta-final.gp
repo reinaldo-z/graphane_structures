@@ -2,14 +2,14 @@
 # set key right top outside
 set terminal epslatex color colortext standalone
 
-set style line 1  linetype 1 linecolor rgb "#6c71c4"  linewidth 3 #violet
-set style line 2  linetype 1 linecolor rgb "#859900"  linewidth 3 #green
-set style line 3  linetype 1 linecolor rgb "#cb4b16"  linewidth 3 #orange
-set style line 4  linetype 1 linecolor rgb "#2aa198"  linewidth 3 #cyan
-set style line 5  linetype 1 linecolor rgb "#dc322f"  linewidth 3 #red
-set style line 6  linetype 1 linecolor rgb "#268bd2"  linewidth 3 #blue
-set style line 7  linetype 1 linecolor rgb "#d33682"  linewidth 3 #magenta
-set style line 8  linetype 1 linecolor rgb "#b58900"  linewidth 3 #yellow
+set style line 1  linetype 1 linecolor rgb "#6c71c4"  linewidth 1 #violet
+set style line 2  linetype 1 linecolor rgb "#859900"  linewidth 1 #green
+set style line 3  linetype 1 linecolor rgb "#cb4b16"  linewidth 1 #orange
+set style line 4  linetype 1 linecolor rgb "#2aa198"  linewidth 1 #cyan
+set style line 5  linetype 1 linecolor rgb "#dc322f"  linewidth 1 #red
+set style line 6  linetype 1 linecolor rgb "#268bd2"  linewidth 1 #blue
+set style line 7  linetype 1 linecolor rgb "#d33682"  linewidth 1 #magenta
+set style line 8  linetype 1 linecolor rgb "#b58900"  linewidth 1 #yellow
 
 set xtics nomirror
 set ytics nomirror
@@ -24,7 +24,8 @@ lm=la*1E-10
 set xtics nomirror
 set ytics nomirror
 
-set zeroaxis lw 2 lt 2 lc 0
+# set xzeroaxis lw 1 lt 2 lc 0
+set xzeroaxis lw 1 lt 2 lc 0
 
 #######   THREE IN ONE PLOT 
 # set title ""
