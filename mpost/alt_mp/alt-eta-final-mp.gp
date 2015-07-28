@@ -1,4 +1,5 @@
-set terminal epslatex color colortext standalone
+# set terminal epslatex color colortext standalone
+set terminal mp color solid latex 11
 set xlabel "Photon Energy (eV)"
 
 set style line 1  linetype 1 linecolor rgb "#6c71c4"  linewidth 1 #violet
@@ -26,12 +27,9 @@ lm=la*1E-10
 #     "eta2.kk_xxy_yxy_zxy_14452_65-spin_scissor_0_Nc_18" u 1:($4*lm) title "$\\eta^{zxy}$" w l ls 4,\
 
 set zeroaxis lw 1 lt 2 lc 0
-set label 1 "C$_{16}$H$_{8}$-alt"   at 0.425,-2.3 
-
-
 #######   THREE IN ONE PLOT 
 set xrange [0.25:2]
-set output "alt-eta_sm-final.tex"
-p   "eta2.sm_xxy_yxy_zxy_14452_65-spin_scissor_0_Nc_18" u 1:($2*lm) title "$\\eta^{xxy}$" w l ls 2,\
-    "eta2.sm_xxy_yxy_zxy_14452_65-spin_scissor_0_Nc_18" u 1:($3*lm) title "$\\eta^{yxy}$" w l ls 5,\
-    "eta2.sm_xxy_yxy_zxy_14452_65-spin_scissor_0_Nc_18" u 1:($4*lm) title "$\\eta^{zxy}$" w l ls 4,\
+set output "alt-eta_sm-final.mp"
+p   "../../alt/eta2.sm_xxy_yxy_zxy_14452_65-spin_scissor_0_Nc_18" u 1:($2*lm) title "$\\eta^{xxy}$" w l ls 2,\
+    "../../alt/eta2.sm_xxy_yxy_zxy_14452_65-spin_scissor_0_Nc_18" u 1:($3*lm) title "$\\eta^{yxy}$" w l ls 5,\
+    "../../alt/eta2.sm_xxy_yxy_zxy_14452_65-spin_scissor_0_Nc_18" u 1:($4*lm) title "$\\eta^{zxy}$" w l ls 4,\
