@@ -23,5 +23,6 @@
 *.out
 *.synctex.gz
 *.fdb_latexmkg
+*.fdb_latexmk
 
 *.pdf
