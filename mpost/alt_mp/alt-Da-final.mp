@@ -1,4 +1,4 @@
-%GNUPLOT Metapost output: Sun Jul 26 23:09:55 2015
+%GNUPLOT Metapost output: Tue Jul 28 18:41:24 2015
 
 
 %% Add \documentclass and \begin{dcoument} for latex
@@ -41,7 +41,7 @@ color currentcolor; currentcolor:=black;
 color fillcolor;
 boolean colorlines,dashedlines;
 colorlines:=true;
-dashedlines:=false;
+dashedlines:=true;
 
 def _wc = withpen currentpen withcolor currentcolor enddef;
 def _ac = addto currentpicture enddef;
@@ -183,10 +183,11 @@ linetype -2;
 put_text( btex Photon Energy (eV) etex, 654.0a, 28.2b, 0, 2);
 linetype -2;
 linetype -2;
-currentcolor:=0.5216*red+0.6*green+0*blue;
+scalepen 1.500;
+currentcolor:=1*red+0*green+0*blue;
 put_text( btex $D^{x}$ etex, 989.3a, 644.3b, 0, 3);
 linetype -2;
-currentcolor:=0.5216*red+0.6*green+0*blue;
+currentcolor:=1*red+0*green+0*blue;
 draw (1008.7a,644.3b)--(1102.9a,644.3b);
 draw (166.4a,405.0b)--(176.2a,405.0b)--(185.9a,405.0b)--(195.7a,405.0b)--(205.4a,405.0b)
 --(215.2a,405.0b)--(224.9a,405.0b)--(234.7a,405.0b)--(244.4a,405.0b)--(254.2a,405.0b)
@@ -210,10 +211,12 @@ draw (166.4a,405.0b)--(176.2a,405.0b)--(185.9a,405.0b)--(195.7a,405.0b)--(205.4a
 --(1092.9a,411.5b)--(1102.7a,411.1b)--(1112.4a,410.6b)--(1122.2a,410.3b)--(1131.9a,410.5b)
 --(1141.7a,409.9b);
 linetype -2;
-currentcolor:=0.8627*red+0.1961*green+0.1843*blue;
+linetype 1;
+currentcolor:=0*red+1*green+0*blue;
 put_text( btex $D^{y}$ etex, 989.3a, 604.0b, 0, 3);
 linetype -2;
-currentcolor:=0.8627*red+0.1961*green+0.1843*blue;
+linetype 1;
+currentcolor:=0*red+1*green+0*blue;
 draw (1008.7a,604.0b)--(1102.9a,604.0b);
 draw (166.4a,405.0b)--(176.2a,405.0b)--(185.9a,405.0b)--(195.7a,405.0b)--(205.4a,405.0b)
 --(215.2a,405.0b)--(224.9a,405.0b)--(234.7a,405.0b)--(244.4a,405.0b)--(254.2a,405.0b)
@@ -237,10 +240,12 @@ draw (166.4a,405.0b)--(176.2a,405.0b)--(185.9a,405.0b)--(195.7a,405.0b)--(205.4a
 --(1092.9a,404.4b)--(1102.7a,405.1b)--(1112.4a,405.7b)--(1122.2a,406.6b)--(1131.9a,407.8b)
 --(1141.7a,408.0b);
 linetype -2;
-currentcolor:=0.1647*red+0.6314*green+0.5961*blue;
+linetype 6;
+currentcolor:=0*red+0*green+1*blue;
 put_text( btex $D^{z}$ etex, 989.3a, 563.7b, 0, 3);
 linetype -2;
-currentcolor:=0.1647*red+0.6314*green+0.5961*blue;
+linetype 6;
+currentcolor:=0*red+0*green+1*blue;
 draw (1008.7a,563.7b)--(1102.9a,563.7b);
 draw (166.4a,405.0b)--(176.2a,405.0b)--(185.9a,405.0b)--(195.7a,405.0b)--(205.4a,405.0b)
 --(215.2a,405.0b)--(224.9a,405.0b)--(234.7a,405.0b)--(244.4a,405.0b)--(254.2a,405.0b)

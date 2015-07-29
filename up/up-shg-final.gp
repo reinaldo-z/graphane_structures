@@ -77,11 +77,11 @@ set xrange [0:0.14]
 set key top right
 set output "up_shg_final_abs_sm.tex"
 set ylabel "$|\\chi^{ijk}(2\\omega; \\omega, \\omega)| \\times [10^{6} $\\,pm$^{2}$/V] "
-p   "shgL.vnl.sm_0.02_xxx_8452_40-nospin_scissor_0_Nc_27" u 1:(lm*1E6*(abso($2,$3,$4,$5))) title "xxx" w l ls 1,\
-    "shgL.vnl.sm_0.02_xxy_8452_40-nospin_scissor_0_Nc_27" u 1:(lm*1E6*(abso($2,$3,$4,$5))) title "xxy" w l ls 2,\
-    "shgL.vnl.sm_0.02_yxx_8452_40-nospin_scissor_0_Nc_27" u 1:(lm*1E6*(abso($2,$3,$4,$5))) title "yxx" w l ls 3,\
-    "shgL.vnl.sm_0.02_yyy_8452_40-nospin_scissor_0_Nc_27" u 1:(lm*1E6*(abso($2,$3,$4,$5))) title "yyy" w l ls 4,\
-    "shgL.vnl.sm_0.02_yzz_8452_40-nospin_scissor_0_Nc_27" u 1:(lm*1E6*(abso($2,$3,$4,$5))) title "yzz" w l ls 7,\
+p   "shgL.vnl.sm_0.02_xxx_8452_40-nospin_scissor_0_Nc_27" u 1:(lm*1E6*(abso($2,$3,$4,$5))) title "xxx" w l lw 3.0 dt 5 lc rgb "black",\
+    "shgL.vnl.sm_0.02_xxy_8452_40-nospin_scissor_0_Nc_27" u 1:(lm*1E6*(abso($2,$3,$4,$5))) title "xxy" w l lw 3.0 dt 4 lc rgb "green",\
+    "shgL.vnl.sm_0.02_yxx_8452_40-nospin_scissor_0_Nc_27" u 1:(lm*1E6*(abso($2,$3,$4,$5))) title "yxx" w l lw 1.5 dt 1 lc rgb "blue",\
+    "shgL.vnl.sm_0.02_yyy_8452_40-nospin_scissor_0_Nc_27" u 1:(lm*1E6*(abso($2,$3,$4,$5))) title "yyy" w l lw 3.0 dt 6 lc rgb "red",\
+    "shgL.vnl.sm_0.02_yzz_8452_40-nospin_scissor_0_Nc_27" u 1:(lm*1E6*(abso($2,$3,$4,$5))) title "yzz" w l lw 3.0 dt 8 lc rgb "orange",\
 
 set zeroaxis lw 1 lt 2 lc 0
 unset label 1

@@ -24,6 +24,6 @@ set ylabel "$D^{i}$"
 
 #.813
 
-p   "dsp.kk_x_14452_65-spin_scissor_0_Nc_18" u 1:(0.813*2*$4/($2+$3+1.e-10)) title "$D^{x}$" w l ls 2,\
-    "dsp.kk_y_14452_65-spin_scissor_0_Nc_18" u 1:(0.813*2*$4/($2+$3+1.e-10)) title "$D^{y}$" w l ls 5,\
-    "dsp.kk_z_14452_65-spin_scissor_0_Nc_18" u 1:(0.813*2*$4/($2+$3+1.e-10)) title "$D^{z}$" w l ls 4,\
+p   "dsp.kk_x_14452_65-spin_scissor_0_Nc_18" u 1:(0.813*2*$4/($2+$3+1.e-10)) title "$D^{x}$" w l lw 3.0 dt 6 lc rgb "red",\
+    "dsp.kk_y_14452_65-spin_scissor_0_Nc_18" u 1:(0.813*2*$4/($2+$3+1.e-10)) title "$D^{y}$" w l lw 1.5 dt 1 lc rgb "blue",\
+    "dsp.kk_z_14452_65-spin_scissor_0_Nc_18" u 1:(0.813*2*$4/($2+$3+1.e-10)) title "$D^{z}$" w l lw 3.0 dt 4 lc rgb "green",\

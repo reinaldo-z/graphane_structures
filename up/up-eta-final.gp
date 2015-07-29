@@ -35,9 +35,9 @@ set label 1 "C$_{16}$H$_{8}$-up"   at 0.025,-22
 set xrange [0.0:0.25]
 
 set output "up_eta_kk_final.tex"
-p   "eta2.kk_xxy_yxy_zxy_8452_40-spin_scissor_0_Nc_18" u 1:($2*lm) title "$\\eta^{xxy}$" w l ls 2,\
-    "eta2.kk_xxy_yxy_zxy_8452_40-spin_scissor_0_Nc_18" u 1:($3*lm) title "$\\eta^{yxy}$" w l ls 5,\
-    "eta2.kk_xxy_yxy_zxy_8452_40-spin_scissor_0_Nc_18" u 1:($4*lm) title "$\\eta^{zxy}$" w l ls 4
+p   "eta2.kk_xxy_yxy_zxy_8452_40-spin_scissor_0_Nc_18" u 1:($2*lm) title "$\\eta^{xxy}$" w l lw 3.0 dt 6 lc rgb "red",\
+    "eta2.kk_xxy_yxy_zxy_8452_40-spin_scissor_0_Nc_18" u 1:($3*lm) title "$\\eta^{yxy}$" w l lw 1.5 dt 1 lc rgb "blue",\
+    "eta2.kk_xxy_yxy_zxy_8452_40-spin_scissor_0_Nc_18" u 1:($4*lm) title "$\\eta^{zxy}$" w l lw 3.0 dt 4 lc rgb "green",\
 
 unset label 1
 
