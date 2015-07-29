@@ -127,6 +127,10 @@ and \emph{up} structures. Finally, we give our conclusions in Sec.
 
 \section{Theory}\label{sec:theory}
 
+\begin{changed}
+In this section we\ldots
+\end{changed}
+
 \begin{figure}[t]
 \subfloat[Top and side view of C$_{16}$H$_{8}$-alt.]
 {\includegraphics[width=\linewidth]{alt/altstruct1}}
@@ -140,190 +144,176 @@ and \emph{up} structures. Finally, we give our conclusions in Sec.
 \subsection{Optical spin injection}
 
 The injection and detection of spin polarized electrons into nonmagnetic
-materials is the core of spintronics \cite{vzutic2004spintronics,fert2008nobel,pezzoli2012optical,bottegoni2013experimental,bottegoni2013photoinduced} and an
-important problem in condensed matter. The process of optical spin injection of
-carriers appears when circularly polarized light (CPL)
-\cite{dyakonov1984theory} insides in a semiconductor media promoting spin
-polarized electrons from the valence to the conduction bands. This process
-takes place as a result of the interaction of electron spin and motion caused
-by the spin-orbit coupling in media. The DSP gives a quantitative value of the
-percentage of injected electrons into the conduction bands that are spin
-polarized in certain direction. It can be calculated by full band structure local-density
-approximation (LDA) and $\textbf{k}\cdot \textbf{p}$ methods
+materials is the core of spintronics \cite{vzutic2004spintronics,%
+fert2008nobel,pezzoli2012optical,bottegoni2013experimental,%
+bottegoni2013photoinduced} and an important problem in condensed matter
+theory. The process of optical spin injection appears when circularly
+polarized light (CPL) \cite{dyakonov1984theory} is incident on a
+semiconducting material. This allows spin polarized electrons to move from the
+valence to the conduction bands. This process is the result of the interaction
+between the electron spin and the motion caused by the spin-orbit coupling in
+the material. The DSP is the percentage of injected spin polarized electrons
+in the conduction bands. It can be calculated with full band structure local-
+density approximation (LDA), and $\textbf{k}\cdot\textbf{p}$ methods
 \cite{nastos2007full,cabellos2009stress}.
 
-In reference \cite{mendoza2012optical} was derived the expressions for the optical spin generation
-appropriate for surfaces and interfaces. It was used a
-slab approach in order to model the surface. According to that the spin generation rate can be described by
+The complete expressions for the DSP are derived in reference
+\cite{mendoza2012optical} for surfaces and interfaces, and we summarize them
+briefly here. We assume an incoming beam of CPL at normal incidence that
+propogates along the $-z$ direction, $\mathbf{E}(\omega) = E_{0}(\hat{x} -
+i\hat{y})/\sqrt{2}$. The degree of spin polarization for this beam is
+expressed as
 
-\begin{equation}
-    \dot{S}^{i} (\omega) = \zeta^{ijk} (\omega) E^{j} (-\omega) E^{k} (\omega),
+\begin{equation}\label{eq:D^i}
+D^{a}(\omega) = 
+\frac{-4i\zeta^{axy}(\omega)}
+    {\hbar\left[\xi^{xx}(\omega) + \xi^{yy}(\omega)\right]},
 \end{equation}
+where $\zeta^{axy} (\omega)$ and $\xi^{aa}(\omega)$ are the 
+\begin{changed}
+surface spin injection rate tensor components and the diagonal components of
+the surface carrier generation rate tensor, respectively.
+\end{changed} 
+and the $abc$ superscripts denote the Cartesian coordinates. The spin
+injection tensor is
 
-where
-\begin{equation}
-    \zeta^{ijk} = \frac{i \pi e^{2}}{\hbar^{2}} \int \frac{d^{3}k}{8\pi^{3}} \sum_{vcc'}^{'} \text{Im} \left[  \mathcal{S}^{i}_{c'c} (\textbf{k}) r^{j}_{vc'}(\textbf{k}) r^{k}_{cv}(\textbf{k})
-    + \mathcal{S}^{i}_{cc'} (\textbf{k}) r^{j}_{vc}(\textbf{k}) r^{k}_{c'v}(\textbf{k}) \right] \delta (\omega_{cv}(\textbf{k}) -\omega), \label{eq:zeta}
-\end{equation}
+\begin{align}\label{eq:zeta}
+\zeta^{abc} &= \frac{i\pi e^{2}}{\hbar^{2}}\int\frac{d^{3}k}{8\pi^{3}}
+\sum_{vcc'}^{\prime}\text{Im}\bigl[\mathcal{S}^{i}_{c'c}(\textbf{k})
+r^{j}_{vc'}(\textbf{k})r^{k}_{cv}(\textbf{k})\nonumber\\
+&\qquad+\mathcal{S}^{i}_{cc'}(\textbf{k})
+r^{j}_{vc}(\textbf{k})r^{k}_{c'v}(\textbf{k})\bigr]
+\delta(\omega_{cv}(\textbf{k})-\omega),
+\end{align}
+where $\mathcal{S}$ and $r$ are the spin and position matrix elements. The
+expression of Eq. \eqref{eq:zeta} satisfies the $\zeta^{abc}(\omega) =
+-\zeta^{acb}(\omega)$ condition.
 
-is the purely imaginary tensor that that allows to calculate the spin generation rate, from where $\mathcal{s} $ and $r$ are the spin matrix elements and the position matrix elements. The expression of eq. \ref{eq:zeta} satisfies the condition  $\zeta^{ijk} (\omega) = -\zeta^{ikj} (\omega)$. 
+% \begin{equation*}
+% \mathbf{E}(\omega) = E_{0}(\hat{x} - i\hat{y})/\sqrt{2}, 
+% \end{equation*}
+% where $E_{0}$ is the incoming field intensity. Finally, we write the surface
+% DSP in the \emph{i} direction as
+
+\begin{changed}
+\begin{equation*}
+\dot{S}^{i}(\omega) = \zeta^{abc}(\omega)E^{j}(-\omega)E^{k}(\omega),
+\end{equation*}
+\end{changed}
 
 
-In our calculation we consider a normal incidence of CPL propagating along the \emph{-z} direction,
+It is generally possible to generate spin-polarized electrons along all three
+$\hat{i}$, $\hat{j}$, and $\hat{k}$ directions. The total DSP can be obtained
+as
 
 \begin{equation*}
-    \mathbf{E} (\omega) = E_{0}(\hat{x} -i \hat{y})/\sqrt{2}, 
+\left|D^{\text{T}}\right| = \sqrt{D_{x}^{2} + D_{y}^{2} + D_{z}^{2}}.
 \end{equation*}
 
 
-\noindent where $E_{0}$ is the field intensity.
-So,  the surface DSP along
-direction \emph{i} as
-
-\begin{equation}
-    D^{i}(\omega) = \frac{-2i \zeta^{ixy} (\omega)}{\hbar \left[
-    \xi^{xx}(\omega) + \xi^{yy}(\omega) \right] /2 } \label{eq:D^i},
-\end{equation}
-
-\noindent where $\zeta^{ixy} (\omega)$ and $\xi^{aa}(\omega)$ are the surface
-spin injection rate tensor components and the diagonal components of the
-surface carrier generation rate tensor, respectively, and the indexes
-\emph{i},\emph{j},\emph{k} denote Cartesian coordinates.
-
- In a first approximations it is 
-possible to generate spin-polarized electrons, from the valence to the
-conduction bands, along the $\hat{i}$, $\hat{j}$, and $\hat{k}$ directions with
-incident light on the surface plane. The total DSP can be obtained by the
-relation
-
-\begin{equation}
-    \left|{D^{\text{T}}}\right| = \sqrt{  D_{x}^{2} +  D_{y}^{2} +  D_{z}^{2} },
-\end{equation}
-
-\noindent where the dependence in frequency, $\omega$, has been omitted.
-
+\begin{changed}
 \subsection{Optical current injection}
 
-The optical current injection (OCI) is a second-order nonlinear effect that takes place in non-centrosymmetric structures \cite{nastos2006optical,cabellos2011optical,bhat2005excitonic,fraser1999quantum}. The photocurrent can be injected with a single optical beam and is produced by the interference of one photon-absorption processes associated with different linear polarizations of light \cite{sipe2000second}. Also called  \emph{circular photovoltaic effect} the OCI occurs in a non-centrosymmetric media when it is photoexcited with CPL, producing an interference effect in the excitation pathways, and resulting in an asymmetric population of the injected carriers in reciprocal space and, therefor, a photocurrent. This photocurrent phenomena has been studied in bulk semiconductors, one dimensional (1D) nanotubes
-\cite{mele2000coherent,kral2000photogalvanic}, and two dimensional (2D) surfaces \cite{mele2000coherent}.
+The optical current injection (OCI) is a second-order nonlinear effect that takes place in non-centrosymmetric materials \cite{nastos2006optical,cabellos2011optical,bhat2005excitonic,fraser1999quantum}. The current can be produced with a single optical beam of CPL via the interference of one photon-absorption processes from different linear polarizations of light \cite{sipe2000second}.
 
-\begin{changed}
+This photocurrent effect has been studied in bulk semiconductors, one dimensional (1D) nanotubes \cite{mele2000coherent,kral2000photogalvanic}, and two dimensional (2D) surfaces \cite{mele2000coherent}.
+
 The one-photon current injection is characterized by the current injection tensor, $\eta(0;\omega,-\omega)$ which is a particular case of $\eta(\omega_{1}-\omega_{2};\omega_{1},-\omega_{2})$, where $\omega{1}$ and $\omega{2}$ are the frequencies of the two incoming beams. The frequency dependence of the injection current tensor is expressed as $\eta(\omega)$ instead of $\eta(0;\omega,-\omega)$.
-\end{changed}
 
 Starting from the current density operator (ref. \cite{cabellos2011optical}, eq. 3)
 
 \begin{equation}
     \hat{j}^{i} = \sum_{mn\textbf{k}} j^{i}_{nm}(\textbf{r};\textbf{k}) \hat{c}^{\dagger}_{n\textbf{k}} \hat{c}_{n\textbf{k}},
 \end{equation}
-
-\noindent where $\hat{c}^{\dagger}_{n\textbf{k}} $ ($\hat{c}_{n\textbf{k}} $) creates (annihilates) an electron in a Bloch state $\vert n\textbf{k} \rangle $ and $j^{i}_{nm}(\textbf{r};\textbf{k}) $ are the matrix elements of the current operator they derived the expression for the generation of injection current for surfaces
+where $\hat{c}^{\dagger}_{n\textbf{k}} $ ($\hat{c}_{n\textbf{k}} $) creates (annihilates) an electron in a Bloch state $\vert n\textbf{k} \rangle $ and $j^{i}_{nm}(\textbf{r};\textbf{k}) $ are the matrix elements of the current operator they derived the expression for the generation of injection current for surfaces
 and interfaces. The surface injection current was defined as
 
 \begin{equation}
     \mathbf{\dot{J}}^{i}_{\text{inj}}(\omega) =
-    \eta^{ijk}(\omega)E_{j}(\omega)E_{k}(\omega), \label{eq:eta}
+    \eta^{abc}(\omega)E_{j}(\omega)E_{k}(\omega), \label{eq:eta}
 \end{equation}
-
-\noindent where $\eta^{ijk}(\omega)$ is the surface injection current tensor.
-Thus, according to Eq. \ref{eq:eta}, a photocurrent is optically injected in
-the \emph{i} direction when two polarized electric fields, in the \emph{j} and
-\emph{k} directions, inside over a surface. For a surface system we have that
-{$\eta^{ixy}$} is given by \cite{cabellos2011optical,arzate2014optical}
+where $\eta^{abc}(\omega)$ is the surface injection current tensor. Thus, according to Eq. \ref{eq:eta}, a photocurrent is optically injected in the \emph{i} direction when two polarized electric fields, in the \emph{j} and \emph{k} directions, inside over a surface. For a surface system we have that {$\eta^{ixy}$} is given by \cite{cabellos2011optical,arzate2014optical}
 
 \begin{equation}
-    \eta^{ijk} (\omega) = \ell_{\text{eff}} \times \sum_{\ell=1}^{n_{eff}}
-    \eta_{ijk} (\ell|\omega). \label{eq:etaeff}
+    \eta^{abc} (\omega) = \ell_{\text{eff}} \times \sum_{\ell=1}^{n_{eff}}
+    \eta_{abc} (\ell|\omega). \label{eq:etaeff}
 \end{equation}
+where the sum is made over the number of layers that contributes to the response of the media, $\eta_{abc} (\ell|\omega)$ corresponds to the $\ell_{\text{th}}$-layer contribution to the surface injection current tensor and $\ell_{\text{eff}}$ is the thickness to the total layers that contribute to the response. The tensor $\eta^{abc}(\omega)$ is purely imaginary and has the property of being antisymmetric in the last two Cartesian indices, \emph{j} and \emph{k} \cite{sipe2000second,nastos2006optical}.
 
-\noindent where the sum is made over the number of layers that contributes to
-the response of the media, $\eta_{ijk} (\ell|\omega)$ corresponds to the
-$\ell_{\text{th}}$-layer contribution to the surface injection current tensor
-and $\ell_{\text{eff}}$ is the thickness to the total layers that contribute to
-the response. The tensor $\eta^{ijk}(\omega)$ is purely imaginary and has the
-property of being antisymmetric in the last two Cartesian indices, \emph{j} and
-\emph{k} \cite{sipe2000second,nastos2006optical}.
-
-Taking in account that with CPL is possible to generate current injection
-along the $\hat{i}$, $\hat{j}$, and $\hat{k}$ directions with incident light on
-the surface plane, the total injection current can be obtained in a similar way
-as has been done in Eq. \ref{eq:D^i}
+Taking in account that with CPL is possible to generate current injection along the $\hat{i}$, $\hat{j}$, and $\hat{k}$ directions with incident light on the surface plane, the total injection current can be obtained in a similar way as has been done in Eq. \ref{eq:D^i}
 
 \begin{equation}
     \left|{\eta^{\text{T}}}\right| = \sqrt{ \eta_{xxy}^{2} +
     \eta_{yxy}^{2} + \eta_{zxy}^{2} },
 \end{equation}
+where the dependence in frequency, $\omega$, has been omitted again.
 
-\noindent where the dependence in frequency, $\omega$, has been omitted again.
-
-The units of both $\mathbf{\dot{J}}^{i}_{\text{inj}}(\omega)$ and $\eta^{ijk}
-(\omega)$  are those of their bulk equivalents times $\ell_{\text{eff}}$
-expressed in the corresponding units to report \cite{cabellos2011optical}.
+The units of both $\mathbf{\dot{J}}^{i}_{\text{inj}}(\omega)$ and $\eta^{abc}(\omega)$ are those of their bulk equivalents times $\ell_{\text{eff}}$ expressed in the corresponding units to report \cite{cabellos2011optical}.
+\end{changed}
 
 
 \subsection{Second-harmonic generation}
 
-SHG, also called frequency doubling, is a particular case of the nonlinear optical process of sum of frequency in which photons of same frequency are annihilated to produce a new photon with twice frequency and energy and half of wavelength of the initial photons. This phenomena occurs when light beams from coherent sources inside over a nonlinear media that does not present inversion of symmetry \cite{bloembergen1962light,anderson2015theory,salazar2014molecular,sipe2000second}.
+SHG is a particular case of the nonlinear optical process of sum of frequency in which photons of same frequency are annihilated to produce a new photon with twice the frequency and energy and half of the wavelength of the initial photons. This phenomena occurs when light beams from coherent sources inside over a nonlinear media that does not present inversion of symmetry \cite{bloembergen1962light,anderson2015theory,sipe2000second}.
 
 Recently, in reference \cite{anderson2015theory} was developed a new formalism to calculate the second order susceptibility which includes the scissors correction, needed to have the correct value of the energy band gap; the contribution of the nonlocal part of the pseudopotentials, frequently used in \emph{ab initio} band-structure calculations; and the derivation for the inclusion of the cut function, used to extract the surface response. According to that we have the expressions for the imaginary part of the interband contributions (\emph{i}) and intraband (\emph{e}) for $1\omega$ and $2\omega$
 
 \begin{subequations}\label{eq:chis}
-    \begin{equation}
-        \mathrm{Im}[\chi^{\mathrm{a}\mathrm{b}\mathrm{c}}_{e,\omega}]= 
-        \frac{\pi |e|^3}{2\hbar^2}
-        \int \frac{dk^3}{8\pi^3}
-        \sum_{vc}\sum_{q\neq(v,c)}\frac{1}{\omega^\Sigma_{cv}}
-        \left[
-        \frac{\mathrm{Im}[\mathcal{V}^{\Sigma,\mathrm{a}}_{qc}\{r^{\mathrm{b}}_
-        {cv}r^{\mathrm{c}}_{vq}\}]} {(2\omega^\Sigma_{cv}-\omega^\Sigma_{cq})} 
-        -\frac{\mathrm{Im}[\mathcal{V}^{\Sigma,\mathrm{a}}_{vq}\{r^{\mathrm{c}}
-        _{qc}r^{\mathrm{b}}_{cv}\}]} {(2\omega^\Sigma_{cv}-\omega^\Sigma_{qv})}
-        \right]\delta(\omega^\Sigma_{cv}-\omega),
-    \end{equation}  
-    \begin{equation}
-        \mathrm{Im}[\chi^{\mathrm{a}\mathrm{b}\mathrm{c}}_{i,\omega}]= 
-        \frac{\pi\vert e\vert^3}{2\hbar^2}
-        \int \frac{dk^3}{8\pi^3}
-        \sum_{cv}\frac{1}{(\omega^\Sigma_{cv})^{2}}
-        \left[
-        \mathrm{Re}\left[\left\{r^{\mathrm{b}}_{cv}\left(\mathcal{V}^
-        {\Sigma,\mathrm{a}}_{vc}\right)_{;k^{\mathrm{c}}}\right\}\right]
-        +\frac{\mathrm{Re}\left[\mathcal{V}^{\Sigma,\mathrm{a}}_{vc}\left\{
-        r^{\mathrm{b}}_{cv}
-        \Delta^{\mathrm{c}}_{cv}\right\}\right]}{\omega^\Sigma_{cv}} 
-        \right]\delta(\omega^\Sigma_{cv}-\omega),
-    \end{equation}
-    \begin{equation}
-        \mathrm{Im}[\chi^{\mathrm{a}\mathrm{b}\mathrm{c}}_{e,2\omega}]= 
-        -\frac{\pi |e|^3}{2\hbar^2}
-        \int \frac{dk^3}{8\pi^3}
-        \sum_{vc}\frac{4}{\omega^\Sigma_{cv}}
-        \left[
-        \sum_{v'\ne
-          v}\frac{\mathrm{Im}[\mathcal{V}^{\Sigma,\mathrm{a}}_{vc}\{r^{\mathrm{
-        b}}_{cv'}r^{\mathrm{c}}_{v'v}\}]}
-        {2\omega^\Sigma_{cv'}-\omega^\Sigma_{cv}}
-        - \sum_{c'\ne
-          c}\frac{\mathrm{Im}[\mathcal{V}^{\Sigma,\mathrm{a}}_{vc}\{r^
-          {\mathrm{c}}_{cc'}r^{\mathrm{b}}_{c'v}\}]}
-        {2\omega^\Sigma_{c'v}-\omega^\Sigma_{cv}}
-        \right]\delta(\omega^\Sigma_{cv}-2\omega),
-    \end{equation}
-    \begin{equation}
-        \mathrm{Im}[\chi^{\mathrm{a}\mathrm{b}\mathrm{c}}_{i,2\omega}]= 
-         \frac{\pi \vert
-           e\vert^{3}}{2\hbar^2}
-        \int \frac{dk^3}{8\pi^3}
-        \sum_{vc}\frac{4}{(\omega^\Sigma_{cv})^{2}}
-        \left[\mathrm{Re}\left[\mathcal{V}^{\Sigma,\mathrm{a}}_{vc}\left\{
-        \left(r^{\mathrm{b}}_{cv}\right)_{;k^{\mathrm{c}}}
-        \right\}\right] -
-        \frac{2\mathrm{Re}\left[\mathcal{V}^{\Sigma,\mathrm{a}}_{vc}\left\{
-        r^{\mathrm{b}}_{cv}
-        \Delta^{\mathrm{c}}_{cv}\right\}\right]}{\omega^\Sigma_{cv}}\right]
-        \delta(\omega^\Sigma_{cv}-2\omega)
-        .
-    \end{equation}
+\begin{equation}
+\mathrm{Im}[\chi^{\mathrm{a}\mathrm{b}\mathrm{c}}_{e,\omega}]= 
+\frac{\pi |e|^3}{2\hbar^2}
+\int \frac{dk^3}{8\pi^3}
+\sum_{vc}\sum_{q\neq(v,c)}\frac{1}{\omega^\Sigma_{cv}}
+\left[
+\frac{\mathrm{Im}[\mathcal{V}^{\Sigma,\mathrm{a}}_{qc}\{r^{\mathrm{b}}_
+{cv}r^{\mathrm{c}}_{vq}\}]} {(2\omega^\Sigma_{cv}-\omega^\Sigma_{cq})} 
+-\frac{\mathrm{Im}[\mathcal{V}^{\Sigma,\mathrm{a}}_{vq}\{r^{\mathrm{c}}
+_{qc}r^{\mathrm{b}}_{cv}\}]} {(2\omega^\Sigma_{cv}-\omega^\Sigma_{qv})}
+\right]\delta(\omega^\Sigma_{cv}-\omega),
+\end{equation}  
+\begin{equation}
+\mathrm{Im}[\chi^{\mathrm{a}\mathrm{b}\mathrm{c}}_{i,\omega}]= 
+\frac{\pi\vert e\vert^3}{2\hbar^2}
+\int \frac{dk^3}{8\pi^3}
+\sum_{cv}\frac{1}{(\omega^\Sigma_{cv})^{2}}
+\left[
+\mathrm{Re}\left[\left\{r^{\mathrm{b}}_{cv}\left(\mathcal{V}^
+{\Sigma,\mathrm{a}}_{vc}\right)_{;k^{\mathrm{c}}}\right\}\right]
++\frac{\mathrm{Re}\left[\mathcal{V}^{\Sigma,\mathrm{a}}_{vc}\left\{
+r^{\mathrm{b}}_{cv}
+\Delta^{\mathrm{c}}_{cv}\right\}\right]}{\omega^\Sigma_{cv}} 
+\right]\delta(\omega^\Sigma_{cv}-\omega),
+\end{equation}
+\begin{equation}
+\mathrm{Im}[\chi^{\mathrm{a}\mathrm{b}\mathrm{c}}_{e,2\omega}]= 
+-\frac{\pi |e|^3}{2\hbar^2}
+\int \frac{dk^3}{8\pi^3}
+\sum_{vc}\frac{4}{\omega^\Sigma_{cv}}
+\left[
+\sum_{v'\ne
+  v}\frac{\mathrm{Im}[\mathcal{V}^{\Sigma,\mathrm{a}}_{vc}\{r^{\mathrm{
+b}}_{cv'}r^{\mathrm{c}}_{v'v}\}]}
+{2\omega^\Sigma_{cv'}-\omega^\Sigma_{cv}}
+- \sum_{c'\ne c}\frac{\mathrm{Im}[\mathcal{V}^{\Sigma,\mathrm{a}}_{vc}\{r^
+{\mathrm{c}}_{cc'}r^{\mathrm{b}}_{c'v}\}]}
+{2\omega^\Sigma_{c'v}-\omega^\Sigma_{cv}}
+\right]\delta(\omega^\Sigma_{cv}-2\omega),
+\end{equation}
+\begin{equation}
+\mathrm{Im}[\chi^{\mathrm{a}\mathrm{b}\mathrm{c}}_{i,2\omega}]= 
+ \frac{\pi \vert
+   e\vert^{3}}{2\hbar^2}
+\int \frac{dk^3}{8\pi^3}
+\sum_{vc}\frac{4}{(\omega^\Sigma_{cv})^{2}}
+\left[\mathrm{Re}\left[\mathcal{V}^{\Sigma,\mathrm{a}}_{vc}\left\{
+\left(r^{\mathrm{b}}_{cv}\right)_{;k^{\mathrm{c}}}
+\right\}\right] -
+\frac{2\mathrm{Re}\left[\mathcal{V}^{\Sigma,\mathrm{a}}_{vc}\left\{
+r^{\mathrm{b}}_{cv}
+\Delta^{\mathrm{c}}_{cv}\right\}\right]}{\omega^\Sigma_{cv}}\right]
+\delta(\omega^\Sigma_{cv}-2\omega)
+.
+\end{equation}
 \end{subequations}
 
 \noindent Here, the factor of 2 for spin degeneracy is not included and the real part of each contribution can be obtained through a Kramers-Kronig transformation \cite{tancogne2014effect} and
@@ -334,17 +324,7 @@ Recently, in reference \cite{anderson2015theory} was developed a new formalism t
     .
 \end{equation}
 
-As made before, in Eq. \ref{eq:chis} and \ref{eq:chitotal} the dependence in
-frequency, $\omega$, has been omitted. For our case in Eq. \ref{eq:chis}, the
-expression $\mathcal{V}^{\Sigma}$ corresponds to the sum of the LDA and 
-non-local velocity matrix elements, $r^{\mathrm{a}} $ are the position matrix
-elements and $\Delta^{a}_{nm} = v^{\text{LDA},a}_{nn} - v^{\text{LDA},a}_{mm}
-$. To accomplish the required intrinsic permutation symmetry, the \{\} notation
-symmetrizes the $bc$ Cartesian indices, i.e., $\{u^{b}s^{c}\} = (u^{b}s^{c} +
-u^{c}s^{b})/{2}$ and so, $\chi^{abc} = \chi^{acb}$. The units of $\chi^{ijk} $,
-again, are those of their bulk equivalents times $\ell_{\text{eff}}$ expressed
-in the corresponding units to report. For full details read the appendix of
-Ref. \cite{anderson2015theory}.
+As made before, in Eq. \ref{eq:chis} and \ref{eq:chitotal} the dependence in frequency, $\omega$, has been omitted. For our case in Eq. \ref{eq:chis}, the expression $\mathcal{V}^{\Sigma}$ corresponds to the sum of the LDA and non-local velocity matrix elements, $r^{\mathrm{a}} $ are the position matrix elements and $\Delta^{a}_{nm} = v^{\text{LDA},a}_{nn} - v^{\text{LDA},a}_{mm} $. To accomplish the required intrinsic permutation symmetry, the \{\} notation symmetrizes the $bc$ Cartesian indices, i.e., $\{u^{b}s^{c}\} = (u^{b}s^{c} + u^{c}s^{b})/{2}$ and so, $\chi^{abc} = \chi^{acb}$. The units of $\chi^{abc} $, again, are those of their bulk equivalents times $\ell_{\text{eff}}$ expressed in the corresponding units to report. For full details read the appendix of Ref. \cite{anderson2015theory}.
 
 
 \section{Results}\label{sec:results}
@@ -406,7 +386,7 @@ the energy eigenvalues and matrix elements were calculated using 14452 and 8452
 \subfloat[]{\includegraphics[width=0.45\textwidth]{up/up_shg_final_abs_sm.eps}}
 \caption{(Color online) Spectra of the absolute value of SHG for the C$_{16}$H$_{8}$-alt 
     and C$_{16}$H$_{8}$-up structures corresponding to the sum of the absolute 
-    value for the non zero real and imaginary components of $\chi^{ijk}(2\omega;\omega,
+    value for the non zero real and imaginary components of $\chi^{abc}(2\omega;\omega,
     \omega) $ tensor.\label{fig:shg-abs-both}}
 \end{figure}
 
@@ -448,7 +428,7 @@ of the maximum current injection reported for different structures.
 
 In Fig. \ref{fig:shg-abs-both}  we show the absolute value of the  spectra obtained
 for the SHG of the \emph{alt} and \emph{up} systems when we evaluated the $
-\chi^{ijk}(2\omega;\omega\omega) $ tensor. We can see
+\chi^{abc}(2\omega;\omega\omega) $ tensor. We can see
 that for the \emph{alt} structure an absolute
 maximum of the SHG spectra is reached at 0.4\,eV with a value of
 0.6$\times10^{6} $\,pm$^{2}$/V for the $\chi^{yxx} $ component produced
@@ -519,7 +499,7 @@ different structures.
     \label{tab:shgcomp}
     \centering
     \begin{tabular}{lcccc}
-    Structure & Energy & \multicolumn{2}{c}{$\chi^{ijk} $} &  Reference\\
+    Structure & Energy & \multicolumn{2}{c}{$\chi^{abc} $} &  Reference\\
     \cline{3-4}
               & [eV]   & component & [$10^{6} $ pm$^{2}$/V ] \\
     \hline
