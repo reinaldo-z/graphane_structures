@@ -14,8 +14,8 @@ set style line 8  linetype 1 linecolor rgb "#b58900"  linewidth 1 #yellow
 set xtics nomirror
 set ytics nomirror
 
-set xlabel "Photon Energy (eV)"
-set ylabel "$\\eta^{ixy}(\\omega)$ \\ \\ [mC$^{3}$/J$^{2}$s$^{2}$]"
+set xlabel "{\\large Photon Energy (eV)}"
+set ylabel "{\\large $\\eta^{ixy}(\\omega)$ \\ \\ [mC$^{3}$/J$^{2}$s$^{2}$]}"
 
 #z lenght of layer [Angstroms (la) & meters (lm)]
 la=2.766410479
@@ -26,7 +26,7 @@ set ytics nomirror
 
 # set xzeroaxis lw 1 lt 2 lc 0
 set xzeroaxis lw 1 lt 2 lc 0
-set label 1 "C$_{16}$H$_{8}$-up"   at 0.025,-22 
+set label 1 "{\\large C$_{16}$H$_{8}$-up}"   at 0.025,-22 
 
 
 #######   THREE IN ONE PLOT 
@@ -35,9 +35,9 @@ set label 1 "C$_{16}$H$_{8}$-up"   at 0.025,-22
 set xrange [0.0:0.25]
 
 set output "up_eta_kk_final.tex"
-p   "eta2.kk_xxy_yxy_zxy_8452_40-spin_scissor_0_Nc_18" u 1:($2*lm) title "$\\eta^{xxy}$" w l lw 3.0 dt 6 lc rgb "red",\
+p   "eta2.kk_xxy_yxy_zxy_8452_40-spin_scissor_0_Nc_18" u 1:($2*lm) title "$\\eta^{xxy}$" w l lw 3.5 dt 6 lc rgb "red",\
     "eta2.kk_xxy_yxy_zxy_8452_40-spin_scissor_0_Nc_18" u 1:($3*lm) title "$\\eta^{yxy}$" w l lw 1.5 dt 1 lc rgb "blue",\
-    "eta2.kk_xxy_yxy_zxy_8452_40-spin_scissor_0_Nc_18" u 1:($4*lm) title "$\\eta^{zxy}$" w l lw 3.0 dt 4 lc rgb "green",\
+    "eta2.kk_xxy_yxy_zxy_8452_40-spin_scissor_0_Nc_18" u 1:($4*lm) title "$\\eta^{zxy}$" w l lw 3.5 dt 7 lc rgb "dark-green",\
 
 unset label 1
 
