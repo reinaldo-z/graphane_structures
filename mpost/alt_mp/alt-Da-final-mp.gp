@@ -1,15 +1,14 @@
-# set terminal epslatex color colortext standalone
-set terminal mp color solid latex 11
+set terminal mp color dashed latex 11
 set xlabel "Photon Energy (eV)"
 
-set style line 1  linetype 1 linecolor rgb "#6c71c4"  linewidth 1 #violet
-set style line 2  linetype 1 linecolor rgb "#859900"  linewidth 1 #green
-set style line 3  linetype 1 linecolor rgb "#cb4b16"  linewidth 1 #orange
-set style line 4  linetype 1 linecolor rgb "#2aa198"  linewidth 1 #cyan
-set style line 5  linetype 1 linecolor rgb "#dc322f"  linewidth 1 #red
-set style line 6  linetype 1 linecolor rgb "#268bd2"  linewidth 1 #blue
-set style line 7  linetype 1 linecolor rgb "#d33682"  linewidth 1 #magenta
-set style line 8  linetype 1 linecolor rgb "#b58900"  linewidth 1 #yellow
+# set style line 1  linetype 1 linecolor rgb "#6c71c4"  linewidth 1 #violet
+# set style line 2  linetype 1 linecolor rgb "#859900"  linewidth 1 #green
+# set style line 3  linetype 1 linecolor rgb "#cb4b16"  linewidth 1 #orange
+# set style line 4  linetype 1 linecolor rgb "#2aa198"  linewidth 1 #cyan
+# set style line 5  linetype 1 linecolor rgb "#dc322f"  linewidth 1 #red
+# set style line 6  linetype 1 linecolor rgb "#268bd2"  linewidth 1 #blue
+# set style line 7  linetype 1 linecolor rgb "#d33682"  linewidth 1 #magenta
+# set style line 8  linetype 1 linecolor rgb "#b58900"  linewidth 1 #yellow
 
 set xtics nomirror
 set ytics nomirror
@@ -22,6 +21,6 @@ set yrange [*:*]
 set key title ""
 set ylabel "$D^{i}$"
 
-p   "../../alt/dsp.kk_x_14452_65-spin_scissor_0_Nc_18" u 1:(2*$4/($2+$3+1.e-10)) title "$D^{x}$" w l ls 2,\
-    "../../alt/dsp.kk_y_14452_65-spin_scissor_0_Nc_18" u 1:(2*$4/($2+$3+1.e-10)) title "$D^{y}$" w l ls 5,\
-    "../../alt/dsp.kk_z_14452_65-spin_scissor_0_Nc_18" u 1:(2*$4/($2+$3+1.e-10)) title "$D^{z}$" w l ls 4,\
+p   "../../alt/dsp.kk_x_14452_65-spin_scissor_0_Nc_18" u 1:(2*$4/($2+$3+1.e-10)) title "$D^{x}$" w l lw 1.5 dt 1 lc rgb "red" ,\
+    "../../alt/dsp.kk_y_14452_65-spin_scissor_0_Nc_18" u 1:(2*$4/($2+$3+1.e-10)) title "$D^{y}$" w l lw 1.5 dt 2 lc rgb "green" ,\
+    "../../alt/dsp.kk_z_14452_65-spin_scissor_0_Nc_18" u 1:(2*$4/($2+$3+1.e-10)) title "$D^{z}$" w l lw 1.5 dt 7 lc rgb "blue" ,\

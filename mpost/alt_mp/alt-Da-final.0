@@ -2,7 +2,7 @@
 %%BoundingBox: 4 3 354 208 
 %%HiResBoundingBox: 4.8251 3.47873 353.85983 207.54227 
 %%Creator: MetaPost 1.902
-%%CreationDate: 2015.07.26:2313
+%%CreationDate: 2015.07.28:1841
 %%Pages: 1
 %*Font: cmr10 9.96265 9.96265 28:c6ff80040082000583284
 %*Font: cmmi10 9.96265 9.96265 44:8
@@ -103,7 +103,7 @@ gsave [0 1 -1 0 9.4397 124.10533 ] concat 0 0 moveto
 (D) cmmi10 9.96265 fshow
 291.77711 193.50346 moveto
 (x) cmmi7 6.97385 fshow
- 0.5216 0.6 0 setrgbcolor
+ 1 0 0 setrgbcolor 0 0.90001 dtransform truncate idtransform setlinewidth pop
 newpath 302.61308 193.29196 moveto
 330.87337 193.29196 lineto stroke
 newpath 49.9205 121.50124 moveto
@@ -212,7 +212,7 @@ newpath 49.9205 121.50124 moveto
 (D) cmmi10 9.96265 fshow
 292.00421 181.41335 moveto
 (y) cmmi7 6.97385 fshow
- 0.8627 0.1961 0.1843 setrgbcolor
+ 0 1 0 setrgbcolor [2 2 ] 0 setdash
 newpath 302.61308 181.20184 moveto
 330.87337 181.20184 lineto stroke
 newpath 49.9205 121.50124 moveto
@@ -321,7 +321,7 @@ newpath 49.9205 121.50124 moveto
 (D) cmmi10 9.96265 fshow
 292.2026 169.32323 moveto
 (z) cmmi7 6.97385 fshow
- 0.1647 0.6314 0.5961 setrgbcolor
+ 0 0 1 setrgbcolor [4 4 0.4 4 ] 0 setdash
 newpath 302.61308 169.11172 moveto
 330.87337 169.11172 lineto stroke
 newpath 49.9205 121.50124 moveto
@@ -425,7 +425,8 @@ newpath 49.9205 121.50124 moveto
 336.66342 122.07124 lineto
 339.57346 121.98125 lineto
 342.51349 121.83124 lineto stroke
- 0 0 0 setrgbcolor
+ 0 0 0 setrgbcolor 0 0.6 dtransform truncate idtransform setlinewidth pop
+ [] 0 setdash
 newpath 49.9205 204.33208 moveto
 49.9205 38.6704 lineto
 342.51349 38.6704 lineto
