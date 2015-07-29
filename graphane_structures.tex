@@ -128,7 +128,7 @@ and \emph{up} structures. Finally, we give our conclusions in Sec.
 \section{Theory}\label{sec:theory}
 
 \begin{changed}
-In this section we\ldots
+In this section we present the scheme used to calculate the DSP, OCI and SHG. The theory presented here has previously presented and can be applied to surface and bulk systems \cite{nastos2007full,mendoza2012optical,cabellos2011optical,sipe2000second,andersonPRB15}
 \end{changed}
 
 \begin{figure}[t]
@@ -157,49 +157,52 @@ in the conduction bands. It can be calculated with full band structure local-
 density approximation (LDA), and $\textbf{k}\cdot\textbf{p}$ methods
 \cite{nastos2007full,cabellos2009stress}.
 
-The complete expressions for the DSP are derived in reference
-\cite{mendoza2012optical} for surfaces and interfaces, and we summarize them
-briefly here. We assume an incoming beam of CPL at normal incidence that
+The complete expressions for the DSP are derived in references
+\cite{mendoza2012optical,nastos2007full} for bulk, surfaces, and interfaces, 
+and we summarize them briefly here. 
+
+The spin and carrier generation rate can be described by 
+
+\begin{changed}
+\begin{align*}
+\dot{S}^{a}(\omega) &= \zeta^{abc}(\omega)E^{b}(-\omega)E^{c}(\omega), \nonumber \\ 
+\dot{n}(\omega)     &= \xi^{bc}E^{b}(-\omega)E^{c}(\omega)
+\end{align*}
+where $\zeta^{abc}$ is the tensor used to calculate the spin generation 
+rate and is given by
+
+\begin{align}\label{eq:zeta}
+\zeta^{abc} &= \frac{i\pi e^{2}}{\hbar^{2}}\int\frac{d^{3}k}{8\pi^{3}}
+\sum_{vcc'}^{\prime}\text{Im}\bigl[S^{a}_{c'c}(\textbf{k})
+r^{b}_{vc'}(\textbf{k})r^{c}_{cv}(\textbf{k})\nonumber\\
+&\qquad+S^{a}_{cc'}(\textbf{k})
+r^{b}_{vc}(\textbf{k})r^{c}_{c'v}(\textbf{k})\bigr]
+\delta(\omega_{cv}(\textbf{k})-\omega),
+\end{align}
+where $S$ and $r$ are the spin and position matrix elements and $\xi^{bc}$ is related to the imaginary part of the linear optical response tensor. The $abc$ superscripts denote the Cartesian coordinates and the expression of Eq. \eqref{eq:zeta} satisfies the $\zeta^{abc}(\omega) = -\zeta^{acb}(\omega)$ condition.
+
+We assume an incoming beam of CPL at normal incidence that
 propogates along the $-z$ direction, $\mathbf{E}(\omega) = E_{0}(\hat{x} -
-i\hat{y})/\sqrt{2}$. The degree of spin polarization for this beam is
-expressed as
+i\hat{y})/\sqrt{2}$. The DSP along a given $a$ direction is defined as $D^{a}=\dot{S}^{a}(\omega)/(\hbar/2)\dot{n}(\omega)$ and then 
+\end{changed}
 
 \begin{equation}\label{eq:D^i}
 D^{a}(\omega) = 
 \frac{-4i\zeta^{axy}(\omega)}
     {\hbar\left[\xi^{xx}(\omega) + \xi^{yy}(\omega)\right]},
 \end{equation}
-where $\zeta^{axy} (\omega)$ and $\xi^{aa}(\omega)$ are the 
 \begin{changed}
-surface spin injection rate tensor components and the diagonal components of
-the surface carrier generation rate tensor, respectively.
 \end{changed} 
-and the $abc$ superscripts denote the Cartesian coordinates. The spin
-injection tensor is
+From Eq. \ref{eq:D^i} we have that the spin
+injection tensor is given by
 
-\begin{align}\label{eq:zeta}
-\zeta^{abc} &= \frac{i\pi e^{2}}{\hbar^{2}}\int\frac{d^{3}k}{8\pi^{3}}
-\sum_{vcc'}^{\prime}\text{Im}\bigl[\mathcal{S}^{i}_{c'c}(\textbf{k})
-r^{j}_{vc'}(\textbf{k})r^{k}_{cv}(\textbf{k})\nonumber\\
-&\qquad+\mathcal{S}^{i}_{cc'}(\textbf{k})
-r^{j}_{vc}(\textbf{k})r^{k}_{c'v}(\textbf{k})\bigr]
-\delta(\omega_{cv}(\textbf{k})-\omega),
-\end{align}
-where $\mathcal{S}$ and $r$ are the spin and position matrix elements. The
-expression of Eq. \eqref{eq:zeta} satisfies the $\zeta^{abc}(\omega) =
--\zeta^{acb}(\omega)$ condition.
+
 
 % \begin{equation*}
 % \mathbf{E}(\omega) = E_{0}(\hat{x} - i\hat{y})/\sqrt{2}, 
 % \end{equation*}
 % where $E_{0}$ is the incoming field intensity. Finally, we write the surface
 % DSP in the \emph{i} direction as
-
-\begin{changed}
-\begin{equation*}
-\dot{S}^{i}(\omega) = \zeta^{abc}(\omega)E^{j}(-\omega)E^{k}(\omega),
-\end{equation*}
-\end{changed}
 
 
 It is generally possible to generate spin-polarized electrons along all three
