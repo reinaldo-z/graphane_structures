@@ -179,7 +179,7 @@ r^{b}_{vc'}(\textbf{k})r^{c}_{cv}(\textbf{k})\nonumber\\
 r^{b}_{vc}(\textbf{k})r^{c}_{c'v}(\textbf{k})\bigr]
 \delta(\omega_{cv}(\textbf{k})-\omega),
 \end{align}
-where $S$ and $r$ are the spin and position matrix elements and $\xi^{bc}$ is related to the imaginary part of the linear optical response tensor. The $abc$ superscripts denote the Cartesian coordinates and the expression of Eq. \eqref{eq:zeta} satisfies the $\zeta^{abc}(\omega) = -\zeta^{acb}(\omega)$ condition.
+where $S^{n}$ and $r^{n}$ are the spin and position matrix elements and $\xi^{bc}$ is related to the imaginary part of the linear optical response tensor. The $abc$ superscripts denote the Cartesian coordinates and the expression of Eq. \eqref{eq:zeta} satisfies the $\zeta^{abc}(\omega) = -\zeta^{acb}(\omega)$ condition.
 
 We assume an incoming beam of CPL at normal incidence that propogates along the $-z$ direction, $\mathbf{E}(\omega) = E_{0}(\hat{x} - i\hat{y})/\sqrt{2}$. The DSP along a given $a$ direction is defined as $D^{a}=\dot{S}^{a}(\omega)/(\hbar/2)\dot{n}(\omega)$ and then we have
 \end{changed}
@@ -220,7 +220,7 @@ where $\eta^{abc}(\omega)$ is the surface injection current tensor and is given 
 \Delta^{a}_{cv}(\mathbf{k})\text{Im}\large[r^{b}_{cv}(\mathbf{k})\times
 \\ & r^{c}_{cv}(\mathbf{k})\large]\delta(\omega_{cv}(\mathbf{k})-\omega)
 \end{align*}
-where $r$ are the position matrix elements and 
+where $r^{n}$ are the position matrix elements and 
 \begin{equation*}
 \Delta^{a}_{cv} = v^{a}_{cc}(\mathbf{k})-v^{a}_{vv}(\mathbf{k})
 \end{equation*}
@@ -241,67 +241,93 @@ The tensor $\eta^{abc}(\omega)$ is purely imaginary and has the property of bein
 
 SHG is a particular case of the nonlinear optical process of sum of frequency in which photons of same frequency are annihilated to produce a new photon with twice the frequency and energy and half of the wavelength of the initial photons. This phenomena occurs when light beams from coherent sources inside over a nonlinear media that does not present inversion of symmetry \cite{bloembergen1962light,anderson2015theory,sipe2000second}.
 
-Recently, in reference \cite{anderson2015theory} was developed a new formalism to calculate the second order susceptibility which includes the scissors correction, needed to have the correct value of the energy band gap; the contribution of the nonlocal part of the pseudopotentials, frequently used in \emph{ab initio} band-structure calculations; and the derivation for the inclusion of the cut function, used to extract the surface response. According to that we have the expressions for the imaginary part of the interband contributions (\emph{i}) and intraband (\emph{e}) for $1\omega$ and $2\omega$
+Recently, in reference \cite{anderson2015theory} was developed a new formalism to calculate the second order susceptibility which includes the scissors correction, needed to have the correct value of the energy band gap; the contribution of the nonlocal part of the pseudopotentials, frequently used in \emph{ab initio} band-structure calculations; and the derivation for the inclusion of the cut function, used to extract the surface response. Again we summarize that work here.
+
+The second order nonlinear polarization is given by 
+
+\begin{equation*}
+\mathcal{P}(2\omega) = \chi^{abc}(-2\omega;\omega,\omega)E^{b}(\omega)E^{c}(\omega)
+\end{equation*}
+where $\chi^{abc}(-2\omega;\omega,\omega)$ is the nonlinear susceptibility tensor responsible for the SHG and satisfies the $\chi^{abc}(-2\omega;\omega,\omega)$ = $\chi^{acb}(-2\omega;\omega,\omega)$ condition. The superscripts $abc$ denote Cartesian components and if repeated are to be summed over. 
+
+The expressions for the imaginary part of the $\chi^{abc}$ for the interband contributions (\emph{i}) and intraband (\emph{e}) for $1\omega$ and $2\omega$ are given by
 
 \begin{subequations}\label{eq:chis}
-\begin{equation}
-\mathrm{Im}[\chi^{\mathrm{a}\mathrm{b}\mathrm{c}}_{e,\omega}]= 
+\begin{align}
+&\mathrm{Im}[\chi^{\mathrm{a}\mathrm{b}\mathrm{c}}_{e,\omega}] =  
 \frac{\pi |e|^3}{2\hbar^2}
-\int \frac{dk^3}{8\pi^3}
-\sum_{vc}\sum_{q\neq(v,c)}\frac{1}{\omega^\Sigma_{cv}}
+\int \frac{dk^3}{8\pi^3}  
+\nonumber \\
+& \qquad \times \sum_{vc}\sum_{q\neq(v,c)}\frac{1}{\omega^\Sigma_{cv}}
 \left[
-\frac{\mathrm{Im}[\mathcal{V}^{\Sigma,\mathrm{a}}_{qc}\{r^{\mathrm{b}}_
-{cv}r^{\mathrm{c}}_{vq}\}]} {(2\omega^\Sigma_{cv}-\omega^\Sigma_{cq})} 
--\frac{\mathrm{Im}[\mathcal{V}^{\Sigma,\mathrm{a}}_{vq}\{r^{\mathrm{c}}
+\frac{\mathrm{Im}[\mathbf{v}^{\Sigma,\mathrm{a}}_{qc}\{r^{\mathrm{b}}_ 
+{cv}r^{\mathrm{c}}_{vq}\}]} {(2\omega^\Sigma_{cv}-\omega^\Sigma_{cq})} \right.
+\nonumber \\
+& \qquad \qquad \qquad \qquad \quad
+\left. -\frac{\mathrm{Im}[\mathbf{v}^{\Sigma,\mathrm{a}}_{vq}\{r^{\mathrm{c}}
 _{qc}r^{\mathrm{b}}_{cv}\}]} {(2\omega^\Sigma_{cv}-\omega^\Sigma_{qv})}
 \right]\delta(\omega^\Sigma_{cv}-\omega),
-\end{equation}  
-\begin{equation}
-\mathrm{Im}[\chi^{\mathrm{a}\mathrm{b}\mathrm{c}}_{i,\omega}]= 
+\end{align}
+
+\begin{align}
+\mathrm{Im} & [\chi^{\mathrm{a}\mathrm{b}\mathrm{c}}_{i,\omega}]= 
 \frac{\pi\vert e\vert^3}{2\hbar^2}
-\int \frac{dk^3}{8\pi^3}
-\sum_{cv}\frac{1}{(\omega^\Sigma_{cv})^{2}}
-\left[
-\mathrm{Re}\left[\left\{r^{\mathrm{b}}_{cv}\left(\mathcal{V}^
-{\Sigma,\mathrm{a}}_{vc}\right)_{;k^{\mathrm{c}}}\right\}\right]
-+\frac{\mathrm{Re}\left[\mathcal{V}^{\Sigma,\mathrm{a}}_{vc}\left\{
+\int \frac{dk^3}{8\pi^3} 
+\nonumber \\
+& \times \sum_{cv}\frac{1}{(\omega^\Sigma_{cv})^{2}} 
+\Bigg[
+\mathrm{Re}\left[\left\{r^{\mathrm{b}}_{cv}\left(\mathbf{v}^
+{\Sigma,\mathrm{a}}_{vc}\right)_{;k^{\mathrm{c}}}\right\}\right] \atop
+\nonumber \\
+& \qquad \qquad \qquad
++\frac{\mathrm{Re}\left[\mathbf{v}^{\Sigma,\mathrm{a}}_{vc}\left\{
 r^{\mathrm{b}}_{cv}
 \Delta^{\mathrm{c}}_{cv}\right\}\right]}{\omega^\Sigma_{cv}} 
-\right]\delta(\omega^\Sigma_{cv}-\omega),
-\end{equation}
-\begin{equation}
-\mathrm{Im}[\chi^{\mathrm{a}\mathrm{b}\mathrm{c}}_{e,2\omega}]= 
+\Bigg]
+\delta(\omega^\Sigma_{cv}-\omega),
+\end{align}
+
+\begin{align}
+\mathrm{Im}&[\chi^{\mathrm{a}\mathrm{b}\mathrm{c}}_{e,2\omega}]= 
 -\frac{\pi |e|^3}{2\hbar^2}
 \int \frac{dk^3}{8\pi^3}
+\nonumber \\
+& \times 
 \sum_{vc}\frac{4}{\omega^\Sigma_{cv}}
-\left[
-\sum_{v'\ne
-  v}\frac{\mathrm{Im}[\mathcal{V}^{\Sigma,\mathrm{a}}_{vc}\{r^{\mathrm{
+\Bigg[
+\sum_{v'\ne v}\frac{\mathrm{Im}[\mathbf{v}^{\Sigma,\mathrm{a}}_{vc}\{r^{\mathrm{
 b}}_{cv'}r^{\mathrm{c}}_{v'v}\}]}
 {2\omega^\Sigma_{cv'}-\omega^\Sigma_{cv}}
-- \sum_{c'\ne c}\frac{\mathrm{Im}[\mathcal{V}^{\Sigma,\mathrm{a}}_{vc}\{r^
+\nonumber \\ 
+& \qquad \qquad \,\,
+- \sum_{c'\ne c}\frac{\mathrm{Im}[\mathbf{v}^{\Sigma,\mathrm{a}}_{vc}\{r^
 {\mathrm{c}}_{cc'}r^{\mathrm{b}}_{c'v}\}]}
 {2\omega^\Sigma_{c'v}-\omega^\Sigma_{cv}}
-\right]\delta(\omega^\Sigma_{cv}-2\omega),
-\end{equation}
-\begin{equation}
-\mathrm{Im}[\chi^{\mathrm{a}\mathrm{b}\mathrm{c}}_{i,2\omega}]= 
- \frac{\pi \vert
-   e\vert^{3}}{2\hbar^2}
+\Bigg]\delta(\omega^\Sigma_{cv}-2\omega),
+\end{align}
+
+\begin{align}
+\mathrm{Im}&[\chi^{\mathrm{a}\mathrm{b}\mathrm{c}}_{i,2\omega}]= 
+\frac{\pi \vert e\vert^{3}}{2\hbar^2}
 \int \frac{dk^3}{8\pi^3}
+\nonumber \\
+& \times 
 \sum_{vc}\frac{4}{(\omega^\Sigma_{cv})^{2}}
-\left[\mathrm{Re}\left[\mathcal{V}^{\Sigma,\mathrm{a}}_{vc}\left\{
+\Bigg[ 
+\mathrm{Re}\left[\mathbf{v}^{\Sigma,\mathrm{a}}_{vc}\left\{
 \left(r^{\mathrm{b}}_{cv}\right)_{;k^{\mathrm{c}}}
-\right\}\right] -
-\frac{2\mathrm{Re}\left[\mathcal{V}^{\Sigma,\mathrm{a}}_{vc}\left\{
+\right\}\right] 
+\nonumber \\
+& \qquad \qquad \quad
+-\frac{2\mathrm{Re}\left[\mathbf{v}^{\Sigma,\mathrm{a}}_{vc}\left\{
 r^{\mathrm{b}}_{cv}
-\Delta^{\mathrm{c}}_{cv}\right\}\right]}{\omega^\Sigma_{cv}}\right]
+\Delta^{\mathrm{c}}_{cv}\right\}\right]}{\omega^\Sigma_{cv}}
+\Bigg]
 \delta(\omega^\Sigma_{cv}-2\omega)
 .
-\end{equation}
+\end{align}
 \end{subequations}
-
-\noindent Here, the factor of 2 for spin degeneracy is not included and the real part of each contribution can be obtained through a Kramers-Kronig transformation \cite{tancogne2014effect} and
+Here, the factor of 2 for spin degeneracy is not included and the real part of each contribution can be obtained through a Kramers-Kronig transformation \cite{tancogne2014effect} and
 
 \begin{equation}\label{eq:chitotal}
     \chi^{abc} = \chi^{abc}_{e,\omega} + \chi^{abc}_{e,2\omega} +
@@ -309,7 +335,7 @@ r^{\mathrm{b}}_{cv}
     .
 \end{equation}
 
-As made before, in Eq. \ref{eq:chis} and \ref{eq:chitotal} the dependence in frequency, $\omega$, has been omitted. For our case in Eq. \ref{eq:chis}, the expression $\mathcal{V}^{\Sigma}$ corresponds to the sum of the LDA and non-local velocity matrix elements, $r^{\mathrm{a}} $ are the position matrix elements and $\Delta^{a}_{nm} = v^{\text{LDA},a}_{nn} - v^{\text{LDA},a}_{mm} $. To accomplish the required intrinsic permutation symmetry, the \{\} notation symmetrizes the $bc$ Cartesian indices, i.e., $\{u^{b}s^{c}\} = (u^{b}s^{c} + u^{c}s^{b})/{2}$ and so, $\chi^{abc} = \chi^{acb}$. The units of $\chi^{abc} $, again, are those of their bulk equivalents times $\ell_{\text{eff}}$ expressed in the corresponding units to report. For full details read the appendix of Ref. \cite{anderson2015theory}.
+For our case in Eq. \ref{eq:chis}, the expression $\mathbf{v}^{\Sigma}$ corresponds to the sum of the LDA and non-local velocity matrix elements, $r^{\mathrm{n}} $ are the position matrix elements and $\Delta^{a}_{nm} = v^{\text{LDA},a}_{nn} - v^{\text{LDA},a}_{mm} $. To accomplish the required intrinsic permutation symmetry, the \{\} notation symmetrizes the $bc$ Cartesian indices, i.e., $\{u^{b}s^{c}\} = (u^{b}s^{c} + u^{c}s^{b})/{2}$ and so, $\chi^{abc} = \chi^{acb}$.
 
 
 \section{Results}\label{sec:results}
