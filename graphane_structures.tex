@@ -94,9 +94,9 @@ C$_{16}$H$_{8}$-up systems presented in this paper both have 50\%
 hydrogenation and present a band gap.
 
 We focus on three phenomena used for characterizing semiconducting systems:
-the optical spin injection, optical current injection, and second-harmonic
-generation (SHG). The optical spin injection is characterized by the
-adimensional degree of spin polarization (DSP), which is a function of
+the degree of spin polarization (DSP), optical current injection (OCI), and 
+second-harmonic generation (SHG). The optical spin injection is characterized by 
+the adimensional degree of spin polarization (DSP), which is a function of
 frequency. The DSP is the fraction of injected electrons in the conduction
 bands that are spin polarized versus those that are not. There are theoretical
 reports of DSP calculations for bulk media (Si, GaAs, CdSe, and Ge
@@ -158,7 +158,7 @@ density approximation (LDA), and $\textbf{k}\cdot\textbf{p}$ methods
 \cite{nastos2007full,cabellos2009stress}.
 
 The complete expressions for the DSP are derived in references
-\cite{mendoza2012optical,nastos2007full} for bulk, surfaces, and interfaces, 
+\cite{nastos2007full,mendoza2012optical} for bulk, surfaces, and interfaces, 
 and we summarize them briefly here. 
 
 The spin and carrier generation rate can be described by 
@@ -181,9 +181,7 @@ r^{b}_{vc}(\textbf{k})r^{c}_{c'v}(\textbf{k})\bigr]
 \end{align}
 where $S$ and $r$ are the spin and position matrix elements and $\xi^{bc}$ is related to the imaginary part of the linear optical response tensor. The $abc$ superscripts denote the Cartesian coordinates and the expression of Eq. \eqref{eq:zeta} satisfies the $\zeta^{abc}(\omega) = -\zeta^{acb}(\omega)$ condition.
 
-We assume an incoming beam of CPL at normal incidence that
-propogates along the $-z$ direction, $\mathbf{E}(\omega) = E_{0}(\hat{x} -
-i\hat{y})/\sqrt{2}$. The DSP along a given $a$ direction is defined as $D^{a}=\dot{S}^{a}(\omega)/(\hbar/2)\dot{n}(\omega)$ and then 
+We assume an incoming beam of CPL at normal incidence that propogates along the $-z$ direction, $\mathbf{E}(\omega) = E_{0}(\hat{x} - i\hat{y})/\sqrt{2}$. The DSP along a given $a$ direction is defined as $D^{a}=\dot{S}^{a}(\omega)/(\hbar/2)\dot{n}(\omega)$ and then we have
 \end{changed}
 
 \begin{equation}\label{eq:D^i}
@@ -193,65 +191,49 @@ D^{a}(\omega) =
 \end{equation}
 \begin{changed}
 \end{changed} 
-From Eq. \ref{eq:D^i} we have that the spin
-injection tensor is given by
-
-
-
-% \begin{equation*}
-% \mathbf{E}(\omega) = E_{0}(\hat{x} - i\hat{y})/\sqrt{2}, 
-% \end{equation*}
-% where $E_{0}$ is the incoming field intensity. Finally, we write the surface
-% DSP in the \emph{i} direction as
-
 
 It is generally possible to generate spin-polarized electrons along all three
-$\hat{i}$, $\hat{j}$, and $\hat{k}$ directions. The total DSP can be obtained
-as
+$\hat{i}$, $\hat{j}$, and $\hat{k}$ directions. 
+% The total DSP can be obtainedas
 
-\begin{equation*}
-\left|D^{\text{T}}\right| = \sqrt{D_{x}^{2} + D_{y}^{2} + D_{z}^{2}}.
-\end{equation*}
+% \begin{equation*}
+% \left|D^{\text{T}}\right| = \sqrt{D_{x}^{2} + D_{y}^{2} + D_{z}^{2}}.
+% \end{equation*}
 
 
 \begin{changed}
 \subsection{Optical current injection}
+The OCI is a surface-sensitive optical effect that offers the potential for study surfaces, interfaces and the control of chemical reactions. The OCI is a second-order nonlinear effect that takes place in non-centrosymmetric materials \cite{nastos2006optical,cabellos2011optical,bhat2005excitonic,fraser1999quantum}. This current can be produced with a single optical beam of CPL via the interference of one photon-absorption processes from different linear polarizations of light \cite{sipe2000second}. This photocurrent effect has been studied in bulk semiconductors, one dimensional (1D) nanotubes \cite{mele2000coherent,kral2000photogalvanic}, and two dimensional (2D) surfaces \cite{mele2000coherent}.
 
-The optical current injection (OCI) is a second-order nonlinear effect that takes place in non-centrosymmetric materials \cite{nastos2006optical,cabellos2011optical,bhat2005excitonic,fraser1999quantum}. The current can be produced with a single optical beam of CPL via the interference of one photon-absorption processes from different linear polarizations of light \cite{sipe2000second}.
+The complete expressions for the OCI of bulk, surfaces, and interfaces, are derived in references \cite{cabellos2011optical,sipe2000second} and we summarize them here. 
 
-This photocurrent effect has been studied in bulk semiconductors, one dimensional (1D) nanotubes \cite{mele2000coherent,kral2000photogalvanic}, and two dimensional (2D) surfaces \cite{mele2000coherent}.
-
-The one-photon current injection is characterized by the current injection tensor, $\eta(0;\omega,-\omega)$ which is a particular case of $\eta(\omega_{1}-\omega_{2};\omega_{1},-\omega_{2})$, where $\omega{1}$ and $\omega{2}$ are the frequencies of the two incoming beams. The frequency dependence of the injection current tensor is expressed as $\eta(\omega)$ instead of $\eta(0;\omega,-\omega)$.
-
-Starting from the current density operator (ref. \cite{cabellos2011optical}, eq. 3)
+The surface injection current is defined as
 
 \begin{equation}
-    \hat{j}^{i} = \sum_{mn\textbf{k}} j^{i}_{nm}(\textbf{r};\textbf{k}) \hat{c}^{\dagger}_{n\textbf{k}} \hat{c}_{n\textbf{k}},
+\mathbf{\dot{J}}^{i}_{\text{inj}}(\omega) =
+\eta^{abc}(\omega)E_{j}(\omega)E_{k}(\omega), \label{eq:eta}
 \end{equation}
-where $\hat{c}^{\dagger}_{n\textbf{k}} $ ($\hat{c}_{n\textbf{k}} $) creates (annihilates) an electron in a Bloch state $\vert n\textbf{k} \rangle $ and $j^{i}_{nm}(\textbf{r};\textbf{k}) $ are the matrix elements of the current operator they derived the expression for the generation of injection current for surfaces
-and interfaces. The surface injection current was defined as
+where $\eta^{abc}(\omega)$ is the surface injection current tensor and is given by
 
-\begin{equation}
-    \mathbf{\dot{J}}^{i}_{\text{inj}}(\omega) =
-    \eta^{abc}(\omega)E_{j}(\omega)E_{k}(\omega), \label{eq:eta}
-\end{equation}
-where $\eta^{abc}(\omega)$ is the surface injection current tensor. Thus, according to Eq. \ref{eq:eta}, a photocurrent is optically injected in the \emph{i} direction when two polarized electric fields, in the \emph{j} and \emph{k} directions, inside over a surface. For a surface system we have that {$\eta^{ixy}$} is given by \cite{cabellos2011optical,arzate2014optical}
+\begin{align*}
+\eta(\omega) =  \frac{i\pi e^{3}}{\hbar^{2}}\int\frac{d^{3}k}{8\pi^{3}}\sum_{vc}&
+\Delta^{a}_{cv}(\mathbf{k})\text{Im}\large[r^{b}_{cv}(\mathbf{k})\times
+\\ & r^{c}_{cv}(\mathbf{k})\large]\delta(\omega_{cv}(\mathbf{k})-\omega)
+\end{align*}
+where $r$ are the position matrix elements and 
+\begin{equation*}
+\Delta^{a}_{cv} = v^{a}_{cc}(\mathbf{k})-v^{a}_{vv}(\mathbf{k})
+\end{equation*}
+with $v^{a}_{nn}(\mathbf{k})=p^{a}_{nn}(\mathbf{k})/m_{e}$ the electron’s velocity for band $n$.
 
-\begin{equation}
-    \eta^{abc} (\omega) = \ell_{\text{eff}} \times \sum_{\ell=1}^{n_{eff}}
-    \eta_{abc} (\ell|\omega). \label{eq:etaeff}
-\end{equation}
-where the sum is made over the number of layers that contributes to the response of the media, $\eta_{abc} (\ell|\omega)$ corresponds to the $\ell_{\text{th}}$-layer contribution to the surface injection current tensor and $\ell_{\text{eff}}$ is the thickness to the total layers that contribute to the response. The tensor $\eta^{abc}(\omega)$ is purely imaginary and has the property of being antisymmetric in the last two Cartesian indices, \emph{j} and \emph{k} \cite{sipe2000second,nastos2006optical}.
+The tensor $\eta^{abc}(\omega)$ is purely imaginary and has the property of being antisymmetric in the last two Cartesian indices, \emph{j} and \emph{k} \cite{sipe2000second,nastos2006optical}. Also with CPL is possible to generate current injection along the $\hat{i}$, $\hat{j}$, and $\hat{k}$ directions with incident light on the surface plane.
+% the total injection current can be obtained in a similar way as has been done in Eq. \ref{eq:D^i}
 
-Taking in account that with CPL is possible to generate current injection along the $\hat{i}$, $\hat{j}$, and $\hat{k}$ directions with incident light on the surface plane, the total injection current can be obtained in a similar way as has been done in Eq. \ref{eq:D^i}
+% \begin{equation}
+%     \left|{\eta^{\text{T}}}\right| = \sqrt{ \eta_{xxy}^{2} +
+%     \eta_{yxy}^{2} + \eta_{zxy}^{2} },
+% \end{equation}
 
-\begin{equation}
-    \left|{\eta^{\text{T}}}\right| = \sqrt{ \eta_{xxy}^{2} +
-    \eta_{yxy}^{2} + \eta_{zxy}^{2} },
-\end{equation}
-where the dependence in frequency, $\omega$, has been omitted again.
-
-The units of both $\mathbf{\dot{J}}^{i}_{\text{inj}}(\omega)$ and $\eta^{abc}(\omega)$ are those of their bulk equivalents times $\ell_{\text{eff}}$ expressed in the corresponding units to report \cite{cabellos2011optical}.
 \end{changed}
 
 
