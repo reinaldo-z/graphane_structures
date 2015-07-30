@@ -114,7 +114,7 @@ adsorption of atoms, and many others \cite{dadap1997second,%
 daum1993identification,mcgilp1994probing,power1995resonant,%
 godefroy1996electric,salazar2014molecular,chen1981surface,%
 mendoza1998microscopic}. For SHG calculation we followed
-the new formalism developed in Ref. \cite{anderson2015theory} for SHG from
+the new formalism developed in Ref. \cite{andersonPRB15} for SHG from
 semiconductor surfaces.
 
 The organization of the sections of this paper is as follows. In Sec.
@@ -216,9 +216,11 @@ The surface injection current is defined as
 where $\eta^{abc}(\omega)$ is the surface injection current tensor and is given by
 
 \begin{align*}
-\eta(\omega) =  \frac{i\pi e^{3}}{\hbar^{2}}\int\frac{d^{3}k}{8\pi^{3}}\sum_{vc}&
-\Delta^{a}_{cv}(\mathbf{k})\text{Im}\large[r^{b}_{cv}(\mathbf{k})\times
-\\ & r^{c}_{cv}(\mathbf{k})\large]\delta(\omega_{cv}(\mathbf{k})-\omega)
+\eta(\omega) =  \frac{i\pi e^{3}}{\hbar^{2}}&\int\frac{d^{3}k}{8\pi^{3}}
+\nonumber \\
+\times &
+\sum_{vc}\Delta^{a}_{cv}(\mathbf{k})\text{Im}\big[r^{b}_{cv}(\mathbf{k})
+r^{c}_{cv}(\mathbf{k})\big]\delta(\omega_{cv}(\mathbf{k})-\omega)
 \end{align*}
 where $r^{n}$ are the position matrix elements and 
 \begin{equation*}
@@ -239,9 +241,9 @@ The tensor $\eta^{abc}(\omega)$ is purely imaginary and has the property of bein
 
 \subsection{Second-harmonic generation}
 
-SHG is a particular case of the nonlinear optical process of sum of frequency in which photons of same frequency are annihilated to produce a new photon with twice the frequency and energy and half of the wavelength of the initial photons. This phenomena occurs when light beams from coherent sources inside over a nonlinear media that does not present inversion of symmetry \cite{bloembergen1962light,anderson2015theory,sipe2000second}.
+SHG is a particular case of the nonlinear optical process of sum of frequency in which photons of same frequency are annihilated to produce a new photon with twice the frequency and energy and half of the wavelength of the initial photons. This phenomena occurs when light beams from coherent sources inside over a nonlinear media that does not present inversion of symmetry \cite{bloembergen1962light,andersonPRB15,sipe2000second}.
 
-Recently, in reference \cite{anderson2015theory} was developed a new formalism to calculate the second order susceptibility which includes the scissors correction, needed to have the correct value of the energy band gap; the contribution of the nonlocal part of the pseudopotentials, frequently used in \emph{ab initio} band-structure calculations; and the derivation for the inclusion of the cut function, used to extract the surface response. Again we summarize that work here.
+Recently, in reference \cite{andersonPRB15} was developed a new formalism to calculate the second order susceptibility which includes the scissors correction, needed to have the correct value of the energy band gap; the contribution of the nonlocal part of the pseudopotentials, frequently used in \emph{ab initio} band-structure calculations; and the derivation for the inclusion of the cut function, used to extract the surface response. Again we summarize that work here.
 
 The second order nonlinear polarization is given by 
 
@@ -254,33 +256,36 @@ The expressions for the imaginary part of the $\chi^{abc}$ for the interband con
 
 \begin{subequations}\label{eq:chis}
 \begin{align}
-&\mathrm{Im}[\chi^{\mathrm{a}\mathrm{b}\mathrm{c}}_{e,\omega}] =  
-\frac{\pi |e|^3}{2\hbar^2}
-\int \frac{dk^3}{8\pi^3}  
+\mathrm{Im}[\chi^{\mathrm{a}\mathrm{b}\mathrm{c}}_{e,\omega}] =  
+\frac{\pi |e|^3}{2\hbar^2}\int 
+&
+\frac{dk^3}{8\pi^3}  
 \nonumber \\
-& \qquad \times \sum_{vc}\sum_{q\neq(v,c)}\frac{1}{\omega^\Sigma_{cv}}
-\left[
-\frac{\mathrm{Im}[\mathbf{v}^{\Sigma,\mathrm{a}}_{qc}\{r^{\mathrm{b}}_ 
+\times \sum_{vc}\sum_{q\neq(v,c)}
+\frac{1}{\omega^\Sigma_{cv}}
+&
+\left[\frac{\mathrm{Im}[\mathbf{v}^{\Sigma,\mathrm{a}}_{qc}\{r^{\mathrm{b}}_ 
 {cv}r^{\mathrm{c}}_{vq}\}]} {(2\omega^\Sigma_{cv}-\omega^\Sigma_{cq})} \right.
 \nonumber \\
-& \qquad \qquad \qquad \qquad \quad
+& 
 \left. -\frac{\mathrm{Im}[\mathbf{v}^{\Sigma,\mathrm{a}}_{vq}\{r^{\mathrm{c}}
 _{qc}r^{\mathrm{b}}_{cv}\}]} {(2\omega^\Sigma_{cv}-\omega^\Sigma_{qv})}
 \right]\delta(\omega^\Sigma_{cv}-\omega),
 \end{align}
 
 \begin{align}
-\mathrm{Im} & [\chi^{\mathrm{a}\mathrm{b}\mathrm{c}}_{i,\omega}]= 
+\mathrm{Im}  [\chi^{\mathrm{a}\mathrm{b}\mathrm{c}}_{i,\omega}]= 
 \frac{\pi\vert e\vert^3}{2\hbar^2}
+&
 \int \frac{dk^3}{8\pi^3} 
 \nonumber \\
-& \times \sum_{cv}\frac{1}{(\omega^\Sigma_{cv})^{2}} 
+ \times \sum_{cv}\frac{1}{(\omega^\Sigma_{cv})^{2}} 
+&
 \Bigg[
 \mathrm{Re}\left[\left\{r^{\mathrm{b}}_{cv}\left(\mathbf{v}^
-{\Sigma,\mathrm{a}}_{vc}\right)_{;k^{\mathrm{c}}}\right\}\right] \atop
+{\Sigma,\mathrm{a}}_{vc}\right)_{;k^{\mathrm{c}}}\right\}\right]
 \nonumber \\
-& \qquad \qquad \qquad
-+\frac{\mathrm{Re}\left[\mathbf{v}^{\Sigma,\mathrm{a}}_{vc}\left\{
+&+\frac{\mathrm{Re}\left[\mathbf{v}^{\Sigma,\mathrm{a}}_{vc}\left\{
 r^{\mathrm{b}}_{cv}
 \Delta^{\mathrm{c}}_{cv}\right\}\right]}{\omega^\Sigma_{cv}} 
 \Bigg]
@@ -288,38 +293,41 @@ r^{\mathrm{b}}_{cv}
 \end{align}
 
 \begin{align}
-\mathrm{Im}&[\chi^{\mathrm{a}\mathrm{b}\mathrm{c}}_{e,2\omega}]= 
--\frac{\pi |e|^3}{2\hbar^2}
-\int \frac{dk^3}{8\pi^3}
+\mathrm{Im}[\chi^{\mathrm{a}\mathrm{b}\mathrm{c}}_{e,2\omega}]= -
+&
+\frac{\pi |e|^3}{2\hbar^2}\int \frac{dk^3}{8\pi^3}
 \nonumber \\
-& \times 
-\sum_{vc}\frac{4}{\omega^\Sigma_{cv}}
+\times \sum_{vc}\frac{4}{\omega^\Sigma_{cv}}
+&
 \Bigg[
 \sum_{v'\ne v}\frac{\mathrm{Im}[\mathbf{v}^{\Sigma,\mathrm{a}}_{vc}\{r^{\mathrm{
 b}}_{cv'}r^{\mathrm{c}}_{v'v}\}]}
 {2\omega^\Sigma_{cv'}-\omega^\Sigma_{cv}}
 \nonumber \\ 
-& \qquad \qquad \,\,
+&
 - \sum_{c'\ne c}\frac{\mathrm{Im}[\mathbf{v}^{\Sigma,\mathrm{a}}_{vc}\{r^
 {\mathrm{c}}_{cc'}r^{\mathrm{b}}_{c'v}\}]}
 {2\omega^\Sigma_{c'v}-\omega^\Sigma_{cv}}
-\Bigg]\delta(\omega^\Sigma_{cv}-2\omega),
+\Bigg]
+\delta(\omega^\Sigma_{cv}-2\omega),
 \end{align}
 
 \begin{align}
-\mathrm{Im}&[\chi^{\mathrm{a}\mathrm{b}\mathrm{c}}_{i,2\omega}]= 
+\mathrm{Im}[\chi^{\mathrm{a}\mathrm{b}\mathrm{c}}_{i,2\omega}]= 
 \frac{\pi \vert e\vert^{3}}{2\hbar^2}
+&
 \int \frac{dk^3}{8\pi^3}
 \nonumber \\
-& \times 
-\sum_{vc}\frac{4}{(\omega^\Sigma_{cv})^{2}}
+\times \sum_{vc}\frac{4}{(\omega^\Sigma_{cv})^{2}}
 \Bigg[ 
+&
 \mathrm{Re}\left[\mathbf{v}^{\Sigma,\mathrm{a}}_{vc}\left\{
-\left(r^{\mathrm{b}}_{cv}\right)_{;k^{\mathrm{c}}}
-\right\}\right] 
+\left(r^{\mathrm{b}}_{cv}\right)_{;k^{\mathrm{c}}}\right\}\right] 
 \nonumber \\
-& \qquad \qquad \quad
--\frac{2\mathrm{Re}\left[\mathbf{v}^{\Sigma,\mathrm{a}}_{vc}\left\{
+-
+&
+\frac{2\mathrm{Re}
+\left[\mathbf{v}^{\Sigma,\mathrm{a}}_{vc}\left\{
 r^{\mathrm{b}}_{cv}
 \Delta^{\mathrm{c}}_{cv}\right\}\right]}{\omega^\Sigma_{cv}}
 \Bigg]
@@ -419,9 +427,8 @@ we show a comparison of the maximum degree of spin polarization reported for
 different structures.
 
 To report the {$\eta^{ixy}$} we took in account that our structures are infinite 
-carbon-hydrogen layers. So in Eq. \ref{eq:etaeff} we defined the 
-$\ell_{\text{eff}}$
-as the thickness of each structure, corresponding to 5.56 and 2.76 Angstroms for 
+carbon-hydrogen layers. To normalize we used  
+the thickness of each structure, corresponding to 5.56 and 2.76 Angstroms for
 the \emph{alt} and \emph{up} cases, respectively. We show in Fig. \ref{fig:eta}
 the spectra obtained for the current tensor {$\eta^{ixy}$} of the
 \emph{alt} and \emph{up} systems, respectively. Again as in the case of DSP the gap starts absorbing the energy of the incident beam. We can observe that
@@ -516,7 +523,7 @@ different structures.
     \hline
     C$_{16}$H$_{8}$-alt                       & 0.4   & yxx   & 0.6   & *     \\
     C$_{16}$H$_{8}$-up                        & 0.042 & yxx   & 70    & *     \\
-    Si(100)2$\times$1               & 1.5   & xxx   & 1.5   & \cite{anderson2015theory} \ \\
+    Si(100)2$\times$1               & 1.5   & xxx   & 1.5   & \cite{andersonPRB15} \ \\
     BN(6,0) nanotubes pristine      & 5.0   & zzz   & 35    & \cite{salazar2014molecular} \\
     BN(6,0) nanotubes + 4(H$_{2}$)  & 5.0   & zzz   & 33    & \cite{salazar2014molecular} \\
     BN(6,0) nanotubes + 12(H$_{2}$) & 4.8   & zzz   & 15    & \cite{salazar2014molecular} \\
