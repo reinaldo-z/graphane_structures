@@ -7,3 +7,5 @@ for i in ${authors[@]}; do
     count=`ack "$i" graphane_structures.tex | wc -l`
     echo -e "$count   $i "
 done
+
+

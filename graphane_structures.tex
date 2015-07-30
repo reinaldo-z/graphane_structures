@@ -10,7 +10,7 @@
 
 % Title of the article
 \title{Optical spin injection, current injection, and second-harmonic
-generation study of hydrogenated graphene structures}
+generation in hydrogenated graphene structures}
 
 % Authors
 \author{
@@ -44,8 +44,8 @@ hydrogenated graphene}
 
 \abstract{%
 \abstcol{%
-We present a theoretical study of spin and current injection, and second-
-harmonic generation via optical means from the C$_{16}$H$_{8}$-alt and
+We present a theoretical study of spin and current injection, and 
+second-harmonic generation via optical means from the C$_{16}$H$_{8}$-alt and
 C$_{16}$H$_{8}$-up graphene structures. The incidence of circularly polarized
 light onto nonmagnetic semiconductors produces spin-polarized electrons in the
 conduction bands. Current injection and second-harmonic generation are
@@ -105,7 +105,7 @@ surfaces [Si(111):In, Si(111):As, GaAs(110):Sb, GaAs(110), and Si(111) with
 $4\times2$ and $8\times2$ reconstructions]
 \cite{mendoza2012optical,arzate2014optical}.
 
-%% need intro paragraph for OCI.
+The OCI is a surface-sensitive optical effect with potential application for surface characterization and chemical reaction control. It is a second-order nonlinear process that takes place in non-centrosymmetric materials \cite{nastos2006optical,cabellos2011optical,bhat2005excitonic,fraser1999quantum}. This photocurrent has been studied in bulk semiconductors \cite{atanasov1996coherent,sipe2000second}, one dimensional (1D) nanotubes \cite{mele2000coherent,kral2000photogalvanic}, and two dimensional (2D) surfaces \cite{mele2000coherent,cabellos2011optical}.
 
 Nonlinear optical spectroscopies, particularly SHG, are important methods for
 styudying surface properties due to their noninvasive and nondestructive
@@ -113,9 +113,8 @@ nature. These properties include atomic structure, phase transitions,
 adsorption of atoms, and many others \cite{dadap1997second,%
 daum1993identification,mcgilp1994probing,power1995resonant,%
 godefroy1996electric,salazar2014molecular,chen1981surface,%
-mendoza1998microscopic}. For SHG calculation we followed
-the new formalism developed in Ref. \cite{andersonPRB15} for SHG from
-semiconductor surfaces.
+mendoza1998microscopic}. 
+SHG is a particular case of the nonlinear optical process of sum of frequency in which photons of same frequency are annihilated to produce a new photon with twice the frequency and energy and half of the wavelength of the initial photons. This phenomena occurs when light beams from coherent sources inside over a nonlinear media that does not present inversion of symmetry \cite{bloembergen1962light,andersonPRB15,sipe2000second}.
 
 The organization of the sections of this paper is as follows. In Sec.
 \ref{sec:theory} we present the theory and formulas that describe the DSP,
@@ -128,7 +127,7 @@ and \emph{up} structures. Finally, we give our conclusions in Sec.
 \section{Theory}\label{sec:theory}
 
 \begin{changed}
-In this section we present the scheme used to calculate the DSP, OCI and SHG. The theory presented here has previously presented and can be applied to surface and bulk systems \cite{nastos2007full,mendoza2012optical,cabellos2011optical,sipe2000second,andersonPRB15}
+In this section we present the formulas used for calculating the DSP \cite{nastos2007full,mendoza2012optical}, OCI \cite{cabellos2011optical,sipe2000second}, and SHG \cite{andersonPRB15}. For a full derivations see the references for each.
 \end{changed}
 
 \begin{figure}[t]
@@ -157,20 +156,13 @@ in the conduction bands. It can be calculated with full band structure local-
 density approximation (LDA), and $\textbf{k}\cdot\textbf{p}$ methods
 \cite{nastos2007full,cabellos2009stress}.
 
-The complete expressions for the DSP are derived in references
-\cite{nastos2007full,mendoza2012optical} for bulk, surfaces, and interfaces, 
-and we summarize them briefly here. 
-
 The spin and carrier generation rate can be described by 
 
-\begin{changed}
 \begin{align*}
 \dot{S}^{a}(\omega) &= \zeta^{abc}(\omega)E^{b}(-\omega)E^{c}(\omega), \nonumber \\ 
 \dot{n}(\omega)     &= \xi^{bc}E^{b}(-\omega)E^{c}(\omega)
 \end{align*}
-where $\zeta^{abc}$ is the tensor used to calculate the spin generation 
-rate and is given by
-
+where $\zeta^{abc}$ is the spin injection rate tensor and $\xi^{bc}$ is the carrier generation rate tensor. The spin injection rate tensor is given by
 \begin{align}\label{eq:zeta}
 \zeta^{abc} &= \frac{i\pi e^{2}}{\hbar^{2}}\int\frac{d^{3}k}{8\pi^{3}}
 \sum_{vcc'}^{\prime}\text{Im}\bigl[S^{a}_{c'c}(\textbf{k})
@@ -179,21 +171,17 @@ r^{b}_{vc'}(\textbf{k})r^{c}_{cv}(\textbf{k})\nonumber\\
 r^{b}_{vc}(\textbf{k})r^{c}_{c'v}(\textbf{k})\bigr]
 \delta(\omega_{cv}(\textbf{k})-\omega),
 \end{align}
-where $S^{n}$ and $r^{n}$ are the spin and position matrix elements and $\xi^{bc}$ is related to the imaginary part of the linear optical response tensor. The $abc$ superscripts denote the Cartesian coordinates and the expression of Eq. \eqref{eq:zeta} satisfies the $\zeta^{abc}(\omega) = -\zeta^{acb}(\omega)$ condition.
+where $S^{n}$ and $r^{n}$ are the spin and position matrix elements. The carrier generation rate tensor is related to the linear optical response tensor by $\xi^{bc}$=Im$[(2/\hbar)\chi^{bc}]$ . The $abc$ superscripts denote the Cartesian coordinates and the expression of Eq. \eqref{eq:zeta} satisfies the $\zeta^{abc} = -\zeta^{acb}$ condition.
 
-We assume an incoming beam of CPL at normal incidence that propogates along the $-z$ direction, $\mathbf{E}(\omega) = E_{0}(\hat{x} - i\hat{y})/\sqrt{2}$. The DSP along a given $a$ direction is defined as $D^{a}=\dot{S}^{a}(\omega)/(\hbar/2)\dot{n}(\omega)$ and then we have
-\end{changed}
-
+We assume an incoming beam of CPL at normal incidence that propogates along the $-z$ direction, $\mathbf{E}(\omega) = E_{0}(\omega)(\hat{x} - i\hat{y})/\sqrt{2}$. The DSP along a given $a$ direction is defined as $D^{a}=\dot{S}^{a}(\omega)/(\hbar/2)\dot{n}(\omega)$, which can be reduced to 
 \begin{equation}\label{eq:D^i}
 D^{a}(\omega) = 
 \frac{-4i\zeta^{axy}(\omega)}
-    {\hbar\left[\xi^{xx}(\omega) + \xi^{yy}(\omega)\right]},
+    {\hbar\left[\xi^{xx}(\omega) + \xi^{yy}(\omega)\right]}.
 \end{equation}
-\begin{changed}
-\end{changed} 
 
 It is generally possible to generate spin-polarized electrons along all three
-$\hat{i}$, $\hat{j}$, and $\hat{k}$ directions. 
+Cartesian directions. 
 % The total DSP can be obtainedas
 
 % \begin{equation*}
@@ -203,33 +191,29 @@ $\hat{i}$, $\hat{j}$, and $\hat{k}$ directions.
 
 \begin{changed}
 \subsection{Optical current injection}
-The OCI is a surface-sensitive optical effect that offers the potential for study surfaces, interfaces and the control of chemical reactions. The OCI is a second-order nonlinear effect that takes place in non-centrosymmetric materials \cite{nastos2006optical,cabellos2011optical,bhat2005excitonic,fraser1999quantum}. This current can be produced with a single optical beam of CPL via the interference of one photon-absorption processes from different linear polarizations of light \cite{sipe2000second}. This photocurrent effect has been studied in bulk semiconductors \cite{atanasov1996coherent,sipe2000second}, one dimensional (1D) nanotubes \cite{mele2000coherent,kral2000photogalvanic}, and two dimensional (2D) surfaces \cite{mele2000coherent,cabellos2011optical}.
 
-The complete expressions for the OCI of bulk, surfaces, and interfaces, are derived in references \cite{cabellos2011optical,sipe2000second} and we summarize them here. 
-
-The surface injection current is defined as
-
+This current can be produced with a single optical beam of CPL via the interference of one photon-absorption processes from different linear polarizations of light \cite{sipe2000second}. The  OCI is defined as
 \begin{equation}
-\mathbf{\dot{J}}^{i}_{\text{inj}}(\omega) =
-\eta^{abc}(\omega)E_{j}(\omega)E_{k}(\omega), \label{eq:eta}
+\mathbf{\dot{J}}^{a}_{\text{inj}}(\omega) =
+\eta^{abc}(\omega)E_{b}(\omega)E_{c}(\omega), \label{eq:eta}
 \end{equation}
 where $\eta^{abc}(\omega)$ is the surface injection current tensor and is given by
-
 \begin{align*}
 \eta(\omega) =  \frac{i\pi e^{3}}{\hbar^{2}}&\int\frac{d^{3}k}{8\pi^{3}}
 \nonumber \\
 \times &
 \sum_{vc}\Delta^{a}_{cv}(\mathbf{k})\text{Im}\big[r^{b}_{cv}(\mathbf{k})
-r^{c}_{cv}(\mathbf{k})\big]\delta(\omega_{cv}(\mathbf{k})-\omega)
+r^{c}_{cv}(\mathbf{k})\big]\delta(\omega_{cv}(\mathbf{k})-\omega).
 \end{align*}
-where $r^{n}$ are the position matrix elements and 
+$r^{n}$ is the position matrix elements and 
 \begin{equation*}
-\Delta^{a}_{cv} = v^{a}_{cc}(\mathbf{k})-v^{a}_{vv}(\mathbf{k})
+\Delta^{a}_{cv} = v^{a}_{cc}(\mathbf{k})-v^{a}_{vv}(\mathbf{k}),
 \end{equation*}
-with $v^{a}_{nn}(\mathbf{k})=p^{a}_{nn}(\mathbf{k})/m_{e}$ the electron’s velocity for band $n$.
+where $v^{a}_{nn}(\mathbf{k})=p^{a}_{nn}(\mathbf{k})/m_{e}$ is the electron velocity for band $n$.
 
-The tensor $\eta^{abc}(\omega)$ is purely imaginary and has the property of being antisymmetric in the last two Cartesian indices, \emph{j} and \emph{k} \cite{sipe2000second,nastos2006optical}. Also with CPL is possible to generate current injection along the $\hat{i}$, $\hat{j}$, and $\hat{k}$ directions with incident light on the surface plane.
-% the total injection current can be obtained in a similar way as has been done in Eq. \ref{eq:D^i}
+The tensor $\eta^{abc}(\omega)$ is purely imaginary and is antisymmetric with respect to the last two indices, \emph{b} and \emph{c} \cite{sipe2000second,nastos2006optical}. It is possible to generate current injection along all three directions with incident CPL on the surface plane.
+
+% The total injection current can be obtained in a similar way as has been done in Eq. \ref{eq:D^i}
 
 % \begin{equation}
 %     \left|{\eta^{\text{T}}}\right| = \sqrt{ \eta_{xxy}^{2} +
@@ -241,19 +225,15 @@ The tensor $\eta^{abc}(\omega)$ is purely imaginary and has the property of bein
 
 \subsection{Second-harmonic generation}
 
-SHG is a particular case of the nonlinear optical process of sum of frequency in which photons of same frequency are annihilated to produce a new photon with twice the frequency and energy and half of the wavelength of the initial photons. This phenomena occurs when light beams from coherent sources inside over a nonlinear media that does not present inversion of symmetry \cite{bloembergen1962light,andersonPRB15,sipe2000second}.
-
-Recently, in reference \cite{andersonPRB15} was developed a new formalism to calculate the second order susceptibility which includes the scissors correction, needed to have the correct value of the energy band gap; the contribution of the nonlocal part of the pseudopotentials, frequently used in \emph{ab initio} band-structure calculations; and the derivation for the inclusion of the cut function, used to extract the surface response. Again we summarize that work here.
+We follow the derivation developed in reference \cite{andersonPRB15}. This new formalism to calculate the second order susceptibility includes the scissors correction, the contribution of the nonlocal part of the pseudopotentials, and the cut function. 
 
 The second order nonlinear polarization is given by 
-
 \begin{equation*}
 \mathcal{P}(2\omega) = \chi^{abc}(-2\omega;\omega,\omega)E^{b}(\omega)E^{c}(\omega)
 \end{equation*}
-where $\chi^{abc}(-2\omega;\omega,\omega)$ is the nonlinear susceptibility tensor responsible for the SHG and satisfies the $\chi^{abc}(-2\omega;\omega,\omega)$ = $\chi^{acb}(-2\omega;\omega,\omega)$ condition. The superscripts $abc$ denote Cartesian components and if repeated are to be summed over. 
+where $\chi^{abc}$ is the nonlinear susceptibility tensor responsible for the SHG and satisfies the $\chi^{abc}$ = $\chi^{acb}$ condition. The superscripts $abc$ denote the Cartesian components.  
 
-The expressions for the imaginary part of the $\chi^{abc}$ for the interband contributions (\emph{i}) and intraband (\emph{e}) for $1\omega$ and $2\omega$ are given by
-
+The expressions for the imaginary part of $\chi^{abc}$ for the interband (\emph{e}) and intraband (\emph{i}) contributions, at $1\omega$ and $2\omega$ are given by
 \begin{subequations}\label{eq:chis}
 \begin{align}
 \mathrm{Im}[\chi^{\mathrm{a}\mathrm{b}\mathrm{c}}_{e,\omega}] =  
@@ -335,15 +315,14 @@ r^{\mathrm{b}}_{cv}
 .
 \end{align}
 \end{subequations}
-Here, the factor of 2 for spin degeneracy is not included and the real part of each contribution can be obtained through a Kramers-Kronig transformation \cite{tancogne2014effect} and
-
+The real part of each contribution can be obtained through a Kramers-Kronig transformation \cite{tancogne2014effect} and
 \begin{equation}\label{eq:chitotal}
     \chi^{abc} = \chi^{abc}_{e,\omega} + \chi^{abc}_{e,2\omega} +
     \chi^{abc}_{i,\omega} + \chi^{abc}_{i,2\omega}
     .
 \end{equation}
 
-For our case in Eq. \ref{eq:chis}, the expression $\mathbf{v}^{\Sigma}$ corresponds to the sum of the LDA and non-local velocity matrix elements, $r^{\mathrm{n}} $ are the position matrix elements and $\Delta^{a}_{nm} = v^{\text{LDA},a}_{nn} - v^{\text{LDA},a}_{mm} $. To accomplish the required intrinsic permutation symmetry, the \{\} notation symmetrizes the $bc$ Cartesian indices, i.e., $\{u^{b}s^{c}\} = (u^{b}s^{c} + u^{c}s^{b})/{2}$ and so, $\chi^{abc} = \chi^{acb}$.
+In Eq. \ref{eq:chis}, $\mathbf{v}^{\Sigma}_{nm}$ is the complete velocity matrix elements, $r^{\mathrm{n}}_{nm}$ is the position matrix elements, and $\omega^\Sigma_{nm}$=$\omega^{\Sigma}_{n}$-$\omega^{\sigma}_{m}$.
 
 
 \section{Results}\label{sec:results}
