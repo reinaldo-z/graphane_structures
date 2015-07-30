@@ -203,7 +203,7 @@ $\hat{i}$, $\hat{j}$, and $\hat{k}$ directions.
 
 \begin{changed}
 \subsection{Optical current injection}
-The OCI is a surface-sensitive optical effect that offers the potential for study surfaces, interfaces and the control of chemical reactions. The OCI is a second-order nonlinear effect that takes place in non-centrosymmetric materials \cite{nastos2006optical,cabellos2011optical,bhat2005excitonic,fraser1999quantum}. This current can be produced with a single optical beam of CPL via the interference of one photon-absorption processes from different linear polarizations of light \cite{sipe2000second}. This photocurrent effect has been studied in bulk semiconductors, one dimensional (1D) nanotubes \cite{mele2000coherent,kral2000photogalvanic}, and two dimensional (2D) surfaces \cite{mele2000coherent}.
+The OCI is a surface-sensitive optical effect that offers the potential for study surfaces, interfaces and the control of chemical reactions. The OCI is a second-order nonlinear effect that takes place in non-centrosymmetric materials \cite{nastos2006optical,cabellos2011optical,bhat2005excitonic,fraser1999quantum}. This current can be produced with a single optical beam of CPL via the interference of one photon-absorption processes from different linear polarizations of light \cite{sipe2000second}. This photocurrent effect has been studied in bulk semiconductors \cite{atanasov1996coherent,sipe2000second}, one dimensional (1D) nanotubes \cite{mele2000coherent,kral2000photogalvanic}, and two dimensional (2D) surfaces \cite{mele2000coherent,cabellos2011optical}.
 
 The complete expressions for the OCI of bulk, surfaces, and interfaces, are derived in references \cite{cabellos2011optical,sipe2000second} and we summarize them here. 
 
@@ -353,20 +353,20 @@ The calculations of them are given in the independent-particle approximation.
 \end{changed}
 
 We present the results of the numerical calculations for {$D^{i}$}, {$\eta^{ixy}$}, and SHG for
-the hydrogenated graphene structures, C$_{16}$H$_{8}$-alt and C$_{16}$H$_{8}$-up shown in Fig.
-\ref{fig:structures}. Both systems are infinite carbon planes in an
+the hydrogenated graphene structures, C$_{16}$H$_{8}$-alt and C$_{16}$H$_{8}$-up shown in Fig. 
+Both systems are infinite carbon planes in an
 hexagonal honeycomb lattice with 50\% of hydrogenation in two different
 arrangements as shown in Fig. \ref{fig:structures}: the \emph{alt} arrangement has
 alternating hydrogen bonds in the top and bottom sides of the carbon plane; the
 \emph{up} arrangement has hydrogen bonds only in the top
 side. Both structures are non-centrosymmetric and has a thickness of 5.56 and
-2.76 Angstroms, respectively. A vacuum length at least  five times the
+2.76 Angstroms, respectively. This thickness where used to normalize the responses. A vacuum length at least  five times the
 thickness of each case was taken to construct the super-cell.
 
 
 In this work we used the ABINIT code \cite{torrent2008implementation} for the
 calculation of the self-consistent ground state and their Kohn-Sham states
-using DFT-LDA in the plane waves approximation. Also, to compute the DSP
+using DFT-LDA in the plane waves basis and the independent-particle approximation. Also, to compute the DSP
 and the OCI we used the relativistic separable dual-space Gaussian
 pseudopotentials of Hartwigsen-Goedecker-Hutter (HGH)
 \cite{hartwigsen1998relativistic} including the spin-orbit interaction,
@@ -379,6 +379,7 @@ using the DP code \cite{olevanoDP}. Moreover, we have taken a cutoff energy of
 65 and 40\,Ha for the \emph{alt} and \emph{up} cases, respectively, and
 the energy eigenvalues and matrix elements were calculated using 14452 and 8452
 \textbf{k}\,points in the irreducible Brillouin zone (IBZ).
+
 
 \begin{figure}[t]
 \subfloat[]{\includegraphics[width=\linewidth]{alt/alt-Da-final.eps}}
@@ -420,16 +421,9 @@ It can be observed that for both structures we have
 more than 30\% of {$D^{i}$} and a maximum absolute value in the \emph{y} direction,
 reaching near to 60\% for the \emph{alt} case. 
 Also it is important to mention that for both cases we have a range of energy in which is possible to hold the maximum DSP. 
-The \emph{alt} structure presents a wide range of energy in which it is possible to have a 39\% of $D^{y}$.  It occurs from  0.7185 to 0.72\,eV of energy and a similar behavior is shown for the  $D^{x}$ and $D^{z}$ components for leaser values of DSP. After the energy of 0.72\,eV the DSP decays for the three components. 
-The \emph{up} system presents a similar behavior from 0.078 to 0.081\,eV presenting a minimal variation in the $D^{y}$ component. Again, the $D^{x}$ and $D^{z}$ components have their own maximum values for this range of energy and after 0.081\,eV the DSP decays smoothly to zero.
-In table \ref{tab:dacomp}
-we show a comparison of the maximum degree of spin polarization reported for
-different structures.
+The \emph{alt} structure presents a wide range of energy in which it is possible to have a 39\% of $D^{y}$.  It occurs from  0.7185 to 0.72\,eV of energy and a similar behavior is shown for the  $D^{x}$ and $D^{z}$ components for leaser values of DSP. After the energy of 0.72\,eV the DSP vanishes for the three components. The \emph{up} system presents a similar behavior from 0.078 to 0.081\,eV presenting a minimal variation in the $D^{y}$ component. Again, the $D^{x}$ and $D^{z}$ components have their own maximum values for this range of energy and after 0.081\,eV the DSP slowly vanishes to zero. In table \ref{tab:dacomp}we show a comparison of the maximum degree of spin polarization reported for different structures. As we can see from table the \emph{alt} and \emph{up} systems have leaser $D^{a}$ than the Si(111)-As 1$\times$1 and the the bulk CdSe system. The $D^{a}$ is comparable with the Si(111)-In 8$\times$2 bulk Si, and bulk GaAs systems for different photon energies where the maximum value of DSP is reached. This makes the use of light sources in another range of energy possible, having, as mentioned before, a wide range in which the maximum DSP is hold.
 
-To report the {$\eta^{ixy}$} we took in account that our structures are infinite 
-carbon-hydrogen layers. To normalize we used  
-the thickness of each structure, corresponding to 5.56 and 2.76 Angstroms for
-the \emph{alt} and \emph{up} cases, respectively. We show in Fig. \ref{fig:eta}
+We show in Fig. \ref{fig:eta}
 the spectra obtained for the current tensor {$\eta^{ixy}$} of the
 \emph{alt} and \emph{up} systems, respectively. Again as in the case of DSP the gap starts absorbing the energy of the incident beam. We can observe that
 circularly polarized light (CPL) on the plane $xy$ produces injection current
@@ -443,10 +437,11 @@ we have a positive maximum in the \emph{y} direction for an
 incident beam energy of 0.09\,eV, reaching a value of
 28\,mC$^{3}$/J$^{2}$s$^{2}$. After 1.55 and 0.125\,eV of the incident field the photocurrent for the \emph{alt} and \emph{up} systems, respectively, smoothly decreases and later the response vanishes. In table \ref{tab:etacomp} we present a comparison
 of the maximum current injection reported for different structures.
+From the table we can see that, excluding the case of the bulk CdSd, the systems presented here have large values in comparison with the other systems. For the \emph{alt} structure this response is comparable wit the Si(111) 2$\times$1 system for a larger photon energy and the response for the \emph{up} structure has the same order of magnitude as the bulk CdSd both in this case for a lower energy of the incoming beam.
 
 In Fig. \ref{fig:shg-abs-both}  we show the absolute value of the  spectra obtained
 for the SHG of the \emph{alt} and \emph{up} systems when we evaluated the $
-\chi^{abc}(2\omega;\omega\omega) $ tensor. We can see
+\chi^{abc}(2\omega;\omega\omega)$ tensor. We can see
 that for the \emph{alt} structure an absolute
 maximum of the SHG spectra is reached at 0.4\,eV with a value of
 0.6$\times10^{6} $\,pm$^{2}$/V for the $\chi^{yxx} $ component produced
@@ -458,78 +453,80 @@ from the real part. In the other hand, we can see that for the
 value of 70$\times10^{6} $\,pm$^{2}$/V for the $\chi^{yxx} $ tensor component
 which contribution comes from the imaginary part of the spectra. In table
 \ref{tab:shgcomp} we show a comparison of the maximum SHG reported for
-different structures.
+different structures. From the table we can see that the \emph{alt} structure has the minimum absolute value of the SHG tensor while the \emph{up} has he biggest one. In both cases the energy of the incoming beam needed to produce SHG is smaller than for the other cases shown here.  
 
 
-%%%% begin table comparison Da
-\begin{table}
-    \caption{Comparison of the reported absolute values for the highest 
-    percentage of {$D^{i}$} for different structures. ($^{*}$This work.)}
-    \label{tab:dacomp}
-    \centering
-    \begin{tabular}{lcccc}
-    Structure & Energy &  \multicolumn{2}{c}{$D^{i}$} &  Reference\\
-    \cline{3-4}
-              & [eV]   & component & [\%] \\
-    \hline
-    C$_{16}$H$_{8}$-alt               & 0.719 & y & 39 & *     \\
-    C$_{16}$H$_{8}$-up                & 0.08  & y & 57 & *     \\
-    Si(111)-In $8\times2$   & 0.74  & z & 32 & \cite{arzate2014optical}  \\
-    Si(111)-As $1\times1$   & 2.20  & z & 100& \cite{mendoza2012optical} \\
-    Bulk Si                 & 3.44  & z & 30 & \cite{nastos2007full}     \\
-    Bulk GaAs               & 1.50  & z & 50 & \cite{nastos2007full} 
-    \cite{bhat2005excitonic} \\
-    Bulk CdSe               & 1.8   & z {\scriptsize (\emph{yz} polarization)} 
-    & 100& \cite{nastos2007full}\\
-    \end{tabular}
-\end{table}
-%%%% end table comparison Da
+\begin{figure*}[htb]%
+  \sidecaption
+  \begin{tabular}{lcccc}
+  \hline
+  Structure & Energy &  \multicolumn{2}{c}{$D^{a}$} &  Reference\\
+  \cline{3-4}
+  & [eV]   & component & [\%] \\
+  \hline
+  C$_{16}$H$_{8}$-alt  & 0.719& y & 39     & This work \\
+  C$_{16}$H$_{8}$-up   & 0.08 & y & 57     & This work \\
+  Si(111)-In $8\times2$& 0.74 & z & 32     & \cite{arzate2014optical}  \\
+  Si(111)-As $1\times1$& 2.20 & z & 100    & \cite{mendoza2012optical} \\
+  Bulk Si              & 3.44 & z & 30     & \cite{nastos2007full}     \\
+  Bulk GaAs            & 1.50 & z & 50     & \cite{nastos2007full,bhat2005excitonic} \\
+  Bulk CdSe            & 1.8  & z ($xy$ polarization) & 100& \cite{nastos2007full}\\
+  \hline
+  \end{tabular}
+  \caption[]{%
+  Comparison of the reported absolute values for the highest 
+  percentage of {$D^{i}$} for different structures.}
+  \label{tab:dacomp}
+\end{figure*}
 
 
-%%%% begin table comparison eta
-\begin{table}
-    \caption{Comparison of the highest reported absolute values of {$\eta^{ixy}$} for 
-    different structures. ($^{*}$This work.)}
-    \label{tab:etacomp}
-    \centering
-    \begin{tabular}{lcccc}
-    Structure & Energy &  \multicolumn{2}{c}{$\eta^{ixy}$} &  Reference\\
+\begin{figure*}[htb]%
+  \sidecaption
+  \begin{tabular}{lcccc}
+  \hline
+    Structure & Energy &  \multicolumn{2}{c}{$\eta^{a}$} &  Reference\\
     \cline{3-4}
               & [eV]   & direction & [mC$^{3}$/J$^{2}$s$^{2}$] \\
     \hline
-    C$_{16}$H$_{8}$-alt               & 1.25  & y & 3.70  & *     \\
-    C$_{16}$H$_{8}$-up                & 0.09  & x & 28.0  & *     \\
+    C$_{16}$H$_{8}$-alt     & 1.25  & y & 3.70  & This work     \\
+    C$_{16}$H$_{8}$-up      & 0.09  & x & 28.0  & This work     \\
     Si(111)-In $8\times2$   & 1.24  & y & 0.35  & \cite{arzate2014optical}  \\
     Si(111) $2\times1$      & 0.75  & y & 1.22  & \cite{mendoza2012optical} \\
     GaAs(110) clean         & 4.30  & y & 0.30  & \cite{nastos2007full}     \\
     GaS (110)-Sb            & 4.60  & y & 0.17  & \cite{cabellos2011optical}\\
-    Bulk CdSd               & 1.8   & y {\scriptsize (\emph{yz} polarization)} 
+    Bulk CdSd               & 1.8   & y ($yz$ polarization) 
     & 90.0  & \cite{nastos2006optical}  \\
-    \end{tabular}
-\end{table}
-%%%% end table comparison eta
+  \hline
+  \end{tabular}
+  \caption[]{%
+  Comparison of the highest reported absolute values of {$\eta^{ixy}$} for 
+    different structures. ($^{*}$This work.)}
+  \label{tab:etacomp}
+\end{figure*}
 
 
-%%%% begin table comparison shg
-\begin{table}
-    \caption{Comparison of the highest reported absolute values of SHG for 
-    different structures and components. ($^{*}$This work.)}
-    \label{tab:shgcomp}
-    \centering
-    \begin{tabular}{lcccc}
+\begin{figure*}[htb]%
+  \sidecaption
+  \begin{tabular}{p{3.7cm}cccc}
+  \hline
     Structure & Energy & \multicolumn{2}{c}{$\chi^{abc} $} &  Reference\\
     \cline{3-4}
               & [eV]   & component & [$10^{6} $ pm$^{2}$/V ] \\
     \hline
-    C$_{16}$H$_{8}$-alt                       & 0.4   & yxx   & 0.6   & *     \\
-    C$_{16}$H$_{8}$-up                        & 0.042 & yxx   & 70    & *     \\
+    C$_{16}$H$_{8}$-alt             & 0.4   & yxx   & 0.6   & This work     \\
+    C$_{16}$H$_{8}$-up              & 0.042 & yxx   & 70    & This work     \\
     Si(100)2$\times$1               & 1.5   & xxx   & 1.5   & \cite{andersonPRB15} \ \\
     BN(6,0) nanotubes pristine      & 5.0   & zzz   & 35    & \cite{salazar2014molecular} \\
     BN(6,0) nanotubes + 4(H$_{2}$)  & 5.0   & zzz   & 33    & \cite{salazar2014molecular} \\
     BN(6,0) nanotubes + 12(H$_{2}$) & 4.8   & zzz   & 15    & \cite{salazar2014molecular} \\
-    \end{tabular}
-\end{table}
-%%%% end table comparison shg
+  \hline
+  \end{tabular}
+  \caption[]{%
+  Comparison of the highest reported absolute values of SHG for 
+    different structures and components. ($^{*}$This work.)}
+  \label{tab:shgcomp}
+\end{figure*}
+
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -548,20 +545,17 @@ possible to inject spin-polarized electrons along the perpendicular direction
 to the surface plane, obtaining a degree of spin polarization (DSP) of the
 injected electrons about 39\% and 57\%  (Fig. \ref{fig:Da}) at the photon energies of around 0.719
 and 0.08\,Ha  for the \emph{alt} and \emph{up} cases, respectively. Also there is a range of energy
-in which this DSP can be held, from 0.078 to 0.081\,eV and from 0.078 to 0.081\,eV for the \emph{alt} and \emph{up} cases, respectively. This results predicts that particularly
-the \emph{up} structure is usable for spintronics proposes. Also, our results
-about the optical current injection (OCI) with circularly polarized light (CPL)
+in which this DSP can be held, from 0.078 to 0.081\,eV and from 0.078 to 0.081\,eV for the \emph{alt} and \emph{up} cases, respectively. This results predicts that particularly the \emph{up} structure is usable for spintronics proposes. 
+Also, our results about the optical current injection (OCI) with circularly polarized light (CPL)
 show that the \emph{alt}  and \emph{up} systems have a response near to 3.70
 and 28.0\,mC$^{3}$/J$^{2}$s$^{2}$ (Fig. \ref{fig:eta}) for incident beams with energies of around
 1.25 and 0.09\,eV. According to measurements already done on bulk materials, it
-is actually possible to measure such amount of injection current density. Thus 
-the control of the motion of the electron at the
-C$_{16}$H$_{8}$-alt and C$_{16}$H$_{8}$-up structures is possible by incidence of circularly
+is actually possible to measure such amount of injection current density. The motion of the electrons at the
+C$_{16}$H$_{8}$-alt and C$_{16}$H$_{8}$-up structures can be controlled by the incidence of circularly
 polarized light. Finally we found that the \emph{alt} and \emph{up} structures
 present a absolute maximum of 0.6$\times 10^{6}$ and 70.0\,$\times 10^{6}
-$\,pm$^{2}$/V (Fig. \ref{fig:shg-abs-both}) at the photon energies of around 0.40 and 0.042\,eV.
-According to these results we can say that our systems of study in this paper are
-usable to SHG, principally the \emph{up} system.
+$\,pm$^{2}$/V (Fig. \ref{fig:shg-abs-both}) at the photon energies of around 0.40 and 0.042\,eV for the \emph{alt} and \emph{up} systems.
+According to these results we can say that the \emph{up} system is usable for SHG.
 
 
 \section{Acknowledgment} % (fold)
