@@ -57,10 +57,10 @@ set ytics nomirror
 ##### Final sm  
 
 unset zeroaxis
-set label 1 "{\\large C$_{16}$H$_{8}$-alt}"   at 1.5,0.28 
-# 0.4
+set label 1 "{\\large C$_{16}$H$_{8}$-alt}"   at 1.7,0.14 
+# 0.85, 0.4
 
-set yrange [0:0.7]
+set yrange [0:0.35]
 set key top right
 set output "alt_shg_final-abs_sm.tex"
 set ylabel "{\\large $|\\chi^{ijk}(2\\omega; \\omega, \\omega)|$ [$\\times10^{6} $\\,pm$^{2}$/V] }"
