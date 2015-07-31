@@ -17,7 +17,7 @@ set xtics 0.25 nomirror
 set ytics nomirror
 
 #z lenght of layer [Angstroms (la) & meters (lm)]
-la=5.564770162
+la=2.944749766
 lm=la*1E-10
 
 # # set xrange [0.3:2]

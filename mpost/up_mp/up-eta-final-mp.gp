@@ -17,7 +17,7 @@ set ytics nomirror
 set ylabel "$\\eta^{ixy}(\\omega)$ \\ \\ [mC$^{3}$/J$^{2}$s$^{2}$]"
 
 #z lenght of layer [Angstroms (la) & meters (lm)]
-la=2.766410479
+la=1.463921487
 lm=la*1E-10
 
 set xtics nomirror

@@ -138,7 +138,7 @@ In this section we present the formulas used for calculating the DSP \cite{nasto
 (dark) spheres correspond to hydrogen (carbon) atoms.\label{fig:structures}}
 \end{figure}
 
-\subsection{Optical spin injection}
+\subsection{Optical spin injection}\label{sec:theory-DSP}
 
 The injection and detection of spin polarized electrons into nonmagnetic
 materials is the core of spintronics \cite{vzutic2004spintronics,%
@@ -181,7 +181,7 @@ It is possible to generate current injection along all three directions with
 an incident CPL beam.
 
 
-\subsection{Optical current injection}
+\subsection{Optical current injection}\label{sec:theory-OCI}
 
 This current can be produced with a single optical beam of CPL via the interference of one photon-absorption processes from different linear polarizations of light \cite{sipe2000second}. The  OCI is defined as
 \begin{equation}
@@ -202,10 +202,10 @@ $r^{n}$ is the position matrix elements and
 \end{equation*}
 where $v^{a}_{nn}(\mathbf{k})=p^{a}_{nn}(\mathbf{k})/m_{e}$ is the electron velocity for band $n$.
 
-The tensor $\eta^{abc}(\omega)$ is purely imaginary and is antisymmetric with respect to the last two indices, \emph{b} and \emph{c} \cite{sipe2000second,nastos2006optical}. Like in optical spin injection, it is possible to generate current injection along all three directions with an incident CPL beam.
+The tensor $\eta^{abc}(\omega)$ is purely imaginary and is antisymmetric with respect to the last two indices, \emph{b} and \emph{c} \cite{sipe2000second,nastos2006optical} and then $\eta^{abc}$=$-\eta^{acb}$. Like in optical spin injection, it is possible to generate current injection along all three directions with an incident CPL beam.
 
 
-\subsection{Second-harmonic generation}
+\subsection{Second-harmonic generation}\label{sec:theory-SHG}
 
 We follow the derivation developed in reference \cite{andersonPRB15}. This new formalism to calculate the second order susceptibility includes the scissors correction, the contribution of the nonlocal part of the pseudopotentials, and the cut function. 
 
@@ -316,8 +316,7 @@ transformation \cite{tancogne2014effect} and
 
 \section{Results}\label{sec:results}
 
-We present the results of the numerical calculations for {$D^{a}$}, {$\eta^{axy}$}, and $\chi^{abc}$ for the C$_{16}$H$_{8}$-alt and C$_{16}$H$_{8}$-up structures shown in Fig. \ref{fig:structures}. Both systems are infinite planes of carbons in a hexagonal honeycomb lattice with 50\% of hydrogenation in two different arrangements. The \emph{alt} arrangement has alternating hydrogen bonds in the upper and lower sides of the carbon plane, and the \emph{up} arrangement has them only on the upper side. Both structures are non-centrosymmetric and have a thickness of 5.56\,{\AA} and 2.76\,{\AA}, respectively. 
-
+We present the results of the numerical calculations for {$D^{a}$}, {$\eta^{axy}$}, and $\chi^{abc}$ for the C$_{16}$H$_{8}$-alt and C$_{16}$H$_{8}$-up structures shown in Fig. \ref{fig:structures}. Both systems are infinite planes of carbons in a hexagonal honeycomb lattice with 50\% of hydrogenation in two different arrangements. The \emph{alt} arrangement has alternating hydrogen bonds in the upper and lower sides of the carbon plane, and the \emph{up} arrangement has them only on the upper side. Both structures are non-centrosymmetric and have a thickness of 2.96\,{\AA} and 1.46\,{\AA}, respectively. 
 
 In this work we used the ABINIT code \cite{torrent2008implementation} for the
 calculation of the self-consistent ground state and the Kohn-Sham states
@@ -373,13 +372,19 @@ C$_{16}$H$_{8}$-up structures.\label{fig:Da}}
 
 \subsection{Optical current injection}
 
-Fig. \ref{fig:eta} depicts the spectra obtained for the current tensor components {$\eta^{axy}$} from the \emph{alt} and \emph{up} systems in. As with DSP, the onset of the system response occurs when the incident light achieves an energy above the gap. Values over (under) zero define a positive (negative) direction of the current injection along the \emph{a} direction.
+Fig. \ref{fig:eta} depicts the spectra obtained for the current tensor components $\eta^{axy}$ from the \emph{alt} and \emph{up} systems in. As with DSP, the onset of the system response occurs when the incident light achieves an energy above the gap. For \emph{alt} this occurs near 0.7185\,eV and for \emph{up} this occurs near 0.078\,eV.
 
-We see that for the \emph{alt} system we have a positive maximum in the \emph{y} direction at an energy of 1.25\,eV, reaching a value of 3.7\,mC$^{3}$/J$^{2}$s$^{2}$. For \emph{up} we obtain the maximum in the \emph{y} direction at an energy of 0.09\,eV, with a value of 28\,mC$^{3}$/J$^{2}$s$^{2}$. The response goes to zero after 1.75\,eV and 0.2\,eV for \emph{alt} and \emph{up}, respectively.
+Values over (under) zero define a positive (negative) direction of the current injection along the \emph{a} direction. As was mentioned before in Sec. \ref{sec:theory-OCI} for this case of CPL the $\eta^{abc}$ has only non zero components when the last two indexes are $xy$. So we report the three components, $xxy$, $yxy$, and $zxy$ , corresponding to the three Cartesian components.
 
-When calculating $\eta^{axy}$ % compare with Si(111)-In $8\times2
+We see that for the \emph{alt} system we have a positive maximum in the \emph{y} direction at an energy of 1.25\,eV, reaching a value of 1.95\,mC$^{3}$/J$^{2}$s$^{2}$. For \emph{up} we obtain the maximum in the \emph{y} direction at an energy of 0.09\,eV, with a value of 18\,mC$^{3}$/J$^{2}$s$^{2}$. The response goes to zero after 1.75\,eV and 0.2\,eV for \emph{alt} and \emph{up}, respectively.
 
-In table \ref{tab:etacomp} we present a comparison of the maximum current injection reported for different structures. From the table we can see that, excluding the case of the bulk CdSd, the systems presented here have large values in comparison with the other systems. For the \emph{alt} structure this response is comparable wit the Si(111) 2$\times$1 system for a larger photon energy and the response for the \emph{up} structure has the same order of magnitude as the bulk CdSd both in this case for a lower energy of the incoming beam.\
+In table \ref{tab:etacomp} we present a comparison of the absolute maximum values of $\eta^{abc}$ reported for different materials and the corresponding direction and enerby at which the maximum is reached. 
+
+From the table we can see that, excluding the case of the bulk CdSd, \emph{alt} reaches a larger value for $\eta^{abc}$ than some of the systems and is in the same order of magnitude that the Si(111) 2$\times$1 system and almos for the same photon energy, 1.25\,eV, which is in the which is the near infrared range. 
+
+\emph{up} structure has the same order of magnitude as the bulk CdSd both in this case for a lower energy of the incoming beam.\
+
+% $\eta^{abc}$
 
 \begin{figure}
 \subfloat{\includegraphics[width=\linewidth]{alt/alt-eta_sm-final.eps}}
@@ -398,8 +403,8 @@ In table \ref{tab:etacomp} we present a comparison of the maximum current inject
     \cline{3-4}
               & [eV]   & direction & [mC$^{3}$/J$^{2}$s$^{2}$] \\
     \hline
-    C$_{16}$H$_{8}$-alt     & 1.25  & y & 3.70  & *     \\
-    C$_{16}$H$_{8}$-up      & 0.09  & x & 28.0  & *     \\
+    C$_{16}$H$_{8}$-alt     & 1.25  & y & 1.95  & *     \\
+    C$_{16}$H$_{8}$-up      & 0.09  & x & 18.0  & *     \\
     Si(111)-In $8\times2$   & 1.24  & y & 0.35  & \cite{arzate2014optical}  \\
     Si(111) $2\times1$      & 0.75  & y & 1.22  & \cite{mendoza2012optical} \\
     GaAs(110) clean         & 4.30  & y & 0.30  & \cite{nastos2007full}     \\
@@ -480,10 +485,11 @@ possible to inject spin-polarized electrons along the perpendicular direction
 to the surface plane, obtaining a degree of spin polarization (DSP) of the
 injected electrons about 39\% and 57\%  (Fig. \ref{fig:Da}) at the photon energies of around 0.719
 and 0.08\,Ha  for the \emph{alt} and \emph{up} cases, respectively. Also there is a range of energy
-in which this DSP can be held, from 0.078 to 0.081\,eV and from 0.078 to 0.081\,eV for the \emph{alt} and \emph{up} cases, respectively. This results predicts that particularly the \emph{up} structure is usable for spintronics proposes. 
+in which this DSP can be held, from 0.078 to 0.081\,eV and from 0.078 to 0.081\,eV for the \emph{alt} and \emph{up} cases, respectively. This results predicts that particularly the \emph{up} structure is usable for spintronics proposes.
+
 Also, our results about the optical current injection (OCI) with circularly polarized light (CPL)
-show that the \emph{alt}  and \emph{up} systems have a response near to 3.70
-and 28.0\,mC$^{3}$/J$^{2}$s$^{2}$ (Fig. \ref{fig:eta}) for incident beams with energies of around
+show that the \emph{alt}  and \emph{up} systems have a response near to 1.95
+and 18.0\,mC$^{3}$/J$^{2}$s$^{2}$ (Fig. \ref{fig:eta}) for incident beams with energies of around
 1.25 and 0.09\,eV. According to measurements already done on bulk materials, it
 is actually possible to measure such amount of injection current density. The motion of the electrons at the
 C$_{16}$H$_{8}$-alt and C$_{16}$H$_{8}$-up structures can be controlled by the incidence of circularly

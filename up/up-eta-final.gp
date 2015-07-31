@@ -18,7 +18,7 @@ set xlabel "{\\large Photon Energy (eV)}"
 set ylabel "{\\large $\\eta^{ixy}(\\omega)$ \\ \\ [mC$^{3}$/J$^{2}$s$^{2}$]}"
 
 #z lenght of layer [Angstroms (la) & meters (lm)]
-la=2.766410479
+la=1.463921487
 lm=la*1E-10
 
 set xtics nomirror
@@ -26,7 +26,7 @@ set ytics nomirror
 
 # set xzeroaxis lw 1 lt 2 lc 0
 set xzeroaxis lw 1 lt 2 lc 0
-set label 1 "{\\large C$_{16}$H$_{8}$-up}"   at 0.025,-22 
+set label 1 "{\\large C$_{16}$H$_{8}$-up}"   at 0.025,-12 
 
 
 #######   THREE IN ONE PLOT 
