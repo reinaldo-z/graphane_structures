@@ -125,9 +125,24 @@ bulk semiconductors \cite{atanasov1996coherent,sipe2000second}, one
 dimensional (1D) nanotubes \cite{mele2000coherent,kral2000photogalvanic}, and
 two dimensional (2D) surfaces \cite{mele2000coherent,cabellos2011optical}.
 
-Nonlinear optical spectroscopies, particularly SHG, are important methods for studying surface properties due to their noninvasive and nondestructive nature. These properties include atomic structure, phase transitions, adsorption of atoms, and many others \cite{dadap1997second,daum1993identification,mcgilp1994probing,power1995resonant,godefroy1996electric,salazar2014molecular,chen1981surface,mendoza1998microscopic}. SHG is a particular case of the nonlinear optical process of sum of frequency in which photons of same frequency are annihilated to produce a new photon with twice the frequency and energy and half of the wavelength of the initial photons. This phenomena occurs when light beams from coherent sources inside over a nonlinear media that does not present inversion of symmetry \cite{bloembergen1962light,andersonPRB15,sipe2000second}.
+Nonlinear optical spectroscopies, particularly second-harmonic generation
+(SHG), are important methods for studying surface properties due to their
+noninvasive and surface sensitive nature. These properties include atomic
+structure, phase transitions, adsorption of atoms, and many others \cite{dadap
+1997second,daum1993identification,mcgilp1994probing,power1995resonant,godefroy
+1996electric,salazar2014molecular,chen1981surface,mendoza1998microscopic}.
+Many semiconducting materials are centrosymmetric, meaning they possess
+inversion symmetry. SHG is highly surface sensitive because in the dipole
+approximation, it can only occur at the surface of these materials, where the
+symmetry is broken \cite{bloembergen1962light,andersonPRB15,sipe2000second}.
+Graphene, with the aforementioned hydrogenation, is non-centrosymmetric. This
+means that there should be an inherint SHG response produced.
 
-The organization of the sections of this paper is as follows. In Sec. \ref{sec:theory} we present the theory and formulas that describe the DSP, current injection, and SHG. In Sec. \ref{sec:results} we describe the details of the calculation and the corresponding spectra for the respective \emph{alt} and \emph{up} structures. Finally, we give our conclusions in Sec. \ref{sec:conclusions}.
+This paper is organized as follows. In Sec. \ref{sec:theory} we present the
+theory and formulas that describe the DSP, OCI, and SHG. In Sec.
+\ref{sec:results} we describe the details of the calculations and the
+corresponding spectra for the respective \emph{alt} and \emph{up} structures.
+Finally, we give our conclusions in Sec. \ref{sec:conclusions}.
 
 
 \section{Theory}\label{sec:theory}
@@ -432,7 +447,6 @@ For \emph{up} we see one predominant peak around 0.05\,eV, completely produced
 by $2\omega$ transitions. The $xxy$ and $yxx$ components have an additional
 feature close to 0.09\,eV dominated by $1\omega$ transitions.
 
-
 In table \ref{tab:shgcomp} we show a comparison of the maximum SHG reported for different structures. From the table we can see that the \emph{alt} structure has the minimum absolute value of the SHG tensor while the \emph{up} has he biggest one. In both cases the energy of the incoming beam needed to produce SHG is smaller than for the other cases shown here.
 
 \begin{figure}
@@ -454,11 +468,12 @@ In table \ref{tab:shgcomp} we show a comparison of the maximum SHG reported for 
     \cline{3-4}
               & [eV]   & $abc$ & value \\
     \hline
-    C$_{16}$H$_{8}$-alt    & 0.4   & yxx   & 0.6 [pm$^{2}$/V]  & *     \\
-    C$_{16}$H$_{8}$-up     & 0.042 & yxx   & 70  [pm$^{2}$/V]  & *     \\
-    BN(6,0) NT pristine    & 5.0   & zzz   & 35  [pm/V]  & \cite{salazar2014molecular} \\
-    BN(6,0) NT+4(H$_{2}$)  & 5.0   & zzz   & 33  [pm/V]  & \cite{salazar2014molecular} \\
-    BN(6,0) NT+12(H$_{2}$) & 4.8   & zzz   & 15  [pm/V]  & \cite{salazar2014molecular} \\
+    C$_{16}$H$_{8}$-alt    & 0.4   & yxx   & 0.6$\times 10^{6}\,\mathrm{pm}^{2}/\mathrm{V}$  & *     \\
+    C$_{16}$H$_{8}$-up     & 0.042 & yxx   & 70 $\times 10^{6}\,\mathrm{pm}^{2}/\mathrm{V}$  & *     \\
+    Si(100)2$\times$1      & 1.5   & xxx   & 1.5$\times 10^{6}\,\mathrm{pm}^{2}/\mathrm{V}$  & \cite{andersonPRB15}  \\
+    BNNT(6,0) pristine    & 5.0   & zzz   & 35\,pm/V  & \cite{salazar2014molecular} \\
+    BNNT(6,0)+4(H$_{2}$)  & 5.0   & zzz   & 33\,pm/V  & \cite{salazar2014molecular} \\
+    BNNT(6,0)+12(H$_{2}$) & 4.8   & zzz   & 15\,pm/V  & \cite{salazar2014molecular} \\
   \hline
   \end{tabular}
   \caption[]{%
