@@ -59,9 +59,9 @@ set xtics nomirror
 set ytics nomirror
 
 unset zeroaxis
-set label 1 "{\\large C$_{16}$H$_{8}$-up}"   at 0.105,30 
+set label 1 "{\\large C$_{16}$H$_{8}$-up}"   at 0.119,16 
 
-set yrange [0:75]
+set yrange [0:40]
 set xrange [0:0.14]
 set key top right
 set output "up_shg_final_abs_sm.tex"
