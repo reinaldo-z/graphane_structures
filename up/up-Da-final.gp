@@ -27,6 +27,6 @@ set ylabel "{\\large $D^{i}$}"
 
 #.813
 
-p   "dsp.kk_x_8452_40-spin_scissor_0_Nc_18" u 1:(0.813*2*$4/($2+$3+1.e-10)) title "$D^{x}$" w l lw 3.0 dt 6 lc rgb "red",\
-    "dsp.kk_y_8452_40-spin_scissor_0_Nc_18" u 1:(0.813*2*$4/($2+$3+1.e-10)) title "$D^{y}$" w l lw 3.0 dt 7 lc rgb "dark-green",\
-    "dsp.kk_z_8452_40-spin_scissor_0_Nc_18" u 1:(0.813*2*$4/($2+$3+1.e-10)) title "$D^{z}$" w l lw 1.5 dt 1 lc rgb "blue",\
+p   "dsp.kk_x_8452_40-spin_scissor_0_Nc_18" u 1:(0.813*2*$4/($2+$3+1.e-10)) title "$D^{x}$" w l lw 3.5 dashtype 6 lc rgb "red",\
+    "dsp.kk_y_8452_40-spin_scissor_0_Nc_18" u 1:(0.813*2*$4/($2+$3+1.e-10)) title "$D^{y}$" w l lw 1.5 dashtype 1  lc rgb "blue",\
+    "dsp.kk_z_8452_40-spin_scissor_0_Nc_18" u 1:(0.813*2*$4/($2+$3+1.e-10)) title "$D^{z}$" w l lw 3.5 dashtype 7 lc rgb "dark-green",\
