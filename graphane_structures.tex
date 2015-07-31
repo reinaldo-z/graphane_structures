@@ -125,9 +125,25 @@ bulk semiconductors \cite{atanasov1996coherent,sipe2000second}, one
 dimensional (1D) nanotubes \cite{mele2000coherent,kral2000photogalvanic}, and
 two dimensional (2D) surfaces \cite{mele2000coherent,cabellos2011optical}.
 
-Nonlinear optical spectroscopies, particularly SHG, are important methods for studying surface properties due to their noninvasive and nondestructive nature. These properties include atomic structure, phase transitions, adsorption of atoms, and many others \cite{dadap1997second,daum1993identification,mcgilp1994probing,power1995resonant,godefroy1996electric,salazar2014molecular,chen1981surface,mendoza1998microscopic}. SHG is a particular case of the nonlinear optical process of sum of frequency in which photons of same frequency are annihilated to produce a new photon with twice the frequency and energy and half of the wavelength of the initial photons. This phenomena occurs when light beams from coherent sources inside over a nonlinear media that does not present inversion of symmetry \cite{bloembergen1962light,andersonPRB15,sipe2000second}.
+Nonlinear optical spectroscopies, particularly second-harmonic generation
+(SHG), are important methods for studying surface properties due to their
+noninvasive and surface sensitive nature. These properties include atomic
+structure, phase transitions, adsorption of atoms, and many others 
+\cite{dadap1997second,daum1993identification,mcgilp1994probing,%
+power1995resonant,godefroy1996electric,salazar2014molecular,chen1981surface,%
+mendoza1998microscopic}.
+Many semiconducting materials are centrosymmetric, meaning they possess
+inversion symmetry. SHG is highly surface sensitive because in the dipole
+approximation, it can only occur at the surface of these materials, where the
+symmetry is broken \cite{bloembergen1962light,andersonPRB15,sipe2000second}.
+Graphene, with the aforementioned hydrogenation, is non-centrosymmetric. This
+means that there should be an inherint SHG response produced.
 
-The organization of the sections of this paper is as follows. In Sec. \ref{sec:theory} we present the theory and formulas that describe the DSP, current injection, and SHG. In Sec. \ref{sec:results} we describe the details of the calculation and the corresponding spectra for the respective \emph{alt} and \emph{up} structures. Finally, we give our conclusions in Sec. \ref{sec:conclusions}.
+This paper is organized as follows. In Sec. \ref{sec:theory} we present the
+theory and formulas that describe the DSP, OCI, and SHG. In Sec.
+\ref{sec:results} we describe the details of the calculations and the
+corresponding spectra for the respective \emph{alt} and \emph{up} structures.
+Finally, we give our conclusions in Sec. \ref{sec:conclusions}.
 
 
 \section{Theory}\label{sec:theory}
@@ -349,11 +365,11 @@ As mentioned previously, the \emph{alt} and \emph{up} cases both have much large
   Si(111)-As $1\times1$& 2.20 & z & 100    & \cite{mendoza2012optical} \\
   Bulk Si              & 3.44 & z & 30     & \cite{nastos2007full}     \\
   Bulk GaAs            & 1.50 & z & 50     & \cite{nastos2007full,bhat2005excitonic} \\
-  Bulk CdSe            & 1.8  & z$^{\star}$ & 100& \cite{nastos2007full}\\
+  Bulk CdSe            & 1.8  & z$^{\dag}$ & 100& \cite{nastos2007full}\\
   \hline
   \end{tabular}
   \caption[]{%
-  Comparison of the reported absolute maximum values of {$D^{a}$} for different materials ($^{*}$This work $^{\star}xy$ polarization).}
+  Comparison of the reported absolute maximum values of {$D^{a}$} for different materials ($^{*}$This work $^{\dag}xy$ polarization).}
   \label{tab:dacomp}
 \end{table}
 
@@ -377,7 +393,9 @@ We see that for the \emph{alt} system we have a positive maximum in the \emph{y}
 
 In table \ref{tab:etacomp} we present a comparison of the absolute maximum values of $\eta^{abc}$ reported for different materials and the corresponding direction and enerby at which the maximum is reached. 
 
-From the table we can see that, excluding the case of the bulk CdSd, \emph{alt} reaches a larger value for $\eta^{yxy}$ than some of the systems presented and is in the same order of magnitude that the Si(111) 2$\times$1 system and almos for the same photon energy, 1.25\,eV, which is in the which is the near infrared range, and in the same direction. Again excludeing the case of the bulk CdSe we have \emph{up} that the $\eta^{yxy}$ reaches a value of 18.0\,mC$^{3}$/J$^{2}$s$^{2}$ that is one order of magnitude larger than the cases for other media. The absolute maximum is reached at 0.09\,eV which is again in the near infrared. Oposite to that, the maxima for the bulk CdSe, GaAs(110) clean, and GaS (110)-Sb are in the optical energy range.
+From the table we can see that, excluding the case of the bulk CdSd, \emph{alt} reaches a larger value for $\eta^{abc}$ than some of the systems and is in the same order of magnitude that the Si(111) 2$\times$1 system and almos for the same photon energy, 1.25\,eV, which is in the which is the near infrared range. 
+
+\emph{up} structure has the same order of magnitude as the bulk CdSd both in this case for a lower energy of the incoming beam.\
 
 The reference \cite{laman1999quantum} includes a report in which an experiment was performed using a single-frequency beam to produce OCI in bulk CdSe. The experiment demostrated that the current injection has a  linearly proportional dependence whti the beam intensity and then makeing the confirming about that the intensity and spectral dependence are in reasonable agreement with a first-principles calculation. They measured an OCI of 2\,$\mu$A/cm$^{2}$ that penetrated 1.8\,$\mu$/cm$^{2}$. The corresponding value of $\eta^{axy}$ is reported in Table \ref{tab:etacomp}.
 
@@ -409,7 +427,8 @@ The reference \cite{laman1999quantum} includes a report in which an experiment w
   \hline
   \end{tabular}
   \caption[]{%
-  Comparison of the reported reported absolute maximum values of {$\eta^{ixy}$} for different materials ($^{*}$This work $^{\star}yz$ polarization $^{\dag}$experimental value).}
+  Comparison of the highest reported absolute values of {$\eta^{ixy}$} for 
+    different structures. ($^{*}$This work. $^{\dag}yz$ polarization)}
   \label{tab:etacomp}
 \end{table}
 
@@ -430,16 +449,18 @@ For \emph{up} we see one predominant peak around 0.05\,eV, completely produced
 by $2\omega$ transitions. The $xxy$ and $yxx$ components have an additional
 feature close to 0.09\,eV dominated by $1\omega$ transitions.
 
-
-In table \ref{tab:shgcomp} we show a comparison of the maximum SHG reported for different structures. From the table we can see that the \emph{alt} structure has the minimum absolute value of the SHG tensor while the \emph{up} has he biggest one. In both cases the energy of the incoming beam needed to produce SHG is smaller than for the other cases shown here.
+In table \ref{tab:shgcomp} we show a comparison of the maximum $\chi^{abc}$
+peak reported for different structures. This table is merely available for
+qualitative comparison.
 
 \begin{figure}
 \subfloat{\includegraphics[width=\linewidth]{alt/alt_shg_final-abs_sm.eps}}
 \hfill
 \subfloat{\includegraphics[width=\linewidth]{up/up_shg_final_abs_sm.eps}}
-\caption{(Color online) Spectra of the absolute value of SHG for the C$_{16}$H$_{8}$-alt 
-    and C$_{16}$H$_{8}$-up structures corresponding to the sum of the absolute 
-    value for the non zero real and imaginary components of $\chi^{abc}(2\omega;\omega,
+\caption{(Color online) Spectra of the absolute value of SHG for the
+    C$_{16}$H$_{8}$-alt and C$_{16}$H$_{8}$-up structures corresponding to the
+    sum of the absolute value for the non zero real and imaginary components
+    of $\chi^{abc}(2\omega;\omega,
     \omega) $ tensor.\label{fig:shg-abs-both}}
 \end{figure}
 
@@ -452,11 +473,12 @@ In table \ref{tab:shgcomp} we show a comparison of the maximum SHG reported for 
     \cline{3-4}
               & [eV]   & $abc$ & value \\
     \hline
-    C$_{16}$H$_{8}$-alt    & 0.4   & yxx   & 0.6 [pm$^{2}$/V]  & *     \\
-    C$_{16}$H$_{8}$-up     & 0.042 & yxx   & 70  [pm$^{2}$/V]  & *     \\
-    BN(6,0) NT pristine    & 5.0   & zzz   & 35  [pm/V]  & \cite{salazar2014molecular} \\
-    BN(6,0) NT+4(H$_{2}$)  & 5.0   & zzz   & 33  [pm/V]  & \cite{salazar2014molecular} \\
-    BN(6,0) NT+12(H$_{2}$) & 4.8   & zzz   & 15  [pm/V]  & \cite{salazar2014molecular} \\
+    C$_{16}$H$_{8}$-alt   & 0.4   & xyy   & 0.32$\times 10^{6}\,\mathrm{pm}^{2}/\mathrm{V}$  & *     \\
+    C$_{16}$H$_{8}$-up    & 0.042 & yxx   & 37 $\times 10^{6}\,\mathrm{pm}^{2}/\mathrm{V}$  & *     \\
+    Si(100)2$\times$1     & 1.5   & xxx   & 1.5$\times 10^{6}\,\mathrm{pm}^{2}/\mathrm{V}$  & \cite{andersonPRB15}  \\
+    BNNT(6,0) pristine    & 5.0   & zzz   & 35\,pm/V  & \cite{salazar2014molecular} \\
+    BNNT(6,0)+4(H$_{2}$)  & 5.0   & zzz   & 33\,pm/V  & \cite{salazar2014molecular} \\
+    BNNT(6,0)+12(H$_{2}$) & 4.8   & zzz   & 15\,pm/V  & \cite{salazar2014molecular} \\
   \hline
   \end{tabular}
   \caption[]{%
