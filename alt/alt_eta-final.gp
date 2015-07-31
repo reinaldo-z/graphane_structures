@@ -7,7 +7,7 @@ set xtics 0.25 nomirror
 set ytics nomirror
 
 #z lenght of layer [Angstroms (la) & meters (lm)]
-la=5.564770162
+la=2.944749766
 lm=la*1E-10
 
 # # set xrange [0.3:2]
@@ -17,7 +17,7 @@ lm=la*1E-10
 #     "eta2.kk_xxy_yxy_zxy_14452_65-spin_scissor_0_Nc_18" u 1:($4*lm) title "$\\eta^{zxy}$" w l ls 4,\
 
 set zeroaxis lw 1 lt 2 lc 0
-set label 1 "{\\large C$_{16}$H$_{8}$-alt}"   at 0.425,-2.3 
+set label 1 "{\\large C$_{16}$H$_{8}$-alt}"   at 0.425,-1.15 
 
 
 #######   THREE IN ONE PLOT 
