@@ -7,8 +7,7 @@ set xlabel "{\\large Photon Energy (eV)}"
 
 abso(w,x,y,z)=(sqrt((w+y)**2+(x+z)**2))
 #z lenght of layer [Angstroms (la) & meters (lm)]
-la=5.564770162
-lm=la*1E-10
+scale=0.00029447126375103006
 
 set xtics nomirror
 set ytics nomirror
@@ -65,11 +64,11 @@ set yrange [0:0.7]
 set key top right
 set output "alt_shg_final-abs_sm.tex"
 set ylabel "{\\large $|\\chi^{ijk}(2\\omega; \\omega, \\omega)|$ [$\\times10^{6} $\\,pm$^{2}$/V] }"
-p   "shgL.vnl.sm_0.15_xxx_14452_55-nospin_scissor_0_Nc_41" u 1:(lm*1E6*(abso($2,$3,$4,$5))) title "xxx" w l lw 3.5 dt 6 lc rgb "red",\
-    "shgL.vnl.sm_0.15_xxy_14452_55-nospin_scissor_0_Nc_41" u 1:(lm*1E6*(abso($2,$3,$4,$5))) title "xxy" w l lw 3.5 dt 7 lc rgb "dark-green",\
-    "shgL.vnl.sm_0.15_xyy_14452_55-nospin_scissor_0_Nc_41" u 1:(lm*1E6*(abso($2,$3,$4,$5))) title "xyy" w l lw 1.5 dt 1 lc rgb "blue",\
-    "shgL.vnl.sm_0.15_yxx_14452_55-nospin_scissor_0_Nc_41" u 1:(lm*1E6*(abso($2,$3,$4,$5))) title "yxx" w l lw 3.5 dt 12 lc rgb "dark-orange",\
-    "shgL.vnl.sm_0.15_yyy_14452_55-nospin_scissor_0_Nc_41" u 1:(lm*1E6*(abso($2,$3,$4,$5))) title "yyy" w l lw 3.5 dt 13 lc rgb "magenta",\
+p   "shgL.vnl.sm_0.15_xxx_14452_55-nospin_scissor_0_Nc_41" u 1:(scale*(abso($2,$3,$4,$5))) title "xxx" w l lw 3.5 dt 6 lc rgb "red",\
+    "shgL.vnl.sm_0.15_xxy_14452_55-nospin_scissor_0_Nc_41" u 1:(scale*(abso($2,$3,$4,$5))) title "xxy" w l lw 3.5 dt 7 lc rgb "dark-green",\
+    "shgL.vnl.sm_0.15_xyy_14452_55-nospin_scissor_0_Nc_41" u 1:(scale*(abso($2,$3,$4,$5))) title "xyy" w l lw 1.5 dt 1 lc rgb "blue",\
+    "shgL.vnl.sm_0.15_yxx_14452_55-nospin_scissor_0_Nc_41" u 1:(scale*(abso($2,$3,$4,$5))) title "yxx" w l lw 3.5 dt 12 lc rgb "dark-orange",\
+    "shgL.vnl.sm_0.15_yyy_14452_55-nospin_scissor_0_Nc_41" u 1:(scale*(abso($2,$3,$4,$5))) title "yyy" w l lw 3.5 dt 13 lc rgb "magenta",\
 
 set zeroaxis lw 1 lt 2 lc 0
 unset label 1
