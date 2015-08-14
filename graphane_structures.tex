@@ -68,15 +68,36 @@ promising results for potential applications in spintronics.}}
 
 Graphene is an allotrope of carbon with a planar, hexagonal, two-dimensional honeycomb structure with one carbon atom at each vertex \cite{geimNM07}. In first instance it was made by graphite exfoliation \cite{geimNM07} and actually its growth is better controlled by chemical vapor deposition \cite{reinaNL08}. It has attracted great interest due to its distinctive properties, such as the fractional quantum Hall effect at room temperature \cite{bottegoniAPL13}, optical absorption \cite{thongrattanasiriPRL12}, thermal conductivity \cite{balandinNL08}. Graphene behaves like a metal \cite{geimNM07}, but it is possible to tune the band gap by increasing the surface area using lithographic processes \cite{hanPRL07}, application of an electric field \cite{zhangN09}, applying uniaxial strain \cite{niACSN08} or doping by depletion of the substrate's dopant carriers \cite{ohtaS06}, with B and N \cite{guoIJ11} or hydrogen \cite{eliasS09,guisingerNL09,samarakoonACSN10}. The band gap opening process by doping occurs due to the modification of the carbon-carbon bonds of the graphene structure and then producing a semiconducting material.
 
-In this paper we present a study on two hydrogenated graphene structures, C$_{16}$H$_{8}$-alt and C$_{16}$H$_{8}$-up. We can obtain different spatial configurations by varying the amount and location of the hydrogen doping. Both of these cases have 50\% hydrogenation, and present a discernible band gap. As shown in Fig. \ref{fig:structures}, when a hydrogen atom is bonded to a carbon atom in the graphene plane, it pulls the carbon atom from the plane modifying the carbon-carbon bond length, and possibly opening the band gap \cite{samarakoonACSN10}. The \emph{alt} case has hydrogen on both sides of the sheet, alternating between the upper and lower faces of the plane. The \emph{up} case has all the hydrogens on a single side, producing a zig-zag form in the carbon lattice.
+In this paper we present a study on two hydrogenated graphene structures, C$_{16}$H$_{8}$-alt and C$_{16}$H$_{8}$-up. We can obtain different spatial configurations by varying the amount and location of the hydrogen doping. Both of these cases have 50\% hydrogenation, and present a discernible band gap. As shown in Fig. \ref{fig:structures}, when a hydrogen atom is bonded to a carbon atom of the graphene plane, it pulls the carbon atom from the original position modifying the carbon-carbon bond length, and then opening the band gap \cite{samarakoonACSN10}. The \emph{alt} case (Fig. \ref{fig:altstrc}) has hydrogen on both sides of the sheet, alternating between the upper and lower faces of the plane. The \emph{up} case (Fig. \ref{fig:upstrc}) has all the hydrogens on a single side, producing a zig-zag form in the carbon lattice. In this paper we made a theoretical study of three optical nonlinear phenomena in the structures mentioned above: the degree of spin polarization (DSP) along a given $a$ direction ($D^{a}$), optical current injection (OCI) along a given $a$ direction ($\mathbf{\dot{J}}^{a}$), and second-harmonic generation (SHG). We briefly describe these as follows.
 
-We focus this study on three optical phenomena primarily used for characterizing semiconducting materials: the degree of spin polarization, optical current injection, and second-harmonic generation (SHG). We briefly describe these as follows.
+\begin{figure}[t]
+\subfloat[Top and side view of graphene structure.]
+{\includegraphics[width=0.49\linewidth]{strc/graph1}
+ \includegraphics[width=0.49\linewidth]{strc/graph2}}\label{fig:graphenestrc}
+\\
+\subfloat[Top and side view of C$_{16}$H$_{8}$-alt structure.]
+{\includegraphics[width=0.49\linewidth]{strc/alt1}
+ \includegraphics[width=0.49\linewidth]{strc/alt2}\label{fig:altstrc}}
+\\
+\subfloat[Top and side view of C$_{16}$H$_{8}$-up structure.]
+{\includegraphics[width=0.49\linewidth]{strc/up1}
+ \includegraphics[width=0.49\linewidth]{strc/up2}\label{fig:upstrc}}
+\caption{(Color online) Scheme of the \emph{alt} and \emph{up} structures. The light (dark) spheres correspond to hydrogen (carbon) atoms and the RGB arrows correspond to the ortogonal directional vectors $\hat{x}$, $\hat{y}$, and $\hat{z}$, respectively. \label{fig:structures}}
+\end{figure}
 
-The optical spin injection is characterized by the adimensional degree of spin polarization (DSP). The DSP is the fraction of injected electrons in the conduction bands that are spin polarized versus those that are not. There are theoretical reports of DSP calculations for bulk media (Si, GaAs, CdSe, and Ge semiconductors) \cite{nastosPRB07,cabellosPRB09,riouxPRB10} and surfaces (Si(111):In, Si(111):As, GaAs(110):Sb, GaAs(110), and Si(111) with $4\times2$ and $8\times2$ reconstructions) \cite{mendozaPRB12,arzatePRB14}.
+\subsection{Degree of spin polarization}
 
-The optical current injection (OCI) is a surface sensitive optical effect with potential application for surface characterization and chemical reaction control. It is a second-order nonlinear process that takes place in non- centrosymmetric materials \cite{nastosPRB06,cabellosPRB11,bhatPRB05,fraserPRL99}. This photocurrent has been studied in bulk semiconductors \cite{atanasovPRL96,sipePRB00}, one dimensional (1D) nanotubes \cite{melePRB00,kralPRL00}, and two dimensional (2D) surfaces \cite{melePRB00,cabellosPRB11}.
+The injection and detection of spin polarized electrons into nonmagnetic materials is the core of spintronics \cite{vzuticRMP04,fertRMP08} and an important  problem in condensed matter theory.
+The idea of using light for spin polarization and its detection dates to the 1960s \cite{LampelPRL68}. Later, it was shown that conversion of angular momentum of light into electron spin and vice versa is very efficient in III-IV semiconductors \cite{dyakonovOO84}. The optical spin injection is characterized through the dimensionless quantity of DSP, $\mathcal{D}(\omega)$, which is a function of the photon frequency, $\omega$. The DSP quantifies the fraction of injected electrons into the conduction bands that are spin polarized.
+The process of optical spin injection appears when circularly polarized light is incident on a semiconducting material \cite{dyakonovOO84}. This allows spin polarized electrons to move from the valence to the conduction bands and the resulting polarization is produced by interaction between the electron spin and its motion caused by the spin-orbit coupling in the material. It can be calculated with full band structure local- density approximation (LDA), and $\textbf{k}\cdot\textbf{p}$ methods \cite{nastosPRB07,cabellosPRB09}. There are theoretical reports of DSP calculations for bulk media (Si, GaAs, CdSe, and Ge semiconductors) \cite{nastosPRB07,cabellosPRB09} and surfaces (Si(111):In, Si(111):As, GaAs(110):Sb, GaAs(110), and Si(111) with $4\times2$ and $8\times2$ reconstructions) \cite{mendozaPRB12,arzatePRB14}. 
 
-Nonlinear optical spectroscopies, particularly second-harmonic generation (SHG), are important methods for studying surface properties due to their noninvasive and surface sensitive nature. These properties include atomic structure, phase transitions, adsorption of atoms, and many others  \cite{dadapPRB97,daumPRL93,mcgilpOE94,powerPRL95,godefroyAPL96,salazarPRB14,chenPRL81,mendozaPRL98}. Many semiconducting materials are centrosymmetric, meaning they possess inversion symmetry. SHG is highly surface sensitive because in the dipole approximation, it can only occur at the surface of these materials, where the symmetry is broken \cite{bloembergenPR62,andersonPRB15,sipePRB00}. Graphene, with the aforementioned hydrogenation, is non-centrosymmetric. This means that there should be an inherint SHG response produced.
+\subsection{Optical current injection}
+
+The understanding and control of structure and chemistry at bulk and surface systems is of fundamental and technological interest. The optical current injection is a surface-sensitive optical effect that offers the potential to control chemical reactions \cite{bhatPRB05,hachePRL97}. This is a second-order optical nonlinear effect associated with the more strongly divergent part of 􏰡$\chi_{2}(0;\omega,\omega)$ \cite{sipePRB00}. In noncentrosymmetric crystals, a photocurrent can be injected with a single optical beam coming  from the interference of one-photon absorption processes associated with different linear polarizations of the light \cite{sipePRB00}. From the total of the 32 crystal classes only 21 has not inversion of symmetry and this process is only allowed in 18 of them. Crystals corresponding to the $\bar{6}m\bar{2}$, $\bar{6}$, and $\bar{4}$$\bar{3}$m are the exceptions. The one-photon current injection is characterized by the current injection tensor, $\eta(0; \omega, − \omega)$, which is a particular case of the current injection tensor $\eta(\omega_{1}-\omega_{2}; \omega_{1},-\omega_{2})$, where $\omega_{1}$ and $\omega_{2}$ are the frequencies of two different optical fields. We write the frequency dependence of the injection current tensor as $\eta(\omega)$ instead of $\eta(0; \omega, − \omega)$. This process can be understood as a quantum interference between absorption events associated with different linear polarizations. The energy intensification of the promoted carriers is produced by the electromagnetic field till the rise in momentum is provided by the crystal lattice. The process of optical current injection can be generated in bulk semiconductors \cite{hachePRL97,sipePRB00}, two-dimensional (2D) systems \cite{melePRB00,cabellosPRB11}, and one-dimensional (1D) nanotubes \cite{melePRB00}. 
+
+\subsection{Second-harmonic generation}
+
+The characterization of structures and interfaces is an important issue in the development of microelectronics, nanomaterials, semiconductors, and other areas of interest in science and technology. Much of this research has been produced from experiments that emerge from the emission or scattering of electrons from the structures under study. These require ultrahigh vacuum (UHV) conditions and provide no access to buried systems. Secon-harmonic generation (SHG) is a nonlinear process in which a pair of photons of same frequency area annihilated to produce new photons with twice the energy, twice of energy and half of wavelength of the initial photons. The SHG spectroscopy technique brings the possibility of study properties of media and has a non invasive, nondestructive and surface sensitive nature. The process is suitable with non-UHV conditions even if the systems is buried under transparent overlayers. The macroscopic basis of SHG, which describe the phase, intensity, and polarization of detected fields to nonlinear and linear susceptibilities at the material interface is described in \cite{downerSIA01}.In non centrosymmetric media the bulk SHG signal of centrosymmetric materials is identically zero but the SHG process can occur at the surface where the inversion symmetry is broken. Using this technique it is possible to characterize properties like phase transitions, atomic structure, molecular and atomic physisorption, structure deformation, and many others \cite{dadapPRB97,godefroyAPL96,salazarPRB14,mendozaPRL98}. 
 
 This paper is organized as follows. In Sec. \ref{sec:theory} we present the theory and formulas that describe the DSP, OCI, and SHG. In Sec. \ref{sec:results} we describe the details of the calculations and the corresponding spectra for the respective \emph{alt} and \emph{up} structures. Finally, we give our conclusions in Sec. \ref{sec:conclusions}.
 
@@ -85,27 +106,12 @@ This paper is organized as follows. In Sec. \ref{sec:theory} we present the theo
 
 In this section we present the formulas used for calculating the DSP \cite{nastosPRB07,mendozaPRB12}, OCI \cite{cabellosPRB11,sipePRB00}, and SHG \cite{andersonPRB15}. For a full derivations see the references for each.
 
-\begin{figure}[t]
-\subfloat[Top and side view of graphene structure.]
-{\includegraphics[width=0.49\linewidth]{strc/graph1}
- \includegraphics[width=0.49\linewidth]{strc/graph2}}
-\\
-\subfloat[Top and side view of C$_{16}$H$_{8}$-alt structure.]
-{\includegraphics[width=0.49\linewidth]{strc/alt1}
- \includegraphics[width=0.49\linewidth]{strc/alt2}}
-\\
-\subfloat[Top and side view of C$_{16}$H$_{8}$-up structure.]
-{\includegraphics[width=0.49\linewidth]{strc/up1}
- \includegraphics[width=0.49\linewidth]{strc/up2}}
-\caption{The \emph{alt} and \emph{up} structures. The light
-(dark) spheres correspond to hydrogen (carbon) atoms.\label{fig:structures}}
-\end{figure}
 
 \subsection{Optical spin injection}\label{sec:theory-DSP}
 
 The injection and detection of spin polarized electrons into nonmagnetic
 materials is the core of spintronics \cite{vzuticRMP04,%
-fertRMP08,pezzoliSPIE12,bottegoniPRB13} and an important 
+fertRMP08} and an important 
 problem in condensed matter
 theory. The process of optical spin injection appears when circularly
 polarized light (CPL) \cite{dyakonovOO84} is incident on a
