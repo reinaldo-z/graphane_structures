@@ -73,16 +73,16 @@ In this paper we present a study on two hydrogenated graphene structures, C$_{16
 \begin{figure}[t]
 \subfloat[Top and side view of graphene structure.]
 {\includegraphics[width=0.49\linewidth]{strc/graph1}
- \includegraphics[width=0.49\linewidth]{strc/graph2}}\label{fig:graphenestrc}
+ \includegraphics[width=0.49\linewidth]{strc/graph2}\label{fig:graphenestrc}}
 \\
 \subfloat[Top and side view of C$_{16}$H$_{8}$-alt structure.]
-{\includegraphics[width=0.49\linewidth]{strc/alt1}
- \includegraphics[width=0.49\linewidth]{strc/alt2}\label{fig:altstrc}}
+{\includegraphics[width=0.49\linewidth]{strc/alt-vec1}
+ \includegraphics[width=0.49\linewidth]{strc/alt-vec2}\label{fig:altstrc}}
 \\
 \subfloat[Top and side view of C$_{16}$H$_{8}$-up structure.]
-{\includegraphics[width=0.49\linewidth]{strc/up1}
- \includegraphics[width=0.49\linewidth]{strc/up2}\label{fig:upstrc}}
-\caption{(Color online) Scheme of the \emph{alt} and \emph{up} structures. The light (dark) spheres correspond to hydrogen (carbon) atoms and the RGB arrows correspond to the ortogonal directional vectors $\hat{x}$, $\hat{y}$, and $\hat{z}$, respectively. \label{fig:structures}}
+{\includegraphics[width=0.49\linewidth]{strc/up-2e-vec1}
+ \includegraphics[width=0.49\linewidth]{strc/up-2e-vec2}\label{fig:upstrc}}
+\caption{(Color online) Scheme of the graphene (Fig. \ref{fig:graphenestrc}), \emph{alt} (Fig. \ref{fig:altstrc}), and \emph{up} (Fig. \ref{fig:upstrc}) structures. The light (dark) spheres correspond to hydrogen (carbon) atoms and the small solid RGB arrows at the bottom-left positions of each picture correspond to the ortogonal directional vectors $\hat{x}$, $\hat{y}$, and $\hat{z}$, respectively. The big red (green) dashed arrows in Figs. \ref{fig:altstrc} and \ref{fig:upstrc} represent the direction where the $\mathcal{D}^{a}$ ($\eta^{abc}_{i}$) response is aligned in the $xy$ and $xz$ plane. This information is explained in subsections \ref{subsec:results-DSP} and \ref{subsec:results-eta}.\label{fig:structures}}
 \end{figure}
 
 \subsection{Degree of spin polarization}
@@ -93,7 +93,7 @@ The process of optical spin injection appears when circularly polarized light is
 
 \subsection{Optical current injection}
 
-The understanding and control of structure and chemistry at bulk and surface systems is of fundamental and technological interest. The optical current injection is a surface-sensitive optical effect that offers the potential to control chemical reactions \cite{bhatPRB05,hachePRL97}. This is a second-order optical nonlinear effect associated with the more strongly divergent part of 􏰡$\chi_{2}(0;\omega,\omega)$ \cite{sipePRB00}. In noncentrosymmetric crystals, a photocurrent can be injected with a single optical beam coming  from the interference of one-photon absorption processes associated with different linear polarizations of the light \cite{sipePRB00}. From the total of the 32 crystal classes only 21 has not inversion of symmetry and this process is only allowed in 18 of them. Crystals corresponding to the $\bar{6}m\bar{2}$, $\bar{6}$, and $\bar{4}$$\bar{3}$m are the exceptions. The one-photon current injection is characterized by the current injection tensor, $\eta(0; \omega, − \omega)$, which is a particular case of the current injection tensor $\eta(\omega_{1}-\omega_{2}; \omega_{1},-\omega_{2})$, where $\omega_{1}$ and $\omega_{2}$ are the frequencies of two different optical fields. We write the frequency dependence of the injection current tensor as $\eta(\omega)$ instead of $\eta(0; \omega, − \omega)$. This process can be understood as a quantum interference between absorption events associated with different linear polarizations. The energy intensification of the promoted carriers is produced by the electromagnetic field till the rise in momentum is provided by the crystal lattice. The process of optical current injection can be generated in bulk semiconductors \cite{hachePRL97,sipePRB00}, two-dimensional (2D) systems \cite{melePRB00,cabellosPRB11}, and one-dimensional (1D) nanotubes \cite{melePRB00}. 
+The understanding and control of structure and chemistry at bulk and surface systems is of fundamental and technological interest. The optical current injection, $\mathbf{\dot{J}}(\omega)$ , is a surface-sensitive optical effect that offers the potential to control chemical reactions \cite{bhatPRB05,hachePRL97}. This is a second-order optical nonlinear effect associated with the more strongly divergent part of 􏰡$\chi_{2}(0;\omega,\omega)$ \cite{sipePRB00}. In noncentrosymmetric crystals, a photocurrent can be injected with a single optical beam coming  from the interference of one-photon absorption processes associated with different linear polarizations of the light \cite{sipePRB00}. From the total of the 32 crystal classes only 21 has not inversion of symmetry and this process is only allowed in 18 of them. Crystals corresponding to the $\bar{6}m\bar{2}$, $\bar{6}$, and $\bar{4}$$\bar{3}$m are the exceptions. The one-photon current injection is characterized by the current injection tensor, $\eta(0; \omega, − \omega)$, which is a particular case of the current injection tensor $\eta(\omega_{1}-\omega_{2}; \omega_{1},-\omega_{2})$, where $\omega_{1}$ and $\omega_{2}$ are the frequencies of two different optical fields. We write the frequency dependence of the injection current tensor as $\eta(\omega)$ instead of $\eta(0; \omega, − \omega)$. This process can be understood as a quantum interference between absorption events associated with different linear polarizations. The energy intensification of the promoted carriers is produced by the electromagnetic field till the rise in momentum is provided by the crystal lattice. The process of optical current injection can be generated in bulk semiconductors \cite{hachePRL97,sipePRB00}, two-dimensional (2D) systems \cite{melePRB00,cabellosPRB11}, and one-dimensional (1D) nanotubes \cite{melePRB00}. 
 
 \subsection{Second-harmonic generation}
 
@@ -290,7 +290,7 @@ We present the results of the numerical calculations for {$D^{a}$}, {$\eta^{axy}
 In this work we used the ABINIT code \cite{torrentCMS08} for the calculation of the self-consistent ground state and the Kohn-Sham states using DFT-LDA with a planewave basis in the independent particle approximation. We used Hartwigsen-Goedecker-Hutter (HGH) relativistic separable dual-space Gaussian pseudopotentials \cite{hartwigsenPRB98} that include spin-orbit interaction for calculating $D^{i}$ and {$\eta^{ixy}$}, although the latter can also be calculated with pseudopotentials that lack this interaction. For $\chi^{abc}$ we used Troullier-Martins pseudopotentials \cite{troullierPRB91} that are fully separable nonlocal pseudopotentials in the Kleiman-Bylander form \cite{kleinmanPRL82}. The contribution from the nonlocal part used in Eq. \eqref{eq:nonlocal} is carried out using the DP code \cite{olevanoDP}. We used cutoff energies of 65\,Ha and 40\,Ha for the \emph{alt} and \emph{up} cases, respectively. The energy eigenvalues and matrix elements were calculated using 14452 \textbf{k} for \emph{alt} and 8452 \textbf{k} points for \emph{up}, in the irreducible Brillouin zone (IBZ).
 
 
-\subsection{Optical spin injection}
+\subsection{Optical spin injection}\label{subsec:results-DSP}
 
 In Fig. \ref{fig:Da} we show the $D^{i}$ spectra for C$_{16}$H$_{8}$-alt and C$_{16}$H$_{8}$-up. Values over (under) zero define a positive (negative) direction of spin polarization along the \emph{i} direction. For both cases, the system response begins when the energy of the incoming light is larger than the gap energy. For \emph{alt} this occurs near 0.7185\,eV and for \emph{up} this occurs near 0.078\,eV. Both cases have at least one {$D^{a}$} with more than 30\% of DSP. For \emph{up} we have nearly 60\% DSP in the $z$ direction, and for \emph{alt} nearly 40\% DSP in the $x$ and $y$ directions. The \emph{alt} structure presents an energy range between 0.7185\,eV and 0.72\,eV where it is possible to have the maximum value for $D^{a}$ in all directions. After 0.72\,eV, the DSP declines for all three components. Likewise, the \emph{up} system presents maximum values between 0.078\,eV to 0.081\,eV, and after 0.081\,eV the DSP slowly vanishes. 
 
@@ -330,7 +330,7 @@ C$_{16}$H$_{8}$-up structures.\label{fig:Da}}
 \end{figure}
 
 
-\subsection{Optical current injection}
+\subsection{Optical current injection}\label{subsec:results-eta}
 
 Fig. \ref{fig:eta} depicts the spectra obtained for the current tensor components $\eta^{axy}$ from the \emph{alt} and \emph{up} systems in. As with DSP, the onset of the system response occurs when the incident light achieves an energy above the gap. For \emph{alt} this occurs near 0.7185\,eV and for \emph{up} this occurs near 0.078\,eV.
 
