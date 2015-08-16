@@ -68,7 +68,7 @@ promising results for potential applications in spintronics.}}
 
 Graphene is an allotrope of carbon with a planar, hexagonal, two-dimensional honeycomb structure with one carbon atom at each vertex \cite{geimNM07}. In first instance it was made by graphite exfoliation \cite{geimNM07} and actually its growth is better controlled by chemical vapor deposition \cite{reinaNL08}. It has attracted great interest due to its distinctive properties, such as the fractional quantum Hall effect at room temperature \cite{bottegoniAPL13}, optical absorption \cite{thongrattanasiriPRL12}, thermal conductivity \cite{balandinNL08}. Graphene behaves like a metal \cite{geimNM07}, but it is possible to tune the band gap by increasing the surface area using lithographic processes \cite{hanPRL07}, application of an electric field \cite{zhangN09}, applying uniaxial strain \cite{niACSN08} or doping by depletion of the substrate's dopant carriers \cite{ohtaS06}, with B and N \cite{guoIJ11} or hydrogen \cite{eliasS09,guisingerNL09,samarakoonACSN10}. The band gap opening process by doping occurs due to the modification of the carbon-carbon bonds of the graphene structure and then producing a semiconducting material.
 
-In this paper we present a study on two hydrogenated graphene structures, C$_{16}$H$_{8}$-alt and C$_{16}$H$_{8}$-up. We can obtain different spatial configurations by varying the amount and location of the hydrogen doping. Both of these cases have 50\% hydrogenation, and present a discernible band gap. As shown in Fig. \ref{fig:structures}, when a hydrogen atom is bonded to a carbon atom of the graphene plane, it pulls the carbon atom from the original position modifying the carbon-carbon bond length, and then opening the band gap \cite{samarakoonACSN10}. The \emph{alt} case (Fig. \ref{fig:altstrc}) has hydrogen on both sides of the sheet, alternating between the upper and lower faces of the plane. The \emph{up} case (Fig. \ref{fig:upstrc}) has all the hydrogens on a single side, producing a zig-zag form in the carbon lattice. In this paper we made a theoretical study of three optical nonlinear phenomena in the structures mentioned above: the degree of spin polarization (DSP) along a given $a$ direction ($D^{a}$), optical current injection (OCI) along a given $a$ direction ($\mathbf{\dot{J}}^{a}$), and second-harmonic generation (SHG). We briefly describe these as follows.
+In this paper we present a study on two hydrogenated graphene structures. It is possible to obtain different spatial configurations by varying the amount and location of the hydrogen bonds. Our cases are the C$_{16}$H$_{8}$-alt and C$_{16}$H$_{8}$-up structures. Both of these cases have 50\% hydrogenation, and present a discernible band gap. As shown in Fig. \ref{fig:structures}, when a hydrogen atom is bonded to a carbon atom of the graphene plane, it pulls the carbon atom from the original position modifying the carbon-carbon bond length, and then opening the band gap \cite{samarakoonACSN10}. The \emph{alt} case (Fig. \ref{fig:altstrc}) has hydrogen on both sides of the sheet, alternating between the upper and lower faces of the plane. The \emph{up} case (Fig. \ref{fig:upstrc}) has all the hydrogens on a single side, producing a zig-zag form in the carbon lattice. In this paper we made a theoretical study of three optical nonlinear phenomena in the structures mentioned above: the degree of spin polarization (DSP) along a given $a$ direction, $D^{a}$, optical current injection along a given $a$ direction, $\mathbf{\dot{J}}^{a}$, and second-harmonic generation (SHG). We describe these as follows.
 
 \begin{figure}[t]
 \subfloat[Top and side view of graphene structure.]
@@ -99,48 +99,40 @@ The understanding and control of structure and chemistry at bulk and surface sys
 
 The characterization of structures and interfaces is an important issue in the development of microelectronics, nanomaterials, semiconductors, and other areas of interest in science and technology. Much of this research has been produced from experiments that emerge from the emission or scattering of electrons from the structures under study. These require ultrahigh vacuum (UHV) conditions and provide no access to buried systems. Secon-harmonic generation (SHG) is a nonlinear process in which a pair of photons of same frequency area annihilated to produce new photons with twice the energy, twice of energy and half of wavelength of the initial photons. The SHG spectroscopy technique brings the possibility of study properties of media and has a non invasive, nondestructive and surface sensitive nature. The process is suitable with non-UHV conditions even if the systems is buried under transparent overlayers. The macroscopic basis of SHG, which describe the phase, intensity, and polarization of detected fields to nonlinear and linear susceptibilities at the material interface is described in \cite{downerSIA01}.In non centrosymmetric media the bulk SHG signal of centrosymmetric materials is identically zero but the SHG process can occur at the surface where the inversion symmetry is broken. Using this technique it is possible to characterize properties like phase transitions, atomic structure, molecular and atomic physisorption, structure deformation, and many others \cite{dadapPRB97,godefroyAPL96,salazarPRB14,mendozaPRL98}. 
 
-This paper is organized as follows. In Sec. \ref{sec:theory} we present the theory and formulas that describe the DSP, OCI, and SHG. In Sec. \ref{sec:results} we describe the details of the calculations and the corresponding spectra for the respective \emph{alt} and \emph{up} structures. Finally, we give our conclusions in Sec. \ref{sec:conclusions}.
+This paper is organized as follows. In Sec. \ref{sec:theory} we present the theory and formulas that describe the DSP, optical current injection, and SHG. In Sec. \ref{sec:results} we describe the details of the calculations and the corresponding spectra for the respective \emph{alt} and \emph{up} structures. Finally, we give our conclusions in Sec. \ref{sec:conclusions}.
 
 
 \section{Theory}\label{sec:theory}
 
-In this section we present the formulas used for calculating the DSP \cite{nastosPRB07,mendozaPRB12}, OCI \cite{cabellosPRB11,sipePRB00}, and SHG \cite{andersonPRB15}. For a full derivations see the references for each.
+In this section we present a brief description of the formalism that describes the three phenomena presented here since they have already been reported before with full details. The reader can check all the derivations for the DSP in Refs. \cite{nastosPRB07,mendozaPRB12}, optical current injection in Refs. \cite{cabellosPRB11,sipePRB00}, and SHG in Refs. \cite{nastosPRB05,andersonPRB15}.
 
 
 \subsection{Optical spin injection}\label{sec:theory-DSP}
 
-The injection and detection of spin polarized electrons into nonmagnetic
-materials is the core of spintronics \cite{vzuticRMP04,%
-fertRMP08} and an important 
-problem in condensed matter
-theory. The process of optical spin injection appears when circularly
-polarized light (CPL) \cite{dyakonovOO84} is incident on a
-semiconducting material. This allows spin polarized electrons to move from the
-valence to the conduction bands. This process is the result of the interaction
-between the electron spin and the motion caused by the spin-orbit coupling in
-the material. The DSP is the percentage of injected spin polarized electrons
-in the conduction bands. It can be calculated with full band structure local-
-density approximation (LDA), and $\textbf{k}\cdot\textbf{p}$ methods
-\cite{nastosPRB07,cabellosPRB09}.
-
-The spin and carrier generation rate can be described by 
-
+The DSP, $\mathcal{D}^{a}$, along a given direction, $a$, is defined as
+\begin{equation}\label{eq:da}
+\mathcal{D}^{a}=\frac{\dot{S}^{abc}(\omega)}{(\hbar/2)\dot{n}^{bc}(\omega)},
+\end{equation}
+where the spin generation rate, $\dot{S}^{abc}(\omega)$, and the carrier generation rate, $\dot{n}^{bc}(\omega)$,  are given by 
 \begin{align*}
-\dot{S}^{a}(\omega) &= \zeta^{abc}(\omega)E^{b}(-\omega)E^{c}(\omega), \nonumber \\ 
-\dot{n}(\omega)     &= \xi^{bc}E^{b}(-\omega)E^{c}(\omega)
+\dot{S}^{abc}(\omega) &= \zeta^{abc}(\omega)E^{b}(-\omega)E^{c}(\omega), \nonumber \\ 
+\dot{n}^{bc}(\omega)  &= \xi^{bc}E^{b}(-\omega)E^{c}(\omega),
 \end{align*}
-where $\zeta^{abc}$ is the spin injection rate tensor and $\xi^{bc}$ is the carrier generation rate tensor. The spin injection rate tensor is given by
-\begin{align}\label{eq:zeta}
+from where $\zeta^{abc}$ is the spin injection rate tensor and $\xi^{bc}$ is the carrier generation rate tensor. The spin injection rate tensor is given by
+\begin{align*}\label{eq:zeta}
 \zeta^{abc} &= \frac{i\pi e^{2}}{\hbar^{2}}\int\frac{d^{3}k}{8\pi^{3}}
 \sum_{vcc'}^{\prime}\text{Im}\bigl[S^{a}_{c'c}(\textbf{k})
 r^{b}_{vc'}(\textbf{k})r^{c}_{cv}(\textbf{k})\nonumber\\
 &\qquad+S^{a}_{cc'}(\textbf{k})
 r^{b}_{vc}(\textbf{k})r^{c}_{c'v}(\textbf{k})\bigr]
 \delta(\omega_{cv}(\textbf{k})-\omega),
-\end{align}
-where $S^{n}$ and $r^{n}$ are the spin and position matrix elements. The carrier generation rate tensor is related to the linear optical response tensor by $\xi^{bc}$=Im$[(2/\hbar)\chi^{bc}]$ . The $abc$ superscripts denote the Cartesian coordinates and the expression of Eq. \eqref{eq:zeta} satisfies the $\zeta^{abc} = -\zeta^{acb}$ condition.
+\end{align*}
+where $S$ and $r$ are the spin and position matrix elements. The carrier generation rate tensor is related to the linear optical response tensor by 
+\begin{equation*}
+\xi^{bc}=Im[(2/\hbar)\chi^{bc}].
+\end{equation*}
 
-We assume an incoming beam of CPL at normal incidence that propogates along the $-z$ direction, $\mathbf{E}(\omega) = E_{0}(\omega)(\hat{x} - i\hat{y})/\sqrt{2}$. The DSP along a given $a$ direction is defined as $D^{a}=\dot{S}^{a}(\omega)/(\hbar/2)\dot{n}(\omega)$, which can be reduced to 
+The superscripts in previous expressions denote the three Cartesian coordinates. We assume an incoming beam of CPL at normal incidence that propogates along the $-z$ direction, $\mathbf{E}(\omega) = E_{0}(\omega)(\hat{x} - i\hat{y})/\sqrt{2}$. Then, the expression of Eq. \eqref{eq:da} can be reduced to
 \begin{equation}\label{eq:D^i}
 D^{a}(\omega) = 
 \frac{-4i\zeta^{axy}(\omega)}
@@ -152,39 +144,37 @@ an incident CPL beam.
 
 \subsection{Optical current injection}\label{sec:theory-OCI}
 
-This current can be produced with a single optical beam of CPL via the interference of one photon-absorption processes from different linear polarizations of light \cite{sipePRB00}. The  OCI is defined as
+The optical current injection is defined as
 \begin{equation}
 \mathbf{\dot{J}}^{a}_{\text{inj}}(\omega) =
 \eta^{abc}(\omega)E_{b}(\omega)E_{c}(\omega), \label{eq:eta}
 \end{equation}
 where $\eta^{abc}(\omega)$ is the surface injection current tensor and is given by
 \begin{align*}
-\eta(\omega) =  \frac{i\pi e^{3}}{\hbar^{2}}&\int\frac{d^{3}k}{8\pi^{3}}
+\eta^{abc}(\omega) =& \frac{i\pi e^{3}}{\hbar^{2}}\int\frac{d^{3}k}{8\pi^{3}}
 \nonumber \\
 \times &
 \sum_{vc}\Delta^{a}_{cv}(\mathbf{k})\text{Im}\big[r^{b}_{cv}(\mathbf{k})
 r^{c}_{cv}(\mathbf{k})\big]\delta(\omega_{cv}(\mathbf{k})-\omega).
 \end{align*}
-$r^{n}$ is the position matrix elements and 
+from where $r$ is the position matrix elements and 
 \begin{equation*}
 \Delta^{a}_{cv} = v^{a}_{cc}(\mathbf{k})-v^{a}_{vv}(\mathbf{k}),
 \end{equation*}
-where $v^{a}_{nn}(\mathbf{k})=p^{a}_{nn}(\mathbf{k})/m_{e}$ is the electron velocity for band $n$.
+where $v^{a}_{nn}(\mathbf{k})=p^{a}_{nn}(\mathbf{k})/m_{e}$ is the electron velocity for a given $n$ band.
 
-The tensor $\eta^{abc}(\omega)$ is purely imaginary and is antisymmetric with respect to the last two indices, \emph{b} and \emph{c} \cite{sipePRB00,nastosPRB06} and then $\eta^{abc}$=$-\eta^{acb}$. Like in optical spin injection, it is possible to generate current injection along all three directions with an incident CPL beam.
+The tensor $\eta^{abc}(\omega)$ is purely imaginary and is antisymmetric with respect to the last two indices, \emph{b} and \emph{c} \cite{sipePRB00,nastosPRB06}. Like in optical spin injection, it is possible to generate current injection along all three directions with an incident CPL beam.
 
 
 \subsection{Second-harmonic generation}\label{sec:theory-SHG}
 
-We follow the derivation developed in reference \cite{andersonPRB15}. This new formalism to calculate the second order susceptibility includes the scissors correction, the contribution of the nonlocal part of the pseudopotentials, and the cut function. 
+For the SHG we followed the the new formalism derived in reference \cite{andersonPRB15}. This formalism to calculate the second order susceptibility tensor is calculated, including in one unique formulation (i) the scissors correction, (ii) the contributionof the nonlocal part of the pseudopotentials, and (iii) the derivation for the inclusion of the cut function. For our calculation we used the cut function equal to one recovering then the response of the complete system.
 
 The second order nonlinear polarization is given by 
-\begin{equation*}
+\begin{equation*}\label{eq:pol}
 \mathcal{P}(2\omega) = \chi^{abc}(-2\omega;\omega,\omega)E^{b}(\omega)E^{c}(\omega)
 \end{equation*}
-where $\chi^{abc}$ is the nonlinear susceptibility tensor responsible for the SHG and satisfies the $\chi^{abc}$ = $\chi^{acb}$ condition. The superscripts $abc$ denote the Cartesian components.  
-
-The expressions for the imaginary part of $\chi^{abc}$ for the interband (\emph{e}) and intraband (\emph{i}) contributions, at $1\omega$ and $2\omega$ are given by
+where $\chi^{abc}(-2\omega;\omega,\omega)$ is the nonlinear susceptibility tensor responsible for the SHG and satisfies the $\chi^{abc}$ = $\chi^{acb}$ condition. Again, the superscripts in previous expression denotes the Cartesian coordinates and if repeated are to be summed over. The expressions for the imaginary part of the tensor components $\chi^{abc}(-2\omega;\omega,\omega)$ at $1\omega$ and $2\omega$ are divided in the interband ($e$) and intraband ($i$) contributions. They correspond to transitions between the conduction and valence bands and transitions between levels within the conduction or valence band, respectively. This expressions are given by
 \begin{subequations}\label{eq:chis}
 \begin{align}
 \mathrm{Im}[\chi^{\mathrm{a}\mathrm{b}\mathrm{c}}_{e,\omega}] =  
@@ -266,17 +256,11 @@ r^{\mathrm{b}}_{cv}
 .
 \end{align}
 \end{subequations}
-$\mathbf{v}^{\Sigma}_{nm}$ is the complete velocity matrix elements defined as
-\begin{equation}\label{eq:nonlocal}
+where $\mathbf{v}^{\Sigma}_{nm}$ is the complete velocity matrix elements defined as
+\begin{equation*}\label{eq:nonlocal}
 \mathbf{v}^{\Sigma}=\mathbf{v}+\mathbf{v}^{\mathrm{nl}}+\mathbf{v}^{S},
-\end{equation}
-where $\mathbf{v}^{\mathrm{nl}}$ includes the nonlocal potential, and
-$\mathbf{v}^{S}$ the scissors correction. Lastly, $r^{\mathrm{a}}_{nm}$ is the
-position matrix elements, and
-$\omega^\Sigma_{nm}$=$\omega^{\Sigma}_{n}$-$\omega^{\sigma}_{m}$.
-
-The real part of each contribution can be obtained through a Kramers-Kronig
-transformation \cite{tancognePRB14} and
+\end{equation*}
+from where $\mathbf{v}^{\mathrm{nl}}$ includes the nonlocal contribution, and $\mathbf{v}^{S}$ the scissors correction. Lastly, $r^{\mathrm{a}}_{nm}$ is the position matrix elements, and $\omega^\Sigma_{nm}$=$\omega^{\Sigma}_{n}$-$\omega^{\sigma}_{m}$. The real part of each contribution can be obtained through a Kramers-Kronig transformation \cite{tancognePRB14} and
 \begin{equation*}\label{eq:chitotal}
     \chi^{abc} = \chi^{abc}_{e,\omega} + \chi^{abc}_{e,2\omega} +
     \chi^{abc}_{i,\omega} + \chi^{abc}_{i,2\omega}
@@ -285,9 +269,11 @@ transformation \cite{tancognePRB14} and
 
 \section{Results}\label{sec:results}
 
-We present the results of the numerical calculations for {$D^{a}$}, {$\eta^{axy}$}, and $\chi^{abc}$ for the C$_{16}$H$_{8}$-alt and C$_{16}$H$_{8}$-up structures shown in Fig. \ref{fig:structures}. Both systems are infinite planes of carbons in a hexagonal honeycomb lattice with 50\% of hydrogenation in two different arrangements. The \emph{alt} arrangement has alternating hydrogen bonds in the upper and lower sides of the carbon plane, and the \emph{up} arrangement has them only on the upper side. Both structures are non-centrosymmetric and have a thickness of 2.96\,{\AA} and 1.46\,{\AA}, respectively. 
+We present the results of the numerical calculations for {$D^{a}$}, {$\eta^{axy}$}, and $\chi^{abc}$ for the C$_{16}$H$_{8}$-alt and C$_{16}$H$_{8}$-up structures shown in Fig. \ref{fig:structures}. Both systems are infinite carbon system with 50\% of hydrogenation in two different arrangements. The \emph{alt} arrangement has alternating hydrogen bonds in the upper and lower sides of the carbon sheet, and the \emph{up} arrangement has them only on the upper side. Both structures are non-centrosymmetric and have a thickness of 2.96\,{\AA} and 1.46\,{\AA}, respectively. Due to the hydrogenation the planar like graphene hexagonal geometry is broken and both structures fall in the primitive triclinic $P1$ space group. The corresponding coordinates in angstroms (\AA) for the \emph{alt} and \emph{up} structures are presented in Tables \ref{tab:altstrc} and \ref{tab:upstrc}.
 
-In this work we used the ABINIT code \cite{torrentCMS08} for the calculation of the self-consistent ground state and the Kohn-Sham states using DFT-LDA with a planewave basis in the independent particle approximation. We used Hartwigsen-Goedecker-Hutter (HGH) relativistic separable dual-space Gaussian pseudopotentials \cite{hartwigsenPRB98} that include spin-orbit interaction for calculating $D^{i}$ and {$\eta^{ixy}$}, although the latter can also be calculated with pseudopotentials that lack this interaction. For $\chi^{abc}$ we used Troullier-Martins pseudopotentials \cite{troullierPRB91} that are fully separable nonlocal pseudopotentials in the Kleiman-Bylander form \cite{kleinmanPRL82}. The contribution from the nonlocal part used in Eq. \eqref{eq:nonlocal} is carried out using the DP code \cite{olevanoDP}. We used cutoff energies of 65\,Ha and 40\,Ha for the \emph{alt} and \emph{up} cases, respectively. The energy eigenvalues and matrix elements were calculated using 14452 \textbf{k} for \emph{alt} and 8452 \textbf{k} points for \emph{up}, in the irreducible Brillouin zone (IBZ).
+
+
+In this work we used the ABINIT code \cite{torrentCMS08} for the calculation of the self-consistent ground state and the Kohn-Sham states using DFT-LDA with a planewave basis in the IPA. We used Hartwigsen-Goedecker-Hutter (HGH) relativistic separable dual-space Gaussian pseudopotentials \cite{hartwigsenPRB98} that include spin-orbit interaction for calculating $D^{i}$ and {$\eta^{ixy}$}, although the latter can also be calculated with pseudopotentials that lack this interaction. For $\chi^{abc}$ we used Troullier-Martins pseudopotentials \cite{troullierPRB91} that are fully separable nonlocal pseudopotentials in the Kleiman-Bylander form \cite{kleinmanPRL82}. The contribution from the nonlocal part used in Eq. \eqref{eq:nonlocal} is carried out using the DP code \cite{olevanoDP}. We used cutoff energies of 65\,Ha and 40\,Ha for the \emph{alt} and \emph{up} cases, respectively. The energy eigenvalues and matrix elements were calculated using 14452 \textbf{k} for \emph{alt} and 8452 \textbf{k} points for \emph{up}, in the irreducible Brillouin zone (IBZ).
 
 
 \subsection{Optical spin injection}\label{subsec:results-DSP}
@@ -428,8 +414,8 @@ qualitative comparison.
               & [eV]   & $abc$ & value \\
     \hline
     C$_{16}$H$_{8}$-alt   & 0.4   & xyy   & 0.32$\times 10^{6}\,\mathrm{pm}^{2}/\mathrm{V}$  & *     \\
-    C$_{16}$H$_{8}$-up    & 0.042 & yxx   & 37 $\times 10^{6}\,\mathrm{pm}^{2}/\mathrm{V}$  & *     \\
-    Si(100)2$\times$1     & 1.5   & xxx   & 1.5$\times 10^{6}\,\mathrm{pm}^{2}/\mathrm{V}$  & \cite{andersonPRB15}  \\
+    C$_{16}$H$_{8}$-up    & 0.042 & yxx   & 37 $\times  10^{6}\,\mathrm{pm}^{2}/\mathrm{V}$  & *     \\
+    Si(100)2$\times$1     & 1.5   & xxx   & 1.5$\times  10^{6}\,\mathrm{pm}^{2}/\mathrm{V}$  & \cite{andersonPRB15}  \\
     BNNT(6,0) pristine    & 5.0   & zzz   & 35\,pm/V  & \cite{salazarPRB14} \\
     BNNT(6,0)+4(H$_{2}$)  & 5.0   & zzz   & 33\,pm/V  & \cite{salazarPRB14} \\
     BNNT(6,0)+12(H$_{2}$) & 4.8   & zzz   & 15\,pm/V  & \cite{salazarPRB14} \\
