@@ -139,7 +139,7 @@ D^{a}(\omega) =
     {\hbar\left[\xi^{xx}(\omega) + \xi^{yy}(\omega)\right]}.
 \end{equation}
 It is possible to generate current injection along all three orthogonal directions with
-an incident CPL beam and so the total DSP can be obtained by the relation
+an incident circularly polarized beam and so the total DSP can be obtained by the relation
 \begin{equation}\label{eq:dsptotal}
 \mathcal{D}(\omega) = \sqrt{ [\mathcal{D}^{x}(\omega)]^{2} + [\mathcal{D}^{y}(\omega)]^{2} +[\mathcal{D}^{z}(\omega)]^{2}  }
 \end{equation}
@@ -166,8 +166,10 @@ from where $r$ is the position matrix elements and
 \end{equation*}
 where $v^{a}_{nn}(\mathbf{k})=p^{a}_{nn}(\mathbf{k})/m_{e}$ is the electron velocity for a given $n$ band.
 
-The tensor $\eta^{abc}(\omega)$ is purely imaginary and is antisymmetric with respect to the last two indices, \emph{b} and \emph{c} \cite{sipePRB00,nastosPRB06}. Like in optical spin injection, it is possible to generate current injection along all three directions with an incident CPL beam.
-
+The tensor $\eta^{abc}(\omega)$ is purely imaginary and is antisymmetric with respect to the last two indices, \emph{b} and \emph{c} \cite{sipePRB00,nastosPRB06}. Like in optical spin injection, it is possible to generate current injection along all three directions with an incident circularly polarized beam. In a similar way as has been made in Eq. \eqref{eq:dsptotal} it is possible to have the total $\eta^{abc}$ with the relation
+\begin{equation}\label{eq:etatotal}
+\eta(\omega) = \sqrt{ [\eta^{xxy}(\omega)]^{2} + [\eta^{yxy}(\omega)]^{2} +[\eta^{zxy}(\omega)]^{2}}
+\end{equation}
 
 \subsection{Second-harmonic generation}\label{sec:theory-SHG}
 
@@ -281,28 +283,33 @@ We present the results of the numerical calculations for {$D^{a}$}, {$\eta^{abc}
   \cline{2-4}
   & $x$ & $y$ & $z$ \\
   \hline
+  \multicolumn{2}{l}{First layer}\\
 H & 2.460673853 & 1.078176853 & 10.796355805 \\
+  \multicolumn{2}{l}{Second layer}\\
 C & 2.460673853 & 1.389876044 & 11.872402140 \\
 C & 3.691010864 & 2.185854780 & 12.110583807 \\
 C & 3.691010863 & 3.496845641 & 12.426806318 \\
 C & 2.460673854 & 0.030828762 & 12.665048452 \\
+  \multicolumn{2}{l}{Third layer}\\
 H & 2.460673853 & 0.342436286 & 13.741105571 \\
   \hline
   \end{tabular}
   \caption[]{%
-  Atom types and positions for the C$_{16}$H$_{8}$-alt structure unit cell in Cartesian coordinates.}
+  Atom types and positions for the C$_{16}$H$_{8}$-alt structure unit cell in Cartesian coordinates. The system was separated in three layers: (i) top hydrogen atoms, (ii) central carbon atoms, (iii) down hydrogen atoms. }
   \label{tab:altstrc}
 \end{table}
 \begin{table}[t]
   % \sidecaption
   \begin{tabular}{cccc}
   \hline
-  Atom type &  \multicolumn{3}{c}{Position} \\
+  Atom type &  \multicolumn{3}{c}{Position [\AA]} \\
   \cline{2-4}
   & $x$ & $y$ & $z$ \\
   \hline
+  \multicolumn{2}{l}{First layer}\\
 H &  -0.0000004500 & 0.001295619 & 25.719423746 \\
 H & \ 2.3250097760 & 4.025098686 & 25.719040070 \\
+  \multicolumn{2}{l}{Second layer}\\
 C & \ 2.3249742340 & 4.029801762 & 23.408608492 \\
 C &  -0.0000004500 & 0.004159945 & 23.407634295 \\
 C &  -0.0000004500 & 2.681215349 & 22.969636067 \\
@@ -310,7 +317,7 @@ C & \ 2.3250023170 & 6.706652267 & 22.953013267 \\
   \hline
   \end{tabular}
   \caption[]{%
-  Atom types and positions for the C$_{16}$H$_{8}$-up structure unit cell in Cartesian coordinates.}
+  Atom types and positions for the C$_{16}$H$_{8}$-up structure unit cell in Cartesian coordinates. The system was separated in two layers: (i) top hydrogen atoms, (ii) down carbon atoms.}
   \label{tab:upstrc}
 \end{table}
 
@@ -319,7 +326,7 @@ We used the ABINIT code \cite{torrentCMS08} for the calculation of the self-cons
 
 \subsection{Optical spin injection}\label{subsec:results-DSP}
 
-In Fig. \ref{fig:Da} we show the $D^{a}$ spectra for the C$_{16}$H$_{8}$-alt and C$_{16}$H$_{8}$-up systems. Values over (under) zero define a positive (negative) direction of spin polarization along the \emph{a} direction with respect {\Large bla\ldots}. For both cases, the system response begins when the energy of the incoming light is is the same of the gap energy. For the \emph{alt} system this occurs at 0.72\,eV and for the \emph{up} one at 0.078\,eV. Both cases have at least one {$D^{a}$} with more than 30\% of DSP. The \emph{alt} system presents nearly 40\% DSP in the $x$ and $y$ directions. Also this structure presents an energy range between 0.720\,eV and 0.722\,eV where it is possible to have the maximum value for $D^{a}$ in all three directions. After 0.72\,eV, the DSP declines for the three components. Using the Eq. \eqref{eq:dsptotal} we have that the \emph{alt} system presents a total DSP of 61\% for an incoming beam of 0.72\,eV. It is fixed in an azimuthal angle $\varphi=-46^{\circ}$ in the $xy$ plane and a polar angle $\theta=35^{\circ}$ in the $xz$ plane. In Fig. \ref{fig:altstrc} the big red dashed arrows depicts only the direction where the total DSP for the \emph{alt} system points in the $xy$ (left) and $xz$ (right) planes for the angles mentioned above. For the \emph{up} structure we have nearly 60\% DSP in the $z$ direction. Likewise the case of the \emph{alt} system, the \emph{up} one presents a range between 0.078\,eV to 0.081\,eV, where the maximum values for DSP are held for each component and after 0.081\,eV the DSP slowly vanishes. Using again the Eq. \eqref{eq:dsptotal} we have that the \emph{up} structure presents a total DSP of 64\% for an incoming beam of 0.08\,eV. It is fixed in an azimuthal angle $\varphi=-18^{\circ}$ in the $xy$ plane and a polar angle $\theta=-62^{\circ}$ in the $xz$ plane. In Fig. \ref{fig:altstrc} the big red dashed arrows depicts only the direction where the total DSP for the \emph{alt} system points in the $xy$ (left) and $xz$ (right) planes for the angles mentioned above. In Table \ref{tab:dacomp} we present a comparison of the absolute maximum values of $D^{a}$ in a given specific direction for different materials and the corresponding direction and energy at which they are reached. From this table we have that the \emph{alt} and \emph{up} systems have less DSP than the Si(111)-As 1$\times$1 and the the bulk CdSe system, but are comparable to the Si(111)-In 8$\times$2, bulk Si, and bulk GaAs systems. Si(111)-In 8$\times$2 and \emph{alt} both have maxima around 0.7\,eV, which is the near infrared range. Conversely, the maxima for Si(111)-As 1$\times$1, bulk Si, and bulk GaAs all occur in the optical energy range.
+In Fig. \ref{fig:Da} we show the $D^{a}$ spectra for the C$_{16}$H$_{8}$-alt and C$_{16}$H$_{8}$-up systems. Values over (under) zero define a positive (negative) direction of spin polarization along the \emph{a} direction with respect {\Large bla\ldots}. For both cases, the system response begins when the energy of the incoming light is is the same of the gap energy. For the \emph{alt} system this occurs at 0.72\,eV and for the \emph{up} one at 0.078\,eV. Both cases have at least one {$D^{a}$} with more than 30\% of DSP. The \emph{alt} system presents nearly 40\% DSP in the $x$ and $y$ directions. Also this structure presents an energy range between 0.720\,eV and 0.722\,eV where it is possible to hold the maximum value for $D^{a}$ in all three directions. After 0.72\,eV, the DSP declines for the three components. Using the Eq. \eqref{eq:dsptotal} we have that the \emph{alt} system presents a total DSP of 61\% for an incoming beam of 0.72\,eV. It is fixed in an azimuthal angle $\varphi=-46^{\circ}$ in the $xy$ plane and a polar angle $\theta=35^{\circ}$ in the $xz$ plane. In Fig. \ref{fig:altstrc} the big red dashed arrows depicts only the direction where the total DSP for the \emph{alt} system points in the $xy$ (left) and $xz$ (right) planes for the angles mentioned above. For the \emph{up} structure we have nearly 60\% DSP in the $z$ direction. Likewise the case of the \emph{alt} system, the \emph{up} one presents a range between 0.078\,eV to 0.081\,eV, where it is possible to hold the maximum values for DSP for each component and after 0.081\,eV the DSP slowly vanishes. Using again the Eq. \eqref{eq:dsptotal} we have that the \emph{up} structure presents a total DSP of 64\% for an incoming beam of 0.08\,eV. It is fixed in an azimuthal angle $\varphi=-18^{\circ}$ in the $xy$ plane and a polar angle $\theta=-62^{\circ}$ in the $xz$ plane. In Fig. \ref{fig:altstrc} the big red dashed arrows depicts only the direction where the total DSP for the \emph{alt} system points in the $xy$ (left) and $xz$ (right) planes for the angles mentioned above. In Table \ref{tab:dacomp} we present a comparison of the absolute maximum values of $D^{a}$ in a given specific direction for different materials and the corresponding direction and energy at which they are reached. From this table we have that the \emph{alt} and \emph{up} systems have less DSP than the Si(111)-As 1$\times$1 and the the bulk CdSe system, but are comparable to the Si(111)-In 8$\times$2, bulk Si, and bulk GaAs systems. Si(111)-In 8$\times$2 and \emph{alt} both have maxima around 0.7\,eV, which is the near infrared range. Conversely, the maxima for Si(111)-As 1$\times$1, bulk Si, and bulk GaAs all occur in the optical energy range.
 
 As mentioned previously, the \emph{alt} and \emph{up} cases both have much larger energy ranges for the maximum DSP values in all directions. This compares very favorably with the other systems, that have very narrow ranges over which the maximum DSP is achieved. The 0.7\,eV maxima for \emph{alt} makes it an interesting candidate for further study, as this energy is readily obtainable using terahertz radiation \large{Cesudo?\ldots}.
 
@@ -351,24 +358,33 @@ As mentioned previously, the \emph{alt} and \emph{up} cases both have much large
 \subfloat{\includegraphics[width=\linewidth]{up/up-Da.eps}}
 \caption{(Color online) Spectra of the degree of spin polarization along the
 \emph{a} direction, {$D^{a}$}, for the C$_{16}$H$_{8}$-alt and
-C$_{16}$H$_{8}$-up structures.\label{fig:Da}}
+C$_{16}$H$_{8}$-up structures under incidence of circularly polarized light.\label{fig:Da}}
 \end{figure}
 
 
 \subsection{Optical current injection}\label{subsec:results-eta}
 
-Fig. \ref{fig:eta} depicts the spectra obtained for the current tensor components $\eta^{axy}$ from the \emph{alt} and \emph{up} systems. As with DSP, the onset of the system response occurs when the incident light of the incoming beam is the energy of the gap. The plus (minus) sign indicates the positive (negative) direction of the current injection along the \emph{a} direction. We see that for the \emph{alt} system we have a positive maximum in the \emph{y} direction at an energy of 1.25\,eV, reaching a value of 2.30\,mC$^{3}$/J$^{2}$s$^{2}$ and the response goes to zero after 1.75\,eV. For the \emph{up} case we obtain the maximum in the \emph{y} direction at an energy of 0.09\,eV, with a value of 18\,mC$^{3}$/J$^{2}$s$^{2}$. In this case the response goes to zero after 0.2\,eV. In table \ref{tab:etacomp} we present a comparison of the absolute maximum values of $\eta^{abc}$ reported for different materials and the corresponding components and energy at which the maximum is reached. From the table we can see that, excluding the case of the bulk CdSd, \emph{alt} reaches a larger value for $\eta^{abc}$ than some of the systems and is in the same order of magnitude that the Si(111) 2$\times$1 system and almost for the same photon energy, 1.25\,eV, which is in the which is the near infrared range.
+Figs. \ref{fig:alt-eta} and \ref{fig:up-eta} depicts the spectra obtained for the current tensor components $\eta^{abc}$ from the \emph{alt} and \emph{up} systems. In both figures the solid lines show to the total response of a given component $abc$ and the dashed lines denotes the layer by layer response of hydrogen or carbon that contributes to that component.
+
+ For the \emph{alt} structure we analyze two important regions of the response. The first one corresponds for an incoming beam with an energy of 0.9\,eV. For this energy the system have important contributions in the all three directions. From the figure \ref{fig:alt-eta} we can see that the contributions for the component $xxy$ comes for the all three layers having a principal contribution from the first hydrogen layer and reaching a value of -0.80\,mC$^{3}$/J$^{2}$s$^{2}$ for this component. The $yxy$ component presents contributions again from the all three layers having its principal contributions from the carbon and last hydrogen layers reaching a value of 1.5\,mC$^{3}$/J$^{2}$s$^{2}$ for this component. Finally, the $zxy$ component has only contributions from the carbon layer reaching a value of -1.3\,mC$^{3}$/J$^{2}$s$^{2}$; the hydrogen layers contributions are identically to zero. 
+ The second region of interest is for an incoming beam with 1.30\,eV of energy where the absolute maximum of the spectra is reached with a value of 2.30\,mC$^{3}$/J$^{2}$s$^{2}$ for the $yxy$ component. For this energy of an incoming beam the $xxy$ and $zxy$ components are identical to zero. Also we can see that the contributions for the $yxy$ component come from the carbon and last hydrogen layers.
+ Using the Eq. \eqref{eq:etatotal} we have that for the first energy value mentioned above total contribution is $\eta^{abc}_{1}$=3.0\,mC$^{3}$/J$^{2}$s$^{2}$ and it is fixed in an azimuthal angle $\varphi=108^{\circ}$ in the $xy$ plane and in a polar angle $\theta=-109^{\circ}$ in the $xz$ plane. Also, we have that for the second energy value the total contribution $\eta^{abc}_{2}$=2.3\,mC$^{3}$/J$^{2}$s$^{2}$ and it is fixed only in the azimuthal angle $\varphi=90^{\circ}$ in the $xy$ plane. In Fig. \ref{fig:altstrc} the big green dashed lines depicts only the angles of this two points of interest denoted by $\eta^{abc}_{1}$ and $\eta^{abc}_{2}$, respectively, in the $xy$ and $xz$ planes. Finally for the \emph{alt} structure  we have that for all the three components the response goes to zero after 1.75\,eV. 
+
+ For the \emph{up} case we obtain the maximum in the \emph{y} direction at an energy of 0.09\,eV, with a value of 18\,mC$^{3}$/J$^{2}$s$^{2}$. In this case the response goes to zero after 0.2\,eV. In table \ref{tab:etacomp} we present a comparison of the absolute maximum values of $\eta^{abc}$ reported for different materials and the corresponding components and energy at which the maximum is reached. From the table we can see that, excluding the case of the bulk CdSd, \emph{alt} reaches a larger value for $\eta^{abc}$ than some of the systems and is in the same order of magnitude that the Si(111) 2$\times$1 system and almost for the same photon energy, 1.25\,eV, which is in the which is the near infrared range.
 The reference \cite{lamanAPL99} includes a report in which an experiment was performed using a single-frequency beam to produce OCI in bulk CdSe. The experiment demostrated that the current injection has a  linearly proportional dependence whti the beam intensity and then makeing the confirming about that the intensity and spectral dependence are in reasonable agreement with a first-principles calculation. They measured an OCI of 2\,$\mu$A/cm$^{2}$ that penetrated 1.8\,$\mu$/cm$^{2}$. The corresponding value of $\eta^{axy}$ is reported in Table \ref{tab:etacomp}.
 
-
 \begin{figure}[t]
-\subfloat{\includegraphics[width=\linewidth]{alt/alt-eta.eps}}
-\hfill
-\subfloat{\includegraphics[width=\linewidth]{up/up-eta.eps}}
-\caption{(Color online) Spectra of the injection current tensor along the
-     \emph{a} direction, {$\eta^{axy}$}, for the hydrogenated graphene structures
-    C$_{16}$H$_{8}$-alt and C$_{16}$H$_{8}$-up under incidence of circularly polarized light.\label{fig:eta}}
+  \centering
+  \includegraphics[width=\linewidth]{alt/alt-eta-layers.eps}
+  \caption{(Color online) Spectra of the injection current tensor along the \emph{a} direction, {$\eta^{abc}$}, layer by layer, for the hydrogenated graphene structure C$_{16}$H$_{8}$-alt under incidence of circularly polarized light.\label{fig:alt-eta}}
 \end{figure}
+
+\begin{figure}[b]
+  \centering
+  \includegraphics[width=\linewidth]{up/up-eta-multiplot.eps}
+  \caption{(Color online) Spectra of the injection current tensor along the \emph{a} direction, {$\eta^{abc}$}, layer by layer, for the hydrogenated graphene structure C$_{16}$H$_{8}$-up under incidence of circularly polarized light.\label{fig:up-eta}}
+\end{figure}
+
 
 \begin{table}%
   \sidecaption
@@ -437,16 +453,16 @@ qualitative comparison.
   \sidecaption
   \begin{tabular}{lcccc}
   \hline
-    Structure & Energy & \multicolumn{2}{c}{$\chi^{abc} $} &  Ref.\\
+    Structure & \hspace{-5mm}Energy & \multicolumn{2}{c}{$\chi^{abc} $} &  Ref.\\
     \cline{3-4}
-              & [eV]   & $abc$ & value \\
+              & \hspace{-5mm}[eV]   & $abc$ & value \\
     \hline
-    C$_{16}$H$_{8}$-alt   & 0.4   & xyy   & 0.32$\times 10^{6}\,\mathrm{pm}^{2}/\mathrm{V}$  & *     \\
-    C$_{16}$H$_{8}$-up    & 0.042 & yxx   & 37 $\times  10^{6}\,\mathrm{pm}^{2}/\mathrm{V}$  & *     \\
-    Si(100)2$\times$1     & 1.5   & xxx   & 1.5$\times  10^{6}\,\mathrm{pm}^{2}/\mathrm{V}$  & \cite{andersonPRB15}  \\
-    BNNT(6,0) pristine    & 5.0   & zzz   & 35\,pm/V  & \cite{salazarPRB14} \\
-    BNNT(6,0)+4(H$_{2}$)  & 5.0   & zzz   & 33\,pm/V  & \cite{salazarPRB14} \\
-    BNNT(6,0)+12(H$_{2}$) & 4.8   & zzz   & 15\,pm/V  & \cite{salazarPRB14} \\
+    C$_{16}$H$_{8}$-alt   & \hspace{-5mm}0.4   & xyy   & 0.32\scriptsize{$\times 10^{6}\,\mathrm{pm}^{2}/\mathrm{V}$}  & *     \\
+    C$_{16}$H$_{8}$-up    & \hspace{-5mm}0.042 & yxx   & 37  \scriptsize{$\times 10^{6}\,\mathrm{pm}^{2}/\mathrm{V}$}  & *     \\
+    Si(100)2$\times$1     & \hspace{-5mm}1.5   & xxx   & 1.5 \scriptsize{$\times 10^{6}\,\mathrm{pm}^{2}/\mathrm{V}$}  & \cite{andersonPRB15}  \\
+    BNNT(6,0) pristine    & \hspace{-5mm}5.0   & zzz   & 35\,\scriptsize{pm/V}  & \cite{salazarPRB14} \\
+    BNNT(6,0)+4(H$_{2}$)  & \hspace{-5mm}5.0   & zzz   & 33\,\scriptsize{pm/V}  & \cite{salazarPRB14} \\
+    BNNT(6,0)+12(H$_{2}$) & \hspace{-5mm}4.8   & zzz   & 15\,\scriptsize{pm/V}  & \cite{salazarPRB14} \\
   \hline
   \end{tabular}
   \caption[]{%
@@ -459,7 +475,7 @@ qualitative comparison.
 
 We have performed \emph{ab initio} calculations for the optical spin injection (DSP), optical current injection (OCI), and second-harmonic generation (SHG) on the hydrogenated graphene C$_{16}$H$_{8}$-alt and C$_{16}$H$_{8}$-up structures, (Fig. \ref{fig:structures}) using the independent particle approximation (IPA) and the plane wabe basis. Our calculations abour DSP predicts that it is possible to inject spin-polarized electrons along the three cartesian directions, obtaining maxima DSP of the injected electrons of about 39\% and 57\% in the $y$ and $z$ directions  (Fig. \ref{fig:Da}) at the photon energies of around 0.719 and 0.08\,Ha  for the \emph{alt} and \emph{up} cases, respectively. Also there is a range of energy in which this DSP can be held, from 0.078 to 0.081\,eV and from 0.078 to 0.081\,eV for the \emph{alt} and \emph{up} cases, respectively. This results predicts that particularly \emph{up} is usable for spintronics proposes because its energy is readily obtainable using terahertz radiation.
 
-Our results about OCI with circularly polarized light (CPL) show that the \emph{alt}  and \emph{up} systems have a response near to 2.30\,mC$^{3}$/J$^{2}$s$^{2}$ and 18.0\,mC$^{3}$/J$^{2}$s$^{2}$ both in the $y$ direction (Fig. \ref{fig:eta}) for incident beams with energies of around 1.25 and 0.09\,eV. According to measurements done on bulk materials, it is actually possible to measure such amount of OCI. According to this result we can affir that it is possible to control the motion of electrons in both systems but specially in the \emph{up} one in the $y$ direction.
+Our results about OCI with circularly polarized light (CPL) show that the \emph{alt}  and \emph{up} systems have a response near to 2.30\,mC$^{3}$/J$^{2}$s$^{2}$ and 18.0\,mC$^{3}$/J$^{2}$s$^{2}$ both in the $y$ direction (Figs. \ref{fig:alt-eta}-\ref{fig:up-eta}) for incident beams with energies of around 1.25 and 0.09\,eV. According to measurements done on bulk materials, it is actually possible to measure such amount of OCI. According to this result we can affir that it is possible to control the motion of electrons in both systems but specially in the \emph{up} one in the $y$ direction.
 
 Finally we found that the \emph{alt} and \emph{up} structures present a absolute maximum of 0.32\,$\times10^{6} $\,pm$^{2}$/V and 37.0\,$\times10^{6} $\,pm$^{2}$/V at the photon energies of around 0.40\,eV and 0.042\,eV (Figs. \ref{fig:alt-shg-abs} and \ref{fig:up-shg-abs}). For \emph{alt} and \emph{up} we have that their maximua come from contributions of the 2$\omega$ resonances. From this we comclude that specially with the \emph{up} system is usable to SHG.
 

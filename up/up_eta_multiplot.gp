@@ -25,12 +25,12 @@ set lmargin 10
 set rmargin 2
 
 set output "up-eta-multiplot.mp"
-set size 1.0,4.0
+set size 1.0,3.0
 set multiplot
 
 
-set origin 0,3
-set size 1,1
+set origin 0,2.3333333333
+set size 1,0.6666666666
 set xtics format "" nomirror
 set yrange [-32:30]
 set ylabel ""
@@ -39,8 +39,8 @@ p   "up_res/eta2.kk_xxy_yxy_zxy_8452_40-spin_scissor_0_Nc_18"      u 1:($2*lm)  
     "up_res/calEta2.kk_xxy_yxy_zxy_8452_1_40-spin_scissor_0_Nc_18" u 1:(-$2*lm) title "$\\eta_{\\scriptsize{H_{l1}}}^{xxy}$"  w l ls 2 lw 2.5 dt 2,\
     "up_res/calEta2.kk_xxy_yxy_zxy_8452_2_40-spin_scissor_0_Nc_18" u 1:(-$2*lm) title "$\\eta_{\\scriptsize{C_{l2}}}^{xxy}$"  w l ls 6 lw 2.5 dt 3,\
 
-set origin 0,2
-set size 1,1
+set origin 0,1.6666666667
+set size 1,0.6666666666
 set xtics format "" mirror
 set yrange [-12:22]
 set ylabel "{\\Large $\\eta^{abc}(\\omega)$ \\ \\ [mC$^{3}$/J$^{2}$s$^{2}$]}"
@@ -50,7 +50,7 @@ p   "up_res/eta2.kk_xxy_yxy_zxy_8452_40-spin_scissor_0_Nc_18"      u 1:($3*lm)  
     "up_res/calEta2.kk_xxy_yxy_zxy_8452_2_40-spin_scissor_0_Nc_18" u 1:(-$3*lm) title "$\\eta_{\\scriptsize{C_{l2}}}^{yxy}$"  w l ls 6 lw 2.5 dt 3,\
 
 set origin 0,1
-set size 1,1
+set size 1,0.6666666666
 set xtics format "%g" mirror
 set yrange [-12:3]
 set ylabel ""
