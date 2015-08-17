@@ -35,19 +35,19 @@ set xtics format "" nomirror
 set yrange [-32:30]
 set ylabel ""
 
-p   "res/eta2.kk_xxy_yxy_zxy_8452_40-spin_scissor_0_Nc_18"      u 1:($2*lm)  title "$\\eta^{xxy}$"       w l ls 1 lw 1.5 dt 1,\
-    "res/calEta2.kk_xxy_yxy_zxy_8452_1_40-spin_scissor_0_Nc_18" u 1:(-$2*lm) title "$\\eta_{\\scriptsize{H_{l1}}}^{xxy}$"  w l ls 2 lw 2.5 dt 2,\
-    "res/calEta2.kk_xxy_yxy_zxy_8452_2_40-spin_scissor_0_Nc_18" u 1:(-$2*lm) title "$\\eta_{\\scriptsize{C_{l2}}}^{xxy}$"  w l ls 3 lw 2.5 dt 3,\
+p   "up_res/eta2.kk_xxy_yxy_zxy_8452_40-spin_scissor_0_Nc_18"      u 1:($2*lm)  title "$\\eta^{xxy}$"       w l ls 1 lw 1.5 dt 1,\
+    "up_res/calEta2.kk_xxy_yxy_zxy_8452_1_40-spin_scissor_0_Nc_18" u 1:(-$2*lm) title "$\\eta_{\\scriptsize{H_{l1}}}^{xxy}$"  w l ls 2 lw 2.5 dt 2,\
+    "up_res/calEta2.kk_xxy_yxy_zxy_8452_2_40-spin_scissor_0_Nc_18" u 1:(-$2*lm) title "$\\eta_{\\scriptsize{C_{l2}}}^{xxy}$"  w l ls 6 lw 2.5 dt 3,\
 
 set origin 0,2
 set size 1,1
 set xtics format "" mirror
 set yrange [-12:22]
-set ylabel "{\\Large $\\eta^{ixy}(\\omega)$ \\ \\ [mC$^{3}$/J$^{2}$s$^{2}$]}"
+set ylabel "{\\Large $\\eta^{abc}(\\omega)$ \\ \\ [mC$^{3}$/J$^{2}$s$^{2}$]}"
 
-p   "res/eta2.kk_xxy_yxy_zxy_8452_40-spin_scissor_0_Nc_18"      u 1:($3*lm)  title "$\\eta^{yxy}$"       w l ls 1 lw 1.5 dt 1,\
-    "res/calEta2.kk_xxy_yxy_zxy_8452_1_40-spin_scissor_0_Nc_18" u 1:(-$3*lm) title "$\\eta_{\\scriptsize{H_{l1}}}^{yxy}$"  w l ls 2 lw 2.5 dt 2,\
-    "res/calEta2.kk_xxy_yxy_zxy_8452_2_40-spin_scissor_0_Nc_18" u 1:(-$3*lm) title "$\\eta_{\\scriptsize{C_{l2}}}^{yxy}$"  w l ls 3 lw 2.5 dt 3,\
+p   "up_res/eta2.kk_xxy_yxy_zxy_8452_40-spin_scissor_0_Nc_18"      u 1:($3*lm)  title "$\\eta^{yxy}$"       w l ls 1 lw 1.5 dt 1,\
+    "up_res/calEta2.kk_xxy_yxy_zxy_8452_1_40-spin_scissor_0_Nc_18" u 1:(-$3*lm) title "$\\eta_{\\scriptsize{H_{l1}}}^{yxy}$"  w l ls 2 lw 2.5 dt 2,\
+    "up_res/calEta2.kk_xxy_yxy_zxy_8452_2_40-spin_scissor_0_Nc_18" u 1:(-$3*lm) title "$\\eta_{\\scriptsize{C_{l2}}}^{yxy}$"  w l ls 6 lw 2.5 dt 3,\
 
 set origin 0,1
 set size 1,1
@@ -58,9 +58,9 @@ set ylabel ""
 set key bottom right
 set xlabel "{\\Large Photon Energy (eV)}"
 
-p   "res/eta2.kk_xxy_yxy_zxy_8452_40-spin_scissor_0_Nc_18"      u 1:($4*lm)  title "$\\eta^{zxy}$"       w l ls 1 lw 1.5 dt 1,\
-    "res/calEta2.kk_xxy_yxy_zxy_8452_1_40-spin_scissor_0_Nc_18" u 1:(-$4*lm) title "$\\eta_{\\scriptsize{H_{l1}}}^{zxy}$"  w l ls 2 lw 2.5 dt 2,\
-    "res/calEta2.kk_xxy_yxy_zxy_8452_2_40-spin_scissor_0_Nc_18" u 1:(-$4*lm) title "$\\eta_{\\scriptsize{C_{l2}}}^{zxy}$"  w l ls 3 lw 2.5 dt 3,\
+p   "up_res/eta2.kk_xxy_yxy_zxy_8452_40-spin_scissor_0_Nc_18"      u 1:($4*lm)  title "$\\eta^{zxy}$"       w l ls 1 lw 1.5 dt 1,\
+    "up_res/calEta2.kk_xxy_yxy_zxy_8452_1_40-spin_scissor_0_Nc_18" u 1:(-$4*lm) title "$\\eta_{\\scriptsize{H_{l1}}}^{zxy}$"  w l ls 2 lw 2.5 dt 2,\
+    "up_res/calEta2.kk_xxy_yxy_zxy_8452_2_40-spin_scissor_0_Nc_18" u 1:(-$4*lm) title "$\\eta_{\\scriptsize{C_{l2}}}^{zxy}$"  w l ls 6 lw 2.5 dt 3,\
 
 
 

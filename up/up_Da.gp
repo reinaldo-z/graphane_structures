@@ -12,7 +12,7 @@ set ytics 0.2
 set output "up-Da.mp"
 set key right top
 set xrange [0.07:0.12]
-set ylabel "{\\Large $D^{i}$}"
+set ylabel "{\\Large $D^{a}$}"
 
 
 p   "up_res/dsp.kk_x_8452_40-spin_scissor_0_Nc_18" u 1:(0.813*2*$4/($2+$3+1.e-10)) title "$D^{x}$" w l lw 1.5 lt 1 dt 1,\

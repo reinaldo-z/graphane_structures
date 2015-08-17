@@ -2,6 +2,9 @@ set terminal mp color dashed latex 11
 
 set xlabel "{\\Large Photon Energy (eV)}"
 
+set lmargin 10
+set rmargin 2
+
 abso(w,x,y,z)=(sqrt((w+y)**2+(x+z)**2))
 
 #z lenght of layer [Bohrs (lb) Angstroms (la) & meters (lm)]
@@ -23,7 +26,7 @@ set yrange [0:0.35]
 set key top right
 
 set output "alt-shg-abs-x.mp"
-set ylabel "{\\Large $|\\chi^{ijk}(2\\omega; \\omega, \\omega)|$ [$\\times10^{6} $\\,pm$^{2}$/V] }"
+set ylabel "{\\Large $|\\chi^{abc}(2\\omega; \\omega, \\omega)|$ [$\\times10^{6} $\\,pm$^{2}$/V] }"
 p   "alt_res/shgL.vnl.sm_0.15_xxx_14452_55-nospin_scissor_0_Nc_41" u 1:(scale*(abso($2,$3,$4,$5))) title "xxx" w l lw 1.5 lt 1 dt 1,\
     "alt_res/shgL.vnl.sm_0.15_xxy_14452_55-nospin_scissor_0_Nc_41" u 1:(scale*(abso($2,$3,$4,$5))) title "xxy" w l lw 2.5 lt 2 dt 2,\
     "alt_res/shgL.vnl.sm_0.15_xyy_14452_55-nospin_scissor_0_Nc_41" u 1:(scale*(abso($2,$3,$4,$5))) title "xyy" w l lw 2.5 lt 6 dt 3,\
@@ -74,7 +77,7 @@ unset label 1
 # set yrange [-0.63:0.43]
 # set key bottom right
 # set output "alt-shg-im.mp"
-# set ylabel "Im $[\\chi^{ijk}(2\\omega; \\omega, \\omega)]$ [$\\times10^{6} $\\,pm$^{2}$/V] "
+# set ylabel "Im $[\\chi^{abc}(2\\omega; \\omega, \\omega)]$ [$\\times10^{6} $\\,pm$^{2}$/V] "
 # p   "alt_res/shgL.vnl.sm_0.15_xxx_14452_55-nospin_scissor_0_Nc_41" u 1:(scale*($3+$5)) title "xxx" w l ls 1,\
 #     "alt_res/shgL.vnl.sm_0.15_xxy_14452_55-nospin_scissor_0_Nc_41" u 1:(scale*($3+$5)) title "xxy" w l ls 2,\
 #     "alt_res/shgL.vnl.sm_0.15_xyy_14452_55-nospin_scissor_0_Nc_41" u 1:(scale*($3+$5)) title "yxx" w l ls 3,\
@@ -86,7 +89,7 @@ unset label 1
 # set yrange [-0.55:0.55]
 # set key top right
 # set output "alt-shg-re.mp"
-# set ylabel "Re $[\\chi^{ijk}(2\\omega; \\omega, \\omega)]$ [$\\times10^{6} $\\,pm$^{2}$/V] "
+# set ylabel "Re $[\\chi^{abc}(2\\omega; \\omega, \\omega)]$ [$\\times10^{6} $\\,pm$^{2}$/V] "
 # p   "alt_res/shgL.vnl.sm_0.15_xxx_14452_55-nospin_scissor_0_Nc_41" u 1:(scale*($2+$4)) title "xxx" w l ls 1,\
 #     "alt_res/shgL.vnl.sm_0.15_xxy_14452_55-nospin_scissor_0_Nc_41" u 1:(scale*($2+$4)) title "xxy" w l ls 2,\
 #     "alt_res/shgL.vnl.sm_0.15_xyy_14452_55-nospin_scissor_0_Nc_41" u 1:(scale*($2+$4)) title "yxx" w l ls 3,\

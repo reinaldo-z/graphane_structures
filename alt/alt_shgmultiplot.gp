@@ -45,7 +45,7 @@ p   "alt_res/shgL.vnl.sm_0.15_xxx_14452_55-nospin_scissor_0_Nc_41" u 1:(scale*(a
 unset xtics
 
 set xlabel "{\\Large Photon Energy (eV)}"
-set ylabel "{\\hspace{7.5cm} \\Large $|\\chi^{ijk}(2\\omega; \\omega, \\omega)|$ [$\\times10^{6} $\\,pm$^{2}$/V] }"
+set ylabel "{\\hspace{7.5cm} \\Large $|\\chi^{abc}(2\\omega; \\omega, \\omega)|$ [$\\times10^{6} $\\,pm$^{2}$/V] }"
 
 set xtics mirror format "%g"
 
