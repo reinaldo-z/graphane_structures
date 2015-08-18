@@ -66,9 +66,10 @@ promising results for potential applications in spintronics.}}
 
 \section{Introduction}\label{sec:intro}
 
-Graphene is an allotrope of carbon with a planar, hexagonal, two-dimensional honeycomb structure with one carbon atom at each vertex \cite{geimNM07}. In first instance it was made by graphite exfoliation \cite{geimNM07} and actually its growth is better controlled by chemical vapor deposition \cite{reinaNL08}. It has attracted great interest due to its distinctive properties, such as the fractional quantum Hall effect at room temperature \cite{bottegoniAPL13}, optical absorption \cite{thongrattanasiriPRL12}, thermal conductivity \cite{balandinNL08}. Graphene behaves like a metal \cite{geimNM07}, but it is possible to tune the band gap by increasing the surface area using lithographic processes \cite{hanPRL07}, application of an electric field \cite{zhangN09}, applying uniaxial strain \cite{niACSN08} or doping by depletion of the substrate's dopant carriers \cite{ohtaS06}, with B and N \cite{guoIJ11} or hydrogen \cite{eliasS09,guisingerNL09,samarakoonACSN10}. The band gap opening process by doping occurs due to the modification of the carbon-carbon bonds of the graphene structure and then producing a semiconducting material.
+Graphene (Fig. \ref{fig:graphenestrc}) is an allotrope of carbon with a planar, hexagonal, two-dimensional honeycomb structure with one carbon atom at each vertex. In first instance it was made by graphite exfoliation and actually its growth is better controlled by chemical vapor deposition. It has attracted great interest due to its distinctive properties, such as the fractional quantum Hall effect at room temperature and thermal conductivity \cite{geimNM07,geimNM07,reinaNL08,bottegoniAPL13,balandinNL08}. Graphene behaves like a metal but it is possible to tune the band gap by changing the surface area \cite{hanPRL07}, application of an electric field \cite{zhangN09}, applying uniaxial strain \cite{niACSN08} or by doping with B and N \cite{guoIJ11} or hydrogen \cite{eliasS09,guisingerNL09,samarakoonACSN10}. 
 
-In this paper we present a study on two hydrogenated graphene structures. It is possible to obtain different spatial configurations by varying the amount and location of the hydrogen bonds. Our cases are the C$_{16}$H$_{8}$-alt and C$_{16}$H$_{8}$-up structures. Both of these cases have 50\% hydrogenation, and present a discernible band gap. As shown in Fig. \ref{fig:structures}, when a hydrogen atom is bonded to a carbon atom of the graphene plane, it pulls the carbon atom from the original position modifying the carbon-carbon bond length, and then opening the band gap \cite{samarakoonACSN10}. The \emph{alt} case (Fig. \ref{fig:altstrc}) has hydrogen on both sides of the sheet, alternating between the upper and lower faces of the plane. The \emph{up} case (Fig. \ref{fig:upstrc}) has all the hydrogens on a single side, producing a zig-zag form in the carbon lattice. In this paper we made a theoretical study of three optical nonlinear phenomena in the structures mentioned above: the degree of spin polarization (DSP) along a given $a$ direction, $D^{a}$, optical current injection along a given $a$ direction, $\mathbf{\dot{J}}^{a}$, and second-harmonic generation (SHG). We describe these as follows.
+When graphene is hydrogenated it is possible to obtain different spatial configurations by varying the amount and location of the hydrogen bonds. In this paper we present a study of two 50\% hydrogenated graphene structures, C$_{16}$H$_{8}$-alt and C$_{16}$H$_{8}$-up. Both present a discernible band gap. As shown in Fig. \ref{fig:altstrc} and \ref{fig:upstrc}, when a hydrogen atom is bonded to a carbon atom on the graphene plane, it pulls the carbon atom from the plane modifying the carbon-carbon bond length, and then opening the band gap \cite{samarakoonACSN10}. The \emph{alt} case (Fig. \ref{fig:altstrc}) has hydrogen on both sides of the sheet, alternating between the upper and lower faces of the plane. The \emph{up} case (Fig. \ref{fig:upstrc}) has all the hydrogens on a single side, producing a zig-zag form in the carbon lattice. In this paper we conduct a theoretical study of three optical nonlinear phenomena in the structures mentioned above: the degree of spin polarization (DSP), $\mathcal{D}(\omega)$, optical current injection, $\mathbf{\dot{J}}(\omega)$, and second-harmonic generation (SHG). We describe these as follows.
+
 
 \begin{figure}[t]
 \subfloat[Top and side view of graphene structure.]
@@ -82,13 +83,13 @@ In this paper we present a study on two hydrogenated graphene structures. It is 
 \subfloat[Top and side view of C$_{16}$H$_{8}$-up structure.]
 {\includegraphics[width=0.49\linewidth]{strc/up-vec1}
  \includegraphics[width=0.49\linewidth]{strc/up-vec2}\label{fig:upstrc}}
-\caption{(Color online) Scheme of the graphene (Fig. \ref{fig:graphenestrc}), \emph{alt} (Fig. \ref{fig:altstrc}), and \emph{up} (Fig. \ref{fig:upstrc}) structures. The light (dark) spheres correspond to hydrogen (carbon) atoms and the small solid RGB arrows at the bottom-left positions of each picture correspond to the ortogonal directional vectors $\hat{x}$, $\hat{y}$, and $\hat{z}$, respectively. The big red (green) dashed arrows in Figs. \ref{fig:altstrc} and \ref{fig:upstrc} represent the direction where the $\mathcal{D}^{a}$ ($\eta^{abc}_{i}$) response is aligned in the $xy$ and $xz$ plane. This information is explained in subsections \ref{subsec:results-DSP} and \ref{subsec:results-eta}.\label{fig:structures}}
+\caption{(Color online) Diagrams of the graphene (\ref{fig:graphenestrc}), \emph{alt} (\ref{fig:altstrc}), and \emph{up} (\ref{fig:upstrc}) structures. The light (dark) spheres correspond to hydrogen (carbon) atoms. For each sibfigure the left side corresponds to a point of view in the $xy$ plane and the right to the $xz$ plane. The red (green) dashed arrows in \ref{fig:altstrc} and \ref{fig:upstrc} represent the direction where the $\mathcal{D}(\omega)$ ($\eta^{abc}(\omega)$) point in the corresponding $xy$ and $xz$ plane. This information is explained in subsections \ref{subsec:results-DSP} and \ref{subsec:results-eta}.\label{fig:structures}}
 \end{figure}
 
 \subsection{Degree of spin polarization}
 
 The injection and detection of spin polarized electrons into nonmagnetic materials is the core of spintronics \cite{vzuticRMP04,fertRMP08} and an important  problem in condensed matter theory.
-The idea of using light for spin polarization and its detection dates to the 1960s \cite{LampelPRL68}. Later, it was shown that conversion of angular momentum of light into electron spin and vice versa is very efficient in III-IV semiconductors \cite{dyakonovOO84}. The optical spin injection is characterized through the dimensionless quantity of DSP, $\mathcal{D}(\omega)$, which is a function of the photon frequency, $\omega$. The DSP quantifies the fraction of injected electrons into the conduction bands that are spin polarized.
+The idea of creating and detecting spin polarization from light dates to the 1960s \cite{LampelPRL68} and in Ref. \cite{dyakonovOO84} it was shown that conversion of angular momentum of light into electron spin and vice versa is very efficient in III-IV semiconductors. The optical spin injection is characterized through the dimensionless quantity of DSP, $\mathcal{D}(\omega)$, which is a function of the photon frequency, $\omega$. The DSP quantifies the fraction of injected electrons into the conduction bands that are spin polarized.
 The process of optical spin injection appears when circularly polarized light is incident on a semiconducting material \cite{dyakonovOO84}. This allows spin polarized electrons to move from the valence to the conduction bands and the resulting polarization is produced by interaction between the electron spin and its motion caused by the spin-orbit coupling in the material. It can be calculated with full band structure local- density approximation (LDA), and $\textbf{k}\cdot\textbf{p}$ methods \cite{nastosPRB07,cabellosPRB09}. There are theoretical reports of DSP calculations for bulk media (Si, GaAs, CdSe, and Ge semiconductors) \cite{nastosPRB07,cabellosPRB09} and surfaces (Si(111):In, Si(111):As, GaAs(110):Sb, GaAs(110), and Si(111) with $4\times2$ and $8\times2$ reconstructions) \cite{mendozaPRB12,arzatePRB14}. 
 
 \subsection{Optical current injection}
@@ -109,7 +110,7 @@ In this section we present a brief description of the formalism that describes t
 
 \subsection{Optical spin injection}\label{sec:theory-DSP}
 
-The DSP, $\mathcal{D}^{a}$, along a given direction, $a$, is defined as
+The DSP, $\mathcal{D}^{a}(\omega)$, along a given direction, $a$, is defined as
 \begin{equation}\label{eq:da}
 \mathcal{D}^{a}=\frac{\dot{S}^{abc}(\omega)}{(\hbar/2)\dot{n}^{bc}(\omega)},
 \end{equation}
@@ -118,7 +119,7 @@ where the spin generation rate, $\dot{S}^{abc}(\omega)$, and the carrier generat
 \dot{S}^{abc}(\omega) &= \zeta^{abc}(\omega)E^{b}(-\omega)E^{c}(\omega), \nonumber \\ 
 \dot{n}^{bc}(\omega)  &= \xi^{bc}E^{b}(-\omega)E^{c}(\omega),
 \end{align*}
-from where $\zeta^{abc}$ is the spin injection rate tensor and $\xi^{bc}$ is the carrier generation rate tensor. The spin injection rate tensor is given by
+from where $\zeta^{abc}(\omega)$ is the spin injection rate tensor and $\xi^{bc}(\omega)$ is the carrier generation rate tensor. The spin injection rate tensor is given by
 \begin{align*}\label{eq:zeta}
 \zeta^{abc} &= \frac{i\pi e^{2}}{\hbar^{2}}\int\frac{d^{3}k}{8\pi^{3}}
 \sum_{vcc'}^{\prime}\text{Im}\bigl[S^{a}_{c'c}(\textbf{k})
@@ -127,12 +128,12 @@ r^{b}_{vc'}(\textbf{k})r^{c}_{cv}(\textbf{k})\nonumber\\
 r^{b}_{vc}(\textbf{k})r^{c}_{c'v}(\textbf{k})\bigr]
 \delta(\omega_{cv}(\textbf{k})-\omega),
 \end{align*}
-where $S$ and $r$ are the spin and position matrix elements. The carrier generation rate tensor is related to the linear optical response tensor by 
+where $S^{a}$ and $r$ are the spin and position matrix elements. The carrier generation rate tensor is related to the linear optical response tensor by 
 \begin{equation*}
 \xi^{bc}=Im[(2/\hbar)\chi^{bc}].
 \end{equation*}
 
-The superscripts in previous expressions denote the three Cartesian coordinates. We assume an incoming beam of CPL at normal incidence that propogates along the $-z$ direction, $\mathbf{E}(\omega) = E_{0}(\omega)(\hat{x} - i\hat{y})/\sqrt{2}$. Then, the expression of Eq. \eqref{eq:da} can be reduced to
+The superscripts in previous expressions denote the three Cartesian coordinates. We assume an incoming circularly polarized beam at normal incidence that propogates along the $-z$ direction, $\mathbf{E}(\omega) = E_{0}(\omega)(\hat{x} - i\hat{y})/\sqrt{2}$. Then, the expression of Eq. \eqref{eq:da} can be reduced to
 \begin{equation}\label{eq:D^i}
 D^{a}(\omega) = 
 \frac{-4i\zeta^{axy}(\omega)}
