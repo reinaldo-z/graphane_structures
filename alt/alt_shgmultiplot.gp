@@ -10,22 +10,14 @@ scale=lm*1E6
 
 set ytics nomirror
 
-set tmargin 0
-set bmargin 0
-set lmargin 10
-set rmargin 2
-unset xtics
 
-
-unset xlabel
-unset ylabel
-unset zeroaxis
+# unset zeroaxis
 
 
 set output "alt-shgmultiplot.mp"
 
-set size 1.0,2.0
-set multiplot 
+# set size 1.0,2.0
+# set multiplot 
 # set key autotitle column nobox samplen 1 noenhanced
 
 set xtics format "" nomirror
@@ -34,8 +26,8 @@ set label 1 "{\\Large C$_{16}$H$_{8}$-alt}"   at graph 0.75, graph 0.40
 
 set key top right
 
-set origin 0.0,1.3333333332
-set size 1.0,0.6666666666
+# set origin 0.0,1.3333333332
+# set size 1.0,0.6666666666
 set yrange [-0.01:0.35]
 
 p   "alt_res/shgL.vnl.sm_0.15_xxx_14452_55-nospin_scissor_0_Nc_41" u 1:(scale*(abso($2,$3,$4,$5))) title "xxx" w l lw 1.5 lt 1 dt 1,\
@@ -50,10 +42,10 @@ set ylabel "{\\hspace{4.7cm} \\Large $|\\chi^{abc}(2\\omega; \\omega, \\omega)|$
 set yrange [-0.01:0.27]
 set xtics mirror format "%g"
 
-set origin 0.0,0.6666666666
-set size 1.0,0.6666666666
+# set origin 0.0,0.6666666666
+# set size 1.0,0.6666666666
 
 p   "alt_res/shgL.vnl.sm_0.15_yxx_14452_55-nospin_scissor_0_Nc_41" u 1:(scale*(abso($2,$3,$4,$5))) title "yxx" w l lw 1.5 lt 1 dt 1,\
     "alt_res/shgL.vnl.sm_0.15_yyy_14452_55-nospin_scissor_0_Nc_41" u 1:(scale*(abso($2,$3,$4,$5))) title "yyy" w l lw 2.5 lt 2 dt 2,\
 
-unset multiplot
+# unset multiplot
