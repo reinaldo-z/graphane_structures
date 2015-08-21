@@ -268,7 +268,7 @@ $r^{a}_{nm}$ is the position matrix elements and
 \end{equation*}
 where $v^{a}_{nn}(\mathbf{k})=p^{a}_{nn}(\mathbf{k})/m_{e}$ is the electron
 velocity for a given $n$ band and the superscripts denote Cartesian
-coordinates.
+directions.
 
 $\eta^{abc}(\omega)$ is purely imaginary and is antisymmetric with respect to
 the last two indices \cite{sipePRB00,nastosPRB06}. Like in optical spin
@@ -297,7 +297,7 @@ order nonlinear polarization is given by
 where $\chi^{abc}(-2\omega;\omega,\omega)$ is the nonlinear susceptibility
 tensor responsible for the SHG and satisfies permutation symmetry condition.
 Again, the superscripts in the previous expression denote the Cartesian
-coordinates and if repeated are to be summed over. The expressions for the
+directions and if repeated are to be summed over. The expressions for the
 imaginary part of the tensor components $\chi^{abc}(-2\omega;\omega,\omega)$
 for $1\omega$ and $2\omega$ are divided into interband ($e$) and intraband
 ($i$) as follows,
@@ -408,7 +408,8 @@ of each contribution can be obtained through a Kramers-Kronig transformation
 
 \section{Results}\label{sec:results}
 
-We present the results of the numerical calculations for {$D^{a}(\omega)$}, {$\eta^{abc}(\omega)$}, and $\chi^{abc}(-2\omega;\omega,\omega)$ for the C$_{16}$H$_{8}$-alt and C$_{16}$H$_{8}$-up structures shown in Fig. \ref{fig:structures}. Both systems are semi-infinite carbon system with 50\% of hydrogenation in two different arrangements. The \emph{alt} arrangement has alternating hydrogen bonds in the upper and lower sides of the carbon sheet, and the \emph{up} arrangement has them only on the upper side. Both structures are noncentrosymmetric and have a thickness of 2.94\,{\AA} and 2.76\,{\AA}, respectively. The corresponding coordinates in Angstroms (\AA) for the \emph{alt} and \emph{up} unit cell of the structures are presented in Tables \ref{tab:altstrc} and \ref{tab:upstrc}. For the structures the carbon atoms are arranged in the $xy$ plane and the hydrogen atoms over and under of them in a perpendicular direction $z$. Also we define for reference the azimuthal angle, $\varphi$, measured in the plane $xy$ in the opposite direction to clockwise starting from $\hat{x}$ and the polar angle, $\theta$, measured in the $xz$ plane opposite direction to clockwise starting from $\hat{x}$. This info is depicted in figure \ref{fig:structures}.
+We present the results of the numerical calculations for {$D^{a}(\omega)$}, {$\eta^{abc}(\omega)$}, and $\chi^{abc}(-2\omega;\omega,\omega)$ for the C$_{16}$H$_{8}$-alt and C$_{16}$H$_{8}$-up structures shown in Fig. \ref{fig:structures}. Both cases are semi-infinite carbon system with 50\% of hydrogenation in two different arrangements. The \emph{alt} system has alternating hydrogen bonds in the upper and bottom sides of the carbon sheet, and the \emph{up} system has them only on the upper side. Both structures are noncentrosymmetric and have a thickness of 2.94\,{\AA} and 2.76\,{\AA}, respectively. The corresponding coordinates in Angstroms (\AA) for the \emph{alt} and \emph{up} unit cells of the structures are presented in Tables \ref{tab:altstrc} and \ref{tab:upstrc}.
+We define the $xy$ plane for each structure as the plane where the carbon atoms are located. The hydrogen atoms are located in a given  position over and under the $xy$ plane. Also we define for reference the azimuthal angle, $\varphi$, in the plane $xy$ measured in the opposite direction to clockwise starting from $\hat{x}$ and the polar angle, $\theta$, in the $xz$ plane measured in the opposite direction to clockwise starting from $\hat{x}$, as usual in spherical coordinates. This info is depicted in figure \ref{fig:structures}.
 
 \begin{table}[t]
   % \sidecaption
@@ -456,7 +457,7 @@ C & \ 2.3250023170 & 6.706652267 & 22.953013267 \\
   \label{tab:upstrc}
 \end{table}
 
-We used the ABINIT code \cite{gonzeCPC09} for the calculation of the self-consistent ground state and the Kohn-Sham states using density functional theory in the local density approximation (DFT-LDA) with a planewave basis in the IPA. We used Hartwigsen-Goedecker-Hutter (HGH) relativistic separable dual-space Gaussian pseudopotentials \cite{hartwigsenPRB98} that include spin-orbit interaction for calculating $D^{a}(\omega)$ and {$\eta^{abc}(\omega)$}, although the latter can also be calculated with pseudopotentials that lack this interaction since it does not depend of the spin-orbit coupling. For $\chi^{abc}(-2\omega;\omega,\omega)$ we used Troullier-Martins pseudopotentials \cite{troullierPRB91} that are fully separable nonlocal pseudopotentials in the Kleiman-Bylander form and are used to calculate the nonlocal contribution of Eq. \eqref{eq:nonlocal} \cite{kleinmanPRL82}. The contribution from the nonlocal part used in Eq. \eqref{eq:nonlocal} is carried out using the DP code \cite{olevanoDP}. We used a cutoff energies of {\changed 65\,Ha and 40\,Ha for the \emph{alt} and \emph{up} cases, respectively}. The energy eigenvalues and matrix elements were calculated using 14452 \textbf{k} for \emph{alt} and 8452 \textbf{k} points for \emph{up}, in the irreducible Brillouin zone (IBZ).
+We used the ABINIT code \cite{gonzeCPC09} for the calculation of the self-consistent ground state and the Kohn-Sham states using density functional theory in the local density approximation (DFT-LDA) with a planewave basis in the IPA. We used Hartwigsen-Goedecker-Hutter (HGH) relativistic separable dual-space Gaussian pseudopotentials \cite{hartwigsenPRB98} that include spin-orbit interaction for calculating $D^{a}(\omega)$. For the calculations of {$\eta^{abc}(\omega)$}, although the latter can also be calculated with pseudopotentials that lack this interaction since it does not depend of the spin-orbit coupling. For $\chi^{abc}(-2\omega;\omega,\omega)$ we used Troullier-Martins pseudopotentials \cite{troullierPRB91} that are fully separable nonlocal pseudopotentials in the Kleiman-Bylander form and are used to calculate the nonlocal contribution of Eq. \eqref{eq:nonlocal} \cite{kleinmanPRL82}. The contribution from the nonlocal part used in Eq. \eqref{eq:nonlocal} is carried out using the DP code \cite{olevanoDP}. We used a cutoff energies of 65\,Ha and 40\,Ha for the \emph{alt} and \emph{up} cases, respectively. The energy eigenvalues and matrix elements were calculated using 14452 \textbf{k} for \emph{alt} and 8452 \textbf{k} points for \emph{up}, in the irreducible Brillouin zone (IBZ).
 
 \subsection{Optical spin injection}\label{subsec:results-DSP}
 
