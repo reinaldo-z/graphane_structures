@@ -22,7 +22,7 @@ unset zeroaxis
 set label 1 "{\\Large C$_{16}$H$_{8}$-alt}"   at graph 0.75, graph 0.40 
 # 0.85, 0.4
 
-set yrange [0:0.35]
+# set yrange [0:0.35]
 set key top right
 
 set output "alt-shg-abs-x.mp"
@@ -41,32 +41,32 @@ p   "alt_res/shgL.vnl.sm_0.15_yxx_14452_55-nospin_scissor_0_Nc_41" u 1:(scale*(a
 set keytitle "xxx"
 set output "alt-shg-rsn-xxx.mp"
 p   "alt_res/shgL.vnl.sm_0.15_xxx_14452_55-nospin_scissor_0_Nc_41" u 1:(scale*(abso($2,$3,$4,$5))) t"abs"        w l lw 1.5 lt 1 dt 1,\
-    "alt_res/shgL.vnl.sm_0.15_xxx_14452_55-nospin_scissor_0_Nc_41" u 1:(scale*(sqrt($2**2+$3**2))) t"1$\\omega$" w l lw 2.5 lt 1 dt 2,\
-    "alt_res/shgL.vnl.sm_0.15_xxx_14452_55-nospin_scissor_0_Nc_41" u 1:(scale*(sqrt($4**2+$5**2))) t"2$\\omega$" w l lw 2.5 lt 1 dt 3,\
+    "alt_res/shgL.vnl.sm_0.15_xxx_14452_55-nospin_scissor_0_Nc_41" u 1:(scale*(sqrt($2**2+$3**2))) t"1$\\omega$" w l lw 2.5 lt 2 dt 2,\
+    "alt_res/shgL.vnl.sm_0.15_xxx_14452_55-nospin_scissor_0_Nc_41" u 1:(scale*(sqrt($4**2+$5**2))) t"2$\\omega$" w l lw 2.5 lt 6 dt 3,\
 
 set keytitle "xxy"
 set output "alt-shg-rsn-xxy.mp"
-p   "alt_res/shgL.vnl.sm_0.15_xxy_14452_55-nospin_scissor_0_Nc_41" u 1:(scale*(abso($2,$3,$4,$5))) t"abs"        w l lw 1.5 lt 2 dt 1,\
+p   "alt_res/shgL.vnl.sm_0.15_xxy_14452_55-nospin_scissor_0_Nc_41" u 1:(scale*(abso($2,$3,$4,$5))) t"abs"        w l lw 1.5 lt 1 dt 1,\
     "alt_res/shgL.vnl.sm_0.15_xxy_14452_55-nospin_scissor_0_Nc_41" u 1:(scale*(sqrt($2**2+$3**2))) t"1$\\omega$" w l lw 2.5 lt 2 dt 2,\
-    "alt_res/shgL.vnl.sm_0.15_xxy_14452_55-nospin_scissor_0_Nc_41" u 1:(scale*(sqrt($4**2+$5**2))) t"2$\\omega$" w l lw 2.5 lt 2 dt 3,\
+    "alt_res/shgL.vnl.sm_0.15_xxy_14452_55-nospin_scissor_0_Nc_41" u 1:(scale*(sqrt($4**2+$5**2))) t"2$\\omega$" w l lw 2.5 lt 6 dt 3,\
 
 set keytitle "xyy"
 set output "alt-shg-rsn-xyy.mp"
-p   "alt_res/shgL.vnl.sm_0.15_xyy_14452_55-nospin_scissor_0_Nc_41" u 1:(scale*(abso($2,$3,$4,$5))) t"abs"        w l lw 1.5 lt 6 dt 1,\
-    "alt_res/shgL.vnl.sm_0.15_xyy_14452_55-nospin_scissor_0_Nc_41" u 1:(scale*(sqrt($2**2+$3**2))) t"1$\\omega$" w l lw 2.5 lt 6 dt 2,\
+p   "alt_res/shgL.vnl.sm_0.15_xyy_14452_55-nospin_scissor_0_Nc_41" u 1:(scale*(abso($2,$3,$4,$5))) t"abs"        w l lw 1.5 lt 1 dt 1,\
+    "alt_res/shgL.vnl.sm_0.15_xyy_14452_55-nospin_scissor_0_Nc_41" u 1:(scale*(sqrt($2**2+$3**2))) t"1$\\omega$" w l lw 2.5 lt 2 dt 2,\
     "alt_res/shgL.vnl.sm_0.15_xyy_14452_55-nospin_scissor_0_Nc_41" u 1:(scale*(sqrt($4**2+$5**2))) t"2$\\omega$" w l lw 2.5 lt 6 dt 3,\
 
 set keytitle "yxx"
 set output "alt-shg-rsn-yxx.mp"
 p   "alt_res/shgL.vnl.sm_0.15_yxx_14452_55-nospin_scissor_0_Nc_41" u 1:(scale*(abso($2,$3,$4,$5))) t"abs"        w l lw 1.5 lt 1 dt 1,\
-    "alt_res/shgL.vnl.sm_0.15_yxx_14452_55-nospin_scissor_0_Nc_41" u 1:(scale*(sqrt($2**2+$3**2))) t"1$\\omega$" w l lw 2.5 lt 1 dt 2,\
-    "alt_res/shgL.vnl.sm_0.15_yxx_14452_55-nospin_scissor_0_Nc_41" u 1:(scale*(sqrt($4**2+$5**2))) t"2$\\omega$" w l lw 2.5 lt 1 dt 3,\
+    "alt_res/shgL.vnl.sm_0.15_yxx_14452_55-nospin_scissor_0_Nc_41" u 1:(scale*(sqrt($2**2+$3**2))) t"1$\\omega$" w l lw 2.5 lt 2 dt 2,\
+    "alt_res/shgL.vnl.sm_0.15_yxx_14452_55-nospin_scissor_0_Nc_41" u 1:(scale*(sqrt($4**2+$5**2))) t"2$\\omega$" w l lw 2.5 lt 6 dt 3,\
 
 set keytitle "yyy"
 set output "alt-shg-rsn-yyy.mp"
-p   "alt_res/shgL.vnl.sm_0.15_yyy_14452_55-nospin_scissor_0_Nc_41" u 1:(scale*(abso($2,$3,$4,$5))) t"abs"        w l lw 1.5 lt 2 dt 1,\
+p   "alt_res/shgL.vnl.sm_0.15_yyy_14452_55-nospin_scissor_0_Nc_41" u 1:(scale*(abso($2,$3,$4,$5))) t"abs"        w l lw 1.5 lt 1 dt 1,\
     "alt_res/shgL.vnl.sm_0.15_yyy_14452_55-nospin_scissor_0_Nc_41" u 1:(scale*(sqrt($2**2+$3**2))) t"1$\\omega$" w l lw 2.5 lt 2 dt 2,\
-    "alt_res/shgL.vnl.sm_0.15_yyy_14452_55-nospin_scissor_0_Nc_41" u 1:(scale*(sqrt($4**2+$5**2))) t"2$\\omega$" w l lw 2.5 lt 2 dt 3,\
+    "alt_res/shgL.vnl.sm_0.15_yyy_14452_55-nospin_scissor_0_Nc_41" u 1:(scale*(sqrt($4**2+$5**2))) t"2$\\omega$" w l lw 2.5 lt 6 dt 3,\
 
 
 
