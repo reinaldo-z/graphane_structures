@@ -13,10 +13,10 @@
 
 % Authors
 \author{
-    Reinaldo Zapata-Pe\~na\textsuperscript{\Ast,\textsf{\bfseries 1}},
-    Sean M. Anderson\textsuperscript{\Ast,\textsf{\bfseries 1}},
-    Bernardo S. Mendoza\textsuperscript{\Ast,\textsf{\bfseries 1}},
-    Anatoli I. Shkrebtii\textsuperscript{\textsf{\bfseries 2}}}
+Reinaldo Zapata-Pe\~na\textsuperscript{\Ast,\textsf{\bfseries 1}},
+Sean M. Anderson\textsuperscript{\Ast,\textsf{\bfseries 1}},
+Bernardo S. Mendoza\textsuperscript{\Ast,\textsf{\bfseries 1}},
+Anatoli I. Shkrebtii\textsuperscript{\textsf{\bfseries 2}}}
 
 % Abbreviated list of authors for the page headers
 \titlerunning{Optical spin injection, current injection, and SHG study of
@@ -43,22 +43,9 @@ hydrogenated graphene}
 
 \abstract{%
 \abstcol{%
-We present a theoretical study of spin and current injection, and 
-second-harmonic generation via optical means from the C$_{16}$H$_{8}$-alt and
-C$_{16}$H$_{8}$-up graphene structures. The incidence of circularly polarized
-light onto nonmagnetic semiconductors produces spin-polarized electrons in the
-conduction bands. Current injection and second-harmonic generation are
-nonlinear, second-order effects that can be produced from both the bulk and
-surface of noncentrosymmetric materials. In centrosymmetric materials, these
-effects can only be observed at the surface where the inversion symmetry is
-broken.} {We also report results for the degree of spin polarization, current
-injection, and second-harmonic generation calculated within a full electronic
-band structure scheme at the DFT-LDA level using a planewave basis. Our
-results show that these effects can be optically generated in both the
-C$_{16}$H$_{8}$-alt and C$_{16}$H$_{8}$-up structures, presenting an
-anisotropic behavior. We obtain a maximum degree of spin polarization of 39\%
-for C$_{16}$H$_{8}$-alt, and 57\% for C$_{16}$H$_{8}$-up, which are
-promising results for potential applications in spintronics.}}
+We present a theoretical study of spin and current injection, and second-harmonic generation via optical means from the C$_{16}$H$_{8}$-alt and C$_{16}$H$_{8}$-up graphene structures. The incidence of circularly polarized light onto nonmagnetic semiconductors produces spin-polarized electrons in the conduction bands. Current injection and second-harmonic generation are nonlinear, second-order effects that can be produced from both the bulk and surface of noncentrosymmetric materials. In centrosymmetric materials, these effects can only be observed at the surface where the inversion symmetry is broken.} 
+{We also report results for the degree of spin polarization, current injection, and second-harmonic generation calculated within a full electronic band structure scheme at the DFT-LDA level using a planewave basis. Our results show that these effects can be optically generated in both the C$_{16}$H$_{8}$-alt and C$_{16}$H$_{8}$-up structures, presenting an anisotropic behavior. We obtain a maximum degree of spin polarization of 39\% for C$_{16}$H$_{8}$-alt, and 57\% for C$_{16}$H$_{8}$-up, which are promising results for potential applications in spintronics.}
+}
 
 
 \maketitle
@@ -66,60 +53,165 @@ promising results for potential applications in spintronics.}}
 
 \section{Introduction}\label{sec:intro}
 
-Graphene is an allotrope of carbon with a planar, hexagonal, two-dimensional honeycomb structure with one carbon atom at each vertex, see Fig. \ref{fig:structures}. The first samples were produced by exfoliating graphite into carbon sheets, eventually producing a monolayer of carbon atoms. Graphene production has been substantially improved since then using other methods, such as chemical vapor deposition, that provides better control over the final structure. Graphene has attracted great interest due to its distinctive properties, such as the fractional quantum Hall effect at room temperature, and excellent thermal transport properties \cite{geimNM07,geimNM07,reinaNL08,bottegoniAPL13,balandinNL08}. Graphene has metallic behavior but has a variable band gap that can be tuned by changing the surface area \cite{hanPRL07}, applying an electric field \cite{zhangN09}, applying uniaxial strain \cite{niACSN08}, or by doping. Previous works have explored doping with boron, nitrogen \cite{guoIJ11}, and hydrogen \cite{eliasS09,guisingerNL09,samarakoonACSN10}.
+Graphene is an allotrope of carbon with a planar, hexagonal, two-dimensional
+honeycomb structure with one carbon atom at each vertex (Fig.
+\ref{fig:structures}) that has attracted great interest due to its distinctive
+properties, such as the fractional quantum Hall effect at room temperature,
+and excellent thermal transport properties
+\cite{geimNM07,geimNM07,reinaNL08,bottegoniAPL13,balandinNL08}. It behaves
+like a metal, but can be modified to semiconductor behavior by tuning the band
+gap. This can be acheived by changing the surface area \cite{hanPRL07},
+applying an electric field \cite{zhangN09}, applying uniaxial strain
+\cite{niACSN08}, or by doping. amongst other methods. Previous works have
+explored doping with boron, nitrogen \cite{guoIJ11}, and hydrogen
+\cite{eliasS09,guisingerNL09,samarakoonACSN10}.
 
-When graphene is hydrogenated it is possible to obtain different spatial configurations through varying the amount and location of the hydrogen bonds. In this paper we present a study of two 50\% hydrogenated graphene structures, C$_{16}$H$_{8}$-alt and C$_{16}$H$_{8}$-up, both presenting a discernible band gap. As shown in Fig. \ref{fig:altstrc} and \ref{fig:upstrc}, when a hydrogen atom is bonded to a carbon atom on the graphene plane, it pulls the carbon atom from the plane modifying the carbon-carbon bond length, and then opening the band gap \cite{samarakoonACSN10}. The \emph{alt} case (Fig. \ref{fig:altstrc}) has hydrogen on both sides of the sheet, alternating between the upper and lower faces of the plane. The \emph{up} case (Fig. \ref{fig:upstrc}) has all the hydrogens on a single side, producing a zig-zag form in the carbon lattice. In this paper we conduct a theoretical study of three optical nonlinear phenomena in the structures mentioned above: the degree of spin polarization (DSP), $\mathcal{D}(\omega)$, optical current injection, $\mathbf{\dot{J}}(\omega)$, and second-harmonic generation (SHG). We describe these as follows.
+Hydrogenated graphene can obtain different spatial configurations by varying
+the amount and location of the hydrogen bonds. In this paper we present a
+study of two 50\% hydrogenated graphene structures, C$_{16}$H$_{8}$-alt and
+C$_{16}$H$_{8}$-up (Figs. \ref{fig:altstrc} and \ref{fig:upstrc}), both
+presenting a discernible band gap. When a hydrogen atom is bonded to a carbon
+atom in graphene, it draws the atom away from the plane. This modifies the
+carbon-carbon bond length and consequently expands the band gap
+\cite{samarakoonACSN10}. The C$_{16}$H$_{8}$-alt case has hydrogen on both
+sides of the carbon sheet, alternating between the upper and lower faces,
+while the C$_{16}$H$_{8}$-up case has all the hydrogens on a single side,
+producing a zig-zag form in the carbon lattice. We conduct a theoretical study
+of three optical nonlinear phenomena for our two cases: the optical spin
+injection, the optical current injection, and second-harmonic generation
+(SHG). We describe these as follows.
 
 
 \begin{figure}[t]
-\subfloat[Top and side view of pristine graphene structure.]
+\subfloat[Top and side view of pristine graphene.]
 {\includegraphics[width=0.49\linewidth]{figures/graph1}
- \includegraphics[width=0.49\linewidth]{figures/graph2}\label{fig:graphenestrc}}
+\includegraphics[width=0.49\linewidth]{figures/graph2}\label{fig:graphenestrc}}
 \\
 \subfloat[Top and side view of C$_{16}$H$_{8}$-alt graphene structure.]
 {\includegraphics[width=0.49\linewidth]{figures/alt1}
- \includegraphics[width=0.49\linewidth]{figures/alt2}\label{fig:altstrc}}
+\includegraphics[width=0.49\linewidth]{figures/alt2}\label{fig:altstrc}}
 \\
 \subfloat[Top and side view of C$_{16}$H$_{8}$-up graphene structure.]
 {\includegraphics[width=0.49\linewidth]{figures/up1}
- \includegraphics[width=0.49\linewidth]{figures/up2}\label{fig:upstrc}}
-\caption{(Color online) Diagrams of the graphene (\ref{fig:graphenestrc}), \emph{alt} (\ref{fig:altstrc}), and \emph{up} (\ref{fig:upstrc}) structures. The light (dark) spheres correspond to hydrogen (carbon) atoms. For each sibfigure the left side corresponds to a point of view in the $xy$ plane and the right to the $xz$ plane. The red (green) dashed arrows in \ref{fig:altstrc} and \ref{fig:upstrc} represent the direction where the $\mathcal{D}(\omega)$ ($\eta^{abc}(\omega)$) point in the corresponding $xy$ and $xz$ plane. This information is explained in subsections \ref{subsec:results-DSP} and \ref{subsec:results-eta}.\label{fig:structures}}
+\includegraphics[width=0.49\linewidth]{figures/up2}\label{fig:upstrc}}
+\caption{(Color online) Diagrams of pristine graphene
+(\ref{fig:graphenestrc}), and the C$_{16}$H$_{8}$-alt (\ref{fig:altstrc}), and
+C$_{16}$H$_{8}$-up (\ref{fig:upstrc}) structures. The light (dark) spheres
+correspond to hydrogen (carbon) atoms. We take the honeycomb lattice to be in
+the $xy$ plane, and the carbon plane itself to be in the $xz$
+plane.\label{fig:structures}}
 \end{figure}
 
-\subsection{Degree of spin polarization}
+% The red (green) dashed arrows in \ref{fig:altstrc} and \ref{fig:upstrc}
+% represent the direction where the $\mathcal{D}(\omega)$
+% ($\eta^{abc}(\omega)$) point in the corresponding $xy$ and $xz$ plane. This
+% information is explained in subsections \ref{subsec:results-DSP} and
+% \ref{subsec:results-eta}.
 
-The injection and detection of spin polarized electrons into nonmagnetic materials is the core of spintronics \cite{vzuticRMP04,fertRMP08} and an important  problem in condensed matter theory.
-The idea of creating and detecting spin polarization from light dates to the 1960s \cite{LampelPRL68} and in Ref. \cite{dyakonovOO84} it was shown that conversion of angular momentum of light into electron spin and vice versa is very efficient in III-IV semiconductors. The optical spin injection is characterized through the dimensionless quantity of DSP, $\mathcal{D}(\omega)$, which is a function of the photon frequency, $\omega$. The DSP quantifies the fraction of injected electrons into the conduction bands that are spin polarized.
-The process of optical spin injection appears when circularly polarized light is incident on a semiconducting material \cite{dyakonovOO84}. This allows electrons to move from the valence to the conduction bands and the resulting polarization is produced by the interaction between the electron spin and its motion caused by the spin-orbit coupling in the material. DSP can be calculated with full band structure local-density approximation (LDA) and $\textbf{k}\cdot\textbf{p}$ methods \cite{nastosPRB07,cabellosPRB09}. There are theoretical reports of DSP calculations for bulk media (Si, GaAs, CdSe, and Ge semiconductors) \cite{nastosPRB07,cabellosPRB09} and surfaces (Si(111):In, Si(111):As, GaAs(110):Sb, GaAs(110), and Si(111) with $4\times2$ and $8\times2$ reconstructions) \cite{mendozaPRB12,arzatePRB14}. 
+
+\subsection{Optical spin injection}
+
+The injection and detection of spin polarized electrons into nonmagnetic
+materials is the core of spintronics \cite{vzuticRMP04,fertRMP08} and an
+important  problem in condensed matter theory. Our concern is with the
+production of spin polarization from light \cite{LampelPRL68}, and this
+conversion from the angular momentum of light into electron spin is very
+efficient in III-IV semiconductors \cite{dyakonovOO84}. The optical spin
+injection is characterized through the degree of spin polarization (DSP)
+$\mathcal{D}(\omega)$, which is a dimensionless quantity and a function of the
+photon frequency $\omega$. The DSP quantifies the fraction of injected
+electrons into the conduction bands that are spin polarized. This effect
+occurs when circularly polarized light is incident on a semiconducting
+material \cite{dyakonovOO84}, thus allowing electrons to move from the valence
+to the conduction bands. The resulting polarization is produced by the
+interaction between the electron spin and its motion caused by the spin-orbit
+coupling in the material. DSP can be calculated with a full band structure
+local-density approximation (LDA) and $\textbf{k}\cdot\textbf{p}$ methods
+\cite{nastosPRB07,cabellosPRB09}. There are theoretical reports of DSP
+calculations for bulk media (Si, GaAs, CdSe, and Ge semiconductors)
+\cite{nastosPRB07,cabellosPRB09} and surfaces (Si(111):In, Si(111):As,
+GaAs(110):Sb, GaAs(110), and Si(111) with $4\times2$ and $8\times2$
+reconstructions) \cite{mendozaPRB12,arzatePRB14}.
+
 
 \subsection{Optical current injection}
 
-The control of chemical process is of interest in science and engineering. The optical current injection, $\mathbf{\dot{J}}(\omega)$ , is a surface-sensitive optical effect that offers the potential to control chemical reactions \cite{bhatPRB05,hachePRL97}. In noncentrosymmetric crystals, a photocurrent can be injected with a single optical beam coming  from the interference of one-photon absorption processes associated with different linear polarizations of the light. From the total of the 32 crystal classes only 21 are noncentrosymmetric and this process is only allowed in 18 of them. Crystals corresponding to the $\bar{6}m\bar{2}$, $\bar{6}$, and $\bar{4}$$\bar{3}$m are the exceptions \cite{sipePRB00}. The one-photon current injection is characterized by the current injection tensor, $\eta(0; \omega, − \omega)$, which is a particular case of $\eta(\omega_{1}-\omega_{2}; \omega_{1},-\omega_{2})$, from where $\omega_{1}$ and $\omega_{2}$ are frequencies of identical photons. Here we will denote its frequency dependence as $\eta(\omega)$. The optical current injection process can be understood as a quantum effect of one photon absorption events associated with different linear polarizations of light. For this phenomenon the electromagnetic field provides the energy of the promoted carriers up to the rise in momentum is provided by the crystal lattice \cite{arzatePRB14}. The process of optical current injection can be generated in bulk semiconductors \cite{hachePRL97,sipePRB00}, two-dimensional systems \cite{melePRB00,cabellosPRB11}, and one-dimensional nanotubes \cite{melePRB00}. 
+The optical current injection $\mathbf{\dot{J}}(\omega)$, is a surface-
+sensitive optical effect that offers the potential to control chemical
+reactions \cite{bhatPRB05,hachePRL97}. A photocurrent can be injected with a
+single optical beam in noncentrosymmetric materials. This current results from
+the interference of one-photon absorption processes associated with different
+linear polarizations of the light. In the process of current injection, the
+energy increase of the injected carriers is provided by the electromagnetic
+field; meanwhile, the increase in momentum is provided by the crystal lattice
+\cite{arzatePRB14}. From the total 32 crystal classes, 21 are
+noncentrosymmetric, and 18 of these have a nonzero injection current. Crystal
+classes $\bar{6}m\bar{2}$, $\bar{6}$, and $\bar{4}$$\bar{3}$m are the
+exceptions \cite{sipePRB00}. The one-photon current injection is characterized
+by the current injection tensor, $\eta(0;\omega,−\omega)$, which is a
+particular case of $\eta(\omega_{1}-\omega_{2};\omega_{1},-\omega_{2})$, where
+$\omega_{1}$ and $\omega_{2}$ are the frequencies of two different optical
+fields. Henceforth, we will denote this tensor as $\eta(\omega)$ for ease of
+notation. This phenomenon has been studied in bulk semiconductors
+\cite{hachePRL97,sipePRB00}, two-dimensional systems
+\cite{melePRB00,cabellosPRB11}, and one-dimensional nanotubes
+\cite{melePRB00}.
+
 
 \subsection{Second-harmonic generation}
 
-The characterization of structures and interfaces is an important issue in the development of microelectronics, nanomaterials, semiconductors, and other areas of interest in science and technology. Some techniques to characterize surfaces, like emission or scattering of electrons, require ultrahigh vacuum conditions and provide no access to buried systems. Second-harmonic generation (SHG) is a nonlinear process in which pairs of photons of the same frequency are annihilated to produce new photons with twice the energy and half of the wavelength of the initial photons. SHG spectroscopy technique brings the possibility to study properties of materials and has a non invasive, nondestructive and surface sensitive nature. Using this technique it is possible to characterize properties like phase transitions, atomic structure, molecular and atomic physisorption, structure deformation, and many others \cite{dadapPRB97,godefroyAPL96,salazarPRB14,mendozaPRL98}. The process is suitable with non-ultrahigh vacuum conditions even if the system is buried under transparent overlayers. The macroscopic basis of SHG, which describe the phase, intensity, and polarization of detected fields to nonlinear and linear susceptibilities at the material interface is described in \cite{downerSIA01}. In centrosymmetric systems the bulk SHG signal is identically zero but the SHG process can occur at the surface where the inversion symmetry is broken.  
+The characterization of embedded structures and interfaces is an important
+issue in the development of microelectronics, nanomaterials, semiconductors,
+and other areas of interest in science and technology. Second-harmonic
+generation (SHG) is a nonlinear process in which two photons of frequency
+$\omega$ are destroyed, and a photon of frequency $2\omega$ is simultaneously
+created. In the dipole approximation SHG is restricted to the surfaces of
+centrosymmetric materials, making it an excellent surface probe. SHG
+spectroscopy techniques bring the possibility to study properties of materials
+and has a non invasive, nondestructive and surface sensitive nature. It is
+possible to characterize properties like phase transitions, atomic structure,
+molecular and atomic physisorption, structure deformation, and many others
+\cite{dadapPRB97,godefroyAPL96,salazarPRB14,mendozaPRL98}. Theses techniques
+work in non-ultrahigh vacuum conditions and can access interfaces that are
+buried under transparent overlayers. The two cases in this study,
+C$_{16}$H$_{8}$-alt and C$_{16}$H$_{8}$-up, are noncentrosymmetric and thus
+present SHG from the entire structure.
 
-This paper is organized as follows. In Sec. \ref{sec:theory} we present the theory and formulas that describe the DSP, optical current injection, and SHG. In Sec. \ref{sec:results} we describe the details of the calculations and the corresponding spectra for the respective \emph{alt} and \emph{up} structures. Finally, we give our conclusions in Sec. \ref{sec:conclusions}.
+This paper is organized as follows. In Sec. \ref{sec:theory} we present the
+theory and formulas that describe the DSP, optical current injection, and SHG.
+In Sec. \ref{sec:results} we describe the details of the calculations and the
+corresponding spectra for the respective \emph{alt} and \emph{up} structures.
+Finally, we give our conclusions in Sec. \ref{sec:conclusions}.
 
 
 \section{Theory}\label{sec:theory}
 
-In this section we report a summary of the formalism that describes the three phenomena presented here. They have been already reported before with more details and it is possible to consult Refs. \cite{nastosPRB07,mendozaPRB12} for DSP, Refs. \cite{cabellosPRB11,sipePRB00} for optical current injection, and Ref. \cite{andersonPRB15} for SHG.
+In this section we report a summary of the theory for the three phenomena of
+interest. For full details see Refs. \cite{nastosPRB07,mendozaPRB12} for DSP,
+Refs. \cite{cabellosPRB11,sipePRB00} for optical current injection, and Ref.
+\cite{andersonPRB15} for SHG.
 
 
 \subsection{Optical spin injection}\label{sec:theory-DSP}
 
-The DSP, $\mathcal{D}^{a}(\omega)$, along a given direction $a$, is defined as
+The optical spin injection is characterized by the DSP, $\mathcal{D}(\omega)$.
+Along a given direction $a$, we write the DSP \cite{cabellosPRB09} as
 \begin{equation}\label{eq:da}
-\mathcal{D}^{a}(\omega)=\frac{\dot{S}^{abc}(\omega)}{(\hbar/2)\dot{n}^{bc}(\omega)},
+\mathcal{D}^{a}(\omega)=
+\frac{\dot{S}^{abc}(\omega)}{(\hbar/2)\dot{n}^{bc}(\omega)},
 \end{equation}
-where the spin generation rate, $\dot{S}^{abc}(\omega)$, and the carrier generation rate, $\dot{n}^{bc}(\omega)$,  are given by 
+where the superscripts denote the three Cartesian directions. The spin
+generation rate, $\dot{S}^{abc}(\omega)$, and the carrier generation rate,
+$\dot{n}^{bc}(\omega)$, are given by
 \begin{align*}
-\dot{S}^{abc}(\omega) &= \zeta^{abc}(\omega)E^{b}(-\omega)E^{c}(\omega), \nonumber \\ 
-\dot{n}^{bc}(\omega)  &= \xi^{bc}E^{b}(-\omega)E^{c}(\omega),
+\dot{S}^{abc}(\omega)&= 
+\zeta^{abc}(\omega)E^{b}(-\omega)E^{c}(\omega),\nonumber\\
+\dot{n}^{bc}(\omega)&= 
+\xi^{bc}E^{b}(-\omega)E^{c}(\omega),
 \end{align*}
-from where $\zeta^{abc}(\omega)$ is the spin injection rate tensor and $\xi^{bc}(\omega)$ is the carrier generation rate tensor. The spin injection rate tensor is given by
+where $\zeta^{abc}(\omega)$ is the spin injection rate tensor and
+$\xi^{bc}(\omega)$ is the carrier generation rate tensor. The spin injection
+rate tensor is given by
 \begin{align*}\label{eq:zeta}
 \zeta^{abc}(\omega) &= \frac{i\pi e^{2}}{\hbar^{2}}\int\frac{d^{3}k}{8\pi^{3}}
 \sum_{vcc'}^{\prime}\text{Im}\bigl[S^{a}_{c'c}(\textbf{k})
@@ -128,20 +220,30 @@ r^{b}_{vc'}(\textbf{k})r^{c}_{cv}(\textbf{k})\nonumber\\
 r^{b}_{vc}(\textbf{k})r^{c}_{c'v}(\textbf{k})\bigr]
 \delta(\omega_{cv}(\textbf{k})-\omega),
 \end{align*}
-where $S^{a}_{nm}$ and $r^{a}_{nm}$ are the spin and position matrix elements. The superscripts in the previous expressions denote the three Cartesian coordinates. The carrier generation rate tensor is related to the linear optical response tensor by 
+where $S^{a}_{nm}$ and $r^{a}_{nm}$ are the spin and position matrix elements.
+Lastly, the carrier generation rate tensor is related to the linear optical
+response tensor by
 \begin{equation*}
 \xi^{bc}(\omega)=\mathrm{Im}[(2/\hbar)\chi^{bc}].
 \end{equation*}
-We assume an incoming circularly polarized beam at normal incidence that propogates along the $-z$ direction, $\mathbf{E}(\omega) = E_{0}(\omega)(\hat{x} - i\hat{y})/\sqrt{2}$. Then, the expression of Eq. \eqref{eq:da} can be reduced to
+We assume an incoming circularly polarized beam at normal incidence that
+propogates along the $-z$ direction, $\mathbf{E}(\omega) =
+E_{0}(\omega)(\hat{x} - i\hat{y})/\sqrt{2}$. Then the expression of Eq.
+\eqref{eq:da} can be reduced to \cite{arzatePRB14}
 \begin{equation}\label{eq:D^i}
 \mathcal{D}^{a}(\omega) = 
 \frac{-4i\zeta^{axy}(\omega)}
     {\hbar\left[\xi^{xx}(\omega) + \xi^{yy}(\omega)\right]}.
 \end{equation}
-It is possible to generate current injection along all three orthogonal directions with
-an incident circularly polarized beam and so the total DSP can be obtained by
+It is possible to generate current injection along all three orthogonal
+directions with an incident circularly polarized beam and so the total DSP can
+be obtained by \cite{arzatePRB14}
 \begin{equation}\label{eq:dsptotal}
-\mathcal{D}(\omega) = \sqrt{ [\mathcal{D}^{x}(\omega)]^{2} + [\mathcal{D}^{y}(\omega)]^{2} +[\mathcal{D}^{z}(\omega)]^{2}}.
+\mathcal{D}(\omega) =
+\sqrt{[\mathcal{D}^{x}(\omega)]^{2} + 
+      [\mathcal{D}^{y}(\omega)]^{2} +
+      [\mathcal{D}^{z}(\omega)]^{2}
+      }.
 \end{equation}
 
 
@@ -160,26 +262,45 @@ where $\eta^{abc}(\omega)$ is the surface injection current tensor and is given 
 \sum_{vc}\mathrm{\Delta}^{a}_{cv}(\mathbf{k})\text{Im}\big[r^{b}_{cv}(\mathbf{k})
 r^{c}_{cv}(\mathbf{k})\big]\delta(\omega_{cv}(\mathbf{k})-\omega).
 \end{align*}
-from where $r^{a}_{nm}$ is the position matrix elements and 
+$r^{a}_{nm}$ is the position matrix elements and 
 \begin{equation*}
 \mathrm{\Delta}^{a}_{cv} = v^{a}_{cc}(\mathbf{k})-v^{a}_{vv}(\mathbf{k}),
 \end{equation*}
-where $v^{a}_{nn}(\mathbf{k})=p^{a}_{nn}(\mathbf{k})/m_{e}$ is the electron velocity for a given $n$ band and the superscripts denote Cartesian coordinates.
+where $v^{a}_{nn}(\mathbf{k})=p^{a}_{nn}(\mathbf{k})/m_{e}$ is the electron
+velocity for a given $n$ band and the superscripts denote Cartesian
+coordinates.
 
-$\eta^{abc}(\omega)$ is purely imaginary and is antisymmetric with respect to the last two indices \cite{sipePRB00,nastosPRB06}. Like in optical spin injection, it is possible to generate current injection along all three directions with an incident circularly polarized beam. Analogously to Eq. \eqref{eq:dsptotal} it is possible to have the total $\eta(\omega)$ with the relation
+$\eta^{abc}(\omega)$ is purely imaginary and is antisymmetric with respect to
+the last two indices \cite{sipePRB00,nastosPRB06}. Like in optical spin
+injection, it is possible to generate current injection along all three
+directions with an incident circularly polarized beam. Analogously to Eq.
+\eqref{eq:dsptotal} it is possible to have the total $\eta(\omega)$ as
 \begin{equation}\label{eq:etatotal}
-\eta(\omega) = \sqrt{ [\eta^{abc}(\omega)]^{2} + [\eta^{abc}(\omega)]^{2} +[\eta^{abc}(\omega)]^{2}}.
+\eta(\omega) =
+\sqrt{[\eta^{xxy}(\omega)]^{2} +
+      [\eta^{yxy}(\omega)]^{2} +
+      [\eta^{zxy}(\omega)]^{2}
+      }.
 \end{equation}
 
 \subsection{Second-harmonic generation}\label{sec:theory-SHG}
 
-For SHG we followed the formalism derived in reference \cite{andersonPRB15}. This new formalism to determine the second order susceptibility tensor including in one formulation (i) the scissors correction, (ii) the contributionof the nonlocal part of the pseudopotentials, and (iii) the cut function. For our calculation we set the cut function equal to unity which recovers the complete system response.
-
-The second order nonlinear polarization is given by 
+The formalism presented here for second order susceptibility tensor including
+in one formulation (i) the scissors correction, (ii) the contribution of the
+nonlocal part of the pseudopotentials, and (iii) the cut function for
+selecting individual layer contributions \cite{andersonPRB15}. The second
+order nonlinear polarization is given by
 \begin{equation*}\label{eq:pol}
-\mathcal{P}(2\omega) = \chi^{abc}(-2\omega;\omega,\omega)E^{b}(\omega)E^{c}(\omega)
+\mathcal{P}(2\omega) = 
+\chi^{abc}(-2\omega;\omega,\omega)E^{b}(\omega)E^{c}(\omega)
 \end{equation*}
-where $\chi^{abc}(-2\omega;\omega,\omega)$ is the nonlinear susceptibility tensor responsible for the SHG and satisfies permutation symmetry condition. Again, the superscripts in the previous expression denote the Cartesian coordinates and if repeated are to be summed over. The expressions for the imaginary part of the tensor components $\chi^{abc}(-2\omega;\omega,\omega)$ at $1\omega$ and $2\omega$ are divided into interband ($e$) and intraband ($i$)
+where $\chi^{abc}(-2\omega;\omega,\omega)$ is the nonlinear susceptibility
+tensor responsible for the SHG and satisfies permutation symmetry condition.
+Again, the superscripts in the previous expression denote the Cartesian
+coordinates and if repeated are to be summed over. The expressions for the
+imaginary part of the tensor components $\chi^{abc}(-2\omega;\omega,\omega)$
+for $1\omega$ and $2\omega$ are divided into interband ($e$) and intraband
+($i$) as follows,
 \begin{subequations}\label{eq:chis}
 \begin{align}
 \mathrm{Im}[\chi^{abc}_{e,\omega}] =  
@@ -190,12 +311,14 @@ where $\chi^{abc}(-2\omega;\omega,\omega)$ is the nonlinear susceptibility tenso
 \times \sum_{vc}\sum_{q\neq(v,c)}
 \frac{1}{\omega^\mathrm{\Sigma}_{cv}}
 &
-\left[\frac{\mathrm{Im}[\mathbf{v}^{\mathrm{\Sigma},a}_{qc}\{r^{b}_ 
-{cv}r^{c}_{vq}\}]} {(2\omega^\mathrm{\Sigma}_{cv}-\omega^\mathrm{\Sigma}_{cq})} \right.
+\left[\frac{\mathrm{Im}[\mathcal{V}^{\mathrm{\Sigma},a}_{qc}\{r^{b}_ 
+{cv}r^{c}_{vq}\}]}
+{(2\omega^\mathrm{\Sigma}_{cv}-\omega^\mathrm{\Sigma}_{cq})}\right.
 \nonumber \\
 & 
-\left. -\frac{\mathrm{Im}[\mathbf{v}^{\mathrm{\Sigma},a}_{vq}\{r^{c}
-_{qc}r^{b}_{cv}\}]} {(2\omega^\mathrm{\Sigma}_{cv}-\omega^\mathrm{\Sigma}_{qv})}
+\left. -\frac{\mathrm{Im}[\mathcal{V}^{\mathrm{\Sigma},a}_{vq}\{r^{c}
+_{qc}r^{b}_{cv}\}]}
+{(2\omega^\mathrm{\Sigma}_{cv}-\omega^\mathrm{\Sigma}_{qv})}
 \right]\delta(\omega^\mathrm{\Sigma}_{cv}-\omega),
 \end{align}
 
@@ -208,10 +331,10 @@ _{qc}r^{b}_{cv}\}]} {(2\omega^\mathrm{\Sigma}_{cv}-\omega^\mathrm{\Sigma}_{qv})}
  \times \sum_{cv}\frac{1}{(\omega^\mathrm{\Sigma}_{cv})^{2}} 
 &
 \Bigg[
-\mathrm{Re}\left[\left\{r^{b}_{cv}\left(\mathbf{v}^
+\mathrm{Re}\left[\left\{r^{b}_{cv}\left(\mathcal{V}^
 {\mathrm{\Sigma},a}_{vc}\right)_{;k^{c}}\right\}\right]
 \nonumber \\
-&+\frac{\mathrm{Re}\left[\mathbf{v}^{\mathrm{\Sigma},a}_{vc}\left\{
+&+\frac{\mathrm{Re}\left[\mathcal{V}^{\mathrm{\Sigma},a}_{vc}\left\{
 r^{b}_{cv}
 \mathrm{\Delta}^{c}_{cv}\right\}\right]}{\omega^\mathrm{\Sigma}_{cv}} 
 \Bigg]
@@ -226,13 +349,14 @@ r^{b}_{cv}
 \times \sum_{vc}\frac{4}{\omega^\mathrm{\Sigma}_{cv}}
 &
 \Bigg[
-\sum_{v'\ne v}\frac{\mathrm{Im}[\mathbf{v}^{\mathrm{\Sigma},a}_{vc}\{r^{b}
+\sum_{v'\ne v}\frac{\mathrm{Im}[\mathcal{V}^{\mathrm{\Sigma},a}_{vc}\{r^{b}
 _{cv'}r^{c}_{v'v}\}]}
 {2\omega^\mathrm{\Sigma}_{cv'}-\omega^\mathrm{\Sigma}_{cv}}
 \nonumber \\ 
 &
-- \sum_{c'\ne c}\frac{\mathrm{Im}[\mathbf{v}^{\mathrm{\Sigma},a}_{vc}\{r^
-{c}_{cc'}r^{b}_{c'v}\}]}
+- \sum_{c'\ne c}
+\frac{\mathrm{Im}[\mathcal{V}^{\mathrm{\Sigma},a}_{vc}
+\{r^{c}_{cc'}r^{b}_{c'v}\}]}
 {2\omega^\mathrm{\Sigma}_{c'v}-\omega^\mathrm{\Sigma}_{cv}}
 \Bigg]
 \delta(\omega^\mathrm{\Sigma}_{cv}-2\omega),
@@ -247,29 +371,39 @@ _{cv'}r^{c}_{v'v}\}]}
 \times \sum_{vc}\frac{4}{(\omega^\mathrm{\Sigma}_{cv})^{2}}
 \Bigg[ 
 &
-\mathrm{Re}\left[\mathbf{v}^{\mathrm{\Sigma},a}_{vc}\left\{
+\mathrm{Re}\left[\mathcal{V}^{\mathrm{\Sigma},a}_{vc}\left\{
 \left(r^{b}_{cv}\right)_{;k^{c}}\right\}\right] 
 \nonumber \\
 -
 &
 \frac{2\mathrm{Re}
-\left[\mathbf{v}^{\mathrm{\Sigma},a}_{vc}\left\{
+\left[\mathcal{V}^{\mathrm{\Sigma},a}_{vc}\left\{
 r^{b}_{cv}
 \mathrm{\Delta}^{c}_{cv}\right\}\right]}{\omega^\mathrm{\Sigma}_{cv}}
 \Bigg]
 \delta(\omega^\mathrm{\Sigma}_{cv}-2\omega)
-.
+,
 \end{align}
 \end{subequations}
-where $\mathbf{v}^{\mathrm{\Sigma}}_{nm}$ is the complete velocity matrix elements defined as
+where $\mathcal{V}^{\mathrm{\Sigma}}_{nm}$ is the velocity matrix elements,
+that are derived from the complete velocity operator defined as
 \begin{equation*}\label{eq:nonlocal}
-\mathbf{v}^{\mathrm{\Sigma}}=\mathbf{v}+\mathbf{v}^{\mathrm{nl}}+\mathbf{v}^{S},
+\boldsymbol{\mathcal{V}}^{\mathrm{\Sigma}}\equiv
+\boldsymbol{\mathcal{V}}+
+\boldsymbol{\mathcal{V}}^{\mathrm{nl}}+
+\boldsymbol{\mathcal{V}}^{S}.
 \end{equation*}
-from where $\mathbf{v}^{\mathrm{nl}}$ includes the nonlocal pseudopotentials contribution, and $\mathbf{v}^{S}$ the scissors correction. Lastly, $r^{a}_{nm}$ is the position matrix elements, and $\omega^\mathrm{\Sigma}_{nm}$=$\omega^{\mathrm{\Sigma}}_{n}$-$\omega^{\mathrm{\Sigma}}_{m}$. The real part of each contribution can be obtained through a Kramers-Kronig transformation \cite{tancognePRB14} and
+$\boldsymbol{\mathcal{V}}^{\mathrm{nl}}$ includes the contribution from the
+nonlocal part of the pseudopotentials, and $\boldsymbol{\mathcal{V}}^{S}$
+includes the scissors correction. Lastly, $r^{a}_{nm}$ is the position matrix
+elements, and $\omega^\mathrm{\Sigma}_{nm}$ =
+$\omega^{\mathrm{\Sigma}}_{n}$-$\omega^{\mathrm{\Sigma}}_{m}$. The real part
+of each contribution can be obtained through a Kramers-Kronig transformation
+\cite{tancognePRB14} and
 \begin{equation}\label{eq:chitotal}
-    \chi^{abc} (-2\omega;\omega,\omega) = \chi^{abc}_{e,\omega} + \chi^{abc}_{e,2\omega} +
-    \chi^{abc}_{i,\omega} + \chi^{abc}_{i,2\omega}
-    .
+\chi^{abc} (-2\omega;\omega,\omega) =
+\chi^{abc}_{e,\omega} + \chi^{abc}_{e,2\omega} +
+\chi^{abc}_{i,\omega} + \chi^{abc}_{i,2\omega}.
 \end{equation}
 
 \section{Results}\label{sec:results}
@@ -382,7 +516,7 @@ Figs. \ref{fig:alt-eta} and \ref{fig:up-eta} depict the spectra obtained for the
   % \includegraphics[width=\linewidth]{up/up-eta-multiplot.eps}
   \caption{(Color online) Spectra of the injection current tensor along the \emph{a} direction, {$\eta^{abc}(\omega)$}, layer by layer, for the hydrogenated graphene structure C$_{16}$H$_{8}$-up under incidence of circularly polarized light.\label{fig:up-eta}}
 \end{figure}
-For the \emph{alt} structure we analyze two important energy values of interest for the response. The first one corresponds for an energy of 0.9\,eV. For this energy the system have important contributions in the all three components. From the figure \ref{fig:alt-eta} we can see that the contributions for the component $\eta^{xxy}(\omega)$ comes for the all three layers having a principal contribution from the first hydrogen layer and reaching a value of $\eta^{xxy}(\omega)$=-0.50\,mC$^{3}$/J$^{2}$s$^{2}$. The $\eta^{yxy}$ component presents contributions again from the all three layers but principally by the carbon and bottom hydrogen layers reaching a value of $\eta^{yxy}$=1.0\,mC$^{3}$/J$^{2}$s$^{2}$. Finally, the $\eta^{zxy}$ component, as mentioned before, has only contributions from the carbon layer reaching a value of -1.9\,mC$^{3}$/J$^{2}$s$^{2}$; the hydrogen layers contributions are identically to zero. Using the Eq. \eqref{eq:etatotal} we have that for this fixed value of energy the total contribution is $\eta^(\omega)$=2.2\,mC$^{3}$/J$^{2}$s$^{2}$ and it is fixed at $\varphi=116^{\circ}$ and $\theta=-135^{\circ}$. The second value of energy of interest is for 1.30\,eV of energy where the absolute maximum of total layers contributions of the spectra is reached with a value of 2.30\,mC$^{3}$/J$^{2}$s$^{2}$ for the $\eta^{yxy}$ component. For this energy the $\eta^{xxy}$=0.5\,mC$^{3}$/J$^{2}$s$^{2}$ and $\eta^{zxy}$ is identical to zero. Also we can see that the contributions for the $\eta^{yxy}$ component come from the carbon and bottom hydrogen layers and that the contributions from the carbon and bottom hydrogen layer for $\eta^{xxy}$ are almost annihilated between themselves. This value is fixed only in the $xy$ plane with $\varphi=78^{\circ}$. In Fig. \ref{fig:altstrc} the green dashed lines depicts only the angles where this two values of $\eta^{zxy}(\omega)$ points for this two energy values energy; they are denoted by $\eta_{1}$ for 0.9\,eV and $\eta_{2}$ for 1.30\,eV. Finally for the \emph{alt} structure  we have that for all the three components the response goes to zero after 1.75\,eV. 
+For the \emph{alt} structure we analyze two important energy values of interest for the response. The first one corresponds for an energy of 0.9\,eV. For this energy the system have important contributions in the all three components. From the figure \ref{fig:alt-eta} we can see that the contributions for the component $\eta^{xxy}(\omega)$ comes for the all three layers having a principal contribution from the first hydrogen layer and reaching a value of $\eta^{xxy}(\omega)$=-0.50\,mC$^{3}$/J$^{2}$s$^{2}$. The $\eta^{yxy}$ component presents contributions again from the all three layers but principally by the carbon and bottom hydrogen layers reaching a value of $\eta^{yxy}$=1.0\,mC$^{3}$/J$^{2}$s$^{2}$. Finally, the $\eta^{zxy}$ component, as mentioned before, has only contributions from the carbon layer reaching a value of -1.9\,mC$^{3}$/J$^{2}$s$^{2}$; the hydrogen layers contributions are identically to zero. Using the Eq. \eqref{eq:etatotal} we have that for this fixed value of energy the total contribution is $\eta(\omega)$=2.2\,mC$^{3}$/J$^{2}$s$^{2}$ and it is fixed at $\varphi=116^{\circ}$ and $\theta=-135^{\circ}$. The second value of energy of interest is for 1.30\,eV of energy where the absolute maximum of total layers contributions of the spectra is reached with a value of 2.30\,mC$^{3}$/J$^{2}$s$^{2}$ for the $\eta^{yxy}$ component. For this energy the $\eta^{xxy}$=0.5\,mC$^{3}$/J$^{2}$s$^{2}$ and $\eta^{zxy}$ is identical to zero. Also we can see that the contributions for the $\eta^{yxy}$ component come from the carbon and bottom hydrogen layers and that the contributions from the carbon and bottom hydrogen layer for $\eta^{xxy}$ are almost annihilated between themselves. This value is fixed only in the $xy$ plane with $\varphi=78^{\circ}$. In Fig. \ref{fig:altstrc} the green dashed lines depicts only the angles where this two values of $\eta^{zxy}(\omega)$ points for this two energy values energy; they are denoted by $\eta_{1}$ for 0.9\,eV and $\eta_{2}$ for 1.30\,eV. Finally for the \emph{alt} structure  we have that for all the three components the response goes to zero after 1.75\,eV. 
 
 In a similar way than in the previous structure analysis the total value for each component of $\eta^{abc}$ comes from contributions from both layers unless for the  $\eta^{zxy}$ which contributions comes only from the carbon layer. For the \emph{up} case we analyze again two energies of interest, the first for 0.09\,eV and the second for 1.1\,eV. For the first value of energy we have contributions from all the three components. The maximum value of $\eta^{xxy}$=9.0\,mC$^{3}$/J$^{2}$s$^{2}$ is reached for this energy and the contributions for each of the two layers are in opposite directions predominating the contributions from the hydrogen layer. Also the component $\eta^{yxy}$=13\,mC$^{3}$/J$^{2}$s$^{2}$ reaches the absolute maximum of the total response, due to the sum of contributions from both layers. The last component for this energy value is $\eta^{zxy}$=-11\,mC$^{3}$/J$^{2}$s$^{2}$ and as mentioned before, has only contributions from the carbon layer. Using the Eq. \ref{eq:etatotal} we have that the total response for this given value of energy is $\eta(\omega)$=19.3\,mC$^{3}$/J$^{2}$s$^{2}$ fixed at $\varphi=55^{\circ}$ $\theta=-51^{\circ}$. For the second energy value, 1.1\,eV, we have that the $\eta^{xxy}$ and $\eta^{yxy}$ are inverted in direction with respect to the previous energy value reaching values of -4.0\,mC$^{3}$/J$^{2}$s$^{2}$ and -2.5\,mC$^{3}$/J$^{2}$s$^{2}$, respectively. Also, for this energy we have the  contribution of the last component is $\eta^{zxy}$=-5.5\,mC$^{3}$/J$^{2}$s$^{2}$. Using again the Eq. \eqref{eq:etatotal} we have a total response is $\eta^(\omega)$=7.2\,mC$^{3}$/J$^{2}$s$^{2}$ and it is directed in $\varphi=-147^{\circ}$ and $\theta=-126^{\circ}$  angles. In figure \ref{fig:upstrc} the green dashed arrows depicts only the angles where the two $\eta(\omega)$ values point denoted by $\eta_{1}$ for 0.9\,eV and $\eta_{2}$ for 1.1\,eV. Finally we have that for the \emph{up} system the response goes to zero after 0.2\,eV. 
 
