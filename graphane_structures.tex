@@ -110,9 +110,9 @@ In this section we report a summary of the formalism that describes the three ph
 
 \subsection{Optical spin injection}\label{sec:theory-DSP}
 
-The DSP, $\mathcal{D}^{a}(\omega)$, along a given direction, $a$, is defined as
+The DSP, $\mathcal{D}^{a}(\omega)$, along a given direction $a$, is defined as
 \begin{equation}\label{eq:da}
-\mathcal{D}^{a}=\frac{\dot{S}^{abc}(\omega)}{(\hbar/2)\dot{n}^{bc}(\omega)},
+\mathcal{D}^{a}(\omega)=\frac{\dot{S}^{abc}(\omega)}{(\hbar/2)\dot{n}^{bc}(\omega)},
 \end{equation}
 where the spin generation rate, $\dot{S}^{abc}(\omega)$, and the carrier generation rate, $\dot{n}^{bc}(\omega)$,  are given by 
 \begin{align*}
@@ -121,154 +121,153 @@ where the spin generation rate, $\dot{S}^{abc}(\omega)$, and the carrier generat
 \end{align*}
 from where $\zeta^{abc}(\omega)$ is the spin injection rate tensor and $\xi^{bc}(\omega)$ is the carrier generation rate tensor. The spin injection rate tensor is given by
 \begin{align*}\label{eq:zeta}
-\zeta^{abc} &= \frac{i\pi e^{2}}{\hbar^{2}}\int\frac{d^{3}k}{8\pi^{3}}
+\zeta^{abc}(\omega) &= \frac{i\pi e^{2}}{\hbar^{2}}\int\frac{d^{3}k}{8\pi^{3}}
 \sum_{vcc'}^{\prime}\text{Im}\bigl[S^{a}_{c'c}(\textbf{k})
 r^{b}_{vc'}(\textbf{k})r^{c}_{cv}(\textbf{k})\nonumber\\
 &\qquad+S^{a}_{cc'}(\textbf{k})
 r^{b}_{vc}(\textbf{k})r^{c}_{c'v}(\textbf{k})\bigr]
 \delta(\omega_{cv}(\textbf{k})-\omega),
 \end{align*}
-where $S^{a}$ and $r$ are the spin and position matrix elements. The carrier generation rate tensor is related to the linear optical response tensor by 
+where $S^{a}_{nm}$ and $r^{a}_{nm}$ are the spin and position matrix elements. The superscripts in the previous expressions denote the three Cartesian coordinates. The carrier generation rate tensor is related to the linear optical response tensor by 
 \begin{equation*}
-\xi^{bc}=Im[(2/\hbar)\chi^{bc}].
+\xi^{bc}(\omega)=\mathrm{Im}[(2/\hbar)\chi^{bc}].
 \end{equation*}
-
-The superscripts in previous expressions denote the three Cartesian coordinates. We assume an incoming circularly polarized beam at normal incidence that propogates along the $-z$ direction, $\mathbf{E}(\omega) = E_{0}(\omega)(\hat{x} - i\hat{y})/\sqrt{2}$. Then, the expression of Eq. \eqref{eq:da} can be reduced to
+We assume an incoming circularly polarized beam at normal incidence that propogates along the $-z$ direction, $\mathbf{E}(\omega) = E_{0}(\omega)(\hat{x} - i\hat{y})/\sqrt{2}$. Then, the expression of Eq. \eqref{eq:da} can be reduced to
 \begin{equation}\label{eq:D^i}
-D^{a}(\omega) = 
+\mathcal{D}^{a}(\omega) = 
 \frac{-4i\zeta^{axy}(\omega)}
     {\hbar\left[\xi^{xx}(\omega) + \xi^{yy}(\omega)\right]}.
 \end{equation}
 It is possible to generate current injection along all three orthogonal directions with
-an incident circularly polarized beam and so the total DSP can be obtained by the relation
+an incident circularly polarized beam and so the total DSP can be obtained by
 \begin{equation}\label{eq:dsptotal}
-\mathcal{D}(\omega) = \sqrt{ [\mathcal{D}^{x}(\omega)]^{2} + [\mathcal{D}^{y}(\omega)]^{2} +[\mathcal{D}^{z}(\omega)]^{2}  }
+\mathcal{D}(\omega) = \sqrt{ [\mathcal{D}^{x}(\omega)]^{2} + [\mathcal{D}^{y}(\omega)]^{2} +[\mathcal{D}^{z}(\omega)]^{2}}.
 \end{equation}
 
 
 \subsection{Optical current injection}\label{sec:theory-OCI}
 
 The optical current injection is defined as
-\begin{equation}
+\begin{equation*}
 \mathbf{\dot{J}}^{a}_{\text{inj}}(\omega) =
 \eta^{abc}(\omega)E_{b}(\omega)E_{c}(\omega), \label{eq:eta}
-\end{equation}
+\end{equation*}
 where $\eta^{abc}(\omega)$ is the surface injection current tensor and is given by
 \begin{align*}
 \eta^{abc}(\omega) =& \frac{i\pi e^{3}}{\hbar^{2}}\int\frac{d^{3}k}{8\pi^{3}}
 \nonumber \\
 \times &
-\sum_{vc}\Delta^{a}_{cv}(\mathbf{k})\text{Im}\big[r^{b}_{cv}(\mathbf{k})
+\sum_{vc}\mathrm{\Delta}^{a}_{cv}(\mathbf{k})\text{Im}\big[r^{b}_{cv}(\mathbf{k})
 r^{c}_{cv}(\mathbf{k})\big]\delta(\omega_{cv}(\mathbf{k})-\omega).
 \end{align*}
-from where $r$ is the position matrix elements and 
+from where $r^{a}_{nm}$ is the position matrix elements and 
 \begin{equation*}
-\Delta^{a}_{cv} = v^{a}_{cc}(\mathbf{k})-v^{a}_{vv}(\mathbf{k}),
+\mathrm{\Delta}^{a}_{cv} = v^{a}_{cc}(\mathbf{k})-v^{a}_{vv}(\mathbf{k}),
 \end{equation*}
-where $v^{a}_{nn}(\mathbf{k})=p^{a}_{nn}(\mathbf{k})/m_{e}$ is the electron velocity for a given $n$ band.
+where $v^{a}_{nn}(\mathbf{k})=p^{a}_{nn}(\mathbf{k})/m_{e}$ is the electron velocity for a given $n$ band and the superscripts denote Cartesian coordinates.
 
-The tensor $\eta^{abc}(\omega)$ is purely imaginary and is antisymmetric with respect to the last two indices, \emph{b} and \emph{c} \cite{sipePRB00,nastosPRB06}. Like in optical spin injection, it is possible to generate current injection along all three directions with an incident circularly polarized beam. In a similar way as has been made in Eq. \eqref{eq:dsptotal} it is possible to have the total $\eta^{abc}$ with the relation
+$\eta^{abc}(\omega)$ is purely imaginary and is antisymmetric with respect to the last two indices \cite{sipePRB00,nastosPRB06}. Like in optical spin injection, it is possible to generate current injection along all three directions with an incident circularly polarized beam. Analogously to Eq. \eqref{eq:dsptotal} it is possible to have the total $\eta(\omega)$ with the relation
 \begin{equation}\label{eq:etatotal}
-\eta(\omega) = \sqrt{ [\eta^{xxy}(\omega)]^{2} + [\eta^{yxy}(\omega)]^{2} +[\eta^{zxy}(\omega)]^{2}}
+\eta(\omega) = \sqrt{ [\eta^{abc}(\omega)]^{2} + [\eta^{abc}(\omega)]^{2} +[\eta^{abc}(\omega)]^{2}}.
 \end{equation}
 
 \subsection{Second-harmonic generation}\label{sec:theory-SHG}
 
-For the SHG we followed the the new formalism derived in reference \cite{andersonPRB15}. This formalism to calculate the second order susceptibility tensor is calculated, including in one unique formulation (i) the scissors correction, (ii) the contributionof the nonlocal part of the pseudopotentials, and (iii) the derivation for the inclusion of the cut function. For our calculation we used the cut function equal to one recovering then the response of the complete system.
+For SHG we followed the formalism derived in reference \cite{andersonPRB15}. This new formalism to determine the second order susceptibility tensor including in one formulation (i) the scissors correction, (ii) the contributionof the nonlocal part of the pseudopotentials, and (iii) the cut function. For our calculation we set the cut function equal to unity which recovers the complete system response.
 
 The second order nonlinear polarization is given by 
 \begin{equation*}\label{eq:pol}
 \mathcal{P}(2\omega) = \chi^{abc}(-2\omega;\omega,\omega)E^{b}(\omega)E^{c}(\omega)
 \end{equation*}
-where $\chi^{abc}(-2\omega;\omega,\omega)$ is the nonlinear susceptibility tensor responsible for the SHG and satisfies the $\chi^{abc}$ = $\chi^{acb}$ condition. Again, the superscripts in previous expression denotes the Cartesian coordinates and if repeated are to be summed over. The expressions for the imaginary part of the tensor components $\chi^{abc}(-2\omega;\omega,\omega)$ at $1\omega$ and $2\omega$ are divided in the interband ($e$) and intraband ($i$) contributions. They correspond to transitions between the conduction and valence bands and transitions between levels within the conduction or valence band, respectively. This expressions are given by
+where $\chi^{abc}(-2\omega;\omega,\omega)$ is the nonlinear susceptibility tensor responsible for the SHG and satisfies permutation symmetry condition. Again, the superscripts in the previous expression denote the Cartesian coordinates and if repeated are to be summed over. The expressions for the imaginary part of the tensor components $\chi^{abc}(-2\omega;\omega,\omega)$ at $1\omega$ and $2\omega$ are divided into interband ($e$) and intraband ($i$)
 \begin{subequations}\label{eq:chis}
 \begin{align}
-\mathrm{Im}[\chi^{\mathrm{a}\mathrm{b}\mathrm{c}}_{e,\omega}] =  
+\mathrm{Im}[\chi^{abc}_{e,\omega}] =  
 \frac{\pi |e|^3}{2\hbar^2}\int 
 &
 \frac{dk^3}{8\pi^3}  
 \nonumber \\
 \times \sum_{vc}\sum_{q\neq(v,c)}
-\frac{1}{\omega^\Sigma_{cv}}
+\frac{1}{\omega^\mathrm{\Sigma}_{cv}}
 &
-\left[\frac{\mathrm{Im}[\mathbf{v}^{\Sigma,\mathrm{a}}_{qc}\{r^{\mathrm{b}}_ 
-{cv}r^{\mathrm{c}}_{vq}\}]} {(2\omega^\Sigma_{cv}-\omega^\Sigma_{cq})} \right.
+\left[\frac{\mathrm{Im}[\mathbf{v}^{\mathrm{\Sigma},a}_{qc}\{r^{b}_ 
+{cv}r^{c}_{vq}\}]} {(2\omega^\mathrm{\Sigma}_{cv}-\omega^\mathrm{\Sigma}_{cq})} \right.
 \nonumber \\
 & 
-\left. -\frac{\mathrm{Im}[\mathbf{v}^{\Sigma,\mathrm{a}}_{vq}\{r^{\mathrm{c}}
-_{qc}r^{\mathrm{b}}_{cv}\}]} {(2\omega^\Sigma_{cv}-\omega^\Sigma_{qv})}
-\right]\delta(\omega^\Sigma_{cv}-\omega),
+\left. -\frac{\mathrm{Im}[\mathbf{v}^{\mathrm{\Sigma},a}_{vq}\{r^{c}
+_{qc}r^{b}_{cv}\}]} {(2\omega^\mathrm{\Sigma}_{cv}-\omega^\mathrm{\Sigma}_{qv})}
+\right]\delta(\omega^\mathrm{\Sigma}_{cv}-\omega),
 \end{align}
 
 \begin{align}
-\mathrm{Im}  [\chi^{\mathrm{a}\mathrm{b}\mathrm{c}}_{i,\omega}]= 
+\mathrm{Im}  [\chi^{abc}_{i,\omega}]= 
 \frac{\pi\vert e\vert^3}{2\hbar^2}
 &
 \int \frac{dk^3}{8\pi^3} 
 \nonumber \\
- \times \sum_{cv}\frac{1}{(\omega^\Sigma_{cv})^{2}} 
+ \times \sum_{cv}\frac{1}{(\omega^\mathrm{\Sigma}_{cv})^{2}} 
 &
 \Bigg[
-\mathrm{Re}\left[\left\{r^{\mathrm{b}}_{cv}\left(\mathbf{v}^
-{\Sigma,\mathrm{a}}_{vc}\right)_{;k^{\mathrm{c}}}\right\}\right]
+\mathrm{Re}\left[\left\{r^{b}_{cv}\left(\mathbf{v}^
+{\mathrm{\Sigma},a}_{vc}\right)_{;k^{c}}\right\}\right]
 \nonumber \\
-&+\frac{\mathrm{Re}\left[\mathbf{v}^{\Sigma,\mathrm{a}}_{vc}\left\{
-r^{\mathrm{b}}_{cv}
-\Delta^{\mathrm{c}}_{cv}\right\}\right]}{\omega^\Sigma_{cv}} 
+&+\frac{\mathrm{Re}\left[\mathbf{v}^{\mathrm{\Sigma},a}_{vc}\left\{
+r^{b}_{cv}
+\mathrm{\Delta}^{c}_{cv}\right\}\right]}{\omega^\mathrm{\Sigma}_{cv}} 
 \Bigg]
-\delta(\omega^\Sigma_{cv}-\omega),
+\delta(\omega^\mathrm{\Sigma}_{cv}-\omega),
 \end{align}
 
 \begin{align}
-\mathrm{Im}[\chi^{\mathrm{a}\mathrm{b}\mathrm{c}}_{e,2\omega}]= -
+\mathrm{Im}[\chi^{abc}_{e,2\omega}]= -
 &
 \frac{\pi |e|^3}{2\hbar^2}\int \frac{dk^3}{8\pi^3}
 \nonumber \\
-\times \sum_{vc}\frac{4}{\omega^\Sigma_{cv}}
+\times \sum_{vc}\frac{4}{\omega^\mathrm{\Sigma}_{cv}}
 &
 \Bigg[
-\sum_{v'\ne v}\frac{\mathrm{Im}[\mathbf{v}^{\Sigma,\mathrm{a}}_{vc}\{r^{\mathrm{
-b}}_{cv'}r^{\mathrm{c}}_{v'v}\}]}
-{2\omega^\Sigma_{cv'}-\omega^\Sigma_{cv}}
+\sum_{v'\ne v}\frac{\mathrm{Im}[\mathbf{v}^{\mathrm{\Sigma},a}_{vc}\{r^{b}
+_{cv'}r^{c}_{v'v}\}]}
+{2\omega^\mathrm{\Sigma}_{cv'}-\omega^\mathrm{\Sigma}_{cv}}
 \nonumber \\ 
 &
-- \sum_{c'\ne c}\frac{\mathrm{Im}[\mathbf{v}^{\Sigma,\mathrm{a}}_{vc}\{r^
-{\mathrm{c}}_{cc'}r^{\mathrm{b}}_{c'v}\}]}
-{2\omega^\Sigma_{c'v}-\omega^\Sigma_{cv}}
+- \sum_{c'\ne c}\frac{\mathrm{Im}[\mathbf{v}^{\mathrm{\Sigma},a}_{vc}\{r^
+{c}_{cc'}r^{b}_{c'v}\}]}
+{2\omega^\mathrm{\Sigma}_{c'v}-\omega^\mathrm{\Sigma}_{cv}}
 \Bigg]
-\delta(\omega^\Sigma_{cv}-2\omega),
+\delta(\omega^\mathrm{\Sigma}_{cv}-2\omega),
 \end{align}
 
 \begin{align}
-\mathrm{Im}[\chi^{\mathrm{a}\mathrm{b}\mathrm{c}}_{i,2\omega}]= 
+\mathrm{Im}[\chi^{abc}_{i,2\omega}]= 
 \frac{\pi \vert e\vert^{3}}{2\hbar^2}
 &
 \int \frac{dk^3}{8\pi^3}
 \nonumber \\
-\times \sum_{vc}\frac{4}{(\omega^\Sigma_{cv})^{2}}
+\times \sum_{vc}\frac{4}{(\omega^\mathrm{\Sigma}_{cv})^{2}}
 \Bigg[ 
 &
-\mathrm{Re}\left[\mathbf{v}^{\Sigma,\mathrm{a}}_{vc}\left\{
-\left(r^{\mathrm{b}}_{cv}\right)_{;k^{\mathrm{c}}}\right\}\right] 
+\mathrm{Re}\left[\mathbf{v}^{\mathrm{\Sigma},a}_{vc}\left\{
+\left(r^{b}_{cv}\right)_{;k^{c}}\right\}\right] 
 \nonumber \\
 -
 &
 \frac{2\mathrm{Re}
-\left[\mathbf{v}^{\Sigma,\mathrm{a}}_{vc}\left\{
-r^{\mathrm{b}}_{cv}
-\Delta^{\mathrm{c}}_{cv}\right\}\right]}{\omega^\Sigma_{cv}}
+\left[\mathbf{v}^{\mathrm{\Sigma},a}_{vc}\left\{
+r^{b}_{cv}
+\mathrm{\Delta}^{c}_{cv}\right\}\right]}{\omega^\mathrm{\Sigma}_{cv}}
 \Bigg]
-\delta(\omega^\Sigma_{cv}-2\omega)
+\delta(\omega^\mathrm{\Sigma}_{cv}-2\omega)
 .
 \end{align}
 \end{subequations}
-where $\mathbf{v}^{\Sigma}_{nm}$ is the complete velocity matrix elements defined as
+where $\mathbf{v}^{\mathrm{\Sigma}}_{nm}$ is the complete velocity matrix elements defined as
 \begin{equation}\label{eq:nonlocal}
-\mathbf{v}^{\Sigma}=\mathbf{v}+\mathbf{v}^{\mathrm{nl}}+\mathbf{v}^{S},
+\mathbf{v}^{\mathrm{\Sigma}}=\mathbf{v}+\mathbf{v}^{\mathrm{nl}}+\mathbf{v}^{S},
 \end{equation}
-from where $\mathbf{v}^{\mathrm{nl}}$ includes the nonlocal contribution, and $\mathbf{v}^{S}$ the scissors correction. Lastly, $r^{\mathrm{a}}_{nm}$ is the position matrix elements, and $\omega^\Sigma_{nm}$=$\omega^{\Sigma}_{n}$-$\omega^{\sigma}_{m}$. The real part of each contribution can be obtained through a Kramers-Kronig transformation \cite{tancognePRB14} and
+from where $\mathbf{v}^{\mathrm{nl}}$ includes the nonlocal pseudopotentials contribution, and $\mathbf{v}^{S}$ the scissors correction. Lastly, $r^{a}_{nm}$ is the position matrix elements, and $\omega^\mathrm{\Sigma}_{nm}$=$\omega^{\mathrm{\Sigma}}_{n}$-$\omega^{\mathrm{\Sigma}}_{m}$. The real part of each contribution can be obtained through a Kramers-Kronig transformation \cite{tancognePRB14} and
 \begin{equation*}\label{eq:chitotal}
-    \chi^{abc} = \chi^{abc}_{e,\omega} + \chi^{abc}_{e,2\omega} +
+    \chi^{abc} (-2\omega;\omega,\omega) = \chi^{abc}_{e,\omega} + \chi^{abc}_{e,2\omega} +
     \chi^{abc}_{i,\omega} + \chi^{abc}_{i,2\omega}
     .
 \end{equation*}
@@ -285,18 +284,18 @@ We present the results of the numerical calculations for {$D^{a}$}, {$\eta^{abc}
   & $x$ & $y$ & $z$ \\
   \hline
   \multicolumn{2}{l}{First layer}\\
-H & 2.460673853 & 1.078176853 & 10.796355805 \\
-  \multicolumn{2}{l}{Second layer}\\
-C & 2.460673853 & 1.389876044 & 11.872402140 \\
-C & 3.691010864 & 2.185854780 & 12.110583807 \\
-C & 3.691010863 & 3.496845641 & 12.426806318 \\
-C & 2.460673854 & 0.030828762 & 12.665048452 \\
-  \multicolumn{2}{l}{Third layer}\\
 H & 2.460673853 & 0.342436286 & 13.741105571 \\
+  \multicolumn{2}{l}{Second layer}\\
+C & 2.460673854 & 0.030828762 & 12.665048452 \\
+C & 3.691010863 & 3.496845641 & 12.426806318 \\
+C & 3.691010864 & 2.185854780 & 12.110583807 \\
+C & 2.460673853 & 1.389876044 & 11.872402140 \\
+  \multicolumn{2}{l}{Third layer}\\
+H & 2.460673853 & 1.078176853 & 10.796355805 \\
   \hline
   \end{tabular}
   \caption[]{%
-  Atom types and positions for the C$_{16}$H$_{8}$-alt structure unit cell in Cartesian coordinates. The system was separated in three layers: (i) top hydrogen atoms, (ii) central carbon atoms, (iii) down hydrogen atoms. }
+  Atom types and positions for the C$_{16}$H$_{8}$-alt structure unit cell in Cartesian coordinates. The system was separated in three layers: (i) top hydrogen atoms, (ii) central carbon atoms, and (iii) bottom hydrogen atoms. }
   \label{tab:altstrc}
 \end{table}
 \begin{table}[t]
@@ -318,7 +317,7 @@ C & \ 2.3250023170 & 6.706652267 & 22.953013267 \\
   \hline
   \end{tabular}
   \caption[]{%
-  Atom types and positions for the C$_{16}$H$_{8}$-up structure unit cell in Cartesian coordinates. The system was separated in two layers: (i) top hydrogen atoms, (ii) down carbon atoms.}
+  Atom types and positions for the C$_{16}$H$_{8}$-up structure unit cell in Cartesian coordinates. The system was separated in two layers: (i) top hydrogen atoms and (ii) bottom carbon atoms.}
   \label{tab:upstrc}
 \end{table}
 
