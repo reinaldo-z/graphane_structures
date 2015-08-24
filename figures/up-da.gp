@@ -15,6 +15,7 @@ set xrange [0.07:0.12]
 set ylabel "{\\Large $D^{a}(\\omega)$}"
 
 
-p   "data/up/res-spin_0-0.8eV/dsp.kk-x-scissor_0_Nc_27" u ($1+0.003):(0.813*2*$4/($2+$3+1.e-10)) title "$D^{x}$" w l lw 2.0 lt 1 dt 1,\
-    "data/up/res-spin_0-0.8eV/dsp.kk-y-scissor_0_Nc_27" u ($1+0.003):(0.813*2*$4/($2+$3+1.e-10)) title "$D^{y}$" w l lw 2.0 lt 2 dt 2,\
-    "data/up/res-spin_0-0.8eV/dsp.kk-z-scissor_0_Nc_27" u ($1+0.003):(0.813*2*$4/($2+$3+1.e-10)) title "$D^{z}$" w l lw 2.0 lt 6 dt 3,\
+p   "data/up/res-spin_0-0.8eV/dsp.kk_x_8452_40-spin_scissor_0_Nc_18" u ($1+0.003):(0.813*2*$4/($2+$3+1.e-10)) title "$D^{x}$" w l lw 2.0 lt 1 dt 1,\
+    "data/up/res-spin_0-0.8eV/dsp.kk_y_8452_40-spin_scissor_0_Nc_18" u ($1+0.003):(0.813*2*$4/($2+$3+1.e-10)) title "$D^{y}$" w l lw 2.0 lt 2 dt 2,\
+    "data/up/res-spin_0-0.8eV/dsp.kk_z_8452_40-spin_scissor_0_Nc_18" u ($1+0.003):(0.813*2*$4/($2+$3+1.e-10)) title "$D^{z}$" w l lw 2.0 lt 6 dt 3,\
+
