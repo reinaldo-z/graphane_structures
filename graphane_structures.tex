@@ -85,16 +85,16 @@ injection, the optical current injection, and second-harmonic generation
 
 \begin{figure}[t]
 \subfloat[Top and side view of pristine graphene.]
-{\includegraphics[width=0.49\linewidth]{figures/graph1}
-\includegraphics[width=0.49\linewidth]{figures/graph2}\label{fig:graphenestrc}}
+{\includegraphics[width=0.49\linewidth]{figures/images/graph1}
+\includegraphics[width=0.49\linewidth]{figures/images/graph2}\label{fig:graphenestrc}}
 \\
 \subfloat[Top and side view of C$_{16}$H$_{8}$-alt graphene structure.]
-{\includegraphics[width=0.49\linewidth]{figures/alt1}
-\includegraphics[width=0.49\linewidth]{figures/alt2}\label{fig:altstrc}}
+{\includegraphics[width=0.49\linewidth]{figures/images/alt1}
+\includegraphics[width=0.49\linewidth]{figures/images/alt2}\label{fig:altstrc}}
 \\
 \subfloat[Top and side view of C$_{16}$H$_{8}$-up graphene structure.]
-{\includegraphics[width=0.49\linewidth]{figures/up1}
-\includegraphics[width=0.49\linewidth]{figures/up2}\label{fig:upstrc}}
+{\includegraphics[width=0.49\linewidth]{figures/images/up1}
+\includegraphics[width=0.49\linewidth]{figures/images/up2}\label{fig:upstrc}}
 \caption{(Color online) Diagrams of pristine graphene
 (\ref{fig:graphenestrc}), and the C$_{16}$H$_{8}$-alt (\ref{fig:altstrc}), and
 C$_{16}$H$_{8}$-up (\ref{fig:upstrc}) structures. The light (dark) spheres
@@ -274,7 +274,9 @@ directions.
 $\eta^{abc}(\omega)$ is purely imaginary and is antisymmetric with respect to
 the last two indices \cite{sipePRB00,nastosPRB06}. Like in optical spin
 injection, it is possible to generate current injection along all three
-directions with an incident circularly polarized beam. Analogously to Eq.
+directions with an incident circularly polarized beam. Therefore, the only
+components to be calculated are $\eta^{xxy}(\omega)$, $\eta^{yxy}(\omega)$,
+and $\eta^{zxy}(\omega)$. Analogously to Eq.
 \eqref{eq:dsptotal} it is possible to have the total $\eta(\omega)$ as
 \begin{equation}\label{eq:etatotal}
 \eta(\omega) =
@@ -450,8 +452,8 @@ H & 2.460673853 & 1.078176853 & 10.796355805 \\
 \caption[]{%
 Atom types and positions for the C$_{16}$H$_{8}$-alt structure unit cell in
 Cartesian coordinates. The system was separated into three layers: (i) top
-hydrogen atoms, (ii) central carbon atoms, and (iii) bottom hydrogen atoms. }
-\label{tab:altstrc}
+hydrogen atoms, (ii) central carbon atoms, and (iii) bottom hydrogen atoms.
+\label{tab:altstrc}}
 \end{table}
 \begin{table}[t]
 % \sidecaption
@@ -575,17 +577,13 @@ C$_{16}$H$_{8}$-up.\label{fig:Da}}
 \subsection{Optical current injection}\label{subsec:results-eta}
 
 Figs. \ref{fig:alt-eta} and \ref{fig:up-eta} depict the spectra obtained for
-the current injection tensor components, $\eta^{abc}(\omega)$, for the
-\emph{alt} and \emph{up} systems. Solid lines are the total response of a
-given component and dashed lines correspond to the layer by layer
-contributions. The \emph{alt} system is divided into three layers comprised of
-the top H atoms, the carbon plane, and bottom H atoms as presented in Table
-\ref{tab:altstrc}. The \emph{up} system is divided into two layers comprised
-of the top H atoms, and the carbon plane, as presented in Table
-\ref{tab:upstrc}. From Figs. \ref{fig:alt-eta} and \ref{fig:up-eta} we note
-that the $\eta^{xxy}$ and $\eta^{yxy}$ components have contributions from all
-three layers while the $\eta^{zxy}$ is produced entirely from the carbon
-layer.
+the current injection tensor components, $\eta^{xxy}(\omega)$,
+$\eta^{yxy}(\omega)$, and $\eta^{zxy}(\omega)$ for the
+\emph{alt} and \emph{up} systems. The \emph{alt} system is divided into three
+layers comprised of the top H atoms, the carbon plane, and the bottom H atoms.
+The \emph{up} system is divided into two layers comprised of the top H atoms
+and the carbon plane. The layer selection for the unit cells are shown
+explicitely in Tables \ref{tab:altstrc} and \ref{tab:upstrc}.
 
 \begin{figure}[t]
 \centering
@@ -594,8 +592,9 @@ layer.
 \subfloat{\includegraphics[width=\linewidth]{figures/alt_eta_z.eps}}
 % \includegraphics[width=\linewidth]{alt/alt-eta-layers.eps}
 \caption{(Color online) Spectra of the current injection tensor
-{$\eta^{abc}(\omega)$} for C$_{16}$H$_{8}$-alt. Each component is divided into
-its layer by layer contributions.\label{fig:alt-eta}}
+{$\eta^{abc}(\omega)$} for C$_{16}$H$_{8}$-alt. Solid lines are the total
+current injection and dashed lines correspond to the layer
+contributions.\label{fig:alt-eta}}
 \end{figure}
 
 \begin{figure}[b]
@@ -609,9 +608,27 @@ its layer by layer contributions.\label{fig:alt-eta}}
 its layer by layer contributions.\label{fig:up-eta}}
 \end{figure}
 
-For the \emph{alt} structure we analyze two important energy values of interest for the response. The first one corresponds for an energy of 0.9\,eV. For this energy the system have important contributions in the all three components. From the figure \ref{fig:alt-eta} we can see that the contributions for the component $\eta^{xxy}(\omega)$ comes for the all three layers having a principal contribution from the first hydrogen layer and reaching a value of $\eta^{xxy}(\omega)$=-0.50\,mC$^{3}$/J$^{2}$s$^{2}$. The $\eta^{yxy}$ component presents contributions again from the all three layers but principally by the carbon and bottom hydrogen layers reaching a value of $\eta^{yxy}$=1.0\,mC$^{3}$/J$^{2}$s$^{2}$. Finally, the $\eta^{zxy}$ component, as mentioned before, has only contributions from the carbon layer reaching a value of -1.9\,mC$^{3}$/J$^{2}$s$^{2}$; the hydrogen layers contributions are identically to zero. Using the Eq. \eqref{eq:etatotal} we have that for this fixed value of energy the total contribution is $\eta(\omega)$=2.2\,mC$^{3}$/J$^{2}$s$^{2}$ and it is fixed at $\varphi=116^{\circ}$ and $\theta=-135^{\circ}$. The second value of energy of interest is for 1.30\,eV of energy where the absolute maximum of total layers contributions of the spectra is reached with a value of 2.30\,mC$^{3}$/J$^{2}$s$^{2}$ for the $\eta^{yxy}$ component. For this energy the $\eta^{xxy}$=0.5\,mC$^{3}$/J$^{2}$s$^{2}$ and $\eta^{zxy}$ is identical to zero. Also we can see that the contributions for the $\eta^{yxy}$ component come from the carbon and bottom hydrogen layers and that the contributions from the carbon and bottom hydrogen layer for $\eta^{xxy}$ are almost annihilated between themselves. This value is fixed only in the $xy$ plane with $\varphi=78^{\circ}$. In Fig. \ref{fig:altstrc} the green dashed lines depicts only the angles where this two values of $\eta^{zxy}(\omega)$ points for this two energy values energy; they are denoted by $\eta_{1}$ for 0.9\,eV and $\eta_{2}$ for 1.30\,eV. Finally for the \emph{alt} structure  we have that for all the three components the response goes to zero after 1.75\,eV. 
+In Fig. \ref{fig:alt-eta} we present the three components for the full
+\emph{alt} structure along with the layer by layer spectra. We establish two
+energy values of interest for each structure where there are critical points
+in the spectra. For the \emph{alt} structure we choose $E_{1} =
+0.97\,\mathrm{eV}$ and $E_{2} = 1.31\,\mathrm{eV}$. For the layer by layer
+analysis, we note that all three layers contribute toward $\eta^{xxy}(\omega)$
+at $E_{1}$ with the carbon and top H layers providing the principal
+contributions. For $E_{2}$, the dominating layers are the carbon and bottom H
+layers with minimal contribution from the top H layer. For $E_{1}$, the
+$\eta^{yxy}(\omega)$ component is also formed by contributions from all three
+layers but dominated by the sum of the top and bottom H layers. The carbon
+layer response is negative at that point, and destructively interferes with
+the response from the other two layers. For $E_{2}$, the spectrum is
+completely dominated by the bottom H layer, with almost no contribution from
+the others. Lastly, at $E_{1}$ the $\eta^{zxy}(\omega)$ component is entirely
+produced from the carbon layer, since the H layers provide no response
+whatsoever. This component is negligible at $E_{2}$.
 
-In a similar way than in the previous structure analysis the total value for each component of $\eta^{abc}$ comes from contributions from both layers unless for the  $\eta^{zxy}$ which contributions comes only from the carbon layer. For the \emph{up} case we analyze again two energies of interest, the first for 0.09\,eV and the second for 1.1\,eV. For the first value of energy we have contributions from all the three components. The maximum value of $\eta^{xxy}$=9.0\,mC$^{3}$/J$^{2}$s$^{2}$ is reached for this energy and the contributions for each of the two layers are in opposite directions predominating the contributions from the hydrogen layer. Also the component $\eta^{yxy}$=13\,mC$^{3}$/J$^{2}$s$^{2}$ reaches the absolute maximum of the total response, due to the sum of contributions from both layers. The last component for this energy value is $\eta^{zxy}$=-11\,mC$^{3}$/J$^{2}$s$^{2}$ and as mentioned before, has only contributions from the carbon layer. Using the Eq. \ref{eq:etatotal} we have that the total response for this given value of energy is $\eta(\omega)$=19.3\,mC$^{3}$/J$^{2}$s$^{2}$ fixed at $\varphi=55^{\circ}$ $\theta=-51^{\circ}$. For the second energy value, 1.1\,eV, we have that the $\eta^{xxy}$ and $\eta^{yxy}$ are inverted in direction with respect to the previous energy value reaching values of -4.0\,mC$^{3}$/J$^{2}$s$^{2}$ and -2.5\,mC$^{3}$/J$^{2}$s$^{2}$, respectively. Also, for this energy we have the  contribution of the last component is $\eta^{zxy}$=-5.5\,mC$^{3}$/J$^{2}$s$^{2}$. Using again the Eq. \eqref{eq:etatotal} we have a total response is $\eta^(\omega)$=7.2\,mC$^{3}$/J$^{2}$s$^{2}$ and it is directed in $\varphi=-147^{\circ}$ and $\theta=-126^{\circ}$  angles. In figure \ref{fig:upstrc} the green dashed arrows depicts only the angles where the two $\eta(\omega)$ values point denoted by $\eta_{1}$ for 0.9\,eV and $\eta_{2}$ for 1.1\,eV. Finally we have that for the \emph{up} system the response goes to zero after 0.2\,eV. 
+Using Eq. \eqref{eq:etatotal}, we have that the total current injection at $E_{1}$ is $\eta(\omega)$=$5.10\,\mathrm{mC}^{3}/\mathrm{J}^{2}\mathrm{s}^{2}$ with angles $\varphi=116^{\circ}$ and $\theta=-135^{\circ}$. In Fig. \ref{fig:altstrc} the green dashed lines depicts only the angles where this two values of $\eta^{zxy}(\omega)$ points for this two energy values energy; they are denoted by $\eta_{1}$ for 0.9\,eV and $\eta_{2}$ for 1.30\,eV. Finally for the \emph{alt} structure we have that for all the three components the response goes to zero after 1.75\,eV. 
+
+In a similar way than in the previous structure analysis the total value for each component of $\eta^{abc}$ comes from contributions from both layers unless for the  $\eta^{zxy}$ which contributions comes only from the carbon layer. For the \emph{up} case we analyze again two energies of interest, the first for 0.09\,eV and the second for 0.11\,eV. For the first value of energy we have contributions from all the three components. The maximum value of $\eta^{xxy}$=9.0\,mC$^{3}$/J$^{2}$s$^{2}$ is reached for this energy and the contributions for each of the two layers are in opposite directions predominating the contributions from the hydrogen layer. Also the component $\eta^{yxy}$=13\,mC$^{3}$/J$^{2}$s$^{2}$ reaches the absolute maximum of the total response, due to the sum of contributions from both layers. The last component for this energy value is $\eta^{zxy}$=-11\,mC$^{3}$/J$^{2}$s$^{2}$ and as mentioned before, has only contributions from the carbon layer. Using the Eq. \ref{eq:etatotal} we have that the total response for this given value of energy is $\eta(\omega)$=19.3\,mC$^{3}$/J$^{2}$s$^{2}$ fixed at $\varphi=55^{\circ}$ $\theta=-51^{\circ}$. For the second energy value, 1.1\,eV, we have that the $\eta^{xxy}$ and $\eta^{yxy}$ are inverted in direction with respect to the previous energy value reaching values of -4.0\,mC$^{3}$/J$^{2}$s$^{2}$ and -2.5\,mC$^{3}$/J$^{2}$s$^{2}$, respectively. Also, for this energy we have the  contribution of the last component is $\eta^{zxy}$=-5.5\,mC$^{3}$/J$^{2}$s$^{2}$. Using again the Eq. \eqref{eq:etatotal} we have a total response is $\eta^(\omega)$=7.2\,mC$^{3}$/J$^{2}$s$^{2}$ and it is directed in $\varphi=-147^{\circ}$ and $\theta=-126^{\circ}$  angles. In figure \ref{fig:upstrc} the green dashed arrows depicts only the angles where the two $\eta(\omega)$ values point denoted by $\eta_{1}$ for 0.9\,eV and $\eta_{2}$ for 1.1\,eV. Finally we have that for the \emph{up} system the response goes to zero after 0.2\,eV. 
 
 In table \ref{tab:etacomp} we present a comparison of the absolute maximum values of $\eta^{abc}(\omega)$ in a given direction reported for different materials and the corresponding energy at which the maximum value of $\eta^{abc}(\omega)$ is reached. From the table we can see that, excluding the case of the bulk CdSe, the \emph{alt} structure reaches a larger value for $\eta^{abc}(\omega)$ than some of the systems and is in the same order of magnitude that the Si(111) 2$\times$1 system and almost for the same photon energy, 1.25\,eV, which is in the near infrared range. Also, the other layered structures have reported two orders of magnitude lower values for this response. 
 
@@ -642,8 +659,8 @@ The reference \cite{lamanAPL99} includes the results of a one-photon experiments
 \end{table}
 
 
-% \subsection{Second-harmonic generation}
-% In Figs. \ref{fig:alt-shg-abs} and \ref{fig:up-shg-abs} we show the absolute value of the different nonzero components of $\chi^{abc}$ for both cases resulting from the evaluation of Eqs. \eqref{eq:chis} and \eqref{eq:chitotal}. For the \emph{alt} system, we note that all components except $xxy$ present two peaks at $\sim0.5$\,eV and $\sim1.0$\,eV. The first peak is completely produced by $2\omega$ resonances, while the second peak is produced by a mixture of both $1\omega$ and $2\omega$ resonances, with the latter dominating in most cases. The $xxy$ component has a single broadened peak with a discernible feature near 0.5\,eV. That feature, much like the other components, is produced by $2\omega$ resonances, while the maxima is produced by a mixture of both frequencies, $1\omega$ and $2\omega$. For the \emph{up} structure we see one predominant peak around 0.05\,eV; it is completely produced by $2\omega$ transitions. The $xxy$ and $yxx$ components have an additional feature close to 0.09\,eV dominated by $1\omega$ transitions. In table \ref{tab:shgcomp} we show a comparison of the maximum $\chi^{abc}$ peak reported for different structures.
+\subsection{Second-harmonic generation}
+In Figs. \ref{fig:alt-shg-abs} and \ref{fig:up-shg-abs} we show the absolute value of the different nonzero components of $\chi^{abc}$ for both cases resulting from the evaluation of Eqs. \eqref{eq:chis} and \eqref{eq:chitotal}. For the \emph{alt} system, we note that all components except $xxy$ present two peaks at $\sim0.5$\,eV and $\sim1.0$\,eV. The first peak is completely produced by $2\omega$ resonances, while the second peak is produced by a mixture of both $1\omega$ and $2\omega$ resonances, with the latter dominating in most cases. The $xxy$ component has a single broadened peak with a discernible feature near 0.5\,eV. That feature, much like the other components, is produced by $2\omega$ resonances, while the maxima is produced by a mixture of both frequencies, $1\omega$ and $2\omega$. For the \emph{up} structure we see one predominant peak around 0.05\,eV; it is completely produced by $2\omega$ transitions. The $xxy$ and $yxx$ components have an additional feature close to 0.09\,eV dominated by $1\omega$ transitions. In table \ref{tab:shgcomp} we show a comparison of the maximum $\chi^{abc}$ peak reported for different structures.
 % 
 % \begin{figure}[t]
 % \subfloat{\includegraphics[width=\linewidth]{figures/alt_shg_abs_x.eps}}\\
