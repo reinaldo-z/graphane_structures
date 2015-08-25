@@ -44,14 +44,6 @@ p   "res-all-shg/shgL.sm_0.15_yxx_14452_65-nospin_scissor_0_Nc_21" u 1:(scale*(a
     "res-all-shg/shgL.sm_0.15_yyz_14452_65-nospin_scissor_0_Nc_21" u 1:(scale*(abso($2,$3,$4,$5))) t "yyz" w l lw 2 lt 5 dt 5,\
     "res-all-shg/shgL.sm_0.15_yzz_14452_65-nospin_scissor_0_Nc_21" u 1:(scale*(abso($2,$3,$4,$5))) t "yzz" w l lw 2 lt 6 dt 6,\
 
-set output "alt_shg_abs_z.mp"
-p   "res-all-shg/shgL.sm_0.15_zxx_14452_65-nospin_scissor_0_Nc_21" u 1:(scale*(abso($2,$3,$4,$5))) t "zxx" w l lw 2 lt 1 dt 1,\
-    "res-all-shg/shgL.sm_0.15_zxy_14452_65-nospin_scissor_0_Nc_21" u 1:(scale*(abso($2,$3,$4,$5))) t "zxy" w l lw 2 lt 2 dt 2,\
-    "res-all-shg/shgL.sm_0.15_zxz_14452_65-nospin_scissor_0_Nc_21" u 1:(scale*(abso($2,$3,$4,$5))) t "zxz" w l lw 2 lt 3 dt 3,\
-    "res-all-shg/shgL.sm_0.15_zyy_14452_65-nospin_scissor_0_Nc_21" u 1:(scale*(abso($2,$3,$4,$5))) t "zyy" w l lw 2 lt 4 dt 4,\
-    "res-all-shg/shgL.sm_0.15_zyz_14452_65-nospin_scissor_0_Nc_21" u 1:(scale*(abso($2,$3,$4,$5))) t "zyz" w l lw 2 lt 5 dt 5,\
-    "res-all-shg/shgL.sm_0.15_zzz_14452_65-nospin_scissor_0_Nc_21" u 1:(scale*(abso($2,$3,$4,$5))) t "zzz" w l lw 2 lt 6 dt 6,\
-
 
 
 
