@@ -28,23 +28,27 @@ set ylabel "{\\Large $|\\chi^{abc}(2\\omega; \\omega, \\omega)|$ [$\\times10^{6}
 
 set key top right
 
-set output "alt_shg_abs_x.mp"
-p   "res-all-shg/shgL.sm_0.15_xxx_14452_65-nospin_scissor_0_Nc_21" u 1:(scale*(abso($2,$3,$4,$5))) t "xxx" w l lw 2 lt 1 dt 1,\
-    "res-all-shg/shgL.sm_0.15_xxy_14452_65-nospin_scissor_0_Nc_21" u 1:(scale*(abso($2,$3,$4,$5))) t "xxy" w l lw 2 lt 2 dt 2,\
-    "res-all-shg/shgL.sm_0.15_xxz_14452_65-nospin_scissor_0_Nc_21" u 1:(scale*(abso($2,$3,$4,$5))) t "xxz" w l lw 2 lt 3 dt 3,\
-    "res-all-shg/shgL.sm_0.15_xyy_14452_65-nospin_scissor_0_Nc_21" u 1:(scale*(abso($2,$3,$4,$5))) t "xyy" w l lw 2 lt 4 dt 4,\
-    "res-all-shg/shgL.sm_0.15_xyz_14452_65-nospin_scissor_0_Nc_21" u 1:(scale*(abso($2,$3,$4,$5))) t "xyz" w l lw 2 lt 5 dt 5,\
-    "res-all-shg/shgL.sm_0.15_xzz_14452_65-nospin_scissor_0_Nc_21" u 1:(scale*(abso($2,$3,$4,$5))) t "xzz" w l lw 2 lt 6 dt 6,\
+set output "alt_shg_x.mp"
+p   "data/alt/res-nospin_0-2eV/shgL.sm_0.15_xxx_14452_65-nospin_scissor_0_Nc_41" u 1:(scale*(abso($2,$3,$4,$5))) t "xxx" w l lw 2 lt 1 dt 1,\
+    "data/alt/res-nospin_0-2eV/shgL.sm_0.15_xxy_14452_65-nospin_scissor_0_Nc_41" u 1:(scale*(abso($2,$3,$4,$5))) t "xxy" w l lw 2 lt 2 dt 2,\
+    "data/alt/res-nospin_0-2eV/shgL.sm_0.15_xyy_14452_65-nospin_scissor_0_Nc_41" u 1:(scale*(abso($2,$3,$4,$5))) t "xyy" w l lw 2 lt 4 dt 4,\
 
-set output "alt_shg_abs_y.mp"
-p   "res-all-shg/shgL.sm_0.15_yxx_14452_65-nospin_scissor_0_Nc_21" u 1:(scale*(abso($2,$3,$4,$5))) t "yxx" w l lw 2 lt 1 dt 1,\
-    "res-all-shg/shgL.sm_0.15_yxy_14452_65-nospin_scissor_0_Nc_21" u 1:(scale*(abso($2,$3,$4,$5))) t "yxy" w l lw 2 lt 2 dt 2,\
-    "res-all-shg/shgL.sm_0.15_yxz_14452_65-nospin_scissor_0_Nc_21" u 1:(scale*(abso($2,$3,$4,$5))) t "yxz" w l lw 2 lt 3 dt 3,\
-    "res-all-shg/shgL.sm_0.15_yyy_14452_65-nospin_scissor_0_Nc_21" u 1:(scale*(abso($2,$3,$4,$5))) t "yyy" w l lw 2 lt 4 dt 4,\
-    "res-all-shg/shgL.sm_0.15_yyz_14452_65-nospin_scissor_0_Nc_21" u 1:(scale*(abso($2,$3,$4,$5))) t "yyz" w l lw 2 lt 5 dt 5,\
-    "res-all-shg/shgL.sm_0.15_yzz_14452_65-nospin_scissor_0_Nc_21" u 1:(scale*(abso($2,$3,$4,$5))) t "yzz" w l lw 2 lt 6 dt 6,\
+set output "alt_shg_y.mp"
+p   "data/alt/res-nospin_0-2eV/shgL.sm_0.15_yxx_14452_65-nospin_scissor_0_Nc_41" u 1:(scale*(abso($2,$3,$4,$5))) t "yxx" w l lw 2 lt 1 dt 1,\
+    "data/alt/res-nospin_0-2eV/shgL.sm_0.15_yxy_14452_65-nospin_scissor_0_Nc_41" u 1:(scale*(abso($2,$3,$4,$5))) t "yxy" w l lw 2 lt 2 dt 2,\
+    "data/alt/res-nospin_0-2eV/shgL.sm_0.15_yyy_14452_65-nospin_scissor_0_Nc_41" u 1:(scale*(abso($2,$3,$4,$5))) t "yyy" w l lw 2 lt 4 dt 4,\
 
+### vnl
 
+set output "alt_shg_x_vnl.mp"
+p   "data/alt/res-nospin_0-2eV/shgL.vnl.sm_0.15_xxx_14452_65-nospin_scissor_0_Nc_41" u 1:(scale*(abso($2,$3,$4,$5))) t "xxx" w l lw 2 lt 1 dt 1,\
+    "data/alt/res-nospin_0-2eV/shgL.vnl.sm_0.15_xxy_14452_65-nospin_scissor_0_Nc_41" u 1:(scale*(abso($2,$3,$4,$5))) t "xxy" w l lw 2 lt 2 dt 2,\
+    "data/alt/res-nospin_0-2eV/shgL.vnl.sm_0.15_xyy_14452_65-nospin_scissor_0_Nc_41" u 1:(scale*(abso($2,$3,$4,$5))) t "xyy" w l lw 2 lt 4 dt 4,\
+
+set output "alt_shg_y_vnl.mp"
+p   "data/alt/res-nospin_0-2eV/shgL.vnl.sm_0.15_yxx_14452_65-nospin_scissor_0_Nc_41" u 1:(scale*(abso($2,$3,$4,$5))) t "yxx" w l lw 2 lt 1 dt 1,\
+    "data/alt/res-nospin_0-2eV/shgL.vnl.sm_0.15_yxy_14452_65-nospin_scissor_0_Nc_41" u 1:(scale*(abso($2,$3,$4,$5))) t "yxy" w l lw 2 lt 2 dt 2,\
+    "data/alt/res-nospin_0-2eV/shgL.vnl.sm_0.15_yyy_14452_65-nospin_scissor_0_Nc_41" u 1:(scale*(abso($2,$3,$4,$5))) t "yyy" w l lw 2 lt 4 dt 4,\
 
 
 
