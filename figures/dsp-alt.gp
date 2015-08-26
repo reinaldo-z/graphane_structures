@@ -10,7 +10,7 @@ set ytics nomirror
 set zeroaxis lw 1 lt 2 lc 0
 set label 1 "{\\Large C$_{16}$H$_{8}$-alt}"   at graph 0.75, graph 0.15 
 
-set output "alt_Da.mp"
+set output "dsp-alt.mp"
 set xrange [0.717:0.727]
 set yrange [*:*]
 set key title ""

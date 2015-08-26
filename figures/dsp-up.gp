@@ -9,7 +9,7 @@ set label 1 "{\\Large C$_{16}$H$_{8}$-up}"   at graph 0.75, graph 0.15
 
 set xtics 0.01
 set ytics 0.2
-set output "up_Da.mp"
+set output "dsp-up.mp"
 set key right top
 set xrange [0.07:0.12]
 set ylabel "{\\Large $D^{a}(\\omega)$}"
