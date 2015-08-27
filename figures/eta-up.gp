@@ -19,7 +19,7 @@ set key title "Layers"
 # set title ""
 # set xtics 0.05
 set xrange [0.04:0.2]
-# set yrange [-15:20]
+set yrange [-20:20]
 
 
 set ylabel "{\\Large $\\eta^{xxy}(\\omega)$ [mC$^{3}$/J$^{2}$s$^{2}$]}"
