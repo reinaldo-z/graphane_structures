@@ -55,8 +55,13 @@ We present a theoretical study of spin and current injection, and second-harmoni
 \section{Introduction}\label{sec:intro}
 
 Graphene is an allotrope of carbon with a planar, hexagonal, two-dimensional
+<<<<<<< HEAD
 honeycomb structure with one carbon atom at each vertex as shown in Fig.
 \ref{fig:structures} that has attracted great interest due to its distinctive
+=======
+honeycomb structure with one carbon atom at each vertex, as shown in Fig.
+\ref{fig:structures}, that has attracted great interest due to its distinctive
+>>>>>>> 6a1670bf7b41970bc97e2cb3542dd45eb563797e
 properties, such as the fractional quantum Hall effect at room temperature,
 and excellent thermal transport properties
 \cite{geimNM07,reinaNL08,novoselov2S7,balandinNL08}. It behaves
@@ -73,7 +78,7 @@ study of two 50\% hydrogenated graphene structures, C$_{16}$H$_{8}$-alt and
 C$_{16}$H$_{8}$-up (Figs. \ref{fig:altstrc} and \ref{fig:upstrc}), both
 presenting a discernible band gap. When a hydrogen atom is bonded to a carbon
 atom in graphene, it draws the atom away from the plane. This modifies the
-carbon-carbon bond length and consequently expands the band gap
+carbon-carbon bond length resulting in an opening of the band gap
 \cite{samarakoonACSN10}. The C$_{16}$H$_{8}$-alt case has hydrogen on both
 sides of the carbon sheet, alternating between the upper and lower faces,
 while the C$_{16}$H$_{8}$-up case has all the hydrogens on a single side,
@@ -114,21 +119,19 @@ plane.\label{fig:structures}}
 
 The injection and detection of spin polarized electrons into nonmagnetic
 materials is the core of spintronics \cite{vzuticRMP04,fertRMP08} and an
-important  problem in condensed matter theory. Our concern is with the
+important problem in condensed matter theory. Our concern is with the
 production of spin polarization from light \cite{LampelPRL68}, and this
 conversion from the angular momentum of light into electron spin is very
 efficient in III-IV semiconductors \cite{dyakonovOO84}. The optical spin
-injection is characterized through the degree of spin polarization (DSP)
-$\mathcal{D}(\omega)$, which is a dimensionless quantity and a function of the
-photon frequency $\omega$. The DSP quantifies the fraction of injected
+injection is characterized through the dimensionless degree of spin polarization (DSP),
+$\boldsymbol{\mathcal{D}}(\omega)$. The DSP quantifies the fraction of injected
 electrons into the conduction bands that are spin polarized. This effect
 occurs when circularly polarized light is incident on a semiconducting
 material \cite{dyakonovOO84}, thus allowing electrons to move from the valence
 to the conduction bands. The resulting polarization is produced by the
 interaction between the electron spin and its motion caused by the spin-orbit
 coupling in the material. DSP can be calculated with a full band structure
-local-density approximation (LDA) and $\textbf{k}\cdot\textbf{p}$ methods
-\cite{nastosPRB07,cabellosPRB09}. There are theoretical reports of DSP
+method as shown in Refs. \cite{nastosPRB07,cabellosPRB09}. There are theoretical reports of DSP
 calculations for bulk media (Si, GaAs, CdSe, and Ge semiconductors)
 \cite{nastosPRB07,cabellosPRB09} and surfaces (Si(111):In, Si(111):As,
 GaAs(110):Sb, GaAs(110), and Si(111) with $4\times2$ and $8\times2$
@@ -137,44 +140,27 @@ reconstructions) \cite{mendozaPRB12,arzatePRB14}.
 
 \subsection{Optical current injection}
 
-The optical current injection $\mathbf{\dot{J}}(\omega)$, is a surface-
-sensitive optical effect that offers the potential to control chemical
-reactions \cite{bhatPRB05,hachePRL97}. A photocurrent can be injected with a
-single optical beam in noncentrosymmetric materials. This current results from
+The optical current injection $\mathbf{\dot{J}}(\omega)$, is a surface-sensitive optical effect that offers the potential to control chemical reactions \cite{bhatPRB05,hachePRL97}. A photocurrent can be injected with a single optical beam in noncentrosymmetric materials. 
+This current results from
 the interference of one-photon absorption processes associated with different
 linear polarizations of the light. In the process of current injection, the
 energy increase of the injected carriers is provided by the electromagnetic
 field; meanwhile, the increase in momentum is provided by the crystal lattice
-\cite{arzatePRB14}. From the total 32 crystal classes, 21 are
-noncentrosymmetric, and 18 of these have a nonzero current injection. Crystal
-classes $\bar{6}m\bar{2}$, $\bar{6}$, and $\bar{4}$$\bar{3}$m are the
-exceptions \cite{sipePRB00}. The one-photon current injection is characterized
-by the current injection tensor, $\eta(0;\omega,−\omega)$, which is a
-particular case of $\eta(\omega_{1}-\omega_{2};\omega_{1},-\omega_{2})$, where
-$\omega_{1}$ and $\omega_{2}$ are the frequencies of two different optical
-fields. This phenomenon has been studied in bulk semiconductors
+\cite{arzatePRB14}. From the total 32 crystal classes, 21 are noncentrosymmetric, and 18 of these have a nonzero current injection. Crystal classes $\bar{6}m\bar{2}$, $\bar{6}$, and $\bar{4}$$\bar{3}$m are the exceptions \cite{sipePRB00}. The one-photon current injection is characterized by the current injection tensor, $\eta(0;\omega,−\omega)$, which is a particular case of $\eta(\omega_{1}-\omega_{2};\omega_{1},-\omega_{2})$, where $\omega_{1}$ and $\omega_{2}$ are the frequencies of two different optical fields. Henceforth, we will denote this tensor as $\eta(\omega)$ for ease of notation.
+This phenomenon has been studied in bulk semiconductors
 \cite{hachePRL97,sipePRB00}, two-dimensional systems
 \cite{melePRB00,cabellosPRB11}, and one-dimensional nanotubes
-\cite{melePRB00}. Henceforth, we will denote this tensor as $\eta(\omega)$ for 
-ease of notation.
+\cite{melePRB00}. 
 
 
 \subsection{Second-harmonic generation}
-
-The characterization of embedded structures and interfaces is an important
-issue in the development of microelectronics, nanomaterials, semiconductors,
-and other areas of interest in science and technology. Second-harmonic
-generation (SHG) is a nonlinear process in which pairs of photons with frequency
-$\omega$ are annihilated, and a photon of frequency $2\omega$ is
-created. In the dipole approximation SHG is restricted to the surfaces of
+% generadores eficientes de SHG y caracterizacion de estructuras de este tipo
+Second-harmonic generation (SHG) is a nonlinear process in which pairs of photons with frequency $\omega$ are annihilated, and a photon of frequency $2\omega$ is created.
+In the dipole approximation SHG is restricted to the surfaces of
 centrosymmetric materials, making it an excellent surface probe. SHG
 spectroscopy techniques bring the possibility to study properties of materials
-and has a non invasive, nondestructive and surface sensitive nature. It is
-possible to characterize properties like phase transitions, atomic structure,
-molecular and atomic physisorption, structure deformation, and many others
-\cite{dadapPRB97,godefroyAPL96,salazarPRB14,mendozaPRL98}. Theses techniques
-work in non-ultrahigh vacuum conditions and can access interfaces that are
-buried under transparent overlayers. The two cases in this study,
+and has a non invasive, nondestructive and surface sensitive nature.
+The two cases in this study,
 C$_{16}$H$_{8}$-alt and C$_{16}$H$_{8}$-up, are noncentrosymmetric and thus
 present SHG from the entire structure.
 
@@ -195,8 +181,8 @@ Refs. \cite{cabellosPRB11,sipePRB00} for optical current injection, and Ref.
 
 \subsection{Optical spin injection}\label{sec:theory-DSP}
 
-The optical spin injection is characterized by the DSP, $\mathcal{D}(\omega)$.
-Along a given direction $a$, we write the DSP \cite{cabellosPRB09} as
+The optical spin injection is characterized by the DSP, $\boldsymbol{\mathcal{D}}(\omega)$.
+Along a given Cartesian direction $a$, we write the DSP \cite{cabellosPRB09} as
 \begin{equation}\label{eq:da}
 \mathcal{D}^{a}(\omega)=
 \frac{\dot{S}^{abc}(\omega)}{(\hbar/2)\dot{n}^{bc}(\omega)},
@@ -234,16 +220,16 @@ E_{0}(\omega)(\hat{x} - i\hat{y})/\sqrt{2}$. Then the expression of Eq.
 \begin{equation}\label{eq:D^i}
 \mathcal{D}^{a}(\omega) = 
 \frac{-4i\zeta^{axy}(\omega)}
-    {\hbar\left[\xi^{xx}(\omega) + \xi^{yy}(\omega)\right]}.
+    {\hbar\left(\xi^{xx}(\omega) + \xi^{yy}(\omega)\right)}.
 \end{equation}
 It is possible to generate current injection along all three orthogonal
 directions with an incident circularly polarized beam and so the total DSP can
 be obtained by \cite{arzatePRB14}
 \begin{equation}\label{eq:dsptotal}
 \mathcal{D}(\omega) =
-\sqrt{[\mathcal{D}^{x}(\omega)]^{2} + 
-      [\mathcal{D}^{y}(\omega)]^{2} +
-      [\mathcal{D}^{z}(\omega)]^{2}
+\sqrt{(\mathcal{D}^{x}(\omega))^{2} + 
+      (\mathcal{D}^{y}(\omega))^{2} +
+      (\mathcal{D}^{z}(\omega))^{2}
       }.
 \end{equation}
 
@@ -280,9 +266,9 @@ and $\eta^{zxy}(\omega)$. Analogously to Eq.
 \eqref{eq:dsptotal} it is possible to have the total $\eta(\omega)$ \cite{arzatePRB14} as
 \begin{equation}\label{eq:etatotal}
 \eta(\omega) =
-\sqrt{[\eta^{xxy}(\omega)]^{2} +
-      [\eta^{yxy}(\omega)]^{2} +
-      [\eta^{zxy}(\omega)]^{2}
+\sqrt{(\eta^{xxy}(\omega))^{2} +
+      (\eta^{yxy}(\omega))^{2} +
+      (\eta^{zxy}(\omega))^{2}
       }.
 \end{equation}
 
@@ -304,93 +290,9 @@ Again, the superscripts in the previous expression denote the Cartesian
 directions and if repeated are to be summed over. The expressions for the
 imaginary part of the tensor components $\chi^{abc}(-2\omega;\omega,\omega)$
 for $1\omega$ and $2\omega$ are divided into interband ($e$) and intraband
-($i$) as follows,
-\begin{subequations}\label{eq:chis}
-\begin{align}
-\mathrm{Im}[\chi^{abc}_{e,\omega}] =  
-\frac{\pi |e|^3}{2\hbar^2}\int 
-&
-\frac{dk^3}{8\pi^3}  
-\nonumber \\
-\times \sum_{vc}\sum_{q\neq(v,c)}
-\frac{1}{\omega^\mathrm{\Sigma}_{cv}}
-&
-\left[\frac{\mathrm{Im}[\mathcal{V}^{\mathrm{\Sigma},a}_{qc}\{r^{b}_ 
-{cv}r^{c}_{vq}\}]}
-{(2\omega^\mathrm{\Sigma}_{cv}-\omega^\mathrm{\Sigma}_{cq})}\right.
-\nonumber \\
-& 
-\left. -\frac{\mathrm{Im}[\mathcal{V}^{\mathrm{\Sigma},a}_{vq}\{r^{c}
-_{qc}r^{b}_{cv}\}]}
-{(2\omega^\mathrm{\Sigma}_{cv}-\omega^\mathrm{\Sigma}_{qv})}
-\right]\delta(\omega^\mathrm{\Sigma}_{cv}-\omega),
-\end{align}
-
-\begin{align}
-\mathrm{Im}  [\chi^{abc}_{i,\omega}]= 
-\frac{\pi\vert e\vert^3}{2\hbar^2}
-&
-\int \frac{dk^3}{8\pi^3} 
-\nonumber \\
- \times \sum_{cv}\frac{1}{(\omega^\mathrm{\Sigma}_{cv})^{2}} 
-&
-\Bigg[
-\mathrm{Re}\left[\left\{r^{b}_{cv}\left(\mathcal{V}^
-{\mathrm{\Sigma},a}_{vc}\right)_{;k^{c}}\right\}\right]
-\nonumber \\
-&+\frac{\mathrm{Re}\left[\mathcal{V}^{\mathrm{\Sigma},a}_{vc}\left\{
-r^{b}_{cv}
-\mathrm{\Delta}^{c}_{cv}\right\}\right]}{\omega^\mathrm{\Sigma}_{cv}} 
-\Bigg]
-\delta(\omega^\mathrm{\Sigma}_{cv}-\omega),
-\end{align}
-
-\begin{align}
-\mathrm{Im}[\chi^{abc}_{e,2\omega}]= -
-&
-\frac{\pi |e|^3}{2\hbar^2}\int \frac{dk^3}{8\pi^3}
-\nonumber \\
-\times \sum_{vc}\frac{4}{\omega^\mathrm{\Sigma}_{cv}}
-&
-\Bigg[
-\sum_{v'\ne v}\frac{\mathrm{Im}[\mathcal{V}^{\mathrm{\Sigma},a}_{vc}\{r^{b}
-_{cv'}r^{c}_{v'v}\}]}
-{2\omega^\mathrm{\Sigma}_{cv'}-\omega^\mathrm{\Sigma}_{cv}}
-\nonumber \\ 
-&
-- \sum_{c'\ne c}
-\frac{\mathrm{Im}[\mathcal{V}^{\mathrm{\Sigma},a}_{vc}
-\{r^{c}_{cc'}r^{b}_{c'v}\}]}
-{2\omega^\mathrm{\Sigma}_{c'v}-\omega^\mathrm{\Sigma}_{cv}}
-\Bigg]
-\delta(\omega^\mathrm{\Sigma}_{cv}-2\omega),
-\end{align}
-
-\begin{align}
-\mathrm{Im}[\chi^{abc}_{i,2\omega}]= 
-\frac{\pi \vert e\vert^{3}}{2\hbar^2}
-&
-\int \frac{dk^3}{8\pi^3}
-\nonumber \\
-\times \sum_{vc}\frac{4}{(\omega^\mathrm{\Sigma}_{cv})^{2}}
-\Bigg[ 
-&
-\mathrm{Re}\left[\mathcal{V}^{\mathrm{\Sigma},a}_{vc}\left\{
-\left(r^{b}_{cv}\right)_{;k^{c}}\right\}\right] 
-\nonumber \\
--
-&
-\frac{2\mathrm{Re}
-\left[\mathcal{V}^{\mathrm{\Sigma},a}_{vc}\left\{
-r^{b}_{cv}
-\mathrm{\Delta}^{c}_{cv}\right\}\right]}{\omega^\mathrm{\Sigma}_{cv}}
-\Bigg]
-\delta(\omega^\mathrm{\Sigma}_{cv}-2\omega)
-,
-\end{align}
-\end{subequations}
-where $\mathcal{V}^{\mathrm{\Sigma}}_{nm}$ is the velocity matrix elements,
-that are derived from the complete velocity operator defined as
+($i$) as follows, where $\mathcal{V}^{\mathrm{\Sigma}}_{nm}$ is the velocity
+matrix elements, that are derived from the complete velocity operator defined
+as
 \begin{equation*}\label{eq:nonlocal}
 \boldsymbol{\mathcal{V}}^{\mathrm{\Sigma}}\equiv
 \boldsymbol{\mathcal{V}}+
@@ -703,51 +605,57 @@ for different structures. ($^{*}$This work $^{\star}$Experimental value)}
 \end{table}
 
 
-% \subsection{Second-harmonic generation}
-% In Figs. \ref{fig:alt-shg-abs} and \ref{fig:up-shg-abs} we show the absolute value of the different nonzero components of $\chi^{abc}$ for both cases resulting from the evaluation of Eqs. \eqref{eq:chis} and \eqref{eq:chitotal}. For the \emph{alt} system, we note that all components except $xxy$ present two peaks at $\sim0.5$\,eV and $\sim1.0$\,eV. The first peak is completely produced by $2\omega$ resonances, while the second peak is produced by a mixture of both $1\omega$ and $2\omega$ resonances, with the latter dominating in most cases. The $xxy$ component has a single broadened peak with a discernible feature near 0.5\,eV. That feature, much like the other components, is produced by $2\omega$ resonances, while the maxima is produced by a mixture of both frequencies, $1\omega$ and $2\omega$. For the \emph{up} structure we see one predominant peak around 0.05\,eV; it is completely produced by $2\omega$ transitions. The $xxy$ and $yxx$ components have an additional feature close to 0.09\,eV dominated by $1\omega$ transitions. In table \ref{tab:shgcomp} we show a comparison of the maximum $\chi^{abc}$ peak reported for different structures.
+\subsection{Second-harmonic generation}
+Both the \emph{alt} and \emph{up} structures are triclinic class 1 systems
+where all 27 components of $\chi^{abc}(-2\omega;\omega,\omega)$ are nonzero,
+with 18 independent components \cite{popovbook}. In Figs. 
+\ref{fig:shg-vnl-alt} and \ref{fig:shg-vnl-up} we present the absolute value
+of the three largest components for each structure. For the \emph{alt} system,
+we note that all components present two peaks around 0.5\,eV and 1.0\,eV. The
+first peak is completely produced by $2\omega$ resonances, while the second
+peak is produced by a mixture of both $1\omega$ and $2\omega$ resonances, with
+the latter dominating for all components. The \emph{up} structure  has one
+predominant peak around 0.04\,eV that is completely produced by $2\omega$
+transitions. All components have an additional feature close to 0.09\,eV
+dominated by $1\omega$ transitions. In table \ref{tab:shgcomp} we show a
+comparison of the maximum response reported for different structures.
 
-% \begin{figure}[t]
-% \subfloat{\includegraphics[width=\linewidth]{figures/alt_shg_abs_x}}\\
-% \subfloat{\includegraphics[width=\linewidth]{figures/alt_shg_abs_y}}
-% \caption{(Color online) Spectra of the absolute value of SHG for the
-%     C$_{16}$H$_{8}$-alt structure corresponding to the
-%     sum of the absolute value for the non zero real and imaginary components
-%     of $\chi^{abc}(2\omega;\omega,
-%     \omega) $ tensor.\label{fig:alt-shg-abs}}
-% \end{figure}
+\begin{figure}[t]
+\includegraphics[width=\linewidth]{figures/shg-vnl-alt}
+\caption{(Color online) The three largest components of
+$\chi^{abc}(-2\omega;\omega,\omega)$ for the \emph{alt} structure.
+\label{fig:shg-vnl-alt}}
+\end{figure}
 
-% \begin{figure}[t]
-% \subfloat{\includegraphics[width=\linewidth]{figures/up_shg_abs_x}}\\
-% \subfloat{\includegraphics[width=\linewidth]{figures/up_shg_abs_y}}
-% \caption{(Color online) Spectra of the absolute value of SHG for the
-%     C$_{16}$H$_{8}$-up structure corresponding to the
-%     sum of the absolute value for the non zero real and imaginary components
-%     of $\chi^{abc}(2\omega;\omega,
-%     \omega) $ tensor.\label{fig:up-shg-abs}}
-% \end{figure}
+\begin{figure}[t]
+\subfloat{\includegraphics[width=\linewidth]{figures/shg-vnl-up}}\\
+\caption{(Color online) The three largest components of
+$\chi^{abc}(-2\omega;\omega,\omega)$ for the \emph{up} structure.
+\label{fig:shg-vnl-up}}
+\end{figure}
 
-% \begin{table}[htb]%
-% \sidecaption
-% \begin{tabular}{lcccc}
-% \hline
-% \hline
-% Structure & \hspace{-5mm}Energy & \multicolumn{2}{c}{$\chi^{abc} $} &  Ref.\\
-% \cline{3-4} & \hspace{-5mm}[eV] & $abc$ & value \\
-% \hline
-% C$_{16}$H$_{8}$-alt   & \hspace{-5mm}0.4   & xyy   & 0.32\scriptsize{$\times 10^{6}\,\mathrm{pm}^{2}/\mathrm{V}$}  & *     \\
-% C$_{16}$H$_{8}$-up    & \hspace{-5mm}0.042 & yxx   & 37  \scriptsize{$\times 10^{6}\,\mathrm{pm}^{2}/\mathrm{V}$}  & *     \\
-% Si(100)2$\times$1     & \hspace{-5mm}1.5   & xxx   & 1.5 \scriptsize{$\times 10^{6}\,\mathrm{pm}^{2}/\mathrm{V}$}  & \cite{andersonPRB15}  \\
-% BNNT(6,0) pristine    & \hspace{-5mm}5.0   & zzz   & 35\,\scriptsize{pm/V}  & \cite{salazarPRB14} \\
-% BNNT(6,0)+4(H$_{2}$)  & \hspace{-5mm}5.0   & zzz   & 33\,\scriptsize{pm/V}  & \cite{salazarPRB14} \\
-% BNNT(6,0)+12(H$_{2}$) & \hspace{-5mm}4.8   & zzz   & 15\,\scriptsize{pm/V}  & \cite{salazarPRB14} \\
-% \hline
-% \hline
-% \end{tabular}
-% \caption[]{%
-% Comparison of the highest reported absolute values of SHG for 
-% different structures and components. ($^{*}$This work)}
-% \label{tab:shgcomp}
-% \end{table}
+\begin{table}[htb]%
+\sidecaption
+\begin{tabular}{lcccc}
+\hline
+\hline
+Structure & \hspace{-5mm}Energy & \multicolumn{2}{c}{$\chi^{abc} $} &  Ref.\\
+\cline{3-4} & \hspace{-5mm}[eV] & $abc$ & value \\
+\hline
+C$_{16}$H$_{8}$-alt   & \hspace{-5mm}0.44  & xyy   & 3000\,\scriptsize{pm/V}  & *     \\
+C$_{16}$H$_{8}$-up    & \hspace{-5mm}0.044 & yxx   & $1.7\times10^{6}$ \scriptsize{pm/V}  & *     \\
+Si(100)2$\times$1     & \hspace{-5mm}1.5   & xxx   & 1.5\, \scriptsize{pm/V}  & \cite{andersonPRB15}  \\
+BNNT(6,0) pristine    & \hspace{-5mm}5.0   & zzz   & 35\,  \scriptsize{pm/V}  & \cite{salazarPRB14} \\
+BNNT(6,0)+4(H$_{2}$)  & \hspace{-5mm}5.0   & zzz   & 33\,  \scriptsize{pm/V}  & \cite{salazarPRB14} \\
+BNNT(6,0)+12(H$_{2}$) & \hspace{-5mm}4.8   & zzz   & 15\,  \scriptsize{pm/V}  & \cite{salazarPRB14} \\
+\hline
+\hline
+\end{tabular}
+\caption[]{%
+Comparison of the highest reported absolute values of SHG for 
+different structures and components. ($^{*}$This work)}
+\label{tab:shgcomp}
+\end{table}
 
 
 \section{Conclusions}\label{sec:conclusions}
@@ -756,7 +664,7 @@ We have performed \emph{ab initio} calculations for the optical spin injection (
 
 Our results about OCI with circularly polarized light (CPL) show that the \emph{alt}  and \emph{up} systems have a response near to 2.30\,mC$^{3}$/J$^{2}$s$^{2}$ and 18.0\,mC$^{3}$/J$^{2}$s$^{2}$ both in the $y$ direction (Figs. \ref{fig:alt-eta}-\ref{fig:up-eta}) for incident beams with energies of around 1.25 and 0.09\,eV. According to measurements done on bulk materials, it is actually possible to measure such amount of OCI. According to this result we can affir that it is possible to control the motion of electrons in both systems but specially in the \emph{up} one in the $y$ direction.
 
-Finally we found that the \emph{alt} and \emph{up} structures present a absolute maximum of 0.32\,$\times10^{6} $\,pm$^{2}$/V and 37.0\,$\times10^{6} $\,pm$^{2}$/V at the photon energies of around 0.40\,eV and 0.042\,eV (Figs. \ref{fig:alt-shg-abs} and \ref{fig:up-shg-abs}). For \emph{alt} and \emph{up} we have that their maximua come from contributions of the 2$\omega$ resonances. From this we comclude that specially with the \emph{up} system is usable to SHG.
+Finally we found that the \emph{alt} and \emph{up} structures present a absolute maximum of 0.32\,$\times10^{6} $\,pm$^{2}$/V and 37.0\,$\times10^{6} $\,pm$^{2}$/V at the photon energies of around 0.40\,eV and 0.042\,eV (Figs. \ref{fig:shg-vnl-alt} and \ref{fig:shg-vnl-up}). For \emph{alt} and \emph{up} we have that their maximua come from contributions of the 2$\omega$ resonances. From this we comclude that specially with the \emph{up} system is usable to SHG.
 
 
 \section{Acknowledgment} % (fold)

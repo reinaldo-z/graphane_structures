@@ -12,6 +12,7 @@ set ytics 0.2
 set output "dsp-up.mp"
 set key right top
 set xrange [0.07:0.12]
+set yrange [-0.6:0.4]
 set ylabel "{\\Large $D^{a}(\\omega)$}"
 
 

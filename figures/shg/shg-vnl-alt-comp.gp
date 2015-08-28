@@ -64,9 +64,3 @@ p "../data/alt/res-nospin_0-2eV/shgL.sm_0.15_yyz_14452_65-nospin_scissor_0_Nc_41
 set output "shg-vnl-alt-comp-yzz.mp"
 set ylabel "{\\Large $|\\chi^{yzz}(2\\omega; \\omega, \\omega)|$ [pm/V] }"
 p "../data/alt/res-nospin_0-2eV/shgL.sm_0.15_yzz_14452_65-nospin_scissor_0_Nc_41" u 1:(abso($2,$3,$4,$5)) t 'No vnl' w l lw 2, "../data/alt/res-nospin_0-2eV/shgL.vnl.sm_0.15_yzz_14452_65-nospin_scissor_0_Nc_41" u 1:(abso($2,$3,$4,$5)) t 'vnl' w l lw 2
-
-
-
-
-
-
