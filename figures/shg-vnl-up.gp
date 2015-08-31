@@ -30,7 +30,7 @@ set key top right
 set output "shg-vnl-up.mp"
 p "data/up/res-nospin_0-2eV/shgL.vnl.sm_0.006_yxx_8452_40-nospin_scissor_0_Nc_27" u 1:(abso($2,$3,$4,$5)*1e-6) t 'yxx' w l lw 2 lt 1 dt 1,\
   "data/up/res-nospin_0-2eV/shgL.vnl.sm_0.006_xxy_8452_40-nospin_scissor_0_Nc_27" u 1:(abso($2,$3,$4,$5)*1e-6) t 'xxy' w l lw 2 lt 2 dt 2,\
-  "data/up/res-nospin_0-2eV/shgL.vnl.sm_0.006_yxy_8452_40-nospin_scissor_0_Nc_27" u 1:(abso($2,$3,$4,$5)*1e-6) t 'yxy' w l lw 2 lt 3 dt 3
+  "data/up/res-nospin_0-2eV/shgL.vnl.sm_0.006_yxy_8452_40-nospin_scissor_0_Nc_27" u 1:(abso($2,$3,$4,$5)*1e-6) t 'yxy' w l lw 2 lt 6 dt 3
   
   # "data/up/res-nospin_0-2eV/shgL.vnl.sm_0.006_yyz_8452_40-nospin_scissor_0_Nc_27" u 1:(abso($2,$3,$4,$5)*1e-6) t 'yyz' w l lw 2 lt 3 dt 3,\
   # "data/up/res-nospin_0-2eV/shgL.vnl.sm_0.006_xxx_8452_40-nospin_scissor_0_Nc_27" u 1:(abso($2,$3,$4,$5)*1e-6) t 'xxx' w l lw 2 lt 4 dt 4,\

@@ -5,4 +5,24 @@ QUANTUM HALL EFFECT: The quantum Hall effect (or integer quantum Hall effect) is
     The Hall effect is the production of a voltage difference (the Hall voltage) across an electrical conductor, transverse to an electric current in the conductor and a magnetic field perpendicular to the current. It was discovered by Edwin Hall in 1879.
 
 
-10 minutos de gravación
+10 minutos de grabación
+
+alt(2lay): caleta, shgC{ xyy xxx yxx }
+all_responses.sh -w layer -m 14452_1_65-nospin2 -s 0 -o 1 -v 9 -c 41 -r 44 -t "xyy"
+
+all_responses.sh -w layer -m 14452_2_65-nospin2 -s 0 -o 1 -v 9 -c 41 -r 44 -t "xyy"; all_responses.sh -w layer -m 14452_1_65-nospin2 -s 0 -o 1 -v 9 -c 41 -r 44 -t "xxx"; all_responses.sh -w layer -m 14452_2_65-nospin2 -s 0 -o 1 -v 9 -c 41 -r 44 -t "xxx"; all_responses.sh -w layer -m 14452_1_65-nospin2 -s 0 -o 1 -v 9 -c 41 -r 44 -t "yxx"; all_responses.sh -w layer -m 14452_2_65-nospin2 -s 0 -o 1 -v 9 -c 41 -r 44 -t "yxx"
+
+
+
+tijeras para las dos
+
+
+
+check info:
+Álgebra Nastos-Bernardo DSP
+Spin orbit interaction
+Spin orbit couplig
+Primado: NASTOS et al. PHYSICAL REVIEW B 76, 205113 􏰜2007􏰝. Full band structure LDA and k·p calculations of optical spin-injection. Eq 13
+Critical points of energy
+
+

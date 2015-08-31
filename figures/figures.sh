@@ -20,8 +20,9 @@ function render {
     dvips -E -o ${target}.eps latex
 }
 
-gpfiles=( dsp-alt.gp dsp-up.gp eta-alt.gp eta-up.gp shg-vnl-alt.gp shg-vnl-up.gp )
+gpfiles=( dsp-alt.gp dsp-up.gp eta-alt.gp eta-up.gp shg-vnl-alt.gp shg-vnl-up.gp shg-lay-alt.gp shg-lay-up.gp )
 #gpfiles=( shg-vnl-alt.gp shg-vnl-up.gp )
+
 for file in "${gpfiles[@]}"; do
     gnuplot $file
     metapost $file
