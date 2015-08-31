@@ -177,7 +177,7 @@ injection response.
 
 \subsection{Second-harmonic generation}
 \begin{changed}
-Second-harmonic generation (SHG) is a nonlinear optical process, in which pairs of photons with the same frequency, $\omega$, interacting with a nonlinear media are annihilated to generate new photons with twice the frequency and half the wavelength of the initial photons. In the dipole approximation SHG is restricted to the surfaces of centrosymmetric materials, making it an excellent surface probe. SHG spectroscopy techniques bring the possibility to study properties of materials and has a non invasive, nondestructive and surface sensitive nature. The two cases in this study, C$_{16}$H$_{8}$-alt and C$_{16}$H$_{8}$-up, are noncentrosymmetric and thus present SHG from the entire structure being efficient SHG generators.
+The electric-dipolar quadratic susceptibility that describes the second harmonic generation (SHG) process is a third rank tensor, and therefore it must be null within the bulk of any centrosymmetric system. SHG is an excellent surface probe and SHG spectroscopy techniques bring the possibility to study properties of materials and has a non invasive, nondestructive and surface sensitive nature. The two cases in this study, C$_{16}$H$_{8}$-alt and C$_{16}$H$_{8}$-up, are noncentrosymmetric and thus present SHG from the entire structure being efficient SHG generators. 
 \end{changed}
 
 This paper is organized as follows. In Sec. \ref{sec:theory} we present the
@@ -193,11 +193,6 @@ In this section we report a summary of the theory for the three phenomena of
 interest. For full details see Refs. \cite{nastosPRB07,mendozaPRB12} for DSP,
 Refs. \cite{cabellosPRB11,sipePRB00} for optical current injection, and Ref.
 \cite{andersonPRB15} for SHG. 
-\begin{changed}
-In the following mathematical expressions
-presented in this section the superscripts denote Cartesian directions and if
-repeated are to be summed over.
-\end{changed}
 
 \subsection{Optical spin injection}\label{sec:theory-DSP}
 
@@ -224,10 +219,7 @@ as the intensity, we obtain $\mathcal{D}^{a}(\omega)$ from Eqs.
 \frac{-4i\zeta^{axy}(\omega)}
     {\hbar\left(\xi^{xx}(\omega) + \xi^{yy}(\omega)\right)},
 \end{equation}
-where, for both structures considered here, $\xi^{ab}(\omega)$ is diagonal. 
-\begin{changed}
-Since $E(\omega)$ lies on the surface of the structure, it can be taken, with the usual neglect of local field corrections, as uniform through the interface region \cite{mendozaPRB12}.
-\end{changed}
+where, for both structures considered here, $\xi^{ab}(\omega)$ is diagonal and the superscripts denote Cartesian directions. 
 Also, it is possible to generate current injection along all three orthogonal
 Cartesian directions with an incident circularly polarized beam and so the
 absolute DSP can be obtained by \cite{arzatePRB14}
@@ -253,7 +245,7 @@ the current injection along the $a$ direction that is optically injected by a
 circularly polarized beam at normal incidence in the $-z$  direction,
 $\mathbf{E}(\omega) = E_{0}(\omega)(\mathbf{\hat{x}} -
 i\mathbf{\hat{y}})/\sqrt{2}$, where $E_{0}$ is again the intensity. For a
-layered system we have that
+layered system we have that the total contribution to $ \eta^{abc}(\omega)$ is given by
 \begin{equation}\label{eq:eta}
 \eta^{abc}_{\mathrm{Total}}(\omega)=
 \ell_{\mathrm{eff}}\sum_{\ell=1}^{N_{\mathrm{eff}}}\eta^{abc}(\ell|\omega)
@@ -282,28 +274,27 @@ incident circularly polarized beam. Analogously to Eq.
 
 \subsection{Second-harmonic generation}\label{sec:theory-SHG}
 
-\begin{changed}
 The second-order nonlinear polarization is given by
 \begin{equation*}\label{eq:pol}
 \mathcal{P}(2\omega) = 
 \chi^{abc}(-2\omega;\omega,\omega)E^{b}(\omega)E^{c}(\omega)
-\end{equation*} where $\chi^{abc}(-2\omega;\omega,\omega)$ is the nonlinear susceptibility tensor responsible for the SHG that satisfies permutation symmetry condition and, as mentioned before,  if the superscripts are repeated, then are to be summed over. The expressions for the imaginary part of the tensor components $\mathrm{Im}[\chi^{abc}(-2\omega;\omega,\omega)]$ for $1\omega$ and $2\omega$ are divided into interband ($e$) and intraband ($i$) as follows, 
-\begin{align*}\label{eq:chiim}
-\mathrm{Im}[\chi^{abc} (-2\omega;\omega,\omega)] &=
-\mathrm{Im}[\chi^{abc}_{e,\omega}] + \mathrm{Im}[\chi^{abc}_{e,2\omega}] \\
-& + 
-\mathrm{Im}[\chi^{abc}_{i,\omega}] + \mathrm{Im}[\chi^{abc}_{i,2\omega}].
-\end{align*}
-They include the contribution from the
-nonlocal part of the pseudopotentials the scissors correction. The real part
-of each contribution can be obtained through a Kramers-Kronig transformation
-\cite{tancognePRB14} and
+\end{equation*} where $\chi^{abc}(-2\omega;\omega,\omega)$ is the nonlinear susceptibility tensor responsible for the SHG that satisfies permutation symmetry condition and, as mentioned before,  if the superscripts are repeated, then are to be summed over. 
+Analogously to the case of optical current injection we have that for a layered system the total contribution for the $\chi^{abc}(-2\omega;\omega,\omega)$ is given by
+\begin{equation}\label{eq:chisum}
+\chi^{abc}_{\mathrm{Total}}(-2\omega;\omega,\omega)=
+\ell_{\mathrm{eff}}\sum_{\ell=1}^{N_{\mathrm{eff}}}\chi^{abc}(\ell|-2\omega;\omega,\omega),
+\end{equation}
+where $\chi^{abc}(\ell|-2\omega;\omega,\omega)$ gives the contribution from the corresponding
+$\ell^{\mathrm{th}}$ layer to the nonlinear susceptibility tensor. The sum in Eq.
+\eqref{eq:chisum} is carried out from the top layer, $\ell=1$, to
+$\ell=N_{\mathrm{eff}}$, that is the resulting values for the tensor components
+have contributions from the $N_{\mathrm{eff}}$ layers that extend to an
+effective length, $\ell_{\mathrm{eff}}$. The expressions for the imaginary part of the tensor components $\mathrm{Im}[\chi^{abc}(-2\omega;\omega,\omega)]$ for $1\omega$ and $2\omega$ are divided into interband and intraband contributions including the contribution from the nonlocal part of the pseudopotentials and the scissors correction and the corresponding real part can be obtained through the Kramers-Kronig transformation  \cite{andersonPRB15}. Finally, the total contribution for the nonlinear susceptibility tensor can be calculated by 
 \begin{equation}\label{eq:chitotal}
-\chi^{abc} (-2\omega;\omega,\omega) =
+\chi^{abc}_{\mathrm{Total}} (-2\omega;\omega,\omega) =
 \chi^{abc}_{e,\omega} + \chi^{abc}_{e,2\omega} +
 \chi^{abc}_{i,\omega} + \chi^{abc}_{i,2\omega}.
 \end{equation}
-\end{changed}
 
 \section{Results}\label{sec:results}
 
@@ -423,24 +414,17 @@ with$\varphi = -18^{\circ}$ and $\theta = -62^{\circ}$. In Fig.
 \ref{fig:upstrc} the dashed red arrow depicts how $\mathcal{D}(\omega)$ is
 oriented in the $xy$ and $xz$ planes at the angles mentioned above.
 
-In Table \ref{tab:dacomp} we present a comparison of the absolute maximum
-values of $\mathcal{D}^{a}(\omega)$ in a given direction for different
-materials and the corresponding direction and energy at which they are
-reached. From this table we have that the \emph{alt} and \emph{up} systems
-have less DSP than the Si(111)-As $1\times1$ and the the bulk CdSe cases, but
-are comparable to the Si(111)-In $8\times2$, bulk Si, and bulk GaAs systems.
-Si(111)-In $8\times2$ and \emph{alt} both have maxima around 0.72\,eV, which
-is in the near infrared range. Conversely, the maxima for Si(111)-As
-$1\times1$, bulk Si, and bulk GaAs all occur in the optical energy range. 
-\begin{changed}
-As
-mentioned previously, the \emph{alt} and \emph{up} cases both have much larger
-energy ranges for the maximum DSP values in all directions in comparison with
-other structures. This compares very favorably with the other systems, that
-have very narrow ranges over which the maximum DSP is achieved. The 0.7\,eV
-maxima for \emph{alt} makes it an interesting candidate for further study, as
-this energy is readily obtainable using terahertz radiation.
-\end{changed}
+In Table \ref{tab:dacomp} we present a comparison of the absolute maximum values
+of $\mathcal{D}^{a}(\omega)$ in a given direction for different materials and
+the corresponding direction and energy at which they are reached. From this
+table we have that the \emph{alt} and \emph{up} systems have less DSP than the
+Si(111)-As $1\times1$ and the the bulk CdSe cases, but are comparable to the
+Si(111)-In $8\times2$, bulk Si, and bulk GaAs systems. Si(111)-In $8\times2$ and
+\emph{alt} both have maxima around 0.72\,eV, which is in the near infrared
+range. Conversely, the maxima for Si(111)-As $1\times1$, bulk Si, and bulk GaAs
+all occur in the optical energy range. The 0.7\,eV maxima for \emph{alt} makes
+it an interesting candidate for further study, as this energy is readily
+obtainable using terahertz radiation.
 \begin{table}[b]
 \sidecaption
 \begin{tabular}{lcccc}
@@ -517,43 +501,44 @@ where there are large values for the response in the spectra. For the
 \emph{alt} structure we choose $E_{1} = 0.97\,\mathrm{eV}$ and $E_{2} =
 1.31\,\mathrm{eV}$. For the layer by layer analysis corresponding to the
 contributions of each atomic layer to the total response, we note that all
-three layers contribute toward $\eta^{xxy}(\omega)$ at $E_{1}$ with the carbon
-and top H layers providing the principal contributions. For $E_{2}$, the
+three layers contribute toward $\eta^{xxy}(E_{1})$ with the carbon
+and top H layers providing the principal contributions. For $\eta^{xxy}(E_{2})$, the
 dominating layers are the carbon and bottom H layers with minimal contribution
-from the top H layer. For $E_{1}$, the $\eta^{yxy}(\omega)$ component is also
+from the top H layer. For $\eta^{yxy}(E_{1})$ component is also
 formed by contributions from all three layers but dominated by the sum of the
 top and bottom H layers. The carbon layer response is negative at that point,
 and destructively interferes with the response from the other two layers. For
-$E_{2}$, the spectrum is completely dominated by the bottom H layer, with
-almost no contribution from the others. Lastly, at $E_{1}$ the
-$\eta^{zxy}(\omega)$ component is entirely produced from the carbon layer,
+$\eta^{yxy}(E_{2})$ the spectrum is completely dominated by the bottom H layer, with
+almost no contribution from the others. Lastly 
+$\eta^{zxy}(E_{1})$ component is entirely produced from the carbon layer,
 since the H layers provide no response whatsoever. This component is negligible
-at $E_{2}$. We note that the response for all three components vanishes after
+at $E_{2}$ and note that the response for all three components vanishes after
 1.75\,eV. Using Eq. \eqref{eq:etatotal}, we find that the absolute current
-injection $\eta(\omega)$, at $E_{1}$ is
+injection $\eta(E_{1})$ is
 $5.10\,\mathrm{mC}^{3}/\mathrm{J}^{2}\mathrm{s}^{2}$ with angles
-$\varphi=116^{\circ}$ and $\theta=-172^{\circ}$. For $E_{2}$, we find that
+$\varphi=116^{\circ}$ and $\theta=-172^{\circ}$. For $\eta(E_{2})$, we find that
 $\eta(\omega)=2.32\,\mathrm{mC}^{3}/\mathrm{J}^{2}\mathrm{s}^{2}$ with angles
 $\varphi=81^{\circ}$ and $\theta=12^{\circ}$. In Fig.
 \ref{fig:altstrc}, the green dashed arrows represent the directions for
-$\eta(\omega)$ for the $E_{1}$ and $E_{2}$ energy values. As mentioned
+$\eta(\omega)$ $\eta(E_{1})$ and $\eta(E_{2})$. As mentioned
 previously, $\varphi$ is located in the $xy$ plane, and $\theta$ is located in
 the $xz$ plane.
 
 Analogously, Fig. \ref{fig:up-eta} presents the three components for the full
 \emph{up} structure along with the layer by layer spectra. We also establish
 two energy values of interest for this structure, choosing $E_{1} =
-0.09\,\mathrm{eV}$ and $E_{2} = 0.10\,\mathrm{eV}$. For $E_{1}$, the carbon
-layer dominates the total response for all three components. For $E_{2}$, the
-carbon layer dominates for both $\eta^{yxy}(\omega)$ and $\eta^{zxy}(\omega)$,
+0.09\,\mathrm{eV}$ and $E_{2} = 0.10\,\mathrm{eV}$. For $\eta^{axy}(E_{1})$, the carbon
+layer dominates the total response for all three components. 
+For $\eta^{yxy}(E_{2})$ and $\eta^{zxy}(E_{2})$ the
+carbon layer dominates the response of the system,
 but both the H and carbon layer contribute significantly to
-$\eta^{xxy}(\omega)$. Identically to the \emph{alt} structure, the
+$\eta^{xxy}(E_{2})$. Identically to the \emph{alt} structure, the
 $\eta^{zxy}(\omega)$ component presents no response from the H layer.  We note
-that the response for all three components vanishes after 0.2\,eV.Using Eq.
-\eqref{eq:etatotal}, we find that the absolute current injection $\eta(\omega)$,
-at $E_{1}$ is $15.12\,\mathrm{mC}^{3}/\mathrm{J}^{2}\mathrm{s}^{2}$ with angles
-$\varphi=58^{\circ}$ and $\theta=-54^{\circ}$. For $E_{2}$, we find that
-$\eta(\omega)=7.62\,\mathrm{mC}^{3}/\mathrm{J}^{2}\mathrm{s}^{2}$ with angles
+that the response for all three components vanishes after 0.2\,eV. Using Eq.
+\eqref{eq:etatotal}, we find that the absolute current injection $\eta(E_{1})$
+is $15.12\,\mathrm{mC}^{3}/\mathrm{J}^{2}\mathrm{s}^{2}$ with angles
+$\varphi=58^{\circ}$ and $\theta=-54^{\circ}$. Also, we find that
+$\eta(E_{2})=7.62\,\mathrm{mC}^{3}/\mathrm{J}^{2}\mathrm{s}^{2}$ with angles
 $\varphi=-157^{\circ}$ and $\theta=-131^{\circ}$. As before, we present the
 directions for $\eta(\omega)$ in Fig. \ref{fig:upstrc} using green dashed
 arrows.
