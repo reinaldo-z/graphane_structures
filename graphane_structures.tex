@@ -309,15 +309,15 @@ of each contribution can be obtained through a Kramers-Kronig transformation
 
 We present the results for {$D^{a}(\omega)$}, {$\eta^{abc}(\omega)$}, and
 $\chi^{abc}(-2\omega;\omega,\omega)$ for the C$_{16}$H$_{8}$-alt and
-C$_{16}$H$_{8}$-up structures. We remind that both cases are semi-infinite
-carbon systems with 50\% of hydrogenation in two different arrangements. The
-\emph{alt} system has alternating hydrogen atoms on the upper and bottom sides
-of the carbon sheet, while the \emph{up} system has H only on the upper side.
-Both structures are noncentrosymmetric and have a thickness of 2.94475\,{\AA}
-and 2.76641\,{\AA}. The corresponding coordinates in Angstroms (\AA) for the
-\emph{alt} and \emph{up} unit cells of the structures are presented in Tables
-\ref{tab:altstrc} and \ref{tab:upstrc} and also are divided in the corresponding
-layers. We take the carbon honeycomb lattice to be in the $xy$ plane for both
+C$_{16}$H$_{8}$-up structures. Both cases are semi-infinite carbon systems with
+50\% of hydrogenation in two different arrangements. The \emph{alt} system has
+alternating hydrogen atoms on the upper and bottom sides of the carbon sheet,
+while the \emph{up} system has H only on the upper side. Both structures are
+noncentrosymmetric and have a thickness of 2.944\,{\AA} and 2.766\,{\AA}. The
+corresponding coordinates in Angstroms (\AA) for the \emph{alt} and
+\emph{up} unit cells of the structures are presented in Tables
+\ref{tab:altstrc} and \ref{tab:upstrc}, with the corresponding layer divisions.
+We take the carbon honeycomb lattice to be in the $xy$ plane for both
 structures and the carbon-hydrogen bonds in the perpendicular $xz$ plane as
 shown in Fig.\ref{fig:graphenestrc}. In order to represent the directions where
 the absolute values of the $\mathcal{D}(\omega)$ and $\eta(\omega)$ (Eqns.
@@ -384,13 +384,18 @@ We used the ABINIT code \cite{gonzeCPC09} for the calculation of the self-
 consistent ground state and the Kohn-Sham states using density functional
 theory in the local density approximation (DFT-LDA) with a planewave basis. We
 used Hartwigsen-Goedecker-Hutter (HGH) relativistic separable dual-space
-Gaussian pseudopotentials \cite{hartwigsenPRB98}that include spin-orbit
+Gaussian pseudopotentials \cite{hartwigsenPRB98} that include spin-orbit
 interaction for calculating $D^{a}(\omega)$. For the calculations of
 {$\eta^{abc}(\omega)$} and $\chi^{abc}(-2\omega;\omega,\omega)$ we used
 Troullier-Martins pseudopotentials \cite{troullierPRB91} that are fully
 separable nonlocal pseudopotentials in the Kleiman-Bylander form
-\cite{kleinmanPRL82} and the contribution from the nonlocal part of the SHG
-response is carried out using the DP code \cite{olevanoDP}. For convergence of our results we used a cutoff energies of 65\,Ha and 40\,Ha and the energy eigenvalues and matrix elements were calculated using 14452 \textbf{k} points and 8452 \textbf{k} points in the irreducible Brillouin zone (IBZ) for the \emph{alt} and \emph{up} cases, respectively.
+\cite{kleinmanPRL82}. These are required for calculating the contribution from
+the nonlocal part of the pseudopotentials in the SHG response. This calculation
+is carried out using the DP code \cite{olevanoDP}. For convergence of our
+results we used a cutoff energies of 65\,Ha and 40\,Ha and the energy
+eigenvalues and matrix elements were calculated using 14452 \textbf{k} points
+and 8452 \textbf{k} points in the irreducible Brillouin zone (IBZ) for the
+\emph{alt} and \emph{up} cases, respectively.
 
 
 \subsection{Optical spin injection}\label{subsec:results-DSP}
@@ -403,19 +408,20 @@ direction with respect the three Cartesian vectors shown in Fig.
 \ref{fig:structures}. For both cases, the onset of the response is when the
 energy of the incoming light is the same as the gap energy. For the \emph{alt}
 system this occurs at 0.72\,eV and for the \emph{up} system at 0.08\,eV. Both
-cases have at least one direction with more than 30\% DSP. The \emph{alt} system
-presents nearly 40\% $\mathcal{D}^{a}(\omega)$ in the $x$ and $y$ directions and
-after 0.72\,eV the DSP rapidly vanishes. Using Eq. \eqref{eq:dsptotal} we have
-that the \emph{alt} system presents an absolute magnitude $\mathcal{D}(\omega)$=61\% for a
-frequency of 0.72\,eV with $\varphi=-46^{\circ}$ and $\theta=35^{\circ}$. In
-Fig. \ref{fig:altstrc} the dashed red arrow depicts how $\mathcal{D}(\omega)$ is
-oriented in the $xy$ and $xz$ planes at the angles mentioned above.For the
-\emph{up} structure we have nearly 60\% DSP in the $z$ direction. Using Eq.
-\eqref{eq:dsptotal} we have that the \emph{up} structure presents an absolute magnitude
-$\mathcal{D}(\omega)$=64\% for a frequency of 0.08\,eV,
-with$\varphi=-18^{\circ}$ and $\theta=-62^{\circ}$. In Fig. \ref{fig:upstrc} the
+cases have at least one direction with more than 30\% DSP. The \emph{alt}
+system presents nearly 40\% $\mathcal{D}^{a}(\omega)$ in the $x$ and $y$
+directions and after 0.72\,eV the DSP rapidly vanishes. Using Eq.
+\eqref{eq:dsptotal} we have that the \emph{alt} system presents an absolute
+magnitude $\mathcal{D}(\omega)$ = 61\% for a frequency of 0.72\,eV with
+$\varphi = -46^{\circ}$ and $\theta=35^{\circ}$. In Fig. \ref{fig:altstrc} the
 dashed red arrow depicts how $\mathcal{D}(\omega)$ is oriented in the $xy$ and
-$xz$ planes at the angles mentioned above.
+$xz$ planes at the angles mentioned above. For the
+\emph{up} structure we have nearly 60\% DSP in the $z$ direction. Using Eq.
+\eqref{eq:dsptotal} we have that the \emph{up} structure presents an absolute
+magnitude $\mathcal{D}(\omega)$ = 64\% for a frequency of 0.08\,eV,
+with$\varphi = -18^{\circ}$ and $\theta = -62^{\circ}$. In Fig. 
+\ref{fig:upstrc} the dashed red arrow depicts how $\mathcal{D}(\omega)$ is
+oriented in the $xy$ and $xz$ planes at the angles mentioned above.
 
 In Table \ref{tab:dacomp} we present a comparison of the absolute maximum
 values of $\mathcal{D}^{a}(\omega)$ in a given direction for different
@@ -425,13 +431,16 @@ have less DSP than the Si(111)-As $1\times1$ and the the bulk CdSe cases, but
 are comparable to the Si(111)-In $8\times2$, bulk Si, and bulk GaAs systems.
 Si(111)-In $8\times2$ and \emph{alt} both have maxima around 0.72\,eV, which
 is in the near infrared range. Conversely, the maxima for Si(111)-As
-$1\times1$, bulk Si, and bulk GaAs all occur in the optical energy range. As
+$1\times1$, bulk Si, and bulk GaAs all occur in the optical energy range. 
+\begin{changed}
+As
 mentioned previously, the \emph{alt} and \emph{up} cases both have much larger
 energy ranges for the maximum DSP values in all directions in comparison with
 other structures. This compares very favorably with the other systems, that
 have very narrow ranges over which the maximum DSP is achieved. The 0.7\,eV
 maxima for \emph{alt} makes it an interesting candidate for further study, as
 this energy is readily obtainable using terahertz radiation.
+\end{changed}
 \begin{table}[b]
 \sidecaption
 \begin{tabular}{lcccc}
@@ -501,25 +510,27 @@ contributions.\label{fig:up-eta}}
 \end{figure}
 
 In Fig. \ref{fig:alt-eta} we present the three components for the full
-\emph{alt} structure along with the layer by layer analysis in which we split the the total response spectra in the corresponding contributions of each layer mentioned above. We establish two
-energy values of interest for each structure where there are large values for the response
-in the spectra. For the \emph{alt} structure we choose $E_{1} =
-0.97\,\mathrm{eV}$ and $E_{2} = 1.31\,\mathrm{eV}$. For the layer by layer
-analysis corresponding to the contributions of each atomic layer to the total response, we note that all three layers contribute toward $\eta^{xxy}(\omega)$
-at $E_{1}$ with the carbon and top H layers providing the principal
-contributions. For $E_{2}$, the dominating layers are the carbon and bottom H
-layers with minimal contribution from the top H layer. For $E_{1}$, the
-$\eta^{yxy}(\omega)$ component is also formed by contributions from all three
-layers but dominated by the sum of the top and bottom H layers. The carbon
-layer response is negative at that point, and destructively interferes with
-the response from the other two layers. For $E_{2}$, the spectrum is
-completely dominated by the bottom H layer, with almost no contribution from
-the others. Lastly, at $E_{1}$ the $\eta^{zxy}(\omega)$ component is entirely
-produced from the carbon layer, since the H layers provide no response
-whatsoever. This component is negligible at $E_{2}$. We note that the response
-for all three components vanishes after 1.75\,eV.
-Using Eq. \eqref{eq:etatotal}, we find that the absolute current injection
-$\eta(\omega)$, at $E_{1}$ is
+\emph{alt} structure along with the layer by layer analysis in which we split
+the the total response spectra in the corresponding contributions of each layer
+mentioned above. We establish two energy values of interest for each structure
+where there are large values for the response in the spectra. For the
+\emph{alt} structure we choose $E_{1} = 0.97\,\mathrm{eV}$ and $E_{2} =
+1.31\,\mathrm{eV}$. For the layer by layer analysis corresponding to the
+contributions of each atomic layer to the total response, we note that all
+three layers contribute toward $\eta^{xxy}(\omega)$ at $E_{1}$ with the carbon
+and top H layers providing the principal contributions. For $E_{2}$, the
+dominating layers are the carbon and bottom H layers with minimal contribution
+from the top H layer. For $E_{1}$, the $\eta^{yxy}(\omega)$ component is also
+formed by contributions from all three layers but dominated by the sum of the
+top and bottom H layers. The carbon layer response is negative at that point,
+and destructively interferes with the response from the other two layers. For
+$E_{2}$, the spectrum is completely dominated by the bottom H layer, with
+almost no contribution from the others. Lastly, at $E_{1}$ the
+$\eta^{zxy}(\omega)$ component is entirely produced from the carbon layer,
+since the H layers provide no response whatsoever. This component is negligible
+at $E_{2}$. We note that the response for all three components vanishes after
+1.75\,eV. Using Eq. \eqref{eq:etatotal}, we find that the absolute current
+injection $\eta(\omega)$, at $E_{1}$ is
 $5.10\,\mathrm{mC}^{3}/\mathrm{J}^{2}\mathrm{s}^{2}$ with angles
 $\varphi=116^{\circ}$ and $\theta=-172^{\circ}$. For $E_{2}$, we find that
 $\eta(\omega)=2.32\,\mathrm{mC}^{3}/\mathrm{J}^{2}\mathrm{s}^{2}$ with angles
@@ -589,6 +600,7 @@ for different structures. ($^{*}$This work. $^{\star}$Experimental value.)}
 
 
 \subsection{Second-harmonic generation}
+
 Both the \emph{alt} and \emph{up} structures are triclinic class 1 systems
 where all 27 components of $\chi^{abc}(-2\omega;\omega,\omega)$ are nonzero,
 with 18 independent components \cite{popovbook}. In Figs. 
@@ -600,10 +612,16 @@ peak is produced by a mixture of both $1\omega$ and $2\omega$ resonances, with
 the latter dominating for all components. The \emph{up} structure  has one
 predominant peak around 0.04\,eV that is completely produced by $2\omega$
 transitions. All components have an additional feature close to 0.09\,eV
-dominated by $1\omega$ transitions. In a layer by layer analysis, we split again the contributions of each layer, now for the highest response for each structure.
-We find from Fig. \ref{fig:shg-lay-alt} that the first feature of the $|\chi^{xyy}(-2\omega;\omega,\omega)|$ component for the \emph{alt} structure is generated by contributions from the all three layers while the second feature is dominated by the carbon layer. From Fig \ref{fig:shg-lay-up} we can see that the spectra for the \emph{up} structure is completely dominated by the
-carbon plane, with almost no response from the H atoms. Additionally, we note
-that both structures are very efficient at SHG, with
+dominated by $1\omega$ transitions.
+
+Figs. \ref{fig:shg-lay-alt} and \ref{fig:shg-lay-up} present a layer by layer
+analysis for the largest component of $|\chi^{abc}(-2\omega;\omega,\omega)|$
+for each structure. For the \emph{alt} structure, the first feature of
+$|\chi^{xyy}(-2\omega;\omega,\omega)|$ is generated by contributions from all
+three layers while the second feature is dominated by the carbon layer. For the
+\emph{up} structure, $|\chi^{yxx}(-2\omega;\omega,\omega)|$ is completely
+dominated by the carbon plane with almost no response from the H layer.
+Additionally, we note that both structures are very efficient at SHG, with
 $\chi^{abc}(-2\omega;\omega,\omega)$ values in the thousands of pm/V for
 \emph{alt} and millions of pm/V for \emph{up}. The \emph{up} structure, with
 only the H and carbon layers, has a high degree of noncentrosymmetry and is
@@ -612,8 +630,14 @@ comparison of the maximum response reported for different structures.
 
 
 \begin{figure}[t]
-\subfloat[The three highest values of $|\chi^{abc}(-2\omega;\omega,\omega)|$ for the \emph{alt} structure. \label{fig:shg-high-alt}]{\includegraphics[width=\linewidth]{figures/shg-vnl-alt-inset}}\\
-\subfloat[Layer by layer response contribution of $|\chi^{xyy}(-2\omega;\omega,\omega)|$ for the \emph{alt} structure. \label{fig:shg-lay-alt}]{\includegraphics[width=\linewidth]{figures/shg-lay-alt}}
+\subfloat[The three largest components of 
+$|\chi^{abc}(-2\omega;\omega,\omega)|$ for the \emph{alt} structure.
+\label{fig:shg-high-alt}]
+{\includegraphics[width=\linewidth]{figures/shg-vnl-alt-inset}}\\
+\subfloat[Layer by layer spectra for $|\chi^{xyy}(-2\omega;\omega,\omega)|$ 
+for the \emph{alt} structure.
+\label{fig:shg-lay-alt}]
+{\includegraphics[width=\linewidth]{figures/shg-lay-alt}}
 \caption{(Color online) SHG spectra for the \emph{alt} structure.
 \label{fig:shg-vnl-alt}}
 \end{figure}
