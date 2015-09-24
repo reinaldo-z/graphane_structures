@@ -17,7 +17,7 @@ set zeroaxis lw 1 lt 2 lc 0
 
 #######   THREE IN ONE PLOT 
 set xrange [0.25:2]
-set yrange [-8:6]
+set yrange [-6:5]
 
 set key title "Layers"
 
