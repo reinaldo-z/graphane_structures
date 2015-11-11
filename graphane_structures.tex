@@ -188,8 +188,8 @@ susceptibility tensor, $\chi^{abc}(-2\omega;\omega,\omega)$; the resulting
 nonlinear polarization in the media acts as a source for the electromagnetic
 waves of frequency $2\omega$ \cite{loudonOUP00}. SHG spectroscopy techniques
 bring the possibility to study material properties due to their noninvasive
-and nondestructive nature, and surface sensitivity. The two cases in this
-study, C$_{16}$H$_{8}$-alt and C$_{16}$H$_{8}$-up, are structures with
+and nondestructive nature, and inherent surface sensitivity. The two cases in
+this study, C$_{16}$H$_{8}$-alt and C$_{16}$H$_{8}$-up, are structures with
 different atomic arrangements and are noncentrosymmetric. They present SHG
 from the entire structure and are efficient SHG generators. This effect has
 been theoretically studied in bulk media \cite{andersonPRB15,figliozziPRL05},
@@ -257,12 +257,12 @@ The optical current injection is given \cite{arzatePRB14} by
 \mathbf{\dot{J}}^{a}_{\text{inj}}(\omega) =
 \eta^{abc}(\omega)E_{b}(\omega)E_{c}(\omega), \label{eq:current}
 \end{equation*}
-where $\eta^{abc}(\omega)$ is the current injection tensor which quantifies the
-current injection along the $a$ direction that is optically injected. To maximize
-$\mathbf{\dot{J}}^{a}_{\text{inj}}(\omega)$ we use a 
-circularly polarized beam at normal incidence in the $-z$  direction,
-$\mathbf{E}(\omega) = E_{0}(\omega)(\mathbf{\hat{x}} -
-i\mathbf{\hat{y}})/\sqrt{2}$. For a layered system we have that the total contribution to $
+where $\eta^{abc}(\omega)$ is the current injection tensor which quantifies
+the current injection along the $a$ direction that is optically injected. To
+maximize $\mathbf{\dot{J}}^{a}_{\text{inj}}(\omega)$ we use a circularly
+polarized beam at normal incidence in the $-z$  direction, $\mathbf{E}(\omega)
+= E_{0}(\omega)(\mathbf{\hat{x}} - i\mathbf{\hat{y}})/\sqrt{2}$. For a layered
+system we have that the total contribution to $
 \eta^{abc}(\omega)$ is given \cite{arzatePRB14} by
 \begin{equation}\label{eq:eta}
 \eta^{abc}(\omega)=
@@ -318,7 +318,7 @@ upper and bottom sides of the carbon sheet, while the \emph{up} system has H
 only on the upper side. Both structures are noncentrosymmetric and have a
 thickness of 2.944\,{\AA} and 2.766\,{\AA}, respectively. The coordinates for
 the \emph{alt} and \emph{up} unit cells of the structures are presented in
-Tables \ref{tab:altstrc} and \ref{tab:upstrc}, with the corresponding layer
+Tables \ref{tab:altstrc} and \ref{tab:upstrc} with the corresponding layer
 divisions. We take the carbon honeycomb lattice to be in the $xy$ plane for
 both structures and the carbon-hydrogen bonds in the perpendicular $xz$ plane
 as depicted in Fig.\ref{fig:structures}. In order to represent the directions
@@ -330,6 +330,7 @@ usual in the polar coordinate system, as shown in Fig. \ref{fig:structures}.
 
 \begin{table}[t]
 % \sidecaption
+\centering
 \begin{tabular}{cccc}
 \hline
 \hline
@@ -357,6 +358,7 @@ hydrogen atoms, (ii) central carbon atoms, and (iii) bottom hydrogen atoms.
 \end{table}
 \begin{table}[t]
 % \sidecaption
+\centering
 \begin{tabular}{cccc}
 \hline
 \hline
@@ -382,13 +384,46 @@ hydrogen atoms and (ii) bottom carbon atoms.}
 \label{tab:upstrc}
 \end{table}
 
-We used the ABINIT code \cite{gonzeCPC09} for the calculation of the self-consistent ground state and the Kohn-Sham states using density functional theory in the local density approximation (DFT-LDA) with a planewave basis. We used Hartwigsen-Goedecker-Hutter (HGH) relativistic separable dual-space Gaussian pseudopotentials \cite{hartwigsenPRB98} that include spin-orbit interaction for calculating $D^{a}(\omega)$. For the calculations of {$\eta^{abc}(\omega)$} and $\chi^{abc}(-2\omega;\omega,\omega)$ we used Troullier-Martins pseudopotentials \cite{troullierPRB91} that are fully separable nonlocal pseudopotentials in the Kleiman-Bylander form \cite{kleinmanPRL82}. These are required for calculating the contribution from the nonlocal part of the pseudopotentials in the SHG response and this calculation is carried out using the DP code \cite{olevanoDP}. For convergence of our results we used a cutoff energies of 65\,Ha and 40\,Ha and the energy eigenvalues and matrix elements were calculated using 14452 \textbf{k} points and 8452 \textbf{k} points in the irreducible Brillouin zone (IBZ) for the \emph{alt} and \emph{up} cases, respectively. Also, the \emph{alt} and \emph{up} structures present LDA energy band gap of  0.72\,eV and 0.08\,eV, respectively. 
+We used the ABINIT code \cite{gonzeCPC09} for the calculation of the 
+self-consistent ground state and the Kohn-Sham states using density functional
+theory in the local density approximation (DFT-LDA) with a planewave basis. We
+used Hartwigsen-Goedecker-Hutter (HGH) relativistic separable dual-space
+Gaussian pseudopotentials \cite{hartwigsenPRB98} that include spin-orbit
+interaction for calculating $D^{a}(\omega)$. For the calculations of
+{$\eta^{abc}(\omega)$} and $\chi^{abc}(-2\omega;\omega,\omega)$ we used
+Troullier-Martins pseudopotentials \cite{troullierPRB91} that are fully
+separable nonlocal pseudopotentials in the Kleiman-Bylander form
+\cite{kleinmanPRL82}. These are required for calculating the contribution from
+the nonlocal part of the pseudopotentials in the SHG response and this
+calculation is carried out using the DP code \cite{olevanoDP}. For convergence
+of our results we used a cutoff energies of 65\,Ha and 40\,Ha and the energy
+eigenvalues and matrix elements were calculated using 14452 \textbf{k} points
+and 8452 \textbf{k} points in the irreducible Brillouin zone (IBZ) for the
+\emph{alt} and \emph{up} cases, respectively. Also, the \emph{alt} and
+\emph{up} structures present LDA energy band gap of  0.72\,eV and 0.08\,eV,
+respectively.
 \textcolor{red}{
-We note that 
-}
-Our systems under study where divided in layers, this has been done to analyze the contribution of each layer for the $\eta^{abc}(\omega)$ and $\chi^{abc}(-2\omega;\omega,\omega)$ responses. The \emph{alt} system is divided into three layers comprised of the top H atoms, the carbon plane, and the bottom H atoms. The \emph{up} system is divided into two layers comprised of the top H atoms and the carbon plane. The layer selections for the unit cells are shown explicitly in Tables \ref{tab:altstrc} and \ref{tab:upstrc}.
+We note that within DFT, the LDA is but one of many possible methods that can
+be used to calculate the electronic structure of materials. Indeed, these
+methods can produce widely varying results for different properties. Recent
+studies on graphene \cite{karamanisJPCC15,botelloACR14} present some of the
+differences in calculated values from several of these methods. It is also
+well known that all DFT methods predict a band gap for the material that
+differs substantially from experiment. This can be corrected by using other
+\emph{ab initio} techniques, such as the GW approximation or Time-dependent
+DFT. However, these are computationally very expensive and are outside the
+scope of this paper.
+} 
 
-\cite{karamanisJPCC15}
+Our systems under study where divided in layers, this has been done to analyze
+the contribution of each layer for the $\eta^{abc}(\omega)$ and
+$\chi^{abc}(-2\omega;\omega,\omega)$ responses. The
+\emph{alt} system is divided into three layers comprised of the top H atoms,
+the carbon plane, and the bottom H atoms. The \emph{up} system is divided into
+two layers comprised of the top H atoms and the carbon plane. The layer
+selections for the unit cells are shown explicitly in Tables \ref{tab:altstrc}
+and \ref{tab:upstrc}.
+
 
 \subsection{Optical spin injection}\label{subsec:results-DSP}
 
@@ -611,8 +646,14 @@ for the \emph{alt} structure.
 
 
 \begin{figure}[t]
-\subfloat[The three highest values of $|\chi^{abc}(-2\omega;\omega,\omega)|$ for the \emph{up} structure. \label{fig:shg-high-up}]{\includegraphics[width=\linewidth]{figures/shg-vnl-up}}\\
-\subfloat[Layer by layer response contribution of $|\chi^{yxx}(-2\omega;\omega,\omega)|$ for the \emph{up} structure. \label{fig:shg-lay-up}]{\includegraphics[width=\linewidth]{figures/shg-lay-up}}
+
+\subfloat[The three highest values of $|\chi^{abc}(-2\omega;\omega,\omega)|$ 
+for the \emph{up} structure. \label{fig:shg-high-up}]
+{\includegraphics[width=\linewidth]{figures/shg-vnl-up}}\\
+\subfloat[Layer by layer response contribution of 
+$|\chi^{yxx}(-2\omega;\omega,\omega)|$ for the \emph{up} structure. 
+\label{fig:shg-lay-up}]
+{\includegraphics[width=\linewidth]{figures/shg-lay-up}}
 \caption{(Color online) SHG spectra for the \emph{up} structure.
 \label{fig:shg-vnl-up}}
 \end{figure}

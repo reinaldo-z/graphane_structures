@@ -70,8 +70,16 @@ Our reply:
 
 We added the following lines in the introductory part of the results:
 
-
-
+We note that within DFT, the LDA is but one of many possible methods that can
+be used to calculate the electronic structure of materials. Indeed, these
+methods can produce widely varying results for different properties. Recent
+studies on graphene \cite{karamanisJPCC15,botelloACR14} present some of the
+differences in calculated values from several of these methods. It is also
+well known that all DFT methods predict a band gap for the material that
+differs substantially from experiment. This can be corrected by using other
+\emph{ab initio} techniques, such as the GW approximation or Time-dependent
+DFT. However, these are computationally very expensive and are outside the
+scope of this paper.
 ============================================================================
 
 Publication recommended after some minor revision/reshaping, as suggested
