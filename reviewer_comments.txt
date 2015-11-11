@@ -1,0 +1,75 @@
+-------------------------------
+REVIEWER REPORT:
+-------------------------------
+
+Please note that reviewers may not be numbered consecutively.
+
+Reviewer #1:
+
+The authors report a concise report on their DFT calculations for the
+nonlinear optical properties of 50% hydrogenated graphene structures. I am not
+sure how relevant the results will be for practical applications, but they
+will certainly be of interest for specialists working in this field.
+
+The methodology is appropriate and well explained, and the results are
+original and new.
+
+The physics discussion would probably benefit if the nonlinear response
+functions calculated were related to the electronic band structure of the
+systems discussed. The authors refer to Ref. 11 for the band gap, but this
+reference considers bilayer graphene.
+
+============================================================================
+Our reply:
+
+Band structure analysis.
+
+We replaced Ref. 11 with Ref. 9 and added Ref. 12, both of which concern the
+hydrogenation of monolayer graphene and how the addition of Hydrogen
+effectively 'opens' the band gap.
+============================================================================
+
+Also, there are quite a number of typos in the text:
+- bot structures
+- was show that
+- the the total response
+- in Fig. 4 presents
+The text obviously needs a careful polishing.
+
+============================================================================
+Our reply:
+
+The aforementioned typos have been corrected and the entire manuscript has
+been suitably revised.
+============================================================================
+
+Once these issues are addressed, the paper will probably be suitable for
+publication.
+
+
+Reviewer #3: 
+
+This paper by Zapata-Pena et al reports a theoretical investigation on
+nolinear response in hydrogenated graphene architectures. This is professional
+work. I think that it would be of interest to a wide audience of researchers
+active in this important field.
+
+My overall opinion on this work is positive. I have only one
+comment/suggestion for the authors.
+
+The authors rely on LDA calculations for their predictions. There is no
+further examination of the method-sensitivity of the results. I would not
+suggest  that the authors perform additional calculations. A few sentences
+would be enough to caution/enlighten the readers. See for instance recent work
+on graphenes by Karamanis (J. Phys. Chem. C, 2015, 119 (21), pp 11872-11885)
+and a recent review on the quantitative analysis of the predictive capability
+of DFT methods, StructBonding 149, 95 (2012).
+
+============================================================================
+Our reply:
+
+Something witty about LDA vs all that other stuff.
+============================================================================
+
+Publication recommended after some minor revision/reshaping, as suggested
+above.
