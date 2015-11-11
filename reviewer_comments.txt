@@ -68,7 +68,10 @@ of DFT methods, StructBonding 149, 95 (2012).
 ============================================================================
 Our reply:
 
-Something witty about LDA vs all that other stuff.
+We added the following lines in the introductory part of the results:
+
+
+
 ============================================================================
 
 Publication recommended after some minor revision/reshaping, as suggested

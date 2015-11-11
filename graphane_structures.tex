@@ -287,8 +287,7 @@ three directions with an incident circularly polarized beam. Analogously to Eq.
 
 
 \subsection{Second-harmonic generation}\label{sec:theory-SHG}
-The second-order nonlinear polarization is given \cite{andersonPRB15}
-by
+The second-order nonlinear polarization is given \cite{andersonPRB15} by
 \begin{equation*}\label{eq:pol}
 \mathcal{P}(2\omega) = 
 \chi^{abc}(-2\omega;\omega,\omega)E^{b}(\omega)E^{c}(\omega)
@@ -302,7 +301,8 @@ Analogously to the case of optical current injection we have that for a layered
 system the total contribution for the second-order susceptibility tensor can be
 obtained by
 \begin{equation}
-\boldsymbol{\chi}^{\mathrm{abs}}(-2\omega;\omega,\omega) = \sum_{\{\ell\}} \boldsymbol{\chi}^{\mathrm{abs}}_{\ell}(-2\omega;\omega,\omega)
+\boldsymbol{\chi}^{\mathrm{abs}}(-2\omega;\omega,\omega) = 
+\sum_{\{\ell\}} \boldsymbol{\chi}^{\mathrm{abs}}_{\ell}(-2\omega;\omega,\omega)
 \end{equation}
 where $\ell$ denote a particular layer chosen.
 
@@ -382,31 +382,13 @@ hydrogen atoms and (ii) bottom carbon atoms.}
 \label{tab:upstrc}
 \end{table}
 
-We used the ABINIT code \cite{gonzeCPC09} for the calculation of the self-
-consistent ground state and the Kohn-Sham states using density functional
-theory in the local density approximation (DFT-LDA) with a planewave basis. We
-used Hartwigsen-Goedecker-Hutter (HGH) relativistic separable dual-space
-Gaussian pseudopotentials \cite{hartwigsenPRB98} that include spin-orbit
-interaction for calculating $D^{a}(\omega)$. For the calculations of
-{$\eta^{abc}(\omega)$} and $\chi^{abc}(-2\omega;\omega,\omega)$ we used
-Troullier-Martins pseudopotentials \cite{troullierPRB91} that are fully
-separable nonlocal pseudopotentials in the Kleiman-Bylander form
-\cite{kleinmanPRL82}. These are required for calculating the contribution from
-the nonlocal part of the pseudopotentials in the SHG response and this
-calculation is carried out using the DP code \cite{olevanoDP}. For convergence
-of our results we used a cutoff energies of 65\,Ha and 40\,Ha and the energy
-eigenvalues and matrix elements were calculated using 14452 \textbf{k} points
-and 8452 \textbf{k} points in the irreducible Brillouin zone (IBZ) for the
-\emph{alt} and \emph{up} cases, respectively. Also, the \emph{alt} and
-\emph{up} structures present LDA energy band gap of  0.72\,eV and 0.08\,eV,
-respectively. Our systems under study where divided in layers, this has been
-done to analyze the contribution of each layer for the $\eta^{abc}(\omega)$
-and $\chi^{abc}(-2\omega;\omega,\omega)$ responses. The \emph{alt} system is
-divided into three layers comprised of the top H atoms, the carbon plane, and
-the bottom H atoms. The \emph{up} system is divided into two layers comprised
-of the top H atoms and the carbon plane. The layer selections for the unit
-cells are shown explicitly in Tables \ref{tab:altstrc} and \ref{tab:upstrc}.
+We used the ABINIT code \cite{gonzeCPC09} for the calculation of the self-consistent ground state and the Kohn-Sham states using density functional theory in the local density approximation (DFT-LDA) with a planewave basis. We used Hartwigsen-Goedecker-Hutter (HGH) relativistic separable dual-space Gaussian pseudopotentials \cite{hartwigsenPRB98} that include spin-orbit interaction for calculating $D^{a}(\omega)$. For the calculations of {$\eta^{abc}(\omega)$} and $\chi^{abc}(-2\omega;\omega,\omega)$ we used Troullier-Martins pseudopotentials \cite{troullierPRB91} that are fully separable nonlocal pseudopotentials in the Kleiman-Bylander form \cite{kleinmanPRL82}. These are required for calculating the contribution from the nonlocal part of the pseudopotentials in the SHG response and this calculation is carried out using the DP code \cite{olevanoDP}. For convergence of our results we used a cutoff energies of 65\,Ha and 40\,Ha and the energy eigenvalues and matrix elements were calculated using 14452 \textbf{k} points and 8452 \textbf{k} points in the irreducible Brillouin zone (IBZ) for the \emph{alt} and \emph{up} cases, respectively. Also, the \emph{alt} and \emph{up} structures present LDA energy band gap of  0.72\,eV and 0.08\,eV, respectively. 
+\textcolor{red}{
+We note that 
+}
+Our systems under study where divided in layers, this has been done to analyze the contribution of each layer for the $\eta^{abc}(\omega)$ and $\chi^{abc}(-2\omega;\omega,\omega)$ responses. The \emph{alt} system is divided into three layers comprised of the top H atoms, the carbon plane, and the bottom H atoms. The \emph{up} system is divided into two layers comprised of the top H atoms and the carbon plane. The layer selections for the unit cells are shown explicitly in Tables \ref{tab:altstrc} and \ref{tab:upstrc}.
 
+\cite{karamanisJPCC15}
 
 \subsection{Optical spin injection}\label{subsec:results-DSP}
 
