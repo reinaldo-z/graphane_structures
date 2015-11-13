@@ -26,7 +26,8 @@ Band structure analysis.
 
 We replaced Ref. 11 with Ref. 9 and added Ref. 12, both of which concern the
 hydrogenation of monolayer graphene and how the addition of Hydrogen
-effectively 'opens' the band gap.
+effectively 'opens' the band gap. This correction starts at the end of the
+left column on page 1.
 ============================================================================
 
 Also, there are quite a number of typos in the text:
@@ -68,18 +69,8 @@ of DFT methods, StructBonding 149, 95 (2012).
 ============================================================================
 Our reply:
 
-We added the following lines in the introductory part of the results:
-
-We note that within DFT, the LDA is but one of many possible methods that can
-be used to calculate the electronic structure of materials. Indeed, these
-methods can produce widely varying results for different properties. Recent
-studies on graphene \cite{karamanisJPCC15,botelloACR14} present some of the
-differences in calculated values from several of these methods. It is also
-well known that all DFT methods predict a band gap for the material that
-differs substantially from experiment. This can be corrected by using other
-\emph{ab initio} techniques, such as the GW approximation or Time-dependent
-DFT. However, these are computationally very expensive and are outside the
-scope of this paper.
+We added a few lines on the upper left column of page 4 where we added Refs.
+41-43, being Ref. 41 one of the suggested references by the referee.
 ============================================================================
 
 Publication recommended after some minor revision/reshaping, as suggested
