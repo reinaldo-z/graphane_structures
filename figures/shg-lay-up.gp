@@ -19,7 +19,7 @@ unset zeroaxis
 #set label 1 "{\\Large C$_{16}$H$_{8}$-up}"   at graph 0.75, graph 0.40 
 set ylabel '{\Large $|\chi^{yxx}(2\omega;\omega,\omega)|$ [$10^{6}\times$ pm/V] }'
 
-set xrange [0:0.15]
+set xrange [0:0.14]
 set key top right
 
 
