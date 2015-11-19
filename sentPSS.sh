@@ -4,8 +4,8 @@ cp w2sp-pss.clo sentPSS/
 cp wiley2sp.cls sentPSS/
 cp pss.bst sentPSS/pss.bst
 
-cp pssb.201552565.tex sentPSS/graphene_structuresPSS.tex
-cp graphane_structures.bib sentPSS/graphene_structuresPSS.bib
+cp pssb.201552565.tex sentPSS/pssb.201552565.tex
+cp pssb.201552565.bib sentPSS/pssb.201552565.bib
 
 cp figures/images/graph1.png  sentPSS/
 cp figures/images/graph2.png  sentPSS/
@@ -28,8 +28,8 @@ cp figures/shg-lay-alt.eps  sentPSS/
 cp figures/shg-vnl-up.pdf  sentPSS/
 cp figures/shg-lay-up.eps  sentPSS/
 
-sed -i -- 's/figures\///g' sentPSS/graphene_structuresPSS.tex
-sed -i -- 's/images\///g' sentPSS/graphene_structuresPSS.tex
-sed -i -- 's/graphane_structures/graphene_structuresPSS/g' sentPSS/graphene_structuresPSS.tex
+sed -i -- 's/figures\///g' sentPSS/pssb.201552565.tex
+sed -i -- 's/images\///g' sentPSS/pssb.201552565.tex
+sed -i -- 's/graphane_structures/pssb.201552565/g' sentPSS/pssb.201552565.tex
 
-rm sentPSS/graphene_structuresPSS.tex--
+rm sentPSS/pssb.201552565.tex--
