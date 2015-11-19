@@ -14,6 +14,7 @@ cp figures/images/alt2.png  sentPSS/
 cp figures/images/up1.png  sentPSS/
 cp figures/images/up2.png  sentPSS/
 
+cp figures/band-structure-up.pdf sentPSS/
 cp figures/dsp-alt.pdf  sentPSS/
 cp figures/dsp-up.pdf  sentPSS/
 cp figures/eta-alt_x.pdf  sentPSS/
